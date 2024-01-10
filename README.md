@@ -1,5 +1,5 @@
 
-<!--(https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=capsule%20render&fontSize=90)-->
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Hello%20&fontSize=90)
 
 Hi there 👋
 
@@ -31,8 +31,10 @@ Here are some ideas to get you started:
   <img src="https://github-readme-stats.vercel.app/api?username=Ra-jin&show_icons=true">
 </div>
 
-<h3>Velog💬</h3>
+<h3>Contact me📫</h3>
 <div align="left">
   ![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=hjin1123)](https://velog.io/@hjin1123) 
 </div>
+
+![footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=footer&text=capsule%20render&fontSize=90)
 
