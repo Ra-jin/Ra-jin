@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue 기초 익히기</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- 1. data 안에 name변수를 만들어서 화면에서 보여주기 -->
+        <!-- 2. 만들어둔 변수들은 person으로 감싸서 person에 속한 데이터를 보여줄땐 {{person.name}} 이렇게 데이터 불러주기 -->
+        <!-- {{person.name}} {{ person.age}} -->
+        <!-- 3. 메소드를 통해 데이터 출력하기, 필요한 로직을 짜서 return해서 호출 할 수 있다. 
+        메소드 안에서 다른 메소드를 생성해서 함수를 사용할 수 있다. -->
+        <!-- 4. 함수를 사용할 때 넣어주는 값을 인자라고 한다. ex) {{ nextYear('안녕하세요')}} 에서 괄호 안에 들어가는 부분 -->
+        {{ nextYear('안녕하세요')}}
+        <!-- 5. 데이터 바인딩 -->
+        <!-- input 태그 안에 value값으로 data값을 넣어주려면 v-bind:value="[변수]" 
+        :type="type" 이렇게 넣어줘도 된다.-->
+        <input v-bind:type="type" v-bind:value="inputData">
+        <a :href="getYoutubeLink('@zamgolbers')">유튜브</a>
+    </div>
+    <script>
+        new Vue ({
+            el: '#app',
+            data: {
+                person:{
+                    name: 'vue 코딩',
+                    age: 31
+                },
+                inputData: 'hello',
+                type: 'text',
+                link: 'https://www.youtube.com/'
+            },
+            methods: {
+                getYoutubeLink(channel) {
+                    return this.link + channel
+                },
+                // 위와 아래 함수가 동일하다.
+                nextYear(greeting) {
+                    return greeting + '! ' + this.person.name + '은 내년에' + [this.person.age + 1] + '살 입니다.';
+                },
+                otherMethod: function() {
+                    this.nextYear();
+                }
+
+            }
+        })
+    </script>
+</body>
+</html>
