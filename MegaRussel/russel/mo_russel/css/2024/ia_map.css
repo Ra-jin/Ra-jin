@@ -1,0 +1,74 @@
+/* === title === */
+/* 통합프로모션 title */
+.pro-wrap .ia-map-wrap .tit-area {display:block;}
+.pro-wrap .ia-map-wrap .tit-area02 {display:none;} 
+.ia-map-wrap .tit-area {display:none;} 
+
+/* map-area */
+.ia-map .map-area {position:relative;}
+.ia-map .map-area .bg img {width:100%;}
+.map-area ul li {position:absolute;padding-top:calc(41vw / 7.2);}
+.map-area ul li:before {content:'';background: url("https://russeldata.megastudy.net/campus/images/russel/event/2024/promotion/f_non.png") no-repeat 0 0;width:calc(25vw / 7.2);height:calc(36vw / 7.2);position:absolute;top:0;left:50%;background-size:100% !important;transform:translateX(-50%);}
+.map-area ul.active li:before {animation:upDown .7s linear infinite alternate;}
+@keyframes upDown {
+    from {
+        transform:translateY(-3px) translateX(-50%)
+    }
+    to {
+        transform:translateY(0) translateX(-50%)
+    }
+}
+.map-area ul li span {background-color:rgb(255, 255, 255, 0.8);color:#555;font-size:calc(16vw / 7.2);font-weight:500;letter-spacing:-0.72px;line-height:1.1;display:block;}
+
+.map-area .a-russel.active li:before {content:'';background: url("https://russeldata.megastudy.net/campus/images/russel/event/2024/promotion/f_blue.png") no-repeat 0 0;}
+.map-area .a-russel .r-gn { top: calc(356vw / 7.2); left: calc(360vw / 7.2); }          /* 러셀 강남 */
+.map-area .a-russel .r-gn span {background-color:transparent;}
+.map-area .a-russel .r-dc { top: calc(378vw / 7.2); left: calc(407vw / 7.2); }    /* 러셀 대치 */
+.map-area .a-russel .r-dc span {background-color:transparent;}
+.map-area .a-russel .r-md { top: calc(350vw / 7.2); left: calc(228vw / 7.2); }   /* 러셀 목동 */
+.map-area .a-russel .r-md span {background-color:transparent;}
+.map-area .a-russel .r-bc { top: calc(385vw / 7.2); left: calc(65vw / 7.2);padding-top:1.5vw;padding-right: 6vw;}   /* 러셀 부천 */
+.map-area .a-russel .r-bc:before {left:initial;margin-left:0;right:0;}
+.map-area .a-russel .r-bd { top: calc(545vw / 7.2); left: calc(395vw / 7.2);z-index: 2; }   /* 러셀 분당 */
+.map-area .a-russel .r-ct { top: calc(1461vw / 7.2); left: calc(516vw / 7.2); }   /* 러셀 센텀 */
+.map-area .a-russel .r-yt { top: calc(657vw / 7.2); left: calc(354vw / 7.2); }   /* 러셀 영통 */
+.map-area .a-russel .r-jg { top: calc(230vw / 7.2); left: calc(414vw / 7.2); }   /* 러셀 중계 */
+.map-area .a-russel .r-jg span {background-color:transparent;}
+.map-area .a-russel .r-pc { top: calc(513vw / 7.2); left: calc(280vw / 7.2); }   /* 러셀 평촌 */
+.map-area .a-russel .r-dg { top: calc(1335vw / 7.2); left: calc(444vw / 7.2); }   /* 러셀 대구 */
+.map-area .a-russel .r-us { top: calc(1392vw / 7.2); left: calc(544vw / 7.2); }  /* 러셀 울산 */
+.map-area .a-russel .r-gj { top: calc(1456vw / 7.2); left: calc(162vw / 7.2); }  /* 러셀CORE 광주 */
+.map-area .a-russel .r-dj { top: calc(1246vw / 7.2); left: calc(246vw / 7.2); }  /* 러셀CORE 대전 */
+.map-area .a-russel .r-wj { top: calc(1056vw / 7.2); left: calc(376vw / 7.2);padding-top:0;padding-left:3vw; }  /* 러셀CORE 원주 */
+.map-area .a-russel .r-wj:before {left:0;margin-left:0;}
+.map-area .a-russel .r-jj { top: calc(1340vw / 7.2); left: calc(199vw / 7.2); }  /* 러셀CORE 전주 */
+.map-area .a-russel .r-cw { top: calc(1430vw / 7.2); left: calc(414vw / 7.2);padding-top:0;padding-right: 6vw;text-align:right; }  /* 러셀CORE 창원 */
+.map-area .a-russel .r-cw:before {left:initial;margin-left:0;right:0;}
+.map-area .a-russel .r-cj { top: calc(1180vw / 7.2); left: calc(275vw / 7.2); }  /* 러셀CORE 청주 */
+
+.map-area .a-mega.active li:before {content:'';background: url("https://russeldata.megastudy.net/campus/images/russel/event/2024/promotion/f_purple.png") no-repeat 0 0;}
+.map-area .a-mega li span {background-color:transparent;}
+.map-area .a-mega .m-scho { top: calc(423vw / 7.2); left: calc(340vw / 7.2); }          /* 서초재종 */
+.map-area .a-mega .m-gb { top: calc(214vw / 7.2); left: calc(323vw / 7.2); }      /* 강북재종 */
+.map-area .a-mega .m-nrj { top: calc(384vw / 7.2); left: calc(281vw / 7.2); }    /* 노량진재종 */
+.map-area .a-mega .m-sinc { top: calc(291vw / 7.2); left: calc(307vw / 7.2); }   /* 신촌재종 */
+.map-area .a-mega .m-sp { top: calc(394vw / 7.2); left: calc(465vw / 7.2); }     /* 송파재종 */
+.map-area .a-mega .m-bc { top: calc(401vw / 7.2); left: calc(136vw / 7.2); }     /* 부천재종 */
+.map-area .a-mega .m-bc span {background-color:rgb(255, 255, 255, 0.8)}
+.map-area .a-mega .m-bd { top: calc(568vw / 7.2); left: calc(439vw / 7.2); }     /* 분당재종 */
+.map-area .a-mega .m-bd span {background-color:rgb(255, 255, 255, 0.8)}
+.map-area .a-mega .m-is { top: calc(194vw / 7.2); left: calc(180vw / 7.2); }     /* 일산재종 */
+.map-area .a-mega .m-pc { top: calc(527vw / 7.2); left: calc(230vw / 7.2); }     /* 평촌재종 */
+.map-area .a-mega .m-pc span {background-color:rgb(255, 255, 255, 0.8)}
+.map-area .a-mega .m-sb { top: calc(275vw / 7.2); left: calc(363vw / 7.2); }     /* 성북재학 */
+
+.map-area .a-gisuk.active li:before {content:'';background: url("https://russeldata.megastudy.net/campus/images/russel/event/2024/promotion/f_red.png") no-repeat 0 0;}
+.map-area .a-gisuk li {text-align:center;}
+.map-area .a-gisuk .g-hs { top: calc(694vw / 7.2); left: calc(470vw / 7.2);z-index: 2; }           /* 최상위권 전문관 */
+.map-area .a-gisuk .g-sm { top: calc(582vw / 7.2); left: calc(533vw / 7.2);padding-top:0;padding-bottom:5.5vw; }     /* 남학생 전문관 */
+.map-area .a-gisuk .g-sm:before {top:initial;bottom:0;}
+.map-area .a-gisuk .g-w { top: calc(628vw / 7.2); left: calc(573vw / 7.2); }     /* 여학생 전문관 */
+.map-area .a-gisuk .g-mw { top: calc(573vw / 7.2); left: calc(620vw / 7.2);padding-top:0;padding-bottom:5.5vw; }     /* 여학생 수학 전문관 */
+.map-area .a-gisuk .g-mw:before {top:initial;bottom:0;left:calc(50% - 1.8vw)} 
+.map-area .a-gisuk .g-mw span {background-color:transparent;}
+.map-area .a-gisuk .g-sc { top: calc(732vw / 7.2); left: calc(551vw / 7.2); }    /* 자연계 전문관 */

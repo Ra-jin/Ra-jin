@@ -1,0 +1,31 @@
+
+/* =================================================
+    공통
+==================================================== */
+mark {color:#222;}
+.campus_wrap {position:relative;overflow:hidden;padding:0 15px}
+.campus_wrap h5 {margin:35px 0 45px;text-align:center;font-size:2.4rem;font-weight:bold;letter-spacing:-1px}
+.campus_wrap h5 strong {color:#0081ff;}
+
+.campus_wrap .campus-facility {position:relative;margin-bottom:50px}
+.campus_wrap .campus-facility .tit {margin-bottom:45px;font-size:2.2rem;font-weight:500;letter-spacing:-1px}
+.campus_wrap .campus-facility .tit:before {content: '';position:absolute;top:48px;width:18px;height:2px;background-color:#3f3e43}
+.campus_wrap .campus-facility .tit strong {font-size:2.4rem;font-weight:500;}
+.campus_wrap .campus-facility .txt {padding-bottom:21px;color:#666;font-size:1.4rem;line-height:1.5;letter-spacing:-0.5px;}
+.campus_wrap .campus-facility .txt strong {color:#111;}
+
+/* 슬라이드 */
+.campus_wrap .gallery-wrap {position:relative;overflow:hidden;}
+.gallery-wrap .js-gallery .swiper-button-next, .gallery-wrap .js-gallery .swiper-button-prev {top:60%;transform:translateY(-50%);width:14px;height:27px;}
+.gallery-wrap .js-gallery .swiper-button-next {right:10px;background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/core_gj/info/campus_facility/arrow_r.png") center right no-repeat;}
+.gallery-wrap .js-gallery .swiper-button-prev {left:10px;background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/core_gj/info/campus_facility/arrow_l.png") center left no-repeat;}
+
+/* view */
+.gallery-wrap .js-gallery .swiper-slide img {width:100%;height:100%}
+.gallery-wrap .js-gallery .swiper-pagination {z-index: -9;}
+
+/* gallery_list */
+.gallery-wrap .gallery-sub {position:relative;height:54px;overflow-x:auto;padding:5px 0 10px;text-align:center;}
+.gallery-wrap .gallery-sub .swiper-slide {cursor:pointer}
+.gallery-wrap .gallery-sub .swiper-slide img {display:block;width:100%;height:100%;}
+.gallery-wrap .gallery-sub .swiper-slide-active::before {content:'';position:absolute;top:0;left:0;width:calc(100% - 7px);height:46px;border:4px solid #267dc1}

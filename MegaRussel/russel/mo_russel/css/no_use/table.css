@@ -1,0 +1,6 @@
+/* ==================================================
+   table style
+================================================== */
+.tbl-type01 {width:100%;border-bottom:1px solid #ccc}
+.tbl-type01 th, .tbl-type01 td {text-align:left;font-size:1.4rem;font-weight:normal;padding:7px 0;vertical-align: middle}
+.tbl-type01 td input {vertical-align: middle}

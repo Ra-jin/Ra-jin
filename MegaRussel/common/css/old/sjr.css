@@ -1,0 +1,45 @@
+.header .headerTop .headerLeft .campus_main, 
+.header .headerTop .headerLeft .campus_btn,
+.header .headerTop .login_wrap .snsShare,
+.russelNavi_2017{display:none;}
+
+
+/* 삽자루 top banner */
+.top-banner{width:1100px;margin:0 auto;}
+.top-banner-wrap.sjr:before{content:"";clear:both;display:block;position:absolute;left:0;top:0;z-index:-1;width:50%;height:100px;background:#033a52;}
+.top-banner-wrap.sjr:after{content:"";clear:both;display:block;position:absolute;right:0;top:0;z-index:-1;width:50%;height:100px;background:#031834;}
+/* //삽자루 top banner */
+
+.system-table{padding:0 20px 65px;background:#f4f5f6;}
+.system-table table{width:100%;border-top:1px solid #aeaeae;}
+.system-table table th{border-right:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;background:#f8f8f8;font-weight:500;font-size:14px;}
+.system-table table td{padding:15px 5px;border-bottom:1px solid #d9d9d9;background:#fff;font-size:14px;font-weight:300;color:#666;}
+
+.study-list{border-top:2px solid #a4a4a4;}
+.study-list ul{padding:20px 7px 0;border-bottom:1px solid #a4a4a4;}
+.study-list ul::after{content:'';display:block;clear:both;}
+.study-list li{float:left;width:208px;margin:0 23px 40px;height:158px;box-sizing:border-box;}
+.study-list li a{display:block;}
+.study-list li a img{width:100%;}
+.study-list li a .name{display:block;margin-top:5px;font-size:14px;font-weight:400;line-height:1.3;text-align:center;color:#333;}
+.study-list .board_list_paging_01{margin-top:20px;}
+
+.campus-dim{display:none;position:fixed;top:0;left:0;z-index:15;width:100%;height:100%;}
+.campus-dim.on{display:flex;align-items:center;justify-content:center;width:100%;height:100%;}
+.campus-dim div{position:relative;}
+.campus-dim .close{position:absolute;top:-36px;right:0;}
+.campus-dim iframe{width:740px;height:416px;}
+
+
+/* 삽자루 정규반/단과반 하단 리스트 (삽자루 단과화면에서 보이지않게 요청)  */
+.russel_tch_list_wrap_common,.russel_tch_list_wrap,
+.dankaListInfo,
+.dankaIconInfo {display:block !important;}
+
+.explainTop{background:none;}
+
+.top_subIn .app_banner {display: none!important;}
+
+/* 삽텐츠 > 정보 컨텐츠 */
+.campus-con-wrap .campus-con .list-box li span {text-align: left;}
+.main-campus-tab .campus-tab .tab-bt02 .btn-more {right: -199px!important;;}

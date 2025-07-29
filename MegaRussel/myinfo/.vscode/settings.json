@@ -1,0 +1,34 @@
+{
+    "svn.ignoreMissingSvnWarning": true,
+    "files.encoding": "euckr",
+    "files.autoGuessEncoding": false,
+    "window.zoomLevel": 0,
+    "editor.tabSize": 4,         // 탭 크기 (프로젝트 요구에 맞게 조정)
+    "editor.insertSpaces": false, // 스페이스 대신 탭 사용
+    "liveSassCompile.settings.formats": [
+        {
+            //expanded 스타일의 css로 컴파일 하겠다는 뜻
+            "format": "expanded",
+            //컴파일된 파일 확장자를 .css로 지정하겠다는 뜻
+            "extensionName": ".css",
+            //컴파일된 파일 저장경로를 아래와 같이 설정하겠다는 뜻
+            "savePath": "~/../"
+        },
+
+        {
+            //expanded 스타일의 css로 컴파일 하겠다는 뜻
+            "format": "compressed",
+            //컴파일된 파일 확장자를 .css로 지정하겠다는 뜻
+            "extensionName": ".min.css",
+            //컴파일된 파일 저장경로를 아래와 같이 설정하겠다는 뜻
+            "savePath": "~/../"
+        }
+    ],
+
+    //scss 저장 시 불필요한 map파일이 생성되는 것을 막는 코드
+    "liveSassCompile.settings.generateMap": false,
+    //원치않는 scss가 컴파일되어버리는 것을 코드
+    "liveSassCompile.settings.includeItems": [
+        "/css/scss/*.scss"
+    ]
+}

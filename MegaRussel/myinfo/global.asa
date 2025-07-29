@@ -1,0 +1,28 @@
+<SCRIPT language="vbscript" runat="server">
+Sub Application_OnStart
+	Application("SiteCharSet")  = "euc-kr"
+	Application("SiteCodePage") = 949
+	'Application("img_path") = "http://amsdev.megastudy.net:8080"
+
+	Application("img_path") = "https://devrusseldata.megastudy.net/campus/image/campus/library/v2015"
+
+	'Application("img_path_russel") = "http://dev.megastudy.net:8080/russel"
+	Application("img_path_russel") = "https://devrusseldata.megastudy.net/campus/image/russel"
+
+	'Application("img_path") = "http://image.megastudy.net/campus/library/v2015"
+	'Application("img_path_russel") = "http://image.megastudy.net/russel"
+
+End Sub
+
+Sub Application_OnEnd
+	Application.Contents.RemoveAll
+End Sub
+
+Sub Session_OnStart
+	Session("campus_enName") = ""
+End Sub
+
+Sub Session_OnEnd
+	Session.Contents.RemoveAll
+End Sub
+</SCRIPT>

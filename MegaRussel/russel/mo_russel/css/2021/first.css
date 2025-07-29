@@ -1,0 +1,199 @@
+.first-wrap .visual {position: relative;}
+.first-wrap.yj {margin-top:50px;}
+.first-wrap .visual .txt {position:absolute;top:88%;left:0%;width:100%;text-align: center;transform:translateY(-50%)}
+.first-wrap .visual .txt::before {content:"";display: inline-block;width:56px;height:2px;margin-right:10px;vertical-align: middle;background:url("http://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2021/first/bg_date_01.png") left top 100%/100% no-repeat;}
+.first-wrap .visual .txt::after {content:"";display: inline-block;width:56px;height:2px;margin-left:10px;vertical-align: middle;background:url("http://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2021/first/bg_date_02.png") right top 100%/100% no-repeat;}
+.first-wrap .visual .txt strong {display:inline-block;vertical-align:middle;font-size:1.5rem;color:#fff;font-weight: bold;letter-spacing: -1px;}
+
+.first-wrap .bt-foucs {position:relative;display:block;padding:15px 0;font-size:1.7rem;font-weight: bold;color:#fff;text-align: center;background: #b81c1f;}
+
+.first-wrap .bg-gr {background:#f6f6f6;padding:0 4% 40px 4%}
+.first-wrap .bg-red {background:#a1040f;padding:0 4% 40px 4%}
+.first-wrap .bg-w-in {background:#fff;padding:0 4% 30px;}
+.first-wrap .bg-w-in .stit {padding:35px 0 25px;font-size:1.7rem;text-align: center;color:#222;font-weight: bold;}
+
+.first-wrap .bg-w-in .stit-02 {margin:30px 0 10px;font-size:1.4rem;color:#232323;font-weight: bold;}
+.first-wrap .bg-w-in .stit + .stit-02 {margin-top:0}
+.first-wrap .bg-w-in .stit-02::before {content:"ㆍ";font-weight: bold;}
+.first-wrap .bt-g-arr {margin-right:4%;text-align: right;}
+.first-wrap .bt-g-arr a {display: inline-block;position:relative;padding:5px 25px 5px 5%;background:#5c5c5c;color:#fff;font-size:1.2rem!important;border-radius: 5px;text-decoration: none!important;}
+.first-wrap .bt-g-arr a::after {content: "";position:absolute;top:50%;right:10px;transform: translateY(-50.1%) rotate(45deg);display:block;width:7px;height:7px;border-top: 1px solid #fff;border-right: 1px solid #fff}
+
+.first-wrap .layer-wrap {display: none;z-index:11;padding:20px 5%;width:80%;position: fixed;left:10%;top:50%;transform:translateY(-50%);background:#fff;box-sizing: border-box;font-size:1.2rem;color:#222;border-radius: 10px;line-height: 1.5;}
+.btClose {width:16px;height:auto;}
+
+.first-wrap .number {display: flex;justify-content:center;padding:20px 0}
+.first-wrap .number li {position: relative;text-align:center;color:#232323;font-size:1.3rem;padding:0 4%;}
+.first-wrap .number li::after {content:"";display:block;height:100%;width:1px;position: absolute;top:0;right:0;background:#e2e2e2;}
+.first-wrap .number li:last-child::after {display: none;;}
+.first-wrap .number li strong {display: block;font-size:2.5rem;color:#b21112;font-weight: bold;}
+.first-wrap .number li strong span {color:#232323;font-size:1.2rem}
+.first-wrap .number-txt {padding-bottom:20px;text-align:center;font-size:1rem;color:#8a8989;letter-spacing: -1px;}
+
+.first-slide {position: relative;overflow: hidden;}
+.first-slide .swiper-pagination-bullet-active {background:#b21112}
+.first-slide .swiper-pagination {z-index: 5;bottom:20px}
+.first-slide .swiper-slide img {width:100%;}
+
+.review-wrap {margin-bottom: 40px;}
+.review-wrap .swiper-slide {margin:0 10%;padding-bottom:40px;width:80%!important;}
+.review-wrap .detail {position:relative;margin-top:-3px;border:1px solid #e1e1e1;border-top: none;border-radius: 0 0 10px 10px;overflow: hidden;}
+.review-wrap .detail .pic {width:50%;height:auto;position: absolute;bottom:-3px;left:-8%;}
+.review-wrap .detail .txt01 {min-height:65px;padding:10px 3% 10px 32%;font-size: 1.2rem;}
+.review-wrap .detail .txt01 strong {font-size:1.2rem;}
+.review-wrap .detail .txt02 {padding:15px 0 15px 40%;font-size: 1.1rem;background:#f4f4f4;color:#828282;}
+.first-slide .swiper-button-prev {background:none;left:3%;width:20px;height:20px;border:5px solid #d2d2d2;border-right:none;border-bottom:none;transform: rotate(-45deg);}
+.first-slide .swiper-button-next {background:none;right:3%;width:20px;height:20px;border:5px solid #d2d2d2;border-left:none;border-bottom:none;transform: rotate(45deg);}
+.review-wrap .swiper-wrapper img {width:100%;}
+
+.first-wrap table * {font-size:1.4rem!important;}
+.first-wrap table .f11 {font-size: 1.1rem!important;}
+.first-wrap table .red {color:#a1040f;font-weight: bold!important;}
+
+.first-wrap .comming {text-align: center;font-size:1.6rem;background:#eee;padding:100px 0;color:#b21112;font-weight: bold;}
+
+.first-wrap .benfit-info {margin-top:10px;display:flex;background:#f6f6f6;padding:14px;}
+.first-wrap .benfit-info .info {margin-right:10px;background:#5a1ca1;color:#fff;padding:10px;font-size: 1.5rem;font-weight: bold;}
+.first-wrap .benfit-info .txt p:nth-of-type(1) {font-size:1.6rem;font-weight: bold;}
+.first-wrap .benfit-info .txt p:nth-of-type(2) {margin-top:2px;font-size: 1.4rem;}
+.first-wrap .benfit-info .txt p:nth-of-type(2) strong {font-size: 1.4rem;color:#5a1d9f;}
+.first-wrap .benfit-info .txt p:nth-of-type(3) {color:#5a1ca1;font-size:1.3rem;font-weight: bold;}
+
+.bottom-wrap {padding: 20px 0 20px;}
+.bottom-wrap .txt01 {text-align: center;color:#262626;font-size:1.5rem;font-weight: bold;}
+.bottom-wrap .txt02 {margin-top:40px;padding:40px 0 35px;text-align: center;color:#262626;font-size:1.4rem;background: #f6f6f6;}
+.bottom-wrap .txt02 strong {display:block;margin-top:10px;font-weight: bold;font-size:1.7rem;}
+.bottom-wrap .bt-box {margin:25px 4% 0;display: flex;justify-content: space-between;}
+.bottom-wrap .bt-box a {flex:1;position: relative;;margin-right:10px;background:#423cd0;color:#fff;padding:10px 0;border-radius:5px;font-size:1.6rem;font-weight: bold;text-align: center;letter-spacing: -1px;}
+.bottom-wrap .bt-box a:last-child {margin-right: 0;}
+.bottom-wrap .bt-box a::after {content: "";position: absolute;top: 50%;right: 15px;transform: translateY(-50%) rotate(45deg);display: block;width: 9px;height: 9px;border-top: 3px solid #b2b0ef;border-right: 3px solid #b2b0ef;}
+
+/* 기숙 재수생 우선선발반 */
+.first-wrap .visual .bt-play {position:absolute;top:30%;right:4%}
+.first-wrap .visual .bt-play p {position: relative;}
+.first-wrap .visual .bt-play p img {width:41px;height:41px;z-index:3;position: relative;animation: btShadow ease-in-out 2s infinite;}
+.first-wrap .visual .bt-play p::before {content:"";display:block;width: 110%;height: 110%;position:absolute;top:-5%;left:-5%;border-radius: 50%;z-index:2;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 1s infinite;background:#e4d2b6;}
+.first-wrap .visual .bt-play p::after {content:"";display:block;width: 130%;height: 130%;position:absolute;top:-15%;left:-15%;border-radius: 50%;z-index:1;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 2s infinite;background:#e4d2b6;}
+.first-wrap .btn {display:block;position:relative;margin-bottom:10px;padding:13px 0;line-height:1.5;letter-spacing: -1px;background:#b91c1e;text-align:center;font-size:1.4rem;color:#fff;}
+.first-wrap .btn strong {color:#fff;}
+.first-wrap .btn strong {display: block;font-size:1.7rem}
+
+/* 기숙 재수정규반 */
+.regular-wrap {position:relative;}
+.regular-wrap .visual .day {position:absolute;top:66%;left:10%;padding:10px;background:#05aac5;font-size:1.2rem;font-weight:bold;color:#fff;border-radius:30px;}
+.regular-wrap .visual .bt-play {position:absolute;top:54%;right:7%;width:10%;height:0;padding-top:10%;}
+.regular-wrap .visual .bt-play p {position: relative;transform: translateY(-100%);}
+.regular-wrap .visual .bt-play p img {width:100%;height:100%;z-index:3;position: relative;animation: btShadow ease-in-out 2s infinite;}
+.regular-wrap .visual .bt-play p::before {content:"";display:block;width: 110%;height: 110%;position:absolute;top:-5%;left:-5%;background:#a9896f;border-radius: 50%;z-index:1;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 1s infinite;}
+.regular-wrap .visual .bt-play p::after {content:"";display:block;width: 130%;height: 130%;position:absolute;top:-15%;left:-15%;background:#d7ba95;border-radius: 50%;z-index:1;transform:translate(-50%,-50%);visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 2s infinite;}
+.regular-wrap .btn {display:block;position:relative;margin-bottom:10px;padding:13px 0;line-height:1.5;letter-spacing: -1px;background:#967e66;text-align:center;font-size:1.4rem;color:#fff;}
+.regular-wrap .btn strong {color:#fff;}
+.regular-wrap .btn strong {display: block;font-size:1.7rem}
+
+.video-wrap{position:relative;width:95%;margin:1rem auto;padding-bottom:53.8%;}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+/* 기숙 재수정규반 2023 */
+.regular-n-wrap {position:relative;padding:49px 0 0 0;}
+.regular-n-wrap .visual .day {position:absolute;top:72%;left:10%;padding:10px;background:#05aac5;font-size:1.2rem;font-weight:bold;color:#fff;border-radius:30px;}
+.regular-n-wrap .btn {display:block;position:relative;padding:13px 0;line-height:1.5;letter-spacing: -1px;background:#05aac5;text-align:center;font-size:1.4rem;color:#fff;}
+.regular-n-wrap .btn strong {color:#fff;}
+.regular-n-wrap .btn strong {display: block;font-size:1.7rem}
+.regular-n-wrap .btn::after {display:block;content:"";position:absolute;top:50%;right:30px;width:9px;height:9px;border-top:3px solid #fff;border-right:3px solid #fff;transform:translateY(-50%)rotate(45deg);}
+
+.regular-cont {position:relative;}
+.regular-cont .inner {padding:0 4% 0 4%;}
+.regular-cont .inner .tit {font-size:1.8rem;font-weight:bold;color:#222222;}
+.regular-cont .inner .tbl-01 {color:#222222;}
+.regular-cont .inner .tbl-01:last-child {margin:0;}
+.regular-cont .inner .tbl-01 thead th {color:#222222;}
+.regular-cont .inner .tbl-01 thead td {color:#222222;border-bottom:1px solid #262626;}
+.regular-cont .inner .tbl-01 tbody th {background:#f6f6f6;font-weight:bold;}
+
+.regular-cont .inner .tbl-01 tbody td .fee {display:flex;justify-content:space-around;align-items:center;margin:0 0 10px;}
+.regular-cont .inner .tbl-01 tbody td .fee p {font-weight:bold;text-align:center;}
+.regular-cont .inner .tbl-01 tbody td .fee p strong {color:#ee3b41;}
+.regular-cont .inner .tbl-01 tbody td .fee p .price {font-size:1.5rem;}
+.regular-cont .inner .tbl-01 tbody td .fee .sym {font-size:1.8rem;}
+
+
+.regular-cont .inner .tbl-02 thead th {color:#222222;}
+.regular-cont .inner .tbl-02 tbody td {color:#222222;}
+.regular-cont .inner .tbl-02 tbody td {border-left:0;}
+
+.bt-s-go a , .tbl-type01 td .bt-s-go a {position:relative;padding:5px 0;display: block;background:#383838;border-radius:5px;font-size:1.3rem;color:#fff;font-weight:500;text-decoration:none!important}
+
+/* bottom */
+.regular-cont .bottom-wrap {margin:30px 0 20px;text-align:center;}
+.regular-cont .bottom-wrap .tit {font-size:1.4rem;color:#222222;line-height: 2.3rem;}
+.regular-cont .bottom-wrap ul {display:flex;justify-content:space-between;margin:20px 4% 0;}
+.regular-cont .bottom-wrap ul li {flex:1;margin-right:10px;}
+.regular-cont .bottom-wrap ul li:nth-child(2) {margin-right:0;}
+.regular-cont .bottom-wrap ul li a {display:block;position:relative;height:50px;line-height:50px;background:#05aac5;font-size:1.6rem;font-weight:bold;color:#fff;text-align:center;border-radius:5px;}
+.regular-cont .bottom-wrap ul li a::after {display:block;content:"";position:absolute;top:51%;right:15px;width:11px;height:11px;border-top:3px solid #fff;border-right:3px solid #fff;transform: translateY(-50%) rotate(45deg);opacity:.8;}
+.regular-cont .bottom-wrap .b-img {margin:40px 0 5px;}
+
+/* 팝업 */
+.layer-w-pop {display:none;position:fixed;left:0;top:0;width:100%;height:100%;z-index:10;justify-content:center;align-items:center;}
+.layer-w-pop::after {content:'';position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(0, 0, 0, 0.7);}
+.layer-w-pop .layer-box {position:relative;z-index:10;width:90%;height:80%;background:#fff;border-radius:5px;box-sizing:border-box;}
+.layer-w-pop .layer-box .bt-close {position: absolute;top: -30px;right:10px;}
+.layer-w-pop .layer-box .bt-close img {width:20px;height:20px;}
+.layer-w-pop .layer-box .inner{position:absolute;left:0;top:0;width:100%;height:100%;overflow-y:auto;}
+.layer-w-pop .layer-box .inner > div {padding:10% 5%;display:none;}
+.layer-w-pop .layer-box .inner > div.on {display:block;}
+.layer-w-pop .layer-box .inner > div .title {margin-bottom:20px;text-align:center;color:#222222;font-size:2.0rem;font-weight:500;}
+.layer-w-pop .needs {text-align:center;}
+.layer-w-pop .needs .tit {margin-bottom:15px;background:#2c21c6;color:#fff;padding:4px 0 6px;font-size:1.6rem;font-weight:600;}
+.layer-w-pop .needs .stit {margin-bottom:5px;padding:0 5px;text-align:left;color:#2c21c6;font-size:1.6rem;font-weight:600;}
+.layer-w-pop .needs ul {margin-bottom:15px;text-align:left;border-bottom:1px solid #e2e2e2;}
+.layer-w-pop .needs ul:last-of-type {border-bottom:0;}
+.layer-w-pop .needs ul li {margin-left:8px;padding:0 5px;color:#222222;font-size:1.3rem;letter-spacing:-0.06rem;line-height:1.5;text-indent:-8px;}
+.layer-w-pop .needs ul li.non {margin-left:0;text-indent:0;}
+.layer-w-pop .needs ul li:last-of-type {margin-bottom:15px;}
+.layer-w-pop .needs ul li::before {content:'';display:inline-block;vertical-align:3px;margin-right:5px; width:3px;height:3px;border-radius:10px;background:#222;}
+.layer-w-pop .needs ul li.non::before {content:none;}
+.layer-w-pop .review p.txt {font-size:1.3rem;color:#222222;margin-bottom:20px;}
+.layer-w-pop .review p.txt .color-blue {color: #2c21c6 !important;}
+.layer-w-pop .review p.txt::before {content:'';display:inline-block;vertical-align:3px;margin-right:5px; width:3px;height:3px;border-radius:10px;background:#222;}
+
+.layer-receipt {display:none;position: fixed;top:50%;left:8.5%;width:83%;transform:translateY(-50.1%);background:#fff;padding:0;border-radius: 20px;box-sizing: border-box;z-index:11;font-size:1.2rem}
+.layer-receipt .inner .tit {font-size:1.6rem;margin:0 0 15px 0;font-weight: bold;padding:0 0 13px;}
+.layer-receipt .inner .txt {font-size: 1.3rem;line-height: 1.5;}
+.layer-receipt .bt-close {position: absolute;top:-30px;right:5px;}
+.layer-receipt .bt-close img {width:20px;height:20px;}
+.layer-receipt .bt-text {display:block;margin:15px 0 -15px;padding:15px 0;font-size:1.6rem;color:#0081ff;border-top:1px solid #eaeaea;font-weight: bold;}
+/* //팝업 */
+
+/* 2023 재수생 우선 선발반 */
+
+
+.first-cont {position:relative;}
+.first-cont .inner {padding:0 4% 0 4%;}
+.first-cont .inner .tit {font-size:1.8rem;font-weight:bold;color:#222222;}
+.first-cont .inner .tbl-01 {color:#222222;}
+.first-cont .inner .tbl-01:last-child {margin:0;}
+.first-cont .inner .tbl-01 thead th {color:#222222;}
+.first-cont .inner .tbl-01 thead td {color:#222222;border-bottom:1px solid #262626;}
+.first-cont .inner .tbl-01 tbody th {background:#f6f6f6;font-weight:bold;}
+
+.first-cont .inner .tbl-01 tbody td .fee {display:flex;justify-content:space-around;align-items:center;margin:0 0 10px;}
+.first-cont .inner .tbl-01 tbody td .fee p {font-weight:bold;text-align:center;}
+.first-cont .inner .tbl-01 tbody td .fee p strong {color:#ee3b41;}
+.first-cont .inner .tbl-01 tbody td .fee p .price {font-size:1.5rem;}
+.first-cont .inner .tbl-01 tbody td .fee .sym {font-size:1.8rem;}
+
+
+.first-cont .inner .tbl-02 thead th {color:#222222;}
+.first-cont .inner .tbl-02 tbody td {color:#222222;}
+.first-cont .inner .tbl-02 tbody td {border-left:0;}
+
+/* bottom */
+.first-cont .first-bottom-wrap {margin:30px 0 50px;text-align:center;}
+.first-cont .first-bottom-wrap .tit {font-size:1.4rem;color:#222222;line-height: 2.3rem;}
+.first-cont .first-bottom-wrap ul {display:flex;justify-content:space-around;margin:20px 4% 0;}
+.first-cont .first-bottom-wrap ul li {flex:1;margin-right:10px;}
+.first-cont .first-bottom-wrap ul li:nth-child(2) {margin-right:0;}
+.first-cont .first-bottom-wrap ul li a {display:block;position:relative;height:50px;line-height:50px;background:#921519;font-size:1.6rem;font-weight:bold;color:#fff;text-align:center;border-radius:5px;}
+.first-cont .first-bottom-wrap ul li a::after {display:block;content:"";position:absolute;top:51%;right:15px;width:11px;height:11px;border-top:3px solid #fff;border-right:3px solid #fff;transform: translateY(-50%) rotate(45deg);opacity:.8;}
+.first-cont .first-bottom-wrap .b-img {margin:40px 0 5px;}

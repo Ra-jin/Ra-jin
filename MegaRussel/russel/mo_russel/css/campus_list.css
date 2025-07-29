@@ -1,0 +1,105 @@
+/* ==================================================================
+    모집페이지 학원 리스트
+================================================================== */
+/****** 모집요강 : PC기준 풀페이지 ******/
+/* 상단 탭 */
+.campus-tab-wrap {background-color: #f4f4f4;}
+.campus-tab-wrap.bg-white {background:#fff}
+.campus-tab {display: flex;position: relative ;width:100%;padding: 22px 4% 20px;box-sizing: border-box;}
+.campus-tab a {overflow:hidden;position:relative; display:flex;flex: 1;align-items: center;justify-content: center;height:50px;border-bottom: 3px solid #000;border-left: 1px solid #f4f4f4;text-align:center;}
+.campus-tab a:first-child {border-right: none;border-left:none}
+.campus-tab a.on {margin-right:-1px;border-left: 3px solid #000;border-top: 3px solid #000;border-right: 3px solid #000;border-bottom: 0;z-index: 1;}
+.campus-tab a::after {display: block;position:absolute;top:0px;left:0px;width:100%;height:50px;background:#cdcdcd;content: "";}
+.campus-tab a.on::after {display: none;}
+.campus-tab a strong {position:relative;display:block;font-weight: bold;;font-size: 1.6rem;color: #f5f5f5;z-index: 1;word-break:keep-all;}
+.campus-tab a.on strong {color: #000;}
+.campus-tab-wrap .btm-con {padding:0 0 10%;font-size: 1.4rem !important;text-align: center;}
+/* tab 4개일 때 */
+.campus-tab-wrap.type-four-tabs .campus-tab a:nth-of-type(3) {display:flex !important;}
+.campus-tab-wrap.type-four-tabs .campus-tab .gisuk {display:flex !important;}
+.campus-tab-wrap.type-four-tabs .campus-tab a {height:60px}
+.campus-tab-wrap.type-four-tabs .campus-tab a::after {height:60px}
+.campus-tab-wrap.type-four-tabs .campus-tab a strong {font-size:1.4rem;letter-spacing:-1px;}
+
+/* tab 3개일 때 */
+.campus-tab-wrap.type-three-tabs .campus-tab a:nth-child(3) {display:flex}
+.campus-tab-wrap.type-three-tabs .campus-tab a {height:60px}
+.campus-tab-wrap.type-three-tabs .campus-tab a::after {height:60px}
+.campus-tab-wrap.type-three-tabs .campus-tab a strong {font-size:1.4rem;letter-spacing:-1px;}
+.campus-tab-wrap.type-three-tabs02 .campus-tab .gisuk {display:flex}
+.campus-tab-wrap.type-three-tabs02 .campus-tab a {height:60px}
+.campus-tab-wrap.type-three-tabs02 .campus-tab a::after {height:60px}
+.campus-tab-wrap.type-three-tabs02 .campus-tab a strong {font-size:1.4rem;letter-spacing:-1px;}
+
+/*tab 2개일 때(러셀코어/최상위권 이과전문관N)*/
+.campus-tab-wrap.type-two-tabs .campus-tab a:nth-child(3) {display:flex}
+.campus-tab-wrap.type-two-tabs .campus-tab a {height:60px}
+.campus-tab-wrap.type-two-tabs .campus-tab a::after {height:60px}
+.campus-tab-wrap.type-two-tabs .campus-tab a strong {font-size:1.4rem;letter-spacing:-1px;}
+.campus-tab-wrap.type-two-tabs .campus-tab .gisuk {display:none}
+.campus-tab-wrap.type-two-tabs .campus-tab .russel {display:none}
+.campus-tab-wrap.type-two-tabs .campus-tab a {height:60px}
+.campus-tab-wrap.type-two-tabs .campus-tab a::after {height:60px}
+
+/*강제삭제*/
+.campus-tab-wrap.type-four-tabs .campus-tab a.gisuk.power-del {display: none !important;}
+.campus-tab-wrap.type-four-tabs.core-into-russel .campus-list .coreIntoRussel.on.power-del {display: none !important;}
+
+
+/*코어를 러셀학원 탭 안에 넣을 때*/
+.campus-tab-wrap.core-into-russel a:nth-child(2){display: none;}
+.campus-tab-wrap.core-into-russel .campus-tab a strong {font-size: 1.6rem;}
+/* .campus-tab-wrap.core-into-russel .campus-list:first-of-type {padding: 0 4% 0;}
+.campus-tab-wrap.core-into-russel .campus-list.coreIntoRussel.on {display: flex !important;} */
+
+.campus-tab-wrap.core-into-russel .campus-list .coreIntoRussel.on {display: flex !important;display: block !important;}
+
+/*코어광주대전에 new 스티커 삭제*/
+.campus-tab-wrap.core-into-russel .campus-list .coreIntoRussel.on.core-gj strong::after {visibility: hidden;}
+.campus-tab-wrap.core-into-russel .campus-list .coreIntoRussel.on.core-dj strong::after {visibility: hidden;}
+.campus-tab-wrap.core-into-russel .campus-cont .campus-list li a {padding: 10px 10%;}
+.campus-tab-wrap.core-into-russel .campus-cont .campus-list li a::before {top: 47px;}
+.campus-tab-wrap.core-into-russel .campus-cont .campus-list li a::after {top: 44px;}
+
+
+.campus-tab-wrap.core-into-russel .campus-cont .campus-list li a {padding: 10px 4%;}
+
+/* 학원 리스트 */
+.campus-cont {display: none;}
+.campus-cont.on {display: block;}
+.campus-cont .campus-list {display:flex;flex-wrap: wrap;justify-content: space-between;position: relative;padding:0 4% 5%;}
+.campus-cont .campus-list li {width:48.5%;margin-bottom:10px;position: relative;z-index: 1;}
+.campus-cont .campus-list li a {position:relative;display:block;background:#fff;padding:17px 10%;line-height:normal;text-align: left;color: #333333;height:100%;box-sizing: border-box;}
+.campus-cont .campus-list li a strong {vertical-align: middle;}
+.campus-cont .campus-list li a::before {content:"";display:block;width:22px;position:absolute;top:53px;right:8%;border-bottom:1px solid #737373;}
+.campus-cont .campus-list li a::after {content:"";display:block;width:7px;position:absolute;top:50px;right:8%;border-bottom:1px solid #737373;transform: rotate(45deg);}
+.campus-cont .campus-list li:last-child span {display:block;padding:17px 0;text-align: center;font-size:1.4rem;line-height:1.5}
+.campus-cont .campus-list .title {height: 30px;line-height: 30px;text-align: center;background: #2b2c57;color: #ffffff;font-size: 1.6rem;}
+.campus-cont .campus-list li.new strong {position: relative}
+.campus-cont .campus-list li.new strong::after {display:inline-block;margin-left:2px;width:13px;height:14px;vertical-align:middle;background:url('https://russeldata.megastudy.net/campus/images/russel/m_russel/common/ico_new_sq.png') left top no-repeat;background-size: 100% 100%;content: "";}
+
+.campus-cont.gisuk-con .campus-list li a {padding:10px 5%}
+
+.campus-cont .campus-stit {display:none;color: #333333;padding: 10px 0 22px;font-size: 1.8rem;font-weight: bold;background-color: #f4f4f4;letter-spacing: -1.5px;}
+.campus-cont .campus-tit {padding: 10px 4%;}
+.campus-cont .campus-tit a {font-size:1.8rem;font-weight:bold;color:#333;letter-spacing: -1.5px;position:relative;display: inline-block;padding-right:30px;}
+.campus-cont .campus-tit a:before {content:'';width:22px;height:22px;background-color:#222;border-radius:4px;position:absolute;top:2px;right:0;}
+.campus-cont .campus-tit a:after {content:'';position:absolute;top:50%;right:12px;width:4px;height:4px;border-top:1px solid #fff;border-right:1px solid #fff;transform:rotate(45deg) translateY(-50%);}
+
+.campus-cont .campus-stxt {color: #333333;padding: 10px 4% 10px;font-size: 1.6rem;font-weight: bold;background-color: #f4f4f4;letter-spacing: -1.5px;}
+
+/****** 시간표 : PC기준 777px ******/
+.danka-list-wrap {margin:0 4%;border-top:1px solid #3e3e3e;}
+.campus-cont .danka-list-wrap {border-top:none;}
+.danka-list-wrap li {padding:15px 4%;border-bottom:1px solid #e2e2e2;}
+.danka-list-wrap li::after {clear:both;content:"";display: block;}
+.danka-list-wrap li .box:nth-of-type(1) {float:left;}
+.danka-list-wrap li .box:nth-of-type(2) {float:right;width:50%;display: flex;}
+.danka-list-wrap li .box {font-size:1.4rem;}
+.danka-list-wrap li .box strong {font-size:1.6rem}
+.danka-list-wrap li .box a {box-sizing:border-box;flex:1;height:40px;line-height: 40px;font-size:1.3rem;border:1px solid #3e3e3e;text-align: center;color: #333333;}
+.danka-list-wrap li .box a:first-child {border-right: none;}
+.danka-list-wrap li .box a:last-child {border-right: 1px solid #3e3e3e;}
+.danka-list-wrap li.new .box:first-child > strong {display:inline-block;position: relative}
+.danka-list-wrap li.new .box:first-child > strong::after {display:inline-block;margin-left:2px;width:13px;height:14px;vertical-align:middle;background:url('https://russeldata.megastudy.net/campus/images/russel/m_russel/common/ico_new_sq.png') left top no-repeat;background-size: 100% 100%;content: "";}
+.danka-list-wrap li .box a.coming {color:#969696;border-color: #e2e2e2;}

@@ -1,0 +1,122 @@
+@import url(/css/danka_common.css);
+
+/* ==================================================
+   common
+================================================== */
+.topclass-wrap {text-align:center}
+.inner {padding:0 4%}
+
+.topclass-wrap .img {line-height:0}
+
+/*fixed bar*/
+.topclass-wrap .fixed-bar {width:100%;height:52px;line-height:52px;background-color:#0075ec;position:fixed;bottom:0;z-index:5}
+.topclass-wrap .fixed-bar a {color:#fff;font-size:1.6rem;font-weight:bold;display:block}
+
+/* 공통 슬라이드 */
+.merit-slide {padding-bottom: 20px}
+.merit-slide .swiper-slide img {width:100%}
+.merit-slide .swiper-pagination {bottom:0}
+.merit-slide .swiper-pagination-bullet {width:7px;height:7px;background:#5d6379;opacity:1;}
+.merit-slide .swiper-pagination .swiper-pagination-bullet-active {background:#f7c594}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {margin:0 3px}
+
+footer {padding-bottom:65px}
+
+/* ==================================================
+   visual
+================================================== */
+/*visual*/
+.topclass-wrap .visual {position: relative;overflow: hidden}
+.topclass-wrap .visual img {width:100%}
+.topclass-wrap .visual .img {animation:scaleInOut ease-in 1s both}
+.topclass-wrap .visual .tit {width:81.1vw;position:absolute;top:21.6vw;left:50%;transform:translateX(-50%);animation:fadeIn ease 1.5s 1.5s both}
+.topclass-wrap .visual .tit02 {width:21.8vw;position:absolute;top:44vw;right:9.7vw;animation: vibrate-3 1s 2s linear both;opacity:1}
+
+/* ==================================================
+   contents
+================================================== */
+
+.cont02 {padding-bottom:55px;background:url('https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2023/top_class/bc_bg.jpg') left top no-repeat;background-size:cover}
+.cont02 .teacher-wrap .teacher-sub-list .pic {background:#a39b8e}
+.cont02 .teacher-wrap .teacher-sub-list .t-sub {color:#fff}
+.cont02 .teacher-wrap .teacher-sub-list .t-info {color:#fff}
+.teacher-wrap.bc .teacher-sub-list .info-box {height:80px}
+
+.cont03 {background:url('https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2023/top_class/jg_bg.jpg') left top no-repeat;background-size:cover;padding-bottom:40px}
+.cont03 .merit-slide .swiper-pagination-bullet {background:#9f927f;opacity:1;}
+.cont03 .merit-slide .swiper-pagination .swiper-pagination-bullet-active {background:#0e2a8d}
+.cont03 .teacher-wrap .teacher-sub-list .pic {background:#a39b8e}
+.cont03 .teacher-wrap .r-txt {display:none}
+.cont04 {background-color:#fff;padding-bottom:55px}
+.cont04 .merit-slide .swiper-pagination-bullet {background:#cbcbcb;opacity:1;}
+.cont04 .merit-slide .swiper-pagination .swiper-pagination-bullet-active {background:#0e2b8e}
+
+.cont05 {background:url('https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2023/top_class/dg_bg.jpg') left top no-repeat;background-size:cover;padding-bottom:55px}
+.cont05 .inner {padding-top:35px}
+.cont05 .merit-slide .swiper-pagination-bullet {background:#5f5d5e;opacity:1;}
+.cont05 .merit-slide .swiper-pagination .swiper-pagination-bullet-active {background:#f7c594}
+.cont05 .teacher-wrap .teacher-sub-list .pic {background:#a39b8e}
+.cont05 .teacher-wrap .teacher-sub-list .t-sub {color:#fff}
+.cont05 .teacher-wrap .teacher-sub-list .t-info {color:#fff}
+/*모집안내*/
+.cont06 {background-color:#f4f4f4}
+.recruit-tit {padding-bottom:50px}
+.recruit-tit span {color:#0175ec}
+.bottom-banner {padding:40px 0;background-color:#0075ec;color:#fff;font-size:1.4rem}
+
+/* ==================================================
+   animation
+================================================== */
+@keyframes fadeInOut {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    70% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+@keyframes scaleInOut {
+    0% {transform: scale(2);opacity: 0;}
+    100%  {transform: scale(1);opacity: 1;}
+}
+
+@keyframes vibrate-3 {
+0% {
+    opacity:0;
+            transform: translate(0);
+}
+10% {
+            transform: translate(-4px, -4px);
+}
+20% {
+            transform: translate(4px, -4px);
+}
+30% {
+            transform: translate(-4px, 4px);
+}
+40% {
+            transform: translate(4px, 4px);
+}
+50% {
+            transform: translate(-4px, -4px);
+}
+60% {
+            transform: translate(4px, -4px);
+}
+70% {
+            transform: translate(-4px, 4px);
+}
+80% {
+            transform: translate(-4px, -4px);
+}
+90% {
+            transform: translate(4px, -4px);
+}
+100% {
+            transform: translate(0);
+}
+}

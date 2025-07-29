@@ -1,0 +1,131 @@
+.summer-wrap {text-align:center;}
+.summer-wrap .visual {position:relative;overflow: hidden;background: #4ac5f0;}
+.summer-wrap .visual .img-leaf {position: absolute;top:-.5%;left:-.8%;width:100%;transform-origin:0 0;animation:rotateShake 5s forwards infinite;}
+.summer-wrap .visual .img-leaf img {width:27%;height:auto;}
+.summer-wrap .visual .txt01 {position:absolute;top:15%;width:100%;font-size:1.5rem;font-weight:700;text-align:center;color:#fff;line-height: 1.8;}
+.summer-wrap .visual .txt01 span {display: block;font-size:1.2rem;color:#fff;text-shadow: 1px 1px 1px #42afd6;}
+.summer-wrap .visual .txt01 strong {font-size:1.5rem;color:#f3ffa6}
+.summer-wrap .visual .txt02 {position:absolute;bottom:27%;width:100%;font-size:1.6rem;color:#0a1c51;font-weight: bold;font-weight: 700;letter-spacing: -1px;}
+.summer-wrap .visual .img-txt {position: absolute;top:42%;left:0;width:100%;z-index: 1;}
+.summer-wrap .visual .img-txt img {width:100%}
+.summer-wrap .visual .img-txt02 {z-index: 0;animation:showShadow ease-in 1.4s both}
+.summer-wrap .visual .wave {animation:showUp .3s ease-out both;position:absolute;bottom:0;left:0;width:100%;transform:translateY(100%);}
+.summer-wrap .visual .wave img {width:100%;animation:wave 2.4s ease-in infinite both}
+.summer-wrap .visual .img-wave01 {z-index: 2;animation-delay: .6s;}
+.summer-wrap .visual .img-wave01 img {animation-delay: .3s;}
+.summer-wrap .visual .img-wave02 {z-index: 3;animation-delay: .9s;}
+.summer-wrap .visual .img-wave02 img {animation-delay: .6s;}
+.summer-wrap .visual .img-wave03 {bottom:0;z-index: 1;animation-delay: 1.3s;}
+.summer-wrap .visual .img-wave04 img {animation-delay: .9s;}
+.summer-wrap .visual .img-p {width:23%;position:absolute;bottom:5%;right:8%;z-index: 4;animation:showRight ease-in 1s 1.2s both;}
+.summer-wrap .visual .img-p img {width:100%;height: auto;animation:surfing 2.5s .7s ease-out infinite both}
+.summer-wrap .visual .round-txt {width:17.5%;height:0%;padding-top:17.5%;position:absolute;top:28%;left:77%;background:#0a1c51;border-radius: 50px;background:url('https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2021/summer/ico_round.png') left top/100% no-repeat;z-index: 0;}
+.summer-wrap .visual .round-txt p {position: relative;margin-top:-50%}
+.summer-wrap .visual .round-txt p strong {position: absolute;top:50%;left:0;width:100%;transform:translateY(-50%);color:#fff;font-size:1.1rem;font-weight: 700;font-weight:bold;}
+
+.summer-wrap .tab {display:flex;}
+.summer-wrap .tab a{display:flex;justify-content:center;align-items:center;flex:1;width:50%;padding:15px 0;background:#a2a2a2;font-weight:700;color:#fff;}
+.summer-wrap .tab a:first-child{border-right:1px solid #fff;}
+.summer-wrap .tab a.on{background:#182f75;}
+
+.tab-con-wrap .tab-con{display:none;}
+.tab-con-wrap .tab-con.on{display:block;}
+
+.tab-con .summer-con {padding:0 4.1% 40px;background:#041f71;text-align: left;}
+.tab-con .summer-con.bg-g {background:#efefef;}
+.tab-con .summer-con.bg-w {background:#fff;}
+
+.tab-con .event-txt {padding:20px 5%;background:#e1e1e1;}
+.tab-con .event-txt li {padding-left:10px;font-size: 1.1rem;color:#636363;position: relative;}
+.tab-con .event-txt li::before {content:"*";position: absolute;top:0;left:0;}
+
+.tab-con .box-perfect {background:#e5e5e5;padding:20px 4%;text-align: center;}
+.tab-con .box-perfect p {margin-bottom:15px;font-size:1.4rem;color:#041f71;}
+.tab-con .box-perfect strong {font-weight: 700;font-weight: bold;color:#030303;font-size:1.4rem;}
+
+.tab-con .inner {margin-top:25px;padding:30px 4.5%;background:#fff;text-align:left;}
+.tab-con .inner:first-child {margin-top:0}
+.summer-con .tit {position: relative;margin-top:10px;padding-left:15px;font-size: 1.9rem;color:#222;font-weight: bold;}
+.summer-con .tit::before {content:"";display:block;width:10px;height:10px;position: absolute;top:50%;left:0;background:#222;transform: translateY(-50%);}
+.summer-con .stit {position:relative;padding-left:15px;margin:20px 0 10px;font-size:1.7rem;text-align:center;color:#222;font-weight: bold;text-align: left;}
+.summer-con .stit::before {content:"¤ý";font-weight: bold;position: absolute;top:0px;left:0;}
+.summer-wrap .red {color:#ee3b41;}
+.summer-wrap .blue {color:#0081ff}
+
+.summer-con .slide-box {position: relative;}
+.summer-con .swiper-container {line-height: 0;position:absolute;top:0;left:0;width:58%;}
+.summer-con .swiper-container li img{width:100%;transform:translateX(.3%)!important}
+.summer-con .swiper-container .swiper-pagination-bullets {position: absolute;left:85%;bottom:0;transform: translateX(-50%);z-index: 3;text-align: center;}
+.summer-con .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet{margin:0 2px;}
+.summer-con .swiper-container .swiper-pagination-bullet-active{background:#041f71;}
+
+.summer-info {padding:30px 15px 20px;background:#f4f4f4;text-align: left;}
+.summer-info .list li{display:flex;width:100%;line-height:1.5;margin-bottom:5px;}
+.summer-info .list p{font-size:1.4rem;color:#222222;}
+.summer-info .list p:first-of-type{width:23%;flex-shrink:0;}
+.summer-info .list p:nth-child(2){flex-grow: 1;}
+.summer-info .list p strong {font-size:1.4rem}
+
+.summer-con .coming{padding:50px 0;font-size:1.6rem;background:#ddd;text-align:center;}
+.summer-con .tui-con {margin-top:20px;display: flex;justify-content: space-between;flex-wrap: wrap;}
+.summer-con .tui-con div {width:48%;text-align: center;border:1px solid #272727;}
+.summer-con .tui-con div p {padding:13px 0;}
+.summer-con .tui-con div p:first-child {background:#272727;color:#fff;font-size: 1.4rem;font-weight: bold;font-weight: 700;letter-spacing: -1px;}
+.summer-con .tui-con div p:nth-child(2) {color:#1b1b1b;font-size: 1.3rem;letter-spacing: -1px;}
+.summer-con .tui-con div p:nth-child(2) strong {color:#0037c4;font-weight: bold;font-weight: 700;font-size: 1.7rem;}
+.summer-con .tui-con .w100 {width:100%;margin-bottom:10px;} 
+.summer-con .tui-con .free {border:1px solid #0037c4;}
+.summer-con .tui-con .free p:first-child {background:#0037c4;}
+.summer-con .tui-con div p span {position: relative;display: block;color:#272727;font-size:1.2rem}
+.summer-con .tui-con div p .price01 {font-size:1.7rem;font-weight: 700;font-weight: bold;}
+.summer-con .tui-con div p .price01::before {content:"";position:absolute;top:54%;left:50%;display: block;width:100px;height:10px;border-top:2px solid #c00b17;transform:translateX(-50.1%)}
+.summer-con .tui-con div p .price01::after {content:"";position:absolute;top:74%;left:50%;display: block;width:100px;height: 10px;border-right: 2px solid #c00b17;transform:rotate(45deg) translateX(-56.1%);}
+.summer-con .tui-con div p .price02 {font-size:1.7rem;color:#0037c4;font-weight: 700;font-weight: bold;}
+
+.bottom-wrap{text-align:center;letter-spacing:-0.06rem;}
+.bottom-wrap .tit{margin-bottom:30px;padding:30px 0;background:#f6f6f6;font-size:1.7rem;line-height: 1.5;font-weight:700;font-weight:bold;}
+.bottom-wrap .tit span {display:block;margin-bottom:5px;font-size:1.4rem;font-weight: normal;font-weight: 500;}
+.bottom-wrap .tit strong{font-size:1.7rem;font-weight:700;font-weight:bold;color:#0037c5;}
+
+.bottom-wrap .txt{font-size:1.4rem;font-weight:700;}
+
+.bottom-wrap .bt-box{display:flex;justify-content:space-between;margin:25px 4% 0;}
+.bottom-wrap .bt-box a{flex:1;position:relative;;margin-right:10px;background:#0037c5;padding:10px 0;border-radius:5px;font-size:1.6rem;font-weight:bold;text-align:center;letter-spacing:-1px;color:#fff;}
+.bottom-wrap .bt-box a:last-child {margin-right: 0;}
+.bottom-wrap .bt-box a::after {content: "";position: absolute;top: 50%;right:15px;display: block;width:9px;height:9px;border-top:3px solid #98afe5;border-right:3px solid #98afe5;transform:translateY(-50%) rotate(45deg);}
+
+
+/* keyframe */
+@keyframes rotateShake{
+    0%{transform:rotate(0deg)}
+    50% {transform:rotate(-4deg)}
+    100%{transform:rotate(0deg)}
+}
+
+@keyframes showUp{
+    0%{transform:translateY(100%)}
+    100%{transform:translateY(0)}
+}
+
+@keyframes wave {
+    0%{transform:translateY(8%)}
+    50%{transform:translateY(0)}
+    100%{transform:translateY(8%)}
+}
+
+@keyframes showRight{
+    0%{transform:translateX(170%)}
+    100%{transform:translateX(0)}
+}
+
+@keyframes surfing{
+    0% {transform:translate(-35%, -5%);}
+    50% {transform:translate(0%, 12%);}
+    100% {transform:translate(-35%, -5%);}
+}
+
+@keyframes showShadow{
+    0% {transform:translate(1%, 2%);opacity: 0;}
+    100% {transform:translate(0%, 0%);opacity: 1;}
+}
+

@@ -1,0 +1,67 @@
+.mock-wrap {margin-bottom:25px;}
+.mock-wrap .visual {position: relative}
+.mock-wrap .visual .txt {position: absolute;top:14%;left:0}
+.mock-wrap .visual .txt img {width: 100%;}
+.mock-wrap .list-notice {background: #f7f7f7;padding:0 4% 50px;}
+.mock-wrap .list-notice ul {padding:25px 4%;background:#fff;border-radius: 10px;;}
+.mock-wrap .list-notice ul li {position: relative;padding-left:18px;font-size: 1.4rem;color:#1f1f20;line-height: 1.7;letter-spacing: -1px;}
+.mock-wrap .list-notice ul li::before {content: "";display: block;position:absolute;top:5px;left:0;width:14px;height:12px;background:url('https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2021/online_mock/ico_check.png') left top;background-size:100% 100%;}
+/* 어드민 등록시 보여지는 화면 */
+.mock-wrap .list-notice * {font-size:1.4rem!important;color:inherit}
+.mock-wrap .list-notice  > span {padding:0 4%}
+.mock-wrap .list-notice ul ul {padding:0!important}
+.mock-wrap .list-notice ul table {width:100%;border-top:2px solid #262626}
+.mock-wrap .list-notice ul table th, .mock-wrap .list-notice ul table td {padding:10px 0;border-bottom:1px solid #d9d9d9;text-align: center;}
+
+.mock-wrap .list-mock .list-view {position:relative;padding:16px 0;border-top:1px solid #eaeaea;}
+.mock-wrap .list-mock .list-view:nth-last-of-type(2) {border-bottom:1px solid #eaeaea}
+.mock-wrap .list-mock .list-view.on {background:#e5edfc;}
+.mock-wrap .list-mock .list-view span {display: block;margin:0 4%}
+.mock-wrap .list-mock .list-view .cate {font-size:1.4rem}
+.mock-wrap .list-mock .list-view .cate u {display:inline-block;margin-right:10px;font-size:1.4rem;text-decoration: none;}
+.mock-wrap .list-mock .list-view .cate u::after {content:"";margin-top:3px;display: inline-block;margin-left:10px;height:12px;width:1px;background:#e0e0e0;}
+.mock-wrap .list-mock .list-view li .cate u::after {background:#dadada}
+.mock-wrap .list-mock .list-view .cate u.i-h {color:#df4646}
+.mock-wrap .list-mock .list-view .cate u.i-s {color:#d46f25}
+.mock-wrap .list-mock .list-view .cate u.i-md {color:#4daa65}
+.mock-wrap .list-mock .list-view .cate u.i-p {color:#547cc6}
+.mock-wrap .list-mock .list-view .cate u.i-e {color:#a018c7}
+.mock-wrap .list-mock .list-view .cate u.i-etc {color:#00addf}
+.mock-wrap .list-mock .list-view .tit {margin:11px 4% 10px;font-size:1.6rem;font-weight: bold;line-height: 1.5;}
+.mock-wrap .list-mock .list-view .tit a {color:#017eff;text-decoration: none;display:inline-block}
+.mock-wrap .list-mock .list-view .tit a strong {color:#017eff;}
+.mock-wrap .list-mock .list-view .tit a::after {content:"▼";}
+.mock-wrap .list-mock .list-view .tit a.on::after {content:"▲";}
+.mock-wrap .list-mock .price {padding:11px 4% 14px;position:relative;background:#f2f6f9;font-size: 2rem;font-weight: bold;;} 
+.mock-wrap .list-mock .price u {text-decoration: none;font-size:1.4rem;}
+.mock-wrap .list-mock .price .bt-order {display:block;position:absolute;top:10px;right:4%;width:75px;height:27px;line-height:27px;background:#fff;font-size:1.2rem;color:#0081ff;border:1px solid #0081ff;border-radius: 3px;text-align: center;font-weight: normal;}
+
+.mock-wrap .list-mock .list-view .bt-info {position:absolute;top:15px;right:4%;display:block;width:18px;height:18px;line-height:18px;color:#727272;border:1px solid #727272;border-radius: 25px;background:#fff;text-align:center}
+.mock-wrap .list-mock .list-view .info-layer {display:none;width:75%;padding:15px 10px;z-index:1;position: absolute;top:10px;right:4%!important;background:#fff;border:1px solid #d6d6d6;border-radius: 2px;box-shadow: 1px 3px 5px rgba(0,0,0, .1);font-size: 1.5rem;color:#222222;}
+.mock-wrap .list-mock .list-view ul .info-layer {right:0%!important;}
+.mock-wrap .list-mock .list-view .info-layer.on {display: block;}
+.mock-wrap .list-mock .list-view .info-layer strong {display: block;font-size: 1.5rem;color:#222222;}
+.mock-wrap .list-mock .list-view .info-layer .bt-x {position:absolute;top:5px;right:10px;margin:0;z-index: 2;}
+.mock-wrap .list-mock .list-view .info-layer .bt-x img {width: 13px;height: 13px;}
+
+.mock-wrap .list-mock .hide-list {display: none;margin-bottom:15px;background:#f2f2f2!important;padding:0 4%;max-height: 375px;overflow: hidden;overflow-y: scroll;}
+.mock-wrap .list-mock .hide-list.on {display: block}
+.mock-wrap .list-mock .hide-list li {position:relative;height:125px;box-sizing:border-box;padding:15px 0;border-bottom:1px solid #dadada;}
+.mock-wrap .list-mock .hide-list li:last-child {border-bottom:0;}
+.mock-wrap .list-mock .hide-list li span {margin:0}
+.mock-wrap .list-mock .hide-list li span.tit {margin:13px 0}
+.mock-wrap .list-mock .hide-list li .price {background:none;text-align: right;position:absolute;bottom:0;right:0;}
+
+.bt-danka {transition:all ease-in .3s;transform: translateY(150%);opacity: 0;}
+.bt-danka.on {display: block;transform: translateY(0%);opacity: 1;}
+
+/* 응시 신청서 신청 팝업 */
+.mock-wrap .pic-wrap {padding-left: 0;text-align: center;}
+.mock-wrap .pic-wrap .stit {font-size: 1.8rem;}
+.mock-wrap .pic-wrap .stit strong {font-weight: bold;color:#0081ff;font-size: 1.8rem;}
+.mock-wrap .pic-wrap .pic {width:105px;height:134px;box-sizing:border-box;margin:17px 0;display: inline-block;}
+.mock-wrap .pic-wrap .pic img {margin:0;height:100%;width:100%}
+.mock-wrap .pic-wrap .pic img.pic {margin:0;}
+.mock-wrap .pic-wrap .stxt {font-size:1.4rem;color:#a2a2a2}
+.mock-wrap .txt-notice {padding-right:5.5%;color:#7e7e7e;}
+.mock-wrap .txt-notice .t-txt {margin-bottom:16px;text-align: center;font-size:1.5rem;color:#222;letter-spacing: -1px;line-height: 1.5;}

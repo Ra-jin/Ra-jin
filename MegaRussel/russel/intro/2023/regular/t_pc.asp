@@ -1,0 +1,60 @@
+<div class="cont js-cont">
+    <!-- cont00 -->
+    <div class="cont00">
+        <div class="inner02">
+            <p class="mb90"><img src="<%=Application("img_path_russel")%>/russel_pc/2023/regular/cont00_tit.png" alt="러셀코어 원주 N수 정규반 모집요강 및 장학혜택"></p>
+            <div class="tbl-box">
+               <!-- 모집요강 자동화 시스템 영역 -->
+            <%
+            '관리자 코드 입력부 (관리자 > 학사정보관리 > 모집요강 의 idx 값)
+            If IsDevSvr() = true Then   '개발서버
+                AGM_CD = 1096
+            Else '실서버
+                AGM_CD = 119
+            End If
+
+            strSql = " SELECT AGM_CONTENT FROM MR_ACA_GUIDE_MAS WITH(NOLOCK) WHERE AGM_IDX = " & AGM_CD
+            Set Rs = russelobjdb.sqlQuery(strSql,1)
+            If Not (Rs.eof Or Rs.bof) Then
+                dbContents = UnsafeQuery(Rs("AGM_CONTENT"))
+                dbContents = Replace(Replace(Trim(dbContents),"<IMG ", "<IMG name='img_desc' "),"<img ", "<img name='img_desc' ")
+                dbContents = Replace(Replace(dbContents,"ja_va_sc","javascript"),"a_lert","alert")
+            End If 
+            Rs.close
+            Set Rs = Nothing
+            Response.Write dbContents
+        %>
+                
+        
+        <!-- //모집요강 자동화 시스템 영역 -->
+            </div>
+            <p class="tit03">러셀 평촌 N수 정규반<br><strong>단과 지원 정책</strong></p>
+            <div class="tbl-box">
+                <!-- 모집요강 자동화 시스템 영역 -->
+                    <%
+                    '관리자 코드 입력부 (관리자 > 학사정보관리 > 모집요강 의 idx 값)
+                    If IsDevSvr() = true Then   '개발서버
+                        AGM_CD = 1119
+                    Else '실서버
+                        AGM_CD = 1141
+                    End If
+
+                    strSql = " SELECT AGM_CONTENT FROM MR_ACA_GUIDE_MAS WITH(NOLOCK) WHERE AGM_IDX = " & AGM_CD
+                    Set Rs = russelobjdb.sqlQuery(strSql,1)
+                    If Not (Rs.eof Or Rs.bof) Then
+                        dbContents = UnsafeQuery(Rs("AGM_CONTENT"))
+                        dbContents = Replace(Replace(Trim(dbContents),"<IMG ", "<IMG name='img_desc' "),"<img ", "<img name='img_desc' ")
+                        dbContents = Replace(Replace(dbContents,"ja_va_sc","javascript"),"a_lert","alert")
+                    End If 
+                    Rs.close
+                    Set Rs = Nothing
+                    Response.Write dbContents
+                %>
+                <!-- //모집요강 자동화 시스템 영역 -->
+
+                
+            </div>
+        </div>
+    </div>
+    <!-- //cont00 -->
+</div>

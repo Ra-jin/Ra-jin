@@ -1,0 +1,337 @@
+/* ==================================================
+   학원바로가기 메뉴(인트로와 공통사용)
+================================================== */
+.panel-wrap {
+    &.on {
+      right: 0;
+      background: #fff;
+    }
+  
+    position: fixed;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 101;
+    transition: all ease .5s .4s;
+  
+    .panel-in {
+      position: relative;
+      overflow-y: auto;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 100;
+      background: #fff;
+    }
+  
+    .tit-wrap {
+      padding: 15px 5.5% 0;
+      background: #fff;
+      height: 35px;
+      overflow: hidden;
+  
+      .img-logo img {
+        width: auto;
+        height: 25px;
+      }
+  
+      .panel-close {
+        position: absolute;
+        top: 16px;
+        right: 15px;
+        width: 19px;
+        height: 19px;
+  
+        &.active {
+          animation: bt-rotate .3s ease-in-out;
+        }
+      }
+    }
+  
+    .bt-wrap {
+      padding: 26px 0px;
+      text-align: center;
+      background: linear-gradient(45deg, #0083fb, #02a98c);
+  
+      a {
+        display: inline-block;
+        margin: 0 4%;
+        font-size: 1.8rem;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        font-weight: bold;
+      }
+    }
+  
+    .menu-list {
+      padding: 0 0 100px 14%;
+      background: #fff;
+  
+      a {
+        font-size: 1.6rem;
+        color: #222;
+        display: block;
+        padding: 18px 0;
+        border-bottom: 1px solid #eaeaea;
+      }
+  
+      .menu01 {
+        position: relative;
+  
+        &::before {
+          content: "";
+          position: absolute;
+          top: 17px;
+          left: -30px;
+          width: 23px;
+          height: 23px;
+          background: url(#{$R-path-img}/common/ico_lnb.png) no-repeat;
+          background-size: 23px auto;
+        }
+      }
+  
+      .m-mo::before {
+        background-position: 0 1px;
+      }
+  
+      .m-pt::before {
+        background-position: 0 -22px;
+      }
+  
+      .m-perfect::before {
+        background-position: 0 -45px;
+      }
+  
+      .m-stu::before {
+        background-position: 0 -67px;
+      }
+  
+      .m-system::before {
+        background-position: 0 -89px;
+      }
+  
+      .m-studyhall::before {
+        background-position: 0 -113px;
+      }
+  
+      .m-myrussel::before {
+        background-position: 0 -136px;
+      }
+  
+      .m-covid::before {
+        background-position: 0 -158px;
+      }
+  
+      .m-campus::before {
+        background-position: 0 -182px;
+      }
+  
+      .m-notice::before {
+        background-position: 0 -205px;
+      }
+  
+      .menu01-02 {
+        > a:first-child::after {
+          content: "";
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-left: 2px solid #a9a9a9;
+          border-bottom: 2px solid #a9a9a9;
+          transform: rotate(-45deg);
+          position: absolute;
+          top: 20px;
+          right: 12%;
+        }
+  
+        &.on > a:first-child::after {
+          transform: rotate(135deg);
+          margin-top: 5px;
+        }
+      }
+  
+      .menu02 {
+        display: none;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 20px;
+  
+        li {
+          position: relative;
+          margin-left: 5%;
+  
+          &::before {
+            content: "";
+            width: 3px;
+            height: 3px;
+            border-radius: 25%;
+            background: #7e7e7e;
+            position: absolute;
+            top: 70%;
+            left: -15px;
+          }
+        }
+  
+        a {
+          color: #7e7e7e;
+          border-bottom: none;
+          padding: 20px 0 0 0;
+        }
+      }
+  
+      .menu01.on .menu02 {
+        display: block;
+      }
+  
+      .ico-new {
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        line-height: 15px;
+        text-align: center;
+        vertical-align: middle;
+        color: #fff;
+        background: #da3e6d;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  /* 하단 배너 */
+  
+  .bottom-slide {
+    position: relative;
+    margin-bottom: -25px;
+    background-color: #fff;
+    min-height: 30px;
+  
+    .swiper-wrapper {
+      border-radius: 25px 25px 0 0;
+      overflow: hidden;
+    }
+  
+    .swiper-slide {
+      position: relative;
+  
+      .txt {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50.1%);
+        width: 100%;
+        text-align: center;
+        transition: all ease .9s;
+        opacity: 0;
+  
+        strong {
+          margin-top: 5px;
+          display: block;
+          font-size: 1.5rem;
+          color: #fff;
+        }
+      }
+  
+      &.swiper-slide-active .txt {
+        transform: translateY(-77.1%);
+        opacity: 1;
+        color: #fff;
+        font-size: 1.3rem;
+        letter-spacing: -1px;
+      }
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    .bottom-pagination {
+      position: absolute;
+      top: 10px;
+      left: 90%;
+      z-index: 2;
+      color: #fff;
+      font-size: 1.1rem;
+      height: auto;
+  
+      span {
+        color: #fff;
+      }
+  
+      .swiper-pagination-current {
+        font-weight: bold;
+      }
+    }
+  }
+  
+  .panel-wrap {
+    .bottom-slide {
+      padding-top: 0;
+      margin-bottom: (-25px) !important;
+      position: fixed;
+      bottom: 0;
+      right: 100%;
+      width: 100%;
+      z-index: 5;
+      transition: all ease .5s .4s;
+  
+      .swiper-slide-active .txt {
+        top: calc(50% - 12px);
+        transform: translateY(-50.1%) !important;
+      }
+  
+      .bottom-pagination {
+        top: 17px;
+      }
+    }
+  
+    &.on .bottom-slide {
+      right: 0;
+    }
+  
+    .menu-ico {
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: 10px solid #f2f2f2;
+      background: #fff;
+      padding: 0 2.5%;
+  
+      a {
+        flex: 0 0 33.3%;
+        text-align: center;
+        padding: 20px 0 0 0;
+  
+        &:nth-of-type(n+7) {
+          padding: 20px 0 20px 0;
+        }
+  
+        img {
+          width: 45px;
+          height: auto;
+        }
+  
+        strong {
+          display: block;
+          margin-top: 5px;
+          font-size: 1.6rem;
+          color: #222;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  
+  /* 각 학원 메인용 메뉴 */
+  
+  /* 애니메이션 keyframes */
+  @keyframes bt-rotate {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(180deg);
+    }
+  }

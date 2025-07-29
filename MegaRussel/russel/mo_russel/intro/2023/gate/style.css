@@ -1,0 +1,156 @@
+@import url(/css/danka_common.css);
+
+/* ==================================================
+   common
+================================================== */
+.inner {padding:0 4%}
+
+.gisuk-gate-wrap .img {line-height:0}
+
+/*fixed bar*/
+.gisuk-gate-wrap .fixed-bar {width:100%;height:52px;line-height:52px;background-color:#28ade5;position:fixed;bottom:0;z-index:5;text-align: center;}
+.gisuk-gate-wrap .fixed-bar a {color:#fff;font-size:1.6rem;font-weight:bold;display:block}
+
+/* swiper-slide */
+.gisuk-gate-wrap .swiper-slide img {width:100%}
+.gisuk-gate-wrap .swiper-pagination-bullet-active {background:#28ade5!important;}
+
+.r-txt {margin:10px 5% 0 0;text-align: right;font-size: 1rem;color:#aeaeae;letter-spacing: -1px;}
+
+footer {padding-bottom:65px}
+
+/* ==================================================
+   visual
+================================================== */
+/*visual*/
+.gisuk-gate-wrap .visual {position: relative;overflow: hidden;line-height: 0;}
+.gisuk-gate-wrap .visual img {width:100%;}
+.gisuk-gate-wrap .visual .tit {position:absolute;top:0;left:0;z-index: 1;}
+.gisuk-gate-wrap .visual .txt {position:absolute;bottom:15%;left:50%;z-index: 1;transform:translateX(-50%);font-size:1rem;color:#777;line-height: 1.3;text-align: center;white-space: nowrap;}
+
+/* sec01 */
+.gisuk-gate-wrap .visual .sec01, .gisuk-gate-wrap .visual .sec02, .gisuk-gate-wrap .visual .sec03 {width:100%;height:100%;}
+.gisuk-gate-wrap .visual .inner {width:100%;height:100%;background:#fff;}
+.gisuk-gate-wrap .visual .sec01 {animation:fadeOut .3s 1s both;position:absolute;top:0;left:0;width:100%;z-index:4;height:100%;width:100%;}
+.gisuk-gate-wrap .visual .sec01 .cursor {width:3px;height:50px;background-color:#222;position:absolute;left:24%;top:30%;animation:cursorAni .5s linear infinite}
+.gisuk-gate-wrap .visual .sec02 {animation:fadeOut 1s 6.8s both;position:absolute;top:0;left:0;width:100%;height:100%;z-index:3;background-color:#fff;}
+.gisuk-gate-wrap .visual .sec02 #myText {font-size:5.2rem;font-weight:900;font-family: 'Noto Sans KR', sans-serif;color:#222;text-align:left;position:absolute;top:26%;left:24%;letter-spacing:-2.2px;line-height: 1.5;background-position:center top;background-size:100% auto;animation:txtAni 3.4s 4s both}
+.gisuk-gate-wrap .visual .sec03 {position:absolute;top:0;left:0;z-index: 2;animation:fadeOut ease 1s 8.3s both;}
+.gisuk-gate-wrap .visual .sec03 .img {position: absolute;top:0;left:0}
+.gisuk-gate-wrap .visual .sec03 .img:nth-of-type(1) {animation:bgImgAni ease 3s 6.2s both;z-index: 1;}
+.gisuk-gate-wrap .visual .sec03 .img:nth-of-type(2) {z-index: 0;}
+.gisuk-gate-wrap .visual .visual-bg {animation:fadeIn ease 1s 8.3s both;z-index: 1;}
+
+
+.round-a.fix {position: fixed;top: 15%;transform: translateY(-50%); right: 0;z-index: 5;}
+
+@keyframes cursorAni {0% {opacity:0;} 50%{opacity:0;} 100% {opacity:1;}}
+@keyframes txtAni {
+   0% {color:#222;background-image:none;background-size:110% auto;}
+   70% {color: transparent;background-clip: text;-webkit-background-clip: text;background-size:110% auto;background-image: url('https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2023/gate/bg_txt.jpg');}
+   100% {color: transparent;background-clip: text;-webkit-background-clip: text;background-size:100% auto;background-image: url('https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2023/gate/bg_txt.jpg');}
+}
+
+@keyframes bgImgAni {
+   0% {opacity:1;transform: scale(110%);}
+   50% {opacity:1;transform: scale(100%);}
+   100% {opacity:0;transform: scale(100%);}
+}
+
+/* ==================================================
+   contents
+================================================== */
+/* cont01 */
+.gisuk-gate-wrap .cont01 {padding-bottom:40px;background:#0048be}
+.gisuk-gate-wrap .cont01 .gate-slide-01 {padding-bottom:40px;margin:0 4%;}
+.gisuk-gate-wrap .cont01 .gate-slide-01 > .swiper-wrapper > .swiper-slide {padding:40px 0;box-sizing: border-box;background:#fff;border-radius: 20px;}
+.gisuk-gate-wrap .cont01 .gate-slide-01 .i-txt {margin:35px 7% 0 0;text-align: right;font-size: 1rem;color:#aeaeae;letter-spacing: -1px;}
+
+.gisuk-gate-wrap .cont01 .history-wrap {position:relative;padding-top:50%;}
+.gisuk-gate-wrap .cont01 .history-wrap > div {position: absolute;top:0;left:0;width:100%;height:100%;overflow: hidden;}
+.gisuk-gate-wrap .cont01 .gate-slide-01 .history-slide {height:100%;overflow: hidden;background:url('https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2023/gate/slide01_03_bg.jpg') left top no-repeat;background-size: 100% auto;}
+.gisuk-gate-wrap .cont01 .gate-slide-01 .history-slide .swiper-wrapper {transition-timing-function:linear !important;}
+/* .gisuk-gate-wrap .cont01 .img {position: relative; height: calc(613vw / 7.2);} */
+.gisuk-gate-wrap .cont01 .img {position: relative; height: auto;} 
+.gisuk-gate-wrap .cont01 .round-banner {position: absolute;top: calc(64vw / 7.2);right: calc(40vw / 7.2);width: calc(180vw / 7.2);height: calc(190vw / 7.2);}
+/* cont02 */
+.cont02 {background:#ebeff5;padding-bottom:60px;}
+.cont02 .gate-slide-02 {padding:0 0 40px;margin:0 4%}
+/* .cont02 .roll-swiper .swiper-wrapper {transition-timing-function:linear !important;} */
+.cont02 .roll-swiper {margin-top:20px;padding: 0 0 0 4%}
+.cont02 .roll-swiper .swiper-slide {padding:20px 14px;background:#fff;border-radius: 10px;box-sizing: border-box;}
+.cont02 .roll-swiper .swiper-slide dl {display: flex;}
+.cont02 .roll-swiper .swiper-slide dt {padding-top:5px;width:32px;height:32px;}
+.cont02 .roll-swiper .swiper-slide dt img {width: 100%;}
+.cont02 .roll-swiper .swiper-slide dd {margin-left:10px;color:#111;font-size: 1.2rem;font-weight: bold;}
+.cont02 .roll-swiper .swiper-slide dd span {display:block;color:#6c6c6c;font-size: 1rem;}
+.cont02 .roll-swiper .swiper-slide div {margin-top: 7px;}
+.cont02 .roll-swiper .swiper-slide div p strong {display:block;font-weight: bold;color:#0357e0;font-size: 1.2rem;letter-spacing: -1px;}
+.cont02 .roll-swiper .swiper-slide div p span {display:block;font-size: 1.1rem;color:#555555;letter-spacing: -1px;}
+.cont02 .roll-swiper .swiper-slide div div {padding-top:5px;width:40px;height:35px;position: absolute;bottom:15px;right:10px;background:#ebeff5;border-radius: 20px;font-size: 1rem;text-align: center;color:#0357e0;}
+.cont02 .roll-swiper .swiper-slide div div::before {display: block;width:15px;height:20px;position:absolute;top:12px;left:-12px;content:"";background:url('https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2023/gate/ico_arr.png') no-repeat;background-size: 100% auto;;}
+.cont02 .roll-swiper .swiper-slide div div strong {display: block;font-weight: bold;color:#0357e0;}
+
+/* cont03 */
+.cont03 {padding-bottom: 50px;}
+.gate-tab {display: flex;}
+.gate-tab a {flex:1;padding:20px 0;margin-right:1px;font-size:1.3rem;text-align: center;color:#e0e0e0;font-weight: bold;background:#b2b2b2;border-radius: 5px 5px 0 0;letter-spacing: -1px;}
+.gate-tab a.on {color:#fff;background:#0048be;}
+.gate-tab a:last-child {margin-right: 0;}
+.gate-cont {display: none;position:relative}
+.gate-cont .txt {position:absolute;bottom:0;left:0;width:75%;padding:15px 20px 18px;z-index:1}
+.gate-cont .txt * {position:relative;z-index: 1;font-size: 1.4rem;color:#2a2a2a;}
+.gate-cont .txt strong {display:block;}
+.gate-cont .txt::after {display:block;position:absolute;top:0;left:0;width:100%;height:100%;content:"";background:#fff;opacity: .9;z-index:0;border-radius: 0 15px 0 0;}
+
+.bottom {padding:50px 0 60px 0;background:#003c9f;color:#ffffff;font-size: 2rem;text-align: center;}
+.bottom strong {font-weight: bold;}
+
+.goto-wrap {background: #c1d4f1;padding: 0 4% 60px;}
+.goto-wrap .box {background: #fff;border-radius: 20px;box-shadow: 0 0 -18px -11px #7c8ce1;}
+.goto-wrap .box:nth-child(n+2) {margin-top: 30px;}
+.goto-wrap .box:nth-child(1) p:nth-of-type(1) img {padding: 35px 25% 13px;box-sizing: border-box;}
+.goto-wrap .box:nth-child(1) p:nth-of-type(2) img {padding: 0px 0 30px;box-sizing: border-box;}
+.goto-wrap .box:nth-child(2) p:nth-of-type(1) img {padding: 35px 12% 13px;box-sizing: border-box;}
+.goto-wrap .box:nth-child(2) p:nth-of-type(2) img {padding: 0px 0 30px;box-sizing: border-box;}
+
+
+/*gisuk-slide-wrap*/
+.gisuk-slide-wrap {padding: 35px 0 50px; background:#cedcf2;}
+.gisuk-slide-wrap .tab-wrap {display: flex;margin:0 4%;}
+.gisuk-slide-wrap .tab-wrap a {flex:1;padding:15px 0;margin-right:1px;border-radius: 10px 10px 0 0;text-align: center;font-size: 1.4rem;color:#e0e0e0;font-weight: bold;border-bottom:0;background:#b2b2b2;}
+.gisuk-slide-wrap .tab-wrap a:last-child {margin-right: 0;}
+.gisuk-slide-wrap .tab-wrap a.on {color: #fff;background:#2d2d2d}
+.gisuk-slide-wrap .tab-wrap a:not(:first-of-type) {position: relative;}
+.gisuk-slide-wrap .tab-wrap a:not(:first-of-type)::after {position: absolute; top: -9px;transform: translateX(-50%); left: 50%; display: block;content: '신규 개원';border-radius: 50px;color: #fff;background: #cc1c5d;line-height: 1;font-size: 1rem;width: calc(100% - 50px);width: 60px; padding: 5px 0;}
+
+
+
+.gisuk-slide-wrap .tab-cont {display: none;margin:0 4%;}
+.gisuk-slide-wrap img {width:100%}
+.gisuk-slide-wrap .gisuk-slide .swiper-slide {line-height: 0;font-size: 0;box-sizing: border-box;background:#fff}
+.gisuk-slide-wrap .gisuk-slide .swiper-pagination {bottom:23px;}
+.gisuk-slide-wrap p:last-child {border:1px solid #241f37;}
+/*//gisuk-slide-wrap*/
+
+
+
+/* gisuk-spech-wrap */
+.gisuk-spech-wrap {overflow: hidden; position: relative; width: 100%;}
+.gisuk-spech-wrap > a {display: block;}
+.gisuk-spech-wrap > a > img {width: 100%;}
+
+.spech-wrap {overflow: hidden; position: relative; display: block; width: 100%; text-align: center;}
+.spech-wrap .loction-wrap {display: block; position: absolute; top: 49%; left: 0%; width:100%;}
+.spech-wrap .loction-wrap ul {display: flex; justify-content: center;}
+.spech-wrap .loction-wrap ul li {display: inline-block; width: 100%%; padding: 2.5% 7.5%; margin: 1%; text-align: center; border-radius: 10px; background-color: #FFF;}
+.spech-wrap .loction-wrap li .tit {display: block; font-size: 1.4rem; font-weight: bold; color: #c02f30;}
+.spech-wrap .loction-wrap li .day {font-size: 1.2rem; font-weight: bold;}
+.spech-wrap p img {width: 100%;}
+.spech-wrap p.txt {position: absolute; bottom: 22%;width: 100%;padding: 0 5%;text-align: center;color: #FFF;font-size: 1.2rem;box-sizing: border-box;}
+.spech-wrap .spech_btn_box {position: absolute; left: 5%; bottom: 10%; width: 100%;}
+.spech-wrap .spech_btn_box a {display: block; width: 90%; height: 50px; line-height: 50px; color: #FFF; font-size: 1.8rem; font-weight: 700; border-radius: 5px; background-color: #802939;}
+.spech-wrap .spech_btn_box a::before {content: ''; display: block; position: absolute; top: 35%; right: 16%; width: 7px; height: 14px; background: url('https://russeldata.megastudy.net/campus/images/russel/m_russel/event/2023/gisuk_pre/ico_arr_r.png') right no-repeat;}
+/* ==================================================
+   animation
+================================================== */

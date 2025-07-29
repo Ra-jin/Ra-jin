@@ -1,0 +1,126 @@
+/* ==================================================
+   공통
+================================================== */
+
+.b-txt {margin-top:25px;font-size:1.1rem;text-align: center;}
+
+.visual {position: relative;}
+
+/* 상단 날짜 동그라미 */
+.visual .date {position:absolute;top:16%;left:19%;width:17%;height:0;padding-top:17%;border-radius: 50%;border:1px solid #fff;text-align: center;transform: translate(-60%, -50%);}
+.visual .date span {display:block;width:100%;position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:1.4rem;font-weight:bold}
+
+/* 버튼 */
+.bt-list a {display:block;position:relative;margin-bottom:10px;padding:11px 0;border:2px solid #434343;text-align: center;border-radius: 5px;font-size:1.4rem;line-height:1.5;color:#222;letter-spacing: -1px;}
+.bt-list a::after {content:"";display:block;width:10px;height:10px;position:absolute;top:50%;right:10%;border-top:3px solid #434343;border-right:3px solid #434343;transform: rotate(45deg) translateY(-50%);}
+.bt-list a strong {display: block;font-size:1.7rem}
+.bt-list .bt-green {color:#fff;background:#20a782;border-color:#20a782}
+.bt-list .bt-green strong {color:#fff}
+.bt-list .bt-green::after {border-color:#fff ;}
+.bt-list .bt-brown {color:#fff;background:#54252d;border-color:#54252d}
+.bt-list .bt-brown strong {color:#fff}
+.bt-list .bt-brown::after {border-color:#fff ;}
+.bt-list .bt-blue {color:#fff;background:#3b589a;border-color:#3b589a}
+.bt-list .bt-blue strong {color:#fff;}
+.bt-list .bt-blue::after {border-color:#fff ;}
+.bt-list .bt-blue02 {color:#fff;background:#1877ed;border-color:#1877ed}
+.bt-list .bt-blue02 strong {color:#fff;}
+.bt-list .bt-blue02::after {border-color:#fff ;}
+.bt-list .bt-blue03 {color:#fff;background:#1d5bc0;border-color:#1d5bc0}
+.bt-list .bt-blue03 span,
+.bt-list .bt-blue03 strong {color:#fff;}
+.bt-list .bt-blue03::after {border-color:#fff ;}
+.bt-list .bt-vio {color:#fff;background:#5531d1;border-color:#5531d1}
+.bt-list .bt-vio strong {color:#fff;}
+.bt-list .bt-vio::after {border-color:#fff ;}
+
+
+.bt-list .bt-gr {color:#fff;background:#403e3e;border-color:#403e3e}
+.bt-list .bt-gr strong {color:#fff;}
+.bt-list .bt-gr::after {border-color:#fff ;}
+
+.bt-list .bt-02 {display: flex;flex-wrap:wrap;}
+.bt-list .bt-02 a {flex:0 0 49%;box-sizing: border-box;}
+.bt-list .bt-02 a:nth-of-type(odd) {margin-right:2%}
+.bt-list .bt-02 a:after {content:none}
+.bt-list .bt-02 a strong {position:relative}
+.bt-list .bt-02 a strong:after {content:"";display:inline-block;width:7px;height:7px;border-top:3px solid #434343;border-right:3px solid #434343;transform: rotate(45deg)}
+
+/* 타이틀 */
+.sub-wrap .tit {margin:35px 0 20px;text-align: center;font-size:1.8rem;font-weight:bold;letter-spacing: -1px;}
+.sub-wrap .stit {margin:40px 0 15px;font-size:1.6rem;font-weight: bold;font-weight:bold}
+.sub-wrap .stit::before {content:"ㆍ"}
+
+/* 모집요강 및 장학혜택 */
+.sub-wrap ul.txt-info {padding:20px 3%;background:#f6f6f6;}
+.sub-wrap ul.txt-info li {display: flex;}
+.sub-wrap ul.txt-info li, .sub-wrap .txt-info li * {font-size:1.4rem;line-height:1.7;letter-spacing: -1px;}
+.sub-wrap ul.txt-info li > strong:first-child {width:24%;}
+.sub-wrap ul.txt-info li > strong:first-child::before {content:"ㆍ"}
+.sub-wrap ul.txt-info li > span:nth-of-type(1) {width:76%;}
+.sub-wrap ul.txt-info .bullet01 {position:relative;display:block;padding-left:15px;text-decoration: none;}
+.sub-wrap ul.txt-info .bullet01::before {content:"※";position: absolute;top:0;left:0;}
+
+/* 리스트 */
+.sub-wrap .s-txt {margin-top:15px;}
+.sub-wrap .s-txt li {position: relative;padding-left:10px;font-size:1.2rem;color:#7e7e7e;}
+.sub-wrap .s-txt li::before {content: "-";position: absolute;top:0;left:0;;}
+.sub-wrap .con-info {margin:30px 0 15px;font-size:1.4rem;text-align: center;line-height: 1.5;}
+.sub-wrap .con-tel {margin-bottom:40px;font-size:1.8rem;text-align: center;font-weight: bold;}
+.sub-wrap .top-list {margin-bottom:10px;}
+.sub-wrap .top-list li {padding-left:20px;font-size:1.4rem;line-height: 1.8;background:url("http://russeldata.megastudy.net/campus/images/russel/m_russel/common/ico_check_gr.png") left 8px no-repeat;background-size:14px 11px }
+
+/* step */
+.info-step li {position:relative;padding:10px 0;margin-bottom:30px;text-align: center;font-size:1.4rem;border:1px solid #c3c3c3;border-radius: 10px;}
+.info-step li span {font-size:1.2rem;color:#7e7e7e;}
+.info-step li .num {display:inline-block;padding:5px 10px;background:#83cdea;font-size:rem;color:#fff;border-radius:15px}
+.info-step li .tit {display: block;margin:10px 0 3px;font-size:1.5rem}
+.info-step li .bt-go {display: inline-block;padding:2px 5px;border-radius:3px;font-size:1.2rem;color:#fff;background:#c4c4c4}
+.info-step li::after {content:"";display: block;width:22px;height:13px;position: absolute;top:calc(100% + 10px);left:50%;transform: translateX(-50%);background:url("http://russeldata.megastudy.net/campus/images/russel/m_russel/common/half_arr.jpg") left top 100%/100% no-repeat;}
+.info-step li:last-child::after {content: none;}
+
+/* 움직이는 재생 버튼 : 위치값/배경컬러는 각각 설정 */
+.bt-play {position:absolute;}
+.bt-play p {position: relative;}
+.bt-play p img {width:41px;height:41px;z-index:3;position: relative;animation: btShadow ease-in-out 2s infinite;}
+.bt-play p::before {content:"";display:block;width: 110%;height: 110%;position:absolute;top:-5%;left:-5%;border-radius: 50%;z-index:2;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 1s infinite;}
+.bt-play p::after {content:"";display:block;width: 130%;height: 130%;position:absolute;top:-15%;left:-15%;border-radius: 50%;z-index:1;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 2s infinite;}
+
+/* ==================================================
+   테이블
+================================================== */
+table {width:100%;border-top:2px solid #262626;}
+table * {font-size:1.3rem!important;letter-spacing: -1px;}
+table thead th {text-align:center;padding:15px 0;border-right:1px solid #d9d9d9;border-bottom:1px solid #262626;}
+table thead th:last-child {border-right: none;}
+table tbody th, table tbody td {border-bottom:1px solid #d9d9d9;}
+table tbody th {font-weight: normal;padding:15px 0;}
+table tbody td {border-left:1px solid #d9d9d9;padding:15px 2.5% 15px;line-height: 1.5;word-break: keep-all;}
+table tbody .b-l-n {border-left:none;}
+table tbody u {text-decoration: line-through;color:#9b9b9b}
+table .tr-bg td {background:#f7f0ef}
+table .txt-center {text-align: center;padding-left:0!important;padding-right:0!important}
+table td a {text-decoration: underline!important;}
+table.tbl-center th, table.tbl-center td {text-align: center;padding-left:0;padding-right:0!important}
+
+/* 하단 부터 2021 단과 css 입력 */
+/* ==================================================
+   정규반
+================================================== */
+.danka-list-wrap {margin:0 4%;border-top:1px solid #3e3e3e}
+.danka-list-wrap li {padding:15px 4%;border-bottom:1px solid #e2e2e2;}
+.danka-list-wrap li::after {clear:both;content:"";display: block;}
+.danka-list-wrap li .box:nth-of-type(1) {float:left;}
+.danka-list-wrap li .box:nth-of-type(2) {float:right;width:55%;display: flex;}
+.danka-list-wrap li .box {font-size:1.4rem;}
+.danka-list-wrap li .box strong {font-size:1.6rem}
+.danka-list-wrap li .box a {box-sizing:border-box;flex:1;height:40px;line-height: 40px;font-size:1.3rem;color:#959595;border:1px solid #e2e2e2;text-align: center;}
+.danka-list-wrap li .box a:first-child {border-right: none;}
+.danka-list-wrap li .box a:last-child {border-right: 1px solid #e2e2e2;}
+.danka-list-wrap li .ico-n {display:inline-block;width:16px;height:15px;line-height:15px;text-align:center;color:#fff;background:#da3e6d;border-radius: 5px;font-size:1.1rem;font-weight:bold;vertical-align: middle;}
+.danka-wrap .danka{position:relative;}
+.danka-wrap .danka .danka-tit{position:absolute;top:26%;left:15%;font-size:2rem;color:#fff;}
+.danka-wrap .danka .danka-tit strong{font-size:3rem;color:#ffe065;}
+.danka-wrap .danka .danka-tit.winter strong{color:#98f9fd;}
+
+

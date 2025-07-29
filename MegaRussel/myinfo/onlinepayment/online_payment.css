@@ -1,0 +1,123 @@
+/* ====================================================================================================
+   공통
+==================================================================================================== */
+body{letter-spacing:-1px;color:#353434;font-family:'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', sans-serif, 'generic-family'}
+body, html {font-size:62.5%}
+.pc-only {display:block !important}
+.mo-only {display:none !important}
+/* ====================================================================================================
+   헤더
+==================================================================================================== */
+header {background-color:#3678e4;color:#fff;height:80px;}
+header > div {display:flex;justify-content:space-between;align-items:center;height:100%;max-width:1000px;margin:0 auto}
+header .location {font-size:2.6rem;}
+
+.location .pc-only {display:inline-block !important}
+.location strong {position:relative;padding-left:30px}
+.location strong:before {content:'';position:absolute;top:50%;left:0;width:10px;height:10px;border-top:1px solid #fff;border-right:1px solid #fff;transform:rotate(45deg) translateY(-50%);}
+
+/* ====================================================================================================
+   온라인 결제
+==================================================================================================== */
+/* sub */
+.sub-wrap .inBox.type02 {max-width:1000px;width:100%;margin:75px auto 0;padding-bottom:100px}
+.sub-wrap .inBox.type03 {max-width:1000px;width:100%;margin:75px auto 0;padding-bottom:70px;border-bottom:1px solid #ced1d4;text-align:center;}
+.inBox.type02 > .txt {margin:20px 0 10px;font-size:1.5rem;}
+.inBox .txt-blue {color:#3678e4}
+.inBox .txt-red {color:#b80c10}
+
+/* 결제리스트 */
+.lecture-list {font-size:1.5rem;border-top:2px solid #353434}
+.lecture-list li:first-child {border-bottom:1px solid #353434}
+.lecture-list > li {position:relative;border-bottom:1px solid #ced1d4}
+.lecture-list > li div {display:inline-block;vertical-align:middle;text-align:center;box-sizing:border-box;}
+.lecture-list .th div {padding:10px 0;font-weight:bold}
+.lecture-list .th div:first-child {width:100px}
+.lecture-list .th div:nth-child(2) {width:150px}
+.lecture-list .th div:nth-child(3) {width:430px}
+.lecture-list .th div:nth-child(4) {width:150px}
+.lecture-list .th div:nth-child(5) {width:150px}
+.lecture-list .txt-list .list-wrap .txt-01 {width:100px;padding:25px 0;}
+.lecture-list .txt-list .list-wrap .txt-02 {width:150px;text-align:left;margin-right:435px;padding:25px 10px;}
+.lecture-list .txt-03 {position:absolute;top:0;left:260px;text-align:left;width:430px;padding:5px 0;overflow:hidden;display:flex;align-items:center;height:100%;}
+.lecture-list .txt-list .list-wrap .txt-04 {width:150px;padding:25px 10px;}
+.lecture-list .txt-list .txt-05 {width:150px;padding:15px 35px;}
+.lecture-list .txt-list .txt-05 span.pc-only {display:inline-block !important}
+.total-price {display:flex;justify-content:space-between; font-size:2.6rem;padding:30px 20px;background-color:#e6f4ff;font-weight:bold;border-bottom:1px solid #353434}
+.total-price .txt span.pc-only {display:inline-block !important}
+.total-price .price {color:#ee2b59;}
+.payment-box {margin-top:36px;display:flex;justify-content:center}
+.btn-blue {background-color:#167be7;color:#fff;font-size:2.8rem;display:block;border-radius:5px;width:425px;height:70px;line-height:68px;text-align:center}
+footer {text-align:center;color:#bfc4c8;font-size:1.8rem;padding-bottom:20px}
+/* 결제 완료 */
+.comple-txt {border-top:1px solid #353434;text-align:center;padding-top:70px}
+.comple-txt .txt02 {font-size:28px;padding-bottom:30px;}
+.link-btn {font-size:24px;color:#737373;text-decoration:underline;text-align:center;padding:40px 0}
+.link-btn.pc-only {display:inline-block !important;}
+.btn-blue {margin:0 auto}
+
+/* ====================================================================================================
+   미디어 쿼리
+==================================================================================================== */
+/* PC & 태블릿 */
+@media (max-width:1023px){
+   /* 공통 레이아웃 */
+   .pc-only {display:none !important}
+   .mo-only {display:block !important}
+   /* header */
+   header {padding:4vw 4%;height:auto;}
+   header > div {width:100%}
+   header .location {font-size:5vw;}
+   header .location .pc-only {display:none !important}
+   header .location strong {padding-left:0}
+   header .location strong:before {display:none}
+   /* sub */
+   .sub-wrap .inBox.type02 {padding:0 4%;margin:0;}
+   .sub-wrap .inBox.type03 {padding:0 4%;margin:0;border-bottom:none}
+   .inBox.type02 > .txt {font-size:1.4rem;}
+   
+   /* 결제리스트 */
+   .lecture-list {font-size:1.3rem;border-top:none}
+   .lecture-list li:first-child {border-bottom:none}
+   .lecture-list li {padding:20px 0;border-bottom:1px solid #eaeaea}
+   .lecture-list li div {display:flex;letter-spacing:-1.5px;}
+   .lecture-list li .txt-list {justify-content:space-between;align-items:center}
+   .lecture-list li .list-wrap {flex-wrap:wrap}
+   
+   .lecture-list .txt-list .list-wrap .txt-01 {width:auto;padding:0;}
+   .lecture-list .txt-list .list-wrap .txt-02 {width:auto;text-align:left;margin-right:0;padding:0 0 0 3px;}
+   .lecture-list .txt-03 {text-align:left;width:auto;padding:0;}
+   .lecture-list .txt-list .list-wrap .txt-04 {width:auto;padding:0 0 0 3px;}
+   .lecture-list .txt-list .txt-05 {width:auto;padding:0;}
+   .lecture-list .txt-list .txt-05 span.pc-only {display:none !important}
+   .lecture-list li .list-wrap div {position:relative;padding-left:3px;margin-left:4px;}
+   .lecture-list li .list-wrap div:before {content:'';width:1px;height:12px;background-color:#222;position:absolute;top:3px;left:0;}
+   .lecture-list li .list-wrap div:first-child {margin-left:0;padding-left:0}
+   .lecture-list li .list-wrap div:first-child:before {display:none}
+   
+   .lecture-list li .txt-03 {position:static;padding:0;width:auto; font-size:1.6rem;font-weight:bold;margin-top:10px;letter-spacing:-1px;display:inline-block}
+   .lecture-list li .txt-05 {min-width:140px}
+   .lecture-list li .date {margin-top:10px}
+   
+   .inBox.type02 .total-price {font-size:1.6rem;display:flex;justify-content:space-between;padding:20px 0;border-bottom:none;background-color:transparent;align-items:center;}
+   .total-price .txt span.pc-only {display:none !important}
+   .total-price .txt span.mo-only {display:inline-block !important}
+   .inBox.type02 .total-price .price {color:#3678e4;font-weight:bold;font-size:2rem}
+   .payment-box {margin:0;}
+   .btn-blue {width:100%;padding:15px 0;display:block;font-size:4.8vw;border-radius:4px;margin-top:35px;line-height:1;height:auto}
+   .btn-blue .mo-only {display:inline-block !important}
+
+   /* 결제완료 */
+   .location strong {font-weight:500}
+   .comple-txt {display:flex;flex-direction:column-reverse;text-align:center;padding:20vw 0 5vw;border-top:none}
+   .comple-txt .pic img {width:33vw}
+   .comple-txt .txt02 {font-size:4.8vw;margin-top:7.6vw;letter-spacing:-1px;padding-bottom:0}
+   .link-btn {font-size:4.2vw;color:#9e9e9e;text-decoration:underline;text-align:center;padding:0}
+   .link-btn.pc-only {display:none !important;}
+   .link-btn.mo-only {display:inline-block !important;}
+
+   @media (max-width:740px){ 
+      /* 공통 레이아웃 */
+      header .logo img {width:30.5vw}
+   }
+}

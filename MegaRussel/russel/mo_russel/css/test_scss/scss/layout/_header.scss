@@ -1,0 +1,328 @@
+/* ==================================================
+   TOP Banner
+================================================== */
+.top-banner {
+    position: relative;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+    }
+  
+    .btn-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+  
+      img {
+        height: 19px;
+        width: 19px;
+      }
+    }
+  
+    .banner-brand {
+      position: relative;
+  
+      a {
+        position: absolute;
+        top: 0;
+        width: 35%;
+        display: block;
+        height: 96%;
+        font-size: 0;
+        line-height: 0;
+      }
+  
+      .bt01 {
+        left: 0;
+      }
+  
+      .bt02 {
+        right: 0;
+      }
+    }
+  }
+  
+/* ==================================================
+    헤더
+================================================== */
+/* 서브 고정 */
+.header-fix {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    height: 50px;
+    border-bottom: 1px solid #eee;
+}
+  
+  header {
+    background: #fff;
+    height: 50px;
+    position: relative;
+    z-index: 7;
+    border-bottom: 1px solid #ddd;
+  
+    h1 {
+      text-align: center;
+      padding-top: 14px;
+      position: relative;
+      font-size: 0;
+      line-height: 0;
+  
+      img {
+        width: auto;
+        height: 25px;
+        vertical-align: top;
+      }
+  
+      .btn-campus {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 5px 2px 2px 11px;
+  
+        &::before {
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-left: 2px solid #000;
+          border-bottom: 2px solid #000;
+          transform: rotate(-45deg);
+          display: inline-block;
+        }
+      }
+    }
+  }
+  
+  .campus-list {
+    width: 206px;
+    display: none;
+    position: fixed;
+    top: 2px;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50.4%);
+    background: #fff;
+    z-index: 8;
+    color: #222;
+    border-radius: 25px 25px;
+    box-shadow: 0px 3px 10px 1px rgba(78, 78, 78, 0.2);
+    border: 1px solid #eaeaea;
+  
+    &.on {
+      display: block;
+    }
+  
+    .now-logo {
+      padding: 11px 0;
+      text-align: center;
+  
+      img {
+        width: auto;
+        height: 25px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+  
+      span {
+        display: inline-block;
+        vertical-align: middle;
+  
+        &::after {
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-left: 2px solid #000;
+          border-bottom: 2px solid #000;
+          transform: rotate(135deg);
+          display: inline-block;
+          vertical-align: middle;
+          margin: 4px 0 0 7px;
+        }
+      }
+    }
+  
+    li {
+      border-top: 1px solid #eaeaea;
+      box-shadow: none;
+    }
+  
+    a {
+      position: relative;
+      display: block;
+      padding: 15px 0;
+      color: #000;
+      margin-top: -1px;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+  
+    .ico-n {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(47px, -49.1%);
+      display: inline-block;
+      width: 16px;
+      height: 15px;
+      line-height: 15px;
+      text-align: center;
+      color: #fff;
+      background: #da3e6d;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+  }
+  
+  header .left-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: transparent;
+    font-size: 0;
+    z-index: 3;
+  
+    span {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      display: inline-block;
+      height: 2px;
+      width: 27px;
+      background: #444a5a;
+  
+      &::before {
+        position: absolute;
+        display: inline-block;
+        height: 2px;
+        width: 27px;
+        background: #444a5a;
+        content: "";
+        transform-origin: 0 50%;
+      }
+    }
+  }
+  
+  .left-nav span::after {
+    position: absolute;
+    display: inline-block;
+    height: 2px;
+    width: 27px;
+    background: #444a5a;
+    content: "";
+    transform-origin: 0 50%;
+  }
+  
+  header {
+    .left-nav {
+      span {
+        &::before {
+          top: -7px;
+        }
+  
+        &::after {
+          top: 7px;
+        }
+      }
+  
+      &.active span {
+        &::before, &::after {
+          transition: all .3s ease;
+          top: 0;
+        }
+      }
+    }
+  
+    .goRussel {
+      position: absolute;
+      top: 50%;
+      left: 4%;
+      transform: translateY(-50.1%);
+      z-index: 10;
+      display: inline-block;
+      height: 12px;
+      width: 18px;
+  
+      a {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+  
+      span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        border-radius: 2px;
+  
+        &:nth-of-type(1) {
+          top: 0;
+          width: 100%;
+        }
+  
+        &:nth-of-type(2) {
+          top: 5px;
+          width: 75%;
+        }
+  
+        &:nth-of-type(3) {
+          bottom: 0;
+          width: 50%;
+        }
+      }
+    }
+  
+    .util-right {
+      position: absolute;
+      top: 50%;
+      right: 4%;
+      transform: translateY(-50.1%);
+      font-size: 0;
+      line-height: 0;
+  
+      a {
+        display: inline-block;
+        width: 23px;
+        height: 20px;
+        position: relative;
+  
+        span {
+          display: block;
+          width: 17px;
+          height: 17px;
+          line-height: 18px;
+          position: absolute;
+          top: -9px;
+          right: -9px;
+          font-size: 1.1rem;
+          color: #fff;
+          background: #db3e6b;
+          border-radius: 50%;
+          text-align: center;
+        }
+  
+        &:nth-of-type(1) {
+          background: url(#{$R-path-img}/common/ico_cart.png) no-repeat left (top / 100%);
+        }
+  
+        &:last-child {
+          margin-left: 10px;
+          background: url(#{$R-path-img}/common/ico_my.png) no-repeat left (top / 100%) !important;
+        }
+      }
+    }
+  }

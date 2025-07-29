@@ -1,0 +1,34 @@
+.panel-wrap .menu-ico a:nth-of-type(n+4) {padding:20px 0 20px 0;}
+
+header h1 .btn-campus{display:none;}
+.btn-sns{display:none;}
+.footer-info{display:none;}
+.teacher-list .sel-cate::before,
+.teacher-list .sel-cate::after,
+.teacher-list .view-cate{display:none;}
+.teacher-list .view-cate.on{display: none!important;}
+
+.facility-info.none .tit{margin-bottom:30px;}
+.facility-info.none .tit::after{display:none;}
+
+.system-table{padding:0 20px 65px;}
+.system-table table{width:100%;border-top:1px solid #aeaeae;}
+.system-table table th{padding:8px 3px;border-right:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;background:#f8f8f8;font-weight:500;font-size:1.2rem;}
+.system-table table th:last-child{border-right:0;}
+.system-table table td{padding:8px 3px;border-left:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;text-align:center;font-size:1.2rem;font-weight:300;color:#666;text-align:left;}
+.system-table .etc_txt{font-size:1.4rem;}
+
+.system-table.small th, .system-table.small td{font-size:1.2rem;}
+.sub-title{padding:50px 0;text-align:center;font-weight:300;font-size:2.6rem;}
+.sub-title strong{display:block;font-weight:500;font-size:2.6rem;}
+
+.study-list{}
+.study-list ul{display:flex;flex-wrap:wrap;}
+.study-list li{flex:0 1 46%;margin-bottom:20px;padding:0 2%;}
+.study-list li a{display:block;}
+.study-list li a strong{display:block;overflow:hidden;position:relative;padding-top:56.5%}
+.study-list li a img{position:absolute;top:0;left:0;width:100%;}
+.study-list li a .name{display:block;overflow:hidden;height:32px;margin-top:5px;font-size:1.3rem;line-height:1.3;font-weight:400;text-align:center;color:#333;}
+
+.play-wrap{display:none;}
+.play-wrap.on{display:block !important;}

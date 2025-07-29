@@ -1,0 +1,198 @@
+/*=======반응형 마이페이지 공통 CSS====================================================================================================*/
+html{font-size: 62.5%;width:100%;-webkit-text-size-adjust: none;-ms-text-size-adjust: none; -moz-text-size-adjust: none; }
+html,body {width:100%;height: 100vh;}
+
+img {width: 100%;}
+body{margin: 0;color:#7F8289;line-height:inherit;letter-spacing: 0;}
+
+
+:root {
+    --main-color: #0081FF;
+    --font-color: #222;
+    --font-gray-color: #6B6B6C;
+  }
+
+.color-black {color: var(--font-color);}
+
+
+/*=======마이페이지 나의 수강 후기 리스트 페이지====================================================================================================*/
+html,body.list {background: #fff;}
+
+/* .review_list_wrap *{margin: 0;padding: 0;} */
+.review_list_wrap ul, ol {list-style: none;}
+.review_list_wrap a {text-decoration: none;}
+
+.review_list_wrap .top-cont {width: 100%;background: #F3F5F7;display: flex;justify-content: center;}
+.review_list_wrap .top-cont .top-inner {width: 100%;max-width: 1000px;padding: 100px 0 0;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.review_list_wrap .top-cont .top-inner > div {display: flex;flex-direction: column;justify-content: center;align-items: center;padding: 0 35px;}
+.review_list_wrap .top-cont .top-inner > div strong {color: var(--font-color);font-size: 27px;}
+.review_list_wrap .top-cont .top-inner > div p {color: var(--font-gray-color);font-size: 17px;display: block;width: 72%;text-align: center;margin: 12px 0 32px;}
+
+.review_list_wrap .bt-tab {display: flex;position: relative;margin-bottom: 26px;width: 100%;max-width: 492px;}
+.review_list_wrap .bt-tab a {margin-left: 12px; background: #C5C5C5; color: #fff;text-decoration: none;border-radius: 50px;width: 100%;height: 50px; display: flex;justify-content: center;align-items: center;text-align: center;}
+.review_list_wrap .bt-tab a:first-child {margin-left: 0;}
+.review_list_wrap .bt-tab a span {color: #fff;font-size: 19px;display: block;line-height: 1;}
+.review_list_wrap .bt-tab a.on {border: none; border-bottom: none; background: var(--main-color) !important;}
+
+.review_list_wrap .mid-cont {display: flex;justify-content: center;background: #F3F5F7;}
+.review_list_wrap .mid-cont .mid-inner {width: 100%;max-width: 1000px;display: flex;flex-direction: column;justify-content: center;align-items: center;padding-bottom: 54px;}
+.review_list_wrap .mid-cont .mid-inner .cont-wrap {width: 100%;display: flex;justify-content: center;padding: 0 35px;box-sizing: border-box;}
+
+.review_list_wrap .cont-box {display: none;width: 100%;}
+.review_list_wrap .cont-box.on{display: block;}
+
+.review_list_wrap .search-wrap {display: flex;gap: 16px;box-sizing: border-box;width: 100%;}
+.review_list_wrap .search-wrap .select-box {position: relative;flex: 1;}
+.review_list_wrap .search-wrap .select-box select {font-size: 17px;height: 44px;appearance: none;-webkit-appearance: none;-moz-appearance: none;padding-left: 20px;border: 1px solid #e4e4e4;border-radius: 3px;width: 100%;background: #ffffff;}
+.review_list_wrap .search-wrap .select-box::after {display: block;content: '';position: absolute;top: 54%;right: 20px;transform: translateY(-50%);width: 12px;height: 12px;background: url("http://russeldata.megastudy.net/campus/images/campus/library/v2015/library/russel/mypage/ico_search_arrow.png") no-repeat 0 0;background-size: contain;}
+.review_list_wrap .search-wrap .select-box select:nth-child(3) {margin-right: 0 !important;}
+
+.review_list_wrap .search-wrap .responsive-wrap {display: flex;flex: 2;}
+.review_list_wrap .search-wrap .responsive-wrap .select-box:nth-child(1) {margin-right: 16px;}
+
+
+.review_list_wrap .calender-wrap {display: flex;justify-content: space-between;margin-top: 12px;}
+.review_list_wrap .calender-wrap > div {display: flex;justify-content: space-between;flex: 5;}
+.review_list_wrap .calender-wrap > div label {position: relative;width: 100%;}
+.review_list_wrap .calender-wrap > div label input {height: 44px;padding-left: 20px;width: 100%;font-size: 17px;}
+.review_list_wrap .calender-wrap > div > div {color: var(--font-color); display: flex;justify-content: center;align-items: center;font-size: 17px;font-weight: 600;min-width: 38px;}
+.review_list_wrap .calender-wrap .btn_serach {border-radius: 5px;background: var(--font-color);color: #fff;font-size: 17px;display: inline-block;flex: 1;height: 44px;line-height: 44px;text-align: center;margin-left: 16px;}
+.review_list_wrap .calender-wrap .ui-datepicker-trigger {width: 24px;height: 24px;position: absolute;top: 10px;right: 20px;}
+
+#ui-datepicker-div {width: 200px;}
+
+
+.review_list_wrap .btm-cont {display: flex;justify-content: center;background: #fff;}
+.review_list_wrap .btm-cont .btm-inner {width: 100%;max-width: 1000px;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.review_list_wrap .btm-cont .btm-inner .btn-more {cursor: pointer;margin: 42px 0 90px;width: 100%;max-width: 159px;height: 50px;border-radius: 5px;border: 1px solid #c5c5c5;background: #fff;display: flex;justify-content: center;align-items: center;color: #a9a9a9;font-size: 19px;font-weight: 500;}
+
+.review_list_wrap .cont-wrap02 {width: 100%;padding: 24px 35px 0;box-sizing: border-box;}
+.review_list_wrap .cont-wrap02 .cont-box02 .list-box {display: flex;justify-content: space-between;align-items: center;padding: 15px 0;border-bottom: 1px solid #e4e4e4;}
+.review_list_wrap .cont-wrap02 .cont-box02 .list-box .txt .desc {color: #7E7E7E;font-size: 15px;}
+.review_list_wrap .cont-wrap02 .cont-box02 .list-box .txt .desc span {color: #c5c5c5;}
+.review_list_wrap .cont-wrap02 .cont-box02 .list-box .txt .tit {color: var(--font-color);font-size: 17px;font-weight: 500;}
+.review_list_wrap .cont-wrap02 .cont-box02 .list-box .txt .date {color: #a9a9a9;font-size: 13px;display: block;margin-top: 6px;}
+.review_list_wrap .cont-wrap02 .cont-box02 .list-box .btn-write {line-height: 1.2;border-radius: 50%;border: 1px solid #01AB87;color: #01AB87;font-size: 17px;width: 58px;height: 58px;display: flex;justify-content: center;align-items: center;}
+.review_list_wrap .cont-wrap02 .cont-box02 .list-box .btn-look {line-height: 1.2;border-radius: 50%;border: 1px solid #ddd;color: #999;font-size: 17px;width: 58px;height: 58px;display: flex;justify-content: center;align-items: center;}
+
+.review_list_wrap .not-exist {font-size: 14px;text-align: center;}
+
+/*=======마이페이지 나의 수강 후기 작성 페이지====================================================================================================*/
+.review_write_wrap {width: 100%;height: 100%;background: #F2F2F2;}
+.review_write_wrap .write-inner {background: #F2F2F2;width: 100%;height: 100%;}
+.review_write_wrap .p-tit {background: #fff;border-bottom: 1px solid #ddd;text-align: center;color: var(--font-color);font-size: 19px;font-weight: 700;display: flex;justify-content: center;align-items: center;height: 56px;box-sizing: border-box;}
+.review_write_wrap .p-cont {display: flex;justify-content: center;align-items: center;padding-bottom: 80px;}
+.review_write_wrap .p-cont .inner {width: 100%;max-width: 720px;}
+.review_write_wrap .p-cont .inner .top-cont {background: #fff;margin-bottom: 14px;padding: 25px 35px;}
+
+.review_write_wrap .p-cont .inner .info-list {display: flex;flex-direction: column;padding-left: 10px;}
+.review_write_wrap .p-cont .inner .info-list li {display: flex;position: relative;flex-wrap: wrap;}
+.review_write_wrap .p-cont .inner .info-list li:not(:last-child) {margin-bottom: 8px;}
+.review_write_wrap .p-cont .inner .info-list li:last-child .txt {font-weight: 500;}
+.review_write_wrap .p-cont .inner .info-list li::after {display: block;content: '';width: 3px;height: 3px;background: #D9D9D9;position: absolute;top: 11px;left: -10px;border-radius: 50px;}
+.review_write_wrap .p-cont .inner .info-list li .tit {color: var(--font-color);font-size: 17px;flex: 1;min-width: 72px;flex: 0 0 auto;margin-right: 16px;}
+.review_write_wrap .p-cont .inner .info-list li .txt {color: var(--font-color);font-size: 17px;flex: 8;}
+.review_write_wrap .p-cont .inner .info-list li .txt div {display: block;flex: 1 1 auto;width: auto;width: calc(100% - 38%);}
+.review_write_wrap .p-cont .inner .info-list li .tit sup {color: #0081FF;vertical-align: baseline;margin-left: 2px;}
+.review_write_wrap .p-cont .inner .info-list li .tit sup.none {display: none !important;}
+
+.review_write_wrap .p-cont .inner .point-list {display: flex;flex-direction: column;padding-left: 10px;margin-bottom: 14px;}
+.review_write_wrap .p-cont .inner .point-list li {display: flex;}
+.review_write_wrap .p-cont .inner .point-list li:not(:last-child) {margin-bottom: 8px;}
+.review_write_wrap .p-cont .inner .point-list li:last-child .txt {font-weight: 500;}
+.review_write_wrap .p-cont .inner .point-list li span {position: relative;}
+.review_write_wrap .p-cont .inner .point-list li span::after {display: block;content: '';width: 3px;height: 3px;background: #D9D9D9;position: absolute;top: 12px;left: -10px;border-radius: 50px;}
+.review_write_wrap .p-cont .inner .point-list li .tit {color: var(--font-color);font-size: 17px;flex: 1;min-width: 72px;}
+.review_write_wrap .p-cont .inner .point-list li .txt {color: var(--font-color);font-size: 17px;flex: 8;}
+.review_write_wrap .p-cont .inner .point-list li .tit sup {color: #0081FF;vertical-align: baseline;margin-left: 2px;}
+.review_write_wrap .p-cont .inner .point-list li .tit {width: unset;min-width: 180px;display: flex;align-items: center;}
+.review_write_wrap .p-cont .inner .point-list li .tit sup.none {display: none !important;}
+
+.review_write_wrap .p-cont .inner .point-list li .txt select {width: 100%;height: 44px;border: 1px solid #e4e4e4;border-radius: 3px;background: #f7f7f7;font-size: 16px;padding-left: 20px;}
+.review_write_wrap .p-cont .inner .point-list li .txt .select-box {position: relative;}
+.review_write_wrap .p-cont .inner .point-list li .txt .select-box select {font-size: 17px;height: 44px;appearance: none;-webkit-appearance: none;-moz-appearance: none;padding-left: 20px;border: 1px solid #e4e4e4;border-radius: 3px;width: 100%;}
+.review_write_wrap .p-cont .inner .point-list li .txt .select-box::after {display: block;content: '';position: absolute;top: 54%;right: 10px;transform: translateY(-50%);width: 12px;height: 12px;background: url("http://russeldata.megastudy.net/campus/images/campus/library/v2015/library/russel/mypage/ico_search_arrow.png") no-repeat 0 0;background-size: contain;}
+
+.review_write_wrap .p-cont .inner .btm-cont {background: #fff;padding: 25px 35px 60px;}
+.review_write_wrap .p-cont .inner .btm-cont .list-bullet {margin-top: 24px;}
+.review_write_wrap .p-cont .inner .btm-cont .list-bullet li {color: #7e7e7e;font-size: 15px;font-weight: 400;padding-left: 18px;}
+.review_write_wrap .p-cont .inner .btm-cont .list-bullet li::before {display: block;position: absolute;top: 0;left: 0;}
+.review_write_wrap .p-cont .inner .btm-cont .list-bullet li:not(:last-child) {margin-bottom: 6px;}
+.review_write_wrap .p-cont .inner .text-counter {text-align: right;font-size: 15px;margin-top: 6px;}
+.review_write_wrap .p-cont .inner .btm-cont textarea {padding: 16px;margin-top: 16px;border-radius: 3px;}
+
+
+/* 하단 버튼 */
+.bt-input a:first-child {flex: 1;}
+.bt-input a:last-child {flex: 1;}
+
+.bt-box-02 {display: flex;justify-content: center;width: 100%;max-width: 328px;margin: 34px auto 0;}
+.bt-box-02 a {border-radius:5px;height:50px;line-height:50px;text-align: center;font-size: 1.8rem;color:#fff;}
+.bt-box-02 .bt-g {background:#c5c5c5;font-weight:500;}
+.bt-box-02 .bt-b {margin-left:10px;background:#0081ff;font-weight:500;}
+.bt-box-02 .bt-l {background: #6B6B6C; font-weight:500;}
+.bt-box-02.btn-one {max-width: 159px;}
+
+
+
+
+
+/* Tablet (601px ~ 1199px) */
+@media only screen and (max-width:1199px){
+
+    /*나의 수강 후기*/
+    .review_list_wrap .top-cont .top-inner {padding: 80px 0 0;}
+    .review_list_wrap .top-cont .top-inner > div strong {font-size: 27px;}
+    .review_list_wrap .top-cont .top-inner > div p {width: 87%;font-size: 17px;}
+    .review_list_wrap .bt-tab a span {font-size: 17px;padding: 0;}
+    .review_list_wrap .cont-wrap02 .cont-box02 .list-box .txt {width: calc(100% - (58px + 5%));}
+    .review_list_wrap .cont-wrap02 .cont-box02 .list-box .btn-write {font-size: 17px;}
+    .review_list_wrap .search-wrap .select-box select {font-size: 17px;}
+
+    /*달력*/
+    #ui-datepicker-div {width: calc(100% - 70%);}
+    .ui-datepicker .ui-datepicker-prev {top: -11px;}
+    .ui-datepicker .ui-datepicker-next {top: -11px;}
+
+    /*수강 후기 작성 페이지*/
+    .review_write_wrap .p-cont {padding-bottom: 0;}
+}
+
+/* Mobile (0px ~ 600px) */
+@media only screen and (max-width:600px){
+
+    /*나의 수강 후기*/
+    .review_list_wrap .top-cont .top-inner > div {padding: 0 16px;}
+    .review_list_wrap .mid-cont .mid-inner {padding-bottom: 32px;}
+    .review_list_wrap .mid-cont .mid-inner .cont-wrap {padding: 0 16px;}
+    .review_list_wrap .bt-tab {margin-bottom: 24px;max-width: unset;}
+    .review_list_wrap .cont-wrap02 {padding: 16px;}
+    .review_list_wrap .search-wrap {flex-wrap: wrap;justify-content: space-between;gap: 12px;flex-wrap: wrap;}
+    .review_list_wrap .search-wrap .responsive-wrap {flex: unset;width: 100%;}
+    .review_list_wrap .search-wrap .responsive-wrap .select-box:nth-child(1) {margin-right: 12px;}
+    .review_list_wrap .search-wrap .select-box select {padding-left: 14px;}
+    .review_list_wrap .search-wrap .select-box::after {right: 14px;}
+    .review_list_wrap .calender-wrap > div > div {min-width: 20px;}
+    .review_list_wrap .calender-wrap > div label input {padding-left: 14px;}
+    .review_list_wrap .calender-wrap .btn_serach {margin-left: 12px;}
+    .review_list_wrap .calender-wrap .ui-datepicker-trigger {right: 8px;}
+    /*달력*/
+    #ui-datepicker-div {width: calc(100% - 35%);}
+    .ui-datepicker .ui-datepicker-prev {top: -10px;}
+    .ui-datepicker .ui-datepicker-next {top: -10px;}
+
+
+    /*수강 후기 작성 페이지*/
+    .review_write_wrap {background: #fff;}
+    .review_write_wrap .write-inner {background: #fff;}
+    .review_write_wrap .p-cont {padding-bottom: 0;}
+    .review_write_wrap .p-tit {font-size: 18px;height: 50px;}
+    .review_write_wrap .p-cont .inner .top-cont {padding: 25px 16px;}
+    .review_write_wrap .p-cont .inner .btm-cont {padding: 24px 16px 60px;}
+    .review_write_wrap .p-cont .inner .info-list li .txt div {width: calc(100% - 0%);}
+    .review_write_wrap .p-cont .inner .point-list li .tit {min-width: 116px;}
+    .review_write_wrap .p-cont .inner .btm-cont textarea {height: 120px !important;}
+
+    .bt-box-02 {max-width: unset;}
+
+}

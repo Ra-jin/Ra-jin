@@ -1,0 +1,177 @@
+/* ==================================================
+   스쿨버스
+================================================== */
+/* 공통 */
+.bus-info-box {padding:20px 4% 40px;background:#ffc219;}
+.bus-info-box.gray {background:#dadada;}
+.bus-info-box .bus-info {padding:25px 0;margin-bottom:20px;background:#fff;border-radius:20px;}
+.bus-info-box .bus-info:last-child {margin-bottom: 0;}
+.bus-info-box .inner {padding:0 4.5%;background:#fff;}
+
+.bus-info-box .bus-red {color:#e92654;}
+.bus-info-box .bus-blue {color:#1e2f89;}
+
+/* 상단 */
+.schoolBus .visual {position: relative;overflow: hidden;padding-bottom:45px;background:#ffc219;}
+.schoolBus .visual .img-bus {width:60%;position:absolute;bottom:10px;right:0;}
+.schoolBus .visual .img-bus img {width:100%;animation:busAction linear 9s both;}
+
+/* keyframes */
+@keyframes busAction {
+   0% {transform:translateX(90%);opacity: 1;}
+   22% {transform:translateX(-10%);opacity: 1;}
+   40% {transform:translateX(-10%);opacity: 1;}
+   74% {transform:translateX(-165%);opacity: 1;}
+   75% {transform:translateX(-165%);opacity: 0;}
+   76% {transform:translateX(100%);opacity: 0;}
+   77% {transform:translateX(100%);opacity: 1;}
+   100% {transform:translateX(-10%);opacity: 1;}
+}
+
+/* 운행안내 */
+.bus-info-box .tit-service {position:relative}
+.bus-info-box .tit-service .txt {position: absolute;top:34%;left:50%;text-align: center;font-size: 1.4rem;transform:translate(-53%, -50%);letter-spacing: -1px;}
+.bus-info-box .tit-service .txt strong {display:block;font-weight: bold;font-size: 1.4rem;}
+.bus-info-txt {display: flex;flex-wrap: wrap;align-items: flex-start;justify-content: space-between;margin:20px 0 13px;}
+.bus-info-txt dt {width:25%;height:30px;line-height:30px;background:#1e2f89;color:#fff;font-size:1.4rem;font-weight:bold;border-radius:50px;text-align: center;}
+.bus-info-txt dd {width: 72%;margin:5px 0 10px;letter-spacing: -1px;font-size: 1.4rem;color:#222}
+.bus-info-txt dd * {font-size: 1.5rem;color:#222}
+.bus-info-txt dd:last-child {margin-bottom:0}
+.bus-info-txt .bus-route {width: 100%;margin:10px 0 0 0;padding:25px 7%;background:#f2f2f2;border-radius: 10px;}
+.bus-info-txt .bus-route p:first-of-type {margin-bottom:10px;font-size: 1.5rem;}
+.bus-info-txt .bus-route div {font-size: 1.3rem;line-height: 1.5;letter-spacing: -1px;}
+.bus-info-txt .bus-route + dt {margin-top:6%}
+.bus-info-txt .bus-route + dt + dd {margin-top:calc(6% + 5px)}
+.bus-info-box .bus-info .list-dot {margin:0;}
+
+.bus-info-txt .tit {width:25%;height:30px;line-height:30px;margin-bottom:10px;background:#1e2f89;color:#fff;font-size:1.4rem;font-weight:bold;border-radius:50px;text-align: center;}
+.bus-info-txt .txt {width: 72%;margin:5px 0 10px;letter-spacing: -1px;font-size: 1.4rem;color:#222}
+.bus-info-txt .txt * {font-size: 1.5rem;color:#222}
+.bus-info-txt .txt:last-child {margin-bottom:0}
+
+/* 승하차 시간 안내  */
+.bus-info-box .bus-time {margin-top:45px}
+.bus-info-box .bus-time .bus-num {margin-top: 25px; background-color: #1e2f89;border-radius: 10px;color: #fff;width: 100%;padding: 3px 0;font-size: 1.4rem;text-align: center;}
+.bus-info-box .bus-time table {border-collapse: separate;border-spacing: 4px;width: 100%;}
+.bus-info-box .bus-time table thead tr th {background-color: #919299;color: #fff;font-size: 1.4rem;padding: 6px 0;}
+.bus-info-box .bus-time table tbody tr td:first-of-type {background-color: #E9E9E9;text-align: left;font-size: 1.4rem;padding: 6px 3px;}
+.bus-info-box .bus-time table tbody tr td:last-of-type {background-color: #E9E9E9;text-align: center;font-size: 1.4rem;}
+
+/* 배너 */
+.bus-info-box .list-banner {width:85%;margin:20px auto 0;}
+.bus-info-box .list-banner li {margin-top:5px;}
+.bus-info-box .list-banner img {width: 100%;}
+
+/* FAQ */
+.bus-faq {padding:30px 4% 0;}
+.bus-faq ul {margin-top: 20px;}
+.bus-faq li:nth-child(2n) {padding:15px 5% 20px;font-size: 1.3rem;}
+
+/* bottom */
+.schoolBus .tel-box {padding:50px 0 45px;background:#1e2f89;}
+.schoolBus .bus-bottom {display:none;padding:19px 0;background:url('https://russeldata.megastudy.net/campus/images/russel/m_russel/info/schoolBus/bg_bottom.jpg') left top 100%/100% no-repeat;text-align: center;letter-spacing: -1px;}
+.schoolBus .bus-bottom p {color: #fff;font-size: 1.3rem;line-height: 1.5;}
+.schoolBus .bus-bottom p:nth-child(2) {font-size: 1.9rem;font-weight: bold;}
+.schoolBus .bus-bottom p:nth-child(2) strong {color:#ffc219;font-size: 1.9rem;font-weight: bold;}
+
+/* 버스노선 탭 */
+.route-wrap {margin-top: 20px;}
+/* .route-wrap .tab {display: flex;flex-wrap: wrap;border-top:1px solid #cecece;border-right:1px solid #cecece;}
+.route-wrap .tab a {flex: 1;padding:10px 0;position:relative;font-size: 1.3rem;text-align: center;text-align: center;color:#8b8b8b;letter-spacing: -1px;border-left:1px solid #cecece;border-bottom:1px solid #cecece;font-weight: bold;min-width: 20%;box-sizing: border-box;}
+.route-wrap .tab a strong {display: block;}
+.route-wrap .tab a .bus-end {position:absolute;top:0;left:50%;transform: translate(-50%, -50%);display: inline-block;padding:2px 7px;color:#fff;font-size:1rem;background:#d61a54;font-weight: bold;border-radius: 10px;}
+.route-wrap .tab a:last-child {border-right: none;}
+.route-wrap .tab a.on {color:#eff2ff;background:#1e2f89;border-bottom:1px solid #1e2f89} */
+.route-wrap .tab {border:1px solid #cecece;border-bottom:none}
+.route-wrap .tab select {width:100%;border:none;border-bottom:1px solid #eaeaea;background: url("https://russeldata.megastudy.net/campus/images/russel/m_russel/common/bg_sel03.png") #fff 97% 52% no-repeat;background-size:14px 9px; text-align-last:center;font-family: "Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif !important;font-weight: bold;color:#333;}
+.route-wrap .r-tit {padding:10px 0;font-size: 1.6rem;color:#333;font-weight: bold;}
+.route-wrap .r-tit strong {font-size: 1.6rem;color:#1e2f89}
+.route-wrap .route-map {padding:0  3%;border:1px solid #cecece;border-top: 0;}
+.route-wrap .route-map .route-txt {margin:5px 0 10px;line-height: 1.2;}
+.route-wrap .route-map .route-txt span {display:inline-block;font-size:1.3rem;color:#333;letter-spacing: -1px;vertical-align: middle;}
+.route-wrap .route-map .route-txt span strong {display:inline-block;padding:2px 5px 0 4px;font-size: 1.3rem;color:#333;background:#e7e7e7;border-radius: 15px;line-height: 1.1;}
+.route-wrap .route-map .route-txt span:first-child strong, .route-wrap .route-map .route-txt span:last-child strong {background:#1e2f89;color:#fff}
+.route-wrap .route-map .route-txt span::after {display:inline-block;content: "▶";}
+.route-wrap .route-map .route-txt span.notime::after {content: ",";}
+.route-wrap .route-map .route-txt span.notime strong {display: none;}
+.route-wrap .route-map .route-txt span:last-child::after {content:"";display: none;}
+.route-map .map-info {padding:0 5px;background:#fff;border:1px solid #999;margin:-25px 0 0 -30px;font-size: 13px;;}
+
+/* .route-wrap .tab.close a {flex:1;height:56px;line-height:58px;font-size:17px;text-align: center;color:#8b8b8b;letter-spacing: -1px;border-right:1px solid #cecece;border-bottom:1px solid #cecece;}
+.route-wrap .tab a span.close {color: #fff;background-color: #d0174f;border-radius: 50px;width: 42px;height: 16px;line-height: 16px; display: block;font-size: 12px;margin: 5px 0 0 5px;}
+.route-wrap .tab a.closeA {line-height: 18px;}
+ */
+
+/* =================================================
+  온라인 서비스
+==================================================== */
+.online-wrap .inner {padding:0 4%}
+.online-wrap .visual {position:relative;background:url('https://russeldata.megastudy.net/campus/images/russel/m_russel/russel/entinfo/online/visual_bg.jpg') no-repeat center top/100%;padding-top: calc(120vw / 7.2);padding-bottom:30px;}
+.online-wrap .visual .v-tit {width:calc(583vw / 7.2);margin:0 auto;opacity:0;transform: perspective(600px) rotateX(90deg);line-height:0;}
+.online-wrap .visual .v-tit img {width:100%;}
+.online-wrap .visual .v-txt {width:calc(539vw / 7.2);margin:0 auto;padding-top:calc(50vw / 7.2);opacity:0;;line-height:0;}
+.online-wrap .visual .v-txt img {width:100%;}
+.online-wrap .visual .v-img {width:calc(633vw / 7.2);margin:0 auto;padding-top:calc(70vw / 7.2);opacity:0;transform:translateY(30px);line-height:0;}
+.online-wrap .visual .v-img img {width:100%;}
+.online-wrap .visual.on .v-tit {opacity:1;transition:all 1s cubic-bezier(0.250, 0.460, 0.450, 0.940);transform: perspective(600px) rotateX(0deg);}
+.online-wrap .visual.on .v-txt {opacity:1;transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55) .6s;}
+.online-wrap .visual.on .v-img {opacity:1;transition:all 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s;transform:translateY(0)}
+.online-wrap .visual .banner {position:relative;margin-top:calc(65vw / 7.2);display:block;}
+
+
+.online-wrap .tab {display:flex;justify-content:center;align-items:center;z-index: 9;flex-wrap:wrap;width:100%}
+.online-wrap .tab a {min-width:calc(100% / 3);text-align:center;background:#f2f2f2;color:#999999;border:1px solid #cccccc;border-left:0;box-sizing:border-box;font-size:1.5rem;font-weight:700;text-decoration:0;height:54px;line-height:54px;}
+.online-wrap .tab a:nth-child(3) {border-right:none;}
+.online-wrap .tab a:nth-child(n+4) {border-top:none;border-bottom:1px solid #222;}
+.online-wrap .tab a:last-of-type {border-right:none;}
+.online-wrap .tab a.on {border-color:#a30964;background:#a30964;color:#fff;}
+.online-wrap .tab a.on:before {opacity:0;}
+.online-wrap .tab-box {display:block;padding-top:0;}
+.online-wrap .tab-box.fix .tab {position:fixed;top:100px;}
+.online-wrap .tab-con {display:none;background:#f2f2f2;padding:30px 4% 50px;box-sizing:border-box;}
+.online-wrap .tab-box.fix .tab-con {padding-top:138px;} 
+.online-wrap .tab-con .inner {margin:0 auto;padding:0 0 40px;border-radius:15px;background:#fff;overflow:hidden;}
+.online-wrap .tab-con.on {display:block;}
+.online-wrap .btn-wrap {margin:25px 4% 0;}
+.online-wrap .btn-wrap a {font-size:1.3rem;background-color:#111;height:50px;line-height:50px;}
+.online-wrap .btn-wrap a:after {top:19px;border-color:#afafaf}
+.online-wrap .btn-wrap a span {color:#f9ff95;}
+
+.online-wrap .layer-wrap {position:fixed;left:0;top:0;z-index:50;height:100%;display:none;justify-content:center;align-items:center;width: 100%;}
+.online-wrap .layer-wrap.on {display:flex;}
+.online-wrap .layer-wrap .layer-in {position:relative;width:90%;margin:0 5%;padding:10px 15px 30px;text-align:left;font-size:12px;line-height:1.4;letter-spacing:-0.5px;background:#fff;box-shadow:0 3px 3px rgba(95, 95, 95, .5);box-sizing:border-box;border-radius:10px;}
+.online-wrap .layer-wrap .layer-in .js-close-mask {display:flex;justify-content:flex-end;margin-bottom:10px;}
+.online-wrap .layer-wrap .layer-in .js-close-mask img {width:16px;height:auto;}
+.online-wrap .layer-wrap .layer-in span {display:block;font-size:11px;line-height:1.5;}
+.online-wrap .layer-wrap .layer-in span.tit {margin-bottom:20px;font-weight:700;font-size:1.3rem;}
+.online-wrap .layer-wrap .bg-mask {position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0, 0, 0, .5);}
+
+.online-wrap .schedule-box {width:100%; height: 60vh; margin:0 auto;position: relative; overflow: auto; text-align: center;}
+.online-wrap .tb-type01 {border-top:2px solid #434343; margin:15px 0 0 0;}
+.online-wrap .tb-type01 table {width:100%; border-collapse:collapse;}
+.online-wrap .tb-type01 table caption {position:absolute;left:-5000px;top:0;visibility:hidden;overflow:hidden;line-height:0.1%;font-size:0.1%;width:0.1%;height:0.1%;}
+.online-wrap .tb-type01 table thead tr th {background:#c6c6c6; border-bottom:1px solid #434343; border-left:1px solid #9a9a9a; padding:10px 0; color:#191919; font-size:13px; text-align:center;}
+.online-wrap .tb-type01 table thead tr th:first-of-type {border-left:0;}
+.online-wrap .tb-type01 table thead tr th.border-l {border-left:1px solid #434343;}
+.online-wrap .tb-type01 table tbody tr td {border-left:1px solid #c4c4c4; border-bottom:1px solid #c4c4c4; padding:10px 0; color:#191919; text-align:center;}
+.online-wrap .tb-type01 table tbody tr td:first-of-type {border-left:0;}
+.online-wrap .tb-type01 table tbody tr td.border-l {border-left:1px solid #c4c4c4;}
+.online-wrap .tb-type01 table tbody tr td.bg-y {background:#ffffde;}
+
+
+/*메뉴 4개일 경우*/
+.tab.js-tab.four-type a {min-width: calc(100% / 2);border: 0;}
+.tab.js-tab.four-type a:nth-child(1) {border-top: 1px solid #cccccc;border-right: 1px solid #cccccc;}
+.tab.js-tab.four-type a:nth-child(2) {border-top: 1px solid #cccccc;}
+.tab.js-tab.four-type a:nth-child(3) {border-bottom: 1px solid #cccccc;border-top: 1px solid #cccccc;border-right: 1px solid #cccccc;}
+.tab.js-tab.four-type a:nth-child(4) {border-bottom: 1px solid #cccccc;border-top: 1px solid #cccccc;}
+
+
+/* =================================================
+   심폐소생술 안전 교육
+==================================================== */
+.safety-edu .visual{position: relative;}
+.safety-edu .visual .v02{position: absolute; top:23%; left:50%; width:72vw; opacity: 0; transform: translateX(-50%);}
+.safety-edu .visual .v03{position: absolute; top:35%; left:50%; width:86vw; opacity: 0; transform: translateX(-50%);}
+.safety-edu .visual.on .v02{transition: all 0.3s ease-in-out; opacity: 1;}
+.safety-edu .visual.on .v03{transition: all 0.5s 0.3s ease-in-out; opacity: 1;}

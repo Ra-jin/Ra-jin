@@ -1,0 +1,452 @@
+@import url('../campus_list.css');
+
+/* ==================================================
+   공통
+================================================== */
+.danka-mojib-title{padding: calc(40vw/7.2) 0; text-align: center; font-size: calc(36vw/7.2);}
+.b-txt {margin-top:25px;font-size:1.1rem;text-align: center;}
+
+.visual {position: relative;}
+:root{
+   --key-color:#222;
+}
+
+/* 상단 날짜 동그라미 */
+.visual .date {position:absolute;top:16%;left:19%;width:17%;height:0;padding-top:17%;border-radius: 50%;border:1px solid #fff;text-align: center;transform: translate(-60%, -50%);}
+.visual .date span {display:block;width:100%;position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:1.4rem;font-weight:bold}
+
+/* 버튼 */
+.bt-list a {display:block;position:relative;margin-bottom:10px;padding:11px 0;border:2px solid #434343;text-align: center;border-radius: 5px;font-size:1.4rem;line-height:1.5;color:#222;letter-spacing: -1px;}
+.bt-list a::after {content:"";display:block;width:10px;height:10px;position:absolute;top:50%;right:10%;border-top:3px solid #434343;border-right:3px solid #434343;transform: rotate(45deg) translateY(-50%);}
+.bt-list a strong {display: block;font-size:1.7rem}
+.bt-list .bt-green {color:#fff;background:#20a782;border-color:#20a782}
+.bt-list .bt-green strong {color:#fff}
+.bt-list .bt-green02 {color:#fff;background:#4ba464;border-color:#4ba464}
+.bt-list .bt-green02 strong {color:#fff}
+.bt-list .bt-green02::after {border-color:#fff ;}
+.bt-list .bt-green::after {border-color:#fff ;}
+.bt-list .bt-brown {color:#fff;background:#54252d;border-color:#54252d}
+.bt-list .bt-brown strong {color:#fff}
+.bt-list .bt-brown::after {border-color:#fff ;}
+.bt-list .bt-blue {color:#fff;background:#3b589a;border-color:#3b589a}
+.bt-list .bt-blue strong {color:#fff;}
+.bt-list .bt-blue::after {border-color:#fff ;}
+.bt-list .bt-blue02 {color:#fff;background:#1877ed;border-color:#1877ed}
+.bt-list .bt-blue02 strong {color:#fff;}
+.bt-list .bt-blue02::after {border-color:#fff ;}
+.bt-list .bt-blue03 {color:#fff;background:#1d5bc0;border-color:#1d5bc0}
+.bt-list .bt-blue03 span,
+.bt-list .bt-blue03 strong {color:#fff;}
+.bt-list .bt-blue03::after {border-color:#fff ;}
+.bt-list .bt-vio {color:#fff;background:#5531d1;border-color:#5531d1}
+.bt-list .bt-vio strong {color:#fff;}
+.bt-list .bt-vio::after {border-color:#fff ;}
+.bt-list .bt-vio02 {color:#fff;background:#7750c5;border-color:#7750c5}
+.bt-list .bt-vio02 strong {color:#fff;}
+.bt-list .bt-vio02::after {border-color:#fff ;}
+.bt-list .bt-orange {color:#fff;background:#da7d51;border-color:#da7d51}
+.bt-list .bt-orange span,
+.bt-list .bt-orange strong {color:#fff;}
+.bt-list .bt-orange::after {border-color:#fff ;}
+
+.bt-list .bt-gr {color:#fff;background:#403e3e;border-color:#403e3e}
+.bt-list .bt-gr strong {color:#fff;}
+.bt-list .bt-gr::after {border-color:#fff ;}
+
+.bt-list .bt-02 {display: flex;flex-wrap:wrap;}
+.bt-list .bt-02 a {flex:0 0 49%;box-sizing: border-box;}
+.bt-list .bt-02 a:nth-of-type(odd) {margin-right:2%}
+.bt-list .bt-02 a:after {content:none}
+.bt-list .bt-02 a strong {position:relative}
+.bt-list .bt-02 a strong:after {content:"";display:inline-block;width:7px;height:7px;border-top:3px solid #434343;border-right:3px solid #434343;transform: rotate(45deg)}
+
+/* 타이틀 */
+.sub-wrap .tit {margin:35px 0 20px;text-align: center;font-size:1.8rem;font-weight:bold;letter-spacing: -1px;}
+.sub-wrap .stit {margin:40px 0 15px;font-size:1.6rem;font-weight: bold;font-weight:bold}
+.sub-wrap .stit::before {content:"ㆍ"}
+
+/* 모집요강 및 장학혜택 */
+.sub-wrap ul.txt-info {padding:20px 3%;background:#f6f6f6;}
+.sub-wrap ul.txt-info li {display: flex;}
+.sub-wrap ul.txt-info li, .sub-wrap .txt-info li * {font-size:1.4rem;line-height:1.7;letter-spacing: -1px;}
+.sub-wrap ul.txt-info li > strong:first-child {width:24%;}
+.sub-wrap ul.txt-info li > strong:first-child::before {content:"ㆍ"}
+.sub-wrap ul.txt-info li > span:nth-of-type(1) {width:76%;}
+.sub-wrap ul.txt-info .bullet01 {position:relative;display:block;padding-left:15px;text-decoration: none;}
+.sub-wrap ul.txt-info .bullet01::before {content:"※";position: absolute;top:0;left:0;}
+
+/* 리스트 */
+.sub-wrap {background:#ffffff;}
+.sub-wrap .s-txt {margin-top:15px;}
+.sub-wrap .s-txt li {position: relative;padding-left:10px;font-size:1.2rem;color:#7e7e7e;}
+.sub-wrap .s-txt li::before {content: "-";position: absolute;top:0;left:0;}
+.sub-wrap .con-info {margin:30px 0 15px;font-size:1.4rem;text-align: center;line-height: 1.5;}
+.sub-wrap .con-tel {margin-bottom:40px;font-size:1.8rem;text-align: center;font-weight: bold;}
+.sub-wrap .top-list {margin-bottom:10px;}
+.sub-wrap .top-list li {padding-left:20px;font-size:1.4rem;line-height: 1.8;background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/common/ico_check_gr.png") left 8px no-repeat;background-size:14px 11px }
+.sub-wrap .info-wrap {background:#f6f6f6;}
+.sub-wrap .info-wrap ul {padding:0 8%}
+.sub-wrap .info-wrap ul:first-child{margin:0 0 20px;}
+.sub-wrap .info-01 li {position:relative;color:#000;font-size:1.6rem;font-weight:bold;letter-spacing:-1px;}
+.sub-wrap .info-01 li:first-child strong{text-decoration:underline;}
+.sub-wrap .info-01 li span::before {display:block;position:absolute;top:0;left:-15px;margin:0 0 20px;content:"※";}
+.sub-wrap .info-note {padding:0 5%;color:#8a8989;font-size:1.2rem}
+.sub-wrap .info-02 li {position:relative;color:#8a8989;font-size:1.4rem;}
+.sub-wrap .info-02 li span::before {display:block;position:absolute;top:0;left:-15px;margin:0 0 20px;content:"※";color:#8a8989;}
+
+/* step */
+.info-step li {position:relative;padding:10px 0;margin-bottom:30px;text-align: center;font-size:1.4rem;border:1px solid #c3c3c3;border-radius: 10px;}
+.info-step li span {font-size:1.2rem;color:#7e7e7e;}
+.info-step li .num {display:inline-block;padding:5px 10px;background:#83cdea;font-size:rem;color:#fff;border-radius:15px}
+.info-step li .tit {display: block;margin:10px 0 3px;font-size:1.5rem}
+.info-step li .bt-go {display: inline-block;padding:2px 5px;border-radius:3px;font-size:1.2rem;color:#fff;background:#c4c4c4}
+.info-step li::after {content:"";display: block;width:22px;height:13px;position: absolute;top:calc(100% + 10px);left:50%;transform: translateX(-50%);background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/common/half_arr.jpg") left top 100%/100% no-repeat;}
+.info-step li:last-child::after {content: none;}
+
+/* 움직이는 재생 버튼 : 위치값/배경컬러는 각각 설정 */
+.bt-play {position:absolute;}
+.bt-play p {position: relative;}
+.bt-play p img {width:41px;height:41px;z-index:3;position: relative;animation: btShadow ease-in-out 2s infinite;}
+.bt-play p::before {content:"";display:block;width: 110%;height: 110%;position:absolute;top:-5%;left:-5%;border-radius: 50%;z-index:2;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 1s infinite;}
+.bt-play p::after {content:"";display:block;width: 130%;height: 130%;position:absolute;top:-15%;left:-15%;border-radius: 50%;z-index:1;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 2s infinite;}
+
+
+/* 등록안내 */
+.sub-wrap div.txt-info {padding:20px 7%;background:#f6f6f6;}
+
+.sub-wrap .txt-info .list-check {text-align: left;}
+.sub-wrap .txt-info .list-check li {display:flex;position: relative;padding-left:19px;font-size:1.4rem;color:#7e7e7e;line-height: 1.5;}
+.sub-wrap .txt-info .list-check li::before {content:"";display:block;width:14px;height:10px;position:absolute;top:8px;left:0;;background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/common/ico_check_gr02.png") left top 100%/100% no-repeat;}
+.sub-wrap .txt-info .list-check li strong {flex:0 0 50px}
+.sub-wrap .txt-info .list-check li u {text-decoration:none;color:#6f6f6f;font-size:1.3rem}
+
+.danka-wrap .danka{position:relative;}
+.danka-wrap .danka .danka-tit{position:absolute;top:16%;left:10%;font-size:2rem;color:#4eaaff;font-weight:300;letter-spacing:-5px;}
+.danka-wrap .danka .danka-tit strong{font-size:4rem;color:#4eaaff;font-weight:900;}
+.danka-wrap .danka .square {position:absolute;top:17.4%;left:23%;width:10rem;height:0;border-bottom: 4rem solid #4eaaff;border-left:0px solid transparent;border-right:2.3rem solid transparent;line-height:2;font-size:2rem;font-weight:700;text-align:center;color:#fff;}
+.danka-wrap .danka .circle {position:absolute;top:13%;left:70%;text-align:center;padding:2.5rem 0 0 0;width:10rem;height:10rem;box-sizing:border-box;border-radius:50%;background:linear-gradient(45deg,transparent,#3e37b1,#4655d7,#436de8,#3790f7,#3790f7);}
+.danka-wrap .danka .circle strong {font-size:1.8rem;color:#fff;}
+
+.danka-wrap .danka .danka-tit.winter strong{color:#98f9fd;font-weight:900;}
+
+/* 이미지 */
+.danka img {display:block;width:100%}
+
+/* ==================================================
+테이블
+================================================== */
+table {width:100%;border-top:2px solid #262626;}
+table * {font-size:1.3rem!important;letter-spacing: -1px;}
+table thead th {text-align:center;padding:15px 0;border-right:1px solid #d9d9d9;border-bottom:1px solid #262626;}
+table thead th:last-child {border-right: none;}
+table tbody th, table tbody td {border-bottom:1px solid #d9d9d9;}
+table tbody th {font-weight: normal;padding:15px 0;}
+table tbody td {border-left:1px solid #d9d9d9;padding:15px 2.5% 15px;line-height: 1.5;word-break: keep-all;}
+table tbody .b-l-n {border-left:none;}
+table tbody u {text-decoration: line-through;color:#9b9b9b}
+table .tr-bg td {background:#f7f0ef}
+table .txt-center {text-align: center;padding-left:0!important;padding-right:0!important}
+table td a {text-decoration: underline!important;}
+table.tbl-center th, table.tbl-center td {text-align: center;padding-left:0;padding-right:0!important}
+
+/* ==================================================
+   메가패스
+================================================== */
+.megaPass .bg-mblue{background-color: #5165ff;}
+.megaPass .bg-mred{background-color: #f8735d;}
+.megaPass .bg-myellow{background-color: #f1ad55;}
+.megaPass .txt-mblue{color: #5165ff;font-size: 1.9rem;font-weight: 600;}
+.megaPass .txt-mred{color: #f8735d;font-size: 1.9rem;font-weight: 600;}
+.megaPass .txt-myellow{color: #f1ad55;font-size: 1.9rem;font-weight: 600;}
+
+.megaPass .po-re {position: relative;line-height: 0;}
+.megaPass .po-re a.bt-pass {display:block;position:absolute;width:80%;left:9.7%;top: 89.2%; height:0;padding-top:15%;font-size:0;}
+
+.megaPass .megapass-intro-box{background-color: #f99696;box-sizing: border-box;padding: 5% 4% 13%;}
+.megaPass .megapass-intro-box p:nth-child(1){color: #fff;font-size: 1rem;}
+.megaPass .megapass-intro-box p{color: #fff;font-size: 0.9rem;}
+
+.megaPass .inner.tab{padding: 0 4%;background-color: #ffcbcb;box-sizing: border-box;}
+.megaPass .tab_menu{position:relative;}
+.megaPass .tab_menu .list{overflow:hidden;display: flex;justify-content: space-between;position: relative;height: 440px;}
+.megaPass .tab_menu .list li:not(:last-child){margin-right:2px;}
+.megaPass .tab_menu .list .btn{font-size:13px;}
+.megaPass .tab_menu .list .btn img{width: 100%;}
+.megaPass .tab_menu .list .cont{display:none; position:absolute;left: 0;top: 41px; background:#fff; text-align:center; width:100%; height:auto; line-height:100px;box-sizing: border-box;padding: 0 5%;}
+.megaPass .tab_menu .list li.is_on .cont{display:block;}
+.megaPass .tab_menu .list li.is_on .cont p.tab-tit {padding: 40px 40px 25px;box-sizing: border-box;}
+.megaPass .tab_menu .list li.is_on .cont p img{width: 100%;height: auto;display: block;}
+
+.megaPass .tab_menu .list img.img{width: 100%;height: auto;display: block;}
+.megaPass .tab_menu .list ul.member{display: flex;justify-content: space-between;margin: 20px 0 30px 0;}
+.megaPass .tab_menu .list ul.member li{width: 48%; height: 50px; background-color: #111111;text-align: center;border-radius: 50px;line-height: 50px;}
+.megaPass .tab_menu .list ul.member li a{color: #fff;font-size: 1.3rem;text-decoration: none;cursor: pointer;font-weight: 700;display: block;}
+.megaPass .tab_menu .list ul.zero{display: flex;justify-content: center;margin: 20px 0 30px 0;}
+.megaPass .tab_menu .list ul.zero li{width: 70%; height: 50px; background-color: #111111;text-align: center;border-radius: 50px;line-height: 50px;}
+.megaPass .tab_menu .list ul.zero li a{color: #fff;font-size: 1.3rem;text-decoration: none;cursor: pointer;font-weight: 600;display: block;}
+
+.megaPass ul.intro.check-point{background-color: #ffcbcb;padding: 0 4% 13%;}
+.megaPass ul.intro.check-point.list-bar li:first-child {padding-left:0;padding-bottom:5px}
+.megaPass ul.intro.check-point.list-bar li:first-child:after {display:none;}
+.megaPass ul.intro.check-point li:first-child{font-size: 1rem;}
+.megaPass ul.intro.check-point li{color: #808080;font-size: 0.9rem;letter-spacing:-.7px}
+.megaPass ul.intro.check-point li span{color: #f36160;font-size: 0.9rem;letter-spacing:-.7px}
+
+.megaPass ul.passPrice{display: flex;justify-content: space-between;flex-direction: column;padding: 0 4%;box-sizing: border-box;background-color: #f36261;gap: 10px;}
+.megaPass ul.passPrice li{background-color: #fff;display: flex;justify-content: space-between;border-radius: 10px;}
+.megaPass ul.passPrice li .top-con {width: 50%;height: 160px;}
+.megaPass ul.passPrice li .top-con p{text-align: center;}
+.megaPass ul.passPrice li .top-con p.tit{font-size: 1.2rem;color: #fff;border-radius: 50px;padding: 2% 0;width: 45%;margin: 13% auto 2%;}
+.megaPass ul.passPrice li .top-con p.tit.basic{margin: 25% auto 2%;}
+.megaPass ul.passPrice li .top-con p.main{font-size: 1.9rem;color: #000;font-weight: 600;line-height: 25px;}
+.megaPass ul.passPrice li .top-con p.cash{border: 1px solid #f73b4b;color: #f73b4b;border-radius: 2px;width: 70%;margin: 5% auto 15%;font-size: 1.3rem;padding: 2%;}
+.megaPass ul.passPrice li .btm-con {width: 50%; text-align: center;position: relative;border-left: 1px solid #dddddd;}
+.megaPass ul.passPrice li .btm-con .percent{position: absolute;left: 0px;top: 0px;  font-size: 16px; color: #fff; width: 64px;height: 64px; background: url("https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/danka/2020/bg-percent.png") no-repeat 50%/cover;}
+.megaPass ul.passPrice li .btm-con .percent p{position: absolute;left: 9px;top: 8px;color: #fff;}
+.megaPass ul.passPrice li .btm-con .percent p span{font-size: 24px;color: #fff;font-weight: 600;}
+.megaPass ul.passPrice li .btm-con .past-price{color: #aaaaaa;font-size: 1.8rem;margin-left: 10%;margin-top: 76px;}
+.megaPass ul.passPrice li .btm-con .past-price span{font-size: 2.2rem;color: #aaaaaa;}
+.megaPass ul.passPrice li .btm-con .current-price{color: #000;font-size: 2rem;font-weight: 600;}
+.megaPass ul.passPrice li .btm-con .current-price span{font-size: 3.2rem;font-weight: 700;line-height: 45px;}
+.megaPass ul.passPrice li .btm-con .erase{position: absolute;left: 18%;top: 91px;}
+.megaPass ul.passPrice.go3-megapass li .btm-con .erase img{width: 90%;}
+.megaPass ul.passPrice.go12-megapass li .btm-con .erase img{width: 101%;}
+
+.megaPass .special-apply{display: flex;justify-content: center;padding: 28px 0 50px;background-color: #f36261;}
+.megaPass .special-apply .special-btn{width: 90%;height: 50px;line-height: 50px;background-color: #000;text-align: center;border-radius: 5px;}
+.megaPass .special-apply .special-btn a{font-size: 1.6rem;color: #fff;text-decoration: none;font-weight: 600;display: block;}
+.megaPass .special-apply .special-btn a::after{content: '';display: block;width: 10px;height: 20px; float: right;transform: translateX(-200%) translateY(75%);background: url("https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/danka/2020/buy_arrow.png") no-repeat 50%/cover;}
+
+.megaPass p.txt-point{color: #FFE8AA;font-size: 11px;text-align: right;padding: 10px 4%;background-color: #f36261;}
+
+@media only screen and (max-width: 821px) {
+   .megaPass .tab_menu .list{height: 870px;}
+   .megaPass ul.passPrice li .top-con {height: 250px;}
+   .megaPass .tab_menu .list .cont{top: 80px;}
+   .megaPass ul.passPrice li .btm-con .erase{left: 35%;}
+   .megaPass ul.passPrice.go3-megapass li .btm-con .erase img{width: 65%;}
+}
+@media only screen and (max-width: 769px) {
+   .megaPass .tab_menu .list{height: 735px;}
+}
+@media only screen and (max-width: 415px) {
+   .megaPass .tab_menu .list{height: 465px;}
+   .megaPass ul.passPrice li .top-con {height: 160px;}
+   .megaPass .tab_menu .list .cont{top: 41px;}
+   .megaPass ul.passPrice li .btm-con .erase{left: 18%;}
+   .megaPass ul.passPrice.go3-megapass li .btm-con .erase img{width: 90%;}
+}
+@media only screen and (max-width: 391px) {
+   .megaPass .tab_menu .list{height: 455px;}
+}
+@media only screen and (max-width: 376px) {
+   .megaPass .tab_menu .list{height: 440px;}
+}
+
+/* ==================================================
+   2025 윈터특강
+================================================== */
+.danka.winter-special .grade-txt {position:absolute;top:0;left:calc(70vw/7.2);display:flex;justify-content:center;align-items:center;width:calc(303vw/7.2);height:calc(92vw/7.2);border-radius:0 0 10px 10px;background:#38006d;box-sizing:border-box}
+.danka.winter-special .grade-txt p {color:#FFF;font-size:calc(34vw/7.2);font-weight:bold;line-height:1.2;letter-spacing:-0.5px;}
+.danka.winter-special .v-txt {font-size:calc(30vw/7.2);}
+.danka.winter-special .vis-info {width:fit-content;display:flex;position:absolute;top:calc(830vw/7.2);left:calc(141vw/7.2);text-align:left;justify-content:space-between;flex-direction: column}
+.danka.winter-special .vis-info div:last-child {line-height: 1;}
+.danka.winter-special .vis-info div p {display:inline-block;vertical-align:middle;text-align:left;font-size:calc(30vw/7.2);font-weight:bold;letter-spacing: -0.1em;line-height:1}
+.danka.winter-special .vis-info div p:first-child {display:inline-flex;justify-content:center;align-items:center;width:calc(174vw/7.2);height:calc(54vw/7.2);color:#FFF;border-radius:70px;background-color:#001740;box-sizing:border-box}
+.danka.winter-special .vis-info div:not(:first-child) {margin-top: 1.9vw;}
+
+/* ==================================================
+   2025 정규,특강 단과
+================================================== */
+.danka.go3 {position:relative;overflow:hidden;}
+.danka.go3 img {display:block;width:100%}
+.danka.go3 .visual-wrap {position:absolute;top:calc(104vw/7.2);left:calc(74vw/7.2);}
+.danka.go3 .visual-wrap .top-info {padding-top:calc(50vw/7.2);display:flex;align-items:center;}
+.danka.go3 .visual-wrap .top-info .grade {min-width:calc(236vw/7.2);padding:7px 0;text-align:center;color:#FFF;font-size:calc(30vw/7.2);font-weight:900;letter-spacing:-0.5px;border-radius:35px;background:#2F23D9}
+.danka.go3 .visual-wrap .top-info .date {margin-left:9px;color:#2F23D9;font-size:calc(50vw/7.2);font-weight:900;line-height:1}
+.danka.go3 .visual-wrap .top-info .date > strong {font-size: calc(76vw/7.2);font-weight:900;}
+.danka.go3 .visual-wrap .tit01 {width:calc(576vw/7.2);height:calc(34vw/7.2);}
+.danka.go3 .visual-wrap .tit02 {width:calc(529vw/7.2);height:calc(83vw/7.2);padding-top:calc(42vw/7.2);}
+.danka.go3 .visual-wrap .tit03 {padding-top:calc(28vw/7.2);color:#666;font-size:calc(26vw/7.2);font-weight:500;line-height:1.6;letter-spacing:-0.5px;}
+.danka.go3 .visual-wrap .v-info {padding-top:calc(50vw/7.2);} 
+.danka.go3 .visual-wrap .v-info dl {display:flex;align-items:center;}
+.danka.go3 .visual-wrap .v-info dl dt {min-width:calc(154vw/7.2);padding:4px 0;text-align:center;color:#FFF;font-size:calc(28vw/7.2);font-weight:700;letter-spacing:-0.5px;border-radius:20px;background:#2F23D9;}
+.danka.go3 .visual-wrap .v-info dl dd {padding-left:10px;font-size:calc(30vw/7.2);font-weight:700;letter-spacing:-0.5px}
+
+/* ==================================================
+   2025 am 단과
+================================================== */
+.danka.am {position:relative;overflow:hidden;}
+.danka.am img {display:block;width:100%}
+
+/* ==================================================================
+    3~4월 1학기 중간고사 대비
+================================================================== */
+.sub-wrap .danka.mid .tit {margin:0;text-align:left;}
+.danka.mid {position:relative;overflow:hidden;}
+.danka.mid img {display:block;width:100%}
+.danka.mid .visual {position:absolute;top:0;width:100%;height:calc(960vw/7.2);padding-bottom:calc(107vw/7.2)}
+.danka.mid .visual .align {position:relative;width:100%;margin-top:calc(109vw/7);}
+
+.danka.mid .top-info {margin-left:calc(61vw/7.2);}
+.danka.mid .top-info > p > img {width:calc(490vw / 7.2);}
+.danka.mid .top-info > div {position:relative;display:flex;justify-content:flex-start;margin: 6vw 0 5vw;}
+.danka.mid .top-info > div .grade {display:flex;justify-content:center;align-items:center;height:calc(70vw/7.2);margin-right:10px;padding:0 5.65vw;background:#4917AA;border-radius:35px}
+.danka.mid .top-info > div .grade strong {color:#fff;font-weight:700;letter-spacing:-0.5px;font-size: 2.2rem;line-height:1}
+.danka.mid .top-info > div .top-date {color: #222;font-size:3.5rem;font-weight:700;line-height:1}
+.danka.mid .top-info > div .top-date span {font-size: 2.5rem;font-weight:400}
+
+.danka.mid .tit.tit01 {overflow:hidden;margin-left:calc(59vw/7.2);}
+.danka.mid .tit.tit01 img {width:calc(526vw / 7.2);}
+.danka.mid .tit.tit02 {margin-top:calc(36vw/7.2);margin-left:calc(61vw/7.2);font-size:1.4rem;font-weight:300;letter-spacing:-0.5px}
+.danka.mid .tit.tit02 strong {font-weight:500;}
+.danka.mid .s-txt {margin-top:calc(21vw/7.2);margin-left:calc(60vw/7.2);text-align:left;color:#a7a7a7;font-size:1.1rem;font-weight:100;line-height:1.2;letter-spacing:-0.5px}
+
+.danka.mid .v-info {margin-top:calc(45vw/7.2);margin-left:calc(60vw/7.2);display:flex;flex-direction:column}
+.danka.mid .v-info dl {display:flex;align-items:center;text-align:center}
+.danka.mid .v-info dl:first-child {margin-bottom:7px}
+.danka.mid .v-info dt {width:calc(139vw / 7.2);padding:6px 0 7px;color:#FFF;font-size:1.4rem;font-weight:700;line-height:1;letter-spacing:-1px;border-radius:18px;background:#4917aa;box-sizing:border-box}
+.danka.mid .v-info dd {margin-left:12px;color:#2f2f2f;font-size:1.5rem;font-weight:700;line-height:1;}
+
+/* ==================================================
+	2025 반수반
+================================================== */
+.danka.half .v-info {position:absolute;left:17vw;top:92vw;display:flex;flex-direction:column;}
+.danka.half .v-info dl {display:flex;align-items:baseline}
+.danka.half .v-info dt {width:calc(154vw / 7.2);padding:5px 0 5px;text-align:center;color:#FFF;font-size:1.5rem;font-weight:700;letter-spacing:-0.5px;border-radius:27px;background-color:#080852;}
+.danka.half .v-info dd {padding-left:10px;font-size:1.5rem;font-weight:700;letter-spacing:-0.5px;color:#222;}
+.danka.half .comment {font-size:1.3rem;color:rgb(0, 0, 0, .5);position:absolute;top:115vw;left:0;width:100%;text-align: center;line-height:1.4;}
+.danka.half .comment span {text-align: left;display:inline-block;}
+
+/* ==================================================
+	2025 썸머특강
+================================================== */
+.danka.summer {position:relative;overflow:hidden;height:calc(945vw/7.2);text-align:center;padding-bottom:calc(73vw/7.2);background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/danka/2025/07/summer_visual.jpg") top center / cover no-repeat;}
+.danka.summer img {display:block;width:100%}
+.danka.summer .v-bg {position:absolute;top:0;left:0;width:100%;height:100%}
+.danka.summer .v-tit {position:relative;margin-top:calc(249vw/7.2);animation:fadeIn 1s ease-in both;}
+.danka.summer .v-tit .img {display:block;padding-left:calc(101vw/7.2);width:calc(546vw/7.2);height:calc(268vw/7.2);}
+.danka.summer .v-tit .v-shadow {position:absolute;top:calc(191vw/7.2);left:calc(101vw/7.2);width:calc(525vw/7.2);height:calc(194vw/7.2);animation: wave 5s linear infinite;}
+.danka.summer .v-tit .v-wave {position:absolute;top:calc(205vw/7.2);right:calc(40vw/7.2);width:calc(55vw/7.2);height:calc(53vw/7.2);animation: waveFlow 5s linear infinite;}
+
+.danka.summer .v-obj01 {position:absolute;top:calc(479vw/7.2);left:calc(85vw/7.2);width:calc(32vw/7.2);height:calc(31vw/7.2);animation:fadeIn 1s ease-in both;}
+.danka.summer .v-obj02 {position:absolute;top:calc(519vw/7.2);left:calc(30vw/7.2);width:calc(50vw/7.2);height:calc(49vw/7.2);animation:fadeIn 1s ease-in both;}
+.danka.summer .v-obj03 {position:absolute;bottom:0;left:0;width:calc(113vw/7.2);height:calc(124vw/7.2);animation:fadeIn 1s ease-in both;}
+.danka.summer .v-obj04 {position:absolute;top:0;right:0;width:calc(109vw/7.2);height:calc(127vw/7.2);animation:fadeIn 1s ease-in both;}
+
+.danka.summer .v-txt {position:relative;margin:0 auto;padding-top:calc(38vw/7.2);;color:#FFF;font-size:calc(28vw/7.2);font-weight:500;line-height:1.4;letter-spacing:-1px;animation:fadeIn 1s 1s ease-in both;}
+.danka.summer .v-grade {position:absolute;top:calc(153vw/7.2);left:calc(75vw/7.2);width:calc(189vw/7.2);height:calc(119vw/7.2);animation:fadeIn 1s ease-in both;}
+.danka.summer .v-info {position:relative;padding-top:calc(54vw/7.2);padding-left:calc(147vw/7.2);animation:fadeIn 1s 1s ease-in both;}
+.danka.summer .v-info dl {display:flex;align-items:center}
+.danka.summer .v-info dt {width:calc(144vw / 7.2);padding:4px 0 5px;font-size:1.4rem;font-weight:700;letter-spacing:-0.5px;border-radius:27px;background:#ff97a4;}
+.danka.summer .v-info dd {padding-left:12px;color:#FFF;font-size:1.5rem;font-weight:500;letter-spacing:-0.5px;}
+.danka.summer .stxt {margin-top:12px;color:rgb(0, 0, 0, .4);font-size:calc(22vw/7.2);line-height:1.4;letter-spacing:-0.4px;animation:fadeIn 1s 1s ease-in both;}
+
+@keyframes waveFlow {
+   0% {
+     transform: translateX(-20px);
+     opacity: 0;
+   }
+   50% {
+     transform: translateX(0px);
+     opacity: 1;
+   }
+   100% {
+     transform: translateX(0px);
+     opacity: 0;
+   }
+ }
+
+@keyframes wave {
+   0%, 100% {
+       transform: translateX(0);
+   }
+   50% {
+       transform: translateX(3px);
+   }
+}
+
+/* ==================================================================
+    2026 대학별 논술 파이널 특강
+================================================================== */
+
+.danka.non .v-wrap {background:url('https://russeldata.megastudy.net/campus/images/russel/intro/danka/2025/07/non/non_bg.jpg') no-repeat center top;position:relative;text-align:left;padding:0px 0 calc(106vw/7.2) calc(66vw/7.2);overflow:hidden; background-size: cover;}
+.danka.non .visual-top-txt{padding-top: calc(109vw/7.2); font-size: calc(30vw/7.2); font-weight: 800; letter-spacing: 2.6px; color: #fff; line-height: 1;}
+.danka.non .v-wrap .label {position:relative;background: #0a001e;padding: calc(13vw/7.2) calc(30vw/7.2);border-radius: 10px; display: inline-block; margin-top: calc(60vw/7.2);}
+.danka.non .v-wrap .label span {font-weight: 700;font-size: calc(30vw/7.2);line-height: 1;color: #fff;}
+.danka.non .visual-tit {padding-top:calc(33vw/7.2);position:relative;z-index:2;}
+.danka.non .visual-tit div {animation: expand 3s ease forwards;overflow:hidden;}
+.danka.non .visual-tit div img{width: calc(575vw/7.2); height: calc(222vw/7.2);}
+
+@keyframes expand {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.danka.non .visual-tit p {font-size:37px;color:#fff;font-weight:bold;margin-bottom:30px;}
+.danka.non .visual-stxt {color: #fff;font-size:calc(30vw/7.2); font-weight: bold; margin-top:calc(50vw/7.2);position:relative;z-index:2;}
+.danka.non .visual-obj {position:absolute;bottom: calc(80vw/7.2);right: calc(-56vw/7.2);width: calc(270vw/7.2);}
+.danka.non .visual-obj .obj-target{position: relative; animation: fadeIn 0.5s 1s ease forwards, targetShake 0.5s 2s cubic-bezier(.36,.07,.19,.97) both; opacity: 0; width: calc(202vw/7.2);}
+.danka.non .visual-obj .obj-bullet{position: absolute;top: calc(61vw/7.2);left: calc(38vw/7.2);animation: bullet 0.2s 1.6s both;opacity: 0;z-index: 2;transform-origin: top;}
+.danka.non .visual-obj .obj-bullet img{width: calc(59vw/7.2); height: calc(39vw/7.2);}
+.danka.non .visual-obj .obj-bullet-bar{position: absolute;top: calc(-53vw/7.2);left: calc(-177vw/7.2);mix-blend-mode: screen;opacity: 0;animation: rightStretch .5s 1.6s both ease; overflow: hidden;}
+.danka.non .visual-obj .obj-bullet-bar img{width: calc(278vw/7.2); height: calc(159vw/7.2);}
+.danka.non .visual-obj .obj-shadow{position: absolute;top: calc(175vw/7.2);left: calc(8vw/7.2);mix-blend-mode: multiply;animation: fadeIn 0.5s 1s ease forwards;opacity: 0;}
+.danka.non .visual-obj .obj-shadow img{width: calc(129vw/7.2); height: auto;}
+
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+@keyframes rightStretch {
+   0% {
+      width: 0;
+      opacity: 0;
+   }
+
+   100% {
+      width: 335px;
+      opacity: 1;
+   }
+}
+@keyframes bullet {
+   0% {
+   transform: translate(-18px, -10px);
+   opacity: 0;
+   transform-origin: center;
+   }
+   10% {
+      opacity: 1;
+   }
+   100% {
+   transform: translate(0px, 0px);
+   opacity: 1;
+   }
+}
+
+@keyframes targetShake {
+   0% { transform: translate(0, 0) rotate(0); }
+   10% { transform: translate(-3px, 1px) rotate(-2deg); }
+   20% { transform: translate(3px, -1px) rotate(2deg); }
+   30% { transform: translate(-3px, 1px) rotate(-2deg); }
+   40% { transform: translate(3px, -1px) rotate(2deg); }
+   50% { transform: translate(-2px, 0) rotate(-1deg); }
+   60% { transform: translate(2px, 0) rotate(1deg); }
+   70% { transform: translate(-1px, 0) rotate(-1deg); }
+   80% { transform: translate(1px, 0) rotate(1deg); }
+   90% { transform: translate(0, 0) rotate(0); }
+   100% { transform: translate(0, 0) rotate(0); }
+}
+.danka.non .vis-info {margin-top:calc(50vw/7.2);position:relative;z-index:2;}
+.danka.non .vis-info div:not(:first-child) {margin-top:calc(30vw/7.2)}
+.danka.non .vis-info div p {color: #fff;text-align:left;font-size:calc(28vw/7.2);font-weight:300;margin-top:calc(15vw/7.2);}
+.danka.non .vis-info div p span {display: block;color: #af87d0;font-size: calc(24vw/7.2);margin-top:3px;}
+.danka.non .vis-info div p:first-child {line-height: 1;padding: 9px 0; text-align:center;vertical-align:top;background:#0a001e;color:#fff;border-radius:30px;font-size:calc(28vw/7.2);width:calc(140vw/7.2); margin-top: 0;}

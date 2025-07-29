@@ -1,0 +1,92 @@
+/*
+Author: Megastudy Russel Mobile
+Description: by Park Sun Young
+*/
+
+/* ==================================================
+   러셀 인트로
+================================================== */
+body {background:#e1e3e7;}
+header {position: relative;padding:0;border-bottom:1px solid #0081ff;background: #fff}
+header h1 {text-align: center}
+header h1 img {width:166px!important;height:30px!important;vertical-align: top;}
+header .btn-goRussel {position: absolute;top:13px;left:12px;z-index:10;display:inline-block;width:20px;}
+header .btn-goRussel img {width:19px;height:24px;}
+header .btn_mypage {position: absolute;top:14px;right:12px;z-index:10;width:21px;height:22px;overflow: hidden;line-height:0;}
+header .btn_mypage img {width:100%;height:44px;}
+header .btn_mypage.on img {margin-top:-22px;}
+
+.top-banner {position: relative}
+.top-banner img {width:100%;}
+.top-banner .btn-close {position: absolute;top:15px;right:15px;}
+.top-banner .btn-close img {height:19px;width:19px;}
+
+.intro-visual {position: relative;overflow: hidden;margin:0 0 10px 0;}
+.intro-visual .visual {font-size:0;}
+.intro-visual .visual img {width:100%;}
+.intro-visual .visual .num-box {position: absolute;color:#025bbb!important;width:33%;text-align:center;border:1px solid #679bd3;border-radius: 3px;display:inline-block;letter-spacing: -1px;;font-weight: normal;padding:2px 0;font-size:2vh!important;line-height:1.5}
+.intro-visual .visual .num-box strong {color:#333}
+.intro-visual .visual .pass-num01 {text-align:center;font-weight:bold;color:#343434;;bottom:24%;left:4%;}
+.intro-visual .visual .pass-num02 {text-align:center;font-weight:bold;color:#343434;bottom:15%;left:4%;}
+.intro-visual .visual .pass-num03 {width:45%;text-align:right;font-size:10vh!important;font-weight:bold;color:#025bbb;position: absolute;bottom:18%;right:12%;letter-spacing: -5px;line-height:1}
+.intro-visual .visual .pass-date {font-size:1.6vh;color:#666;position: absolute;top:93.5%;left:5.3%;text-align: center;}
+.intro-visual .branch {width:83%;position:absolute;bottom:15%;left:0px;padding:0 8.5%;}
+.intro-visual .branch li {margin-bottom:0.5rem;width:100%;box-sizing: border-box;display:flex;display: -webkit-flex;flex-wrap: wrap;display: -ms-flexbox;flex-wrap: wrap;}
+.intro-visual .branch li a {flex:1 1 auto;padding:0.7rem 0;margin-right:0.5rem;display: inline-block;text-align: center;background: #f2f2f2;border-radius:3px;color:#333;font-weight:bold;font-size:1.3rem}
+.intro-visual .branch.no-2 li a {background-color:#52525a;color:#f3f4f4;}
+.intro-visual .branch li a:last-child {margin-right:0;}
+.intro-visual .branch-more {text-align:left;padding:0.5rem 3rem 0.5rem 1.5rem;width:29px;position: absolute;bottom:15px;right:17px!important;font-size:1.3rem;color:#ccc;background:rgba(0, 0, 0, 0.4);border-radius: 20px;left:auto}
+.intro-visual .branch-more .swiper-pagination-current {color:#fff;font-weight:bold;}
+.intro-visual .branch-btn {position: absolute;bottom:15px;right:17px;z-index:10}
+.intro-visual .branch-btn a img {height:26px;width:26px;}
+
+.all-layer-wrap {position:fixed;top:100%;left:0;right: 0;bottom:0;width:100%;height:100%;overflow:hidden;z-index:100;overflow:hidden;transition:all .5s cubic-bezier(0.40, 0.30, 0, 1);opacity: 0}
+.all-layer-wrap.on {opacity: 1;top: 0;}
+.all-layer-wrap .tit-box {padding:17px 0;text-align:center;font-weight:bold;color:#fff;font-size:17px;position: relative;top:0;left:0;width:100%;height:25px;z-index:2;background:#2e3542}
+.all-layer-wrap .tit-box .layer-close {position: absolute;top:15px;right:15px;}
+.all-layer-wrap .tit-box .layer-close img {width:19px;height:19px;}
+.all-layer-wrap .layer-inner {overflow-y: auto;position:absolute;top:59px;bottom:0;left:0;width:100%;box-sizing:border-box}
+.all-layer-wrap .layer-inner .wrap {position: relative;padding-bottom:1px;background:#fff}
+
+.branch-list {display: flex;display: -webkit-flex;flex-wrap: wrap;display: -ms-flexbox;background: #fff;margin-top:-1px;border-bottom:1px solid #ccc}
+.branch-list li {width:33.3%;box-sizing: border-box;text-align: center;font-size:1.6rem;border-right:1px solid #ddd;overflow: hidden;border-top:1px solid #e5e5e5;position:relative;padding-bottom:36px;}
+.branch-list li:nth-child(3n) {border-right:none;}
+.branch-list li a {display: block;position: relative}
+.branch-list li span {display: block;}
+.branch-list li .branch-name {height:100%;background:url("http://russeldata.megastudy.net/campus/images/russel/m_russel/intro/branch_bg.jpg") center center no-repeat;background-size: 94px 22px;}
+.branch-list li .branch-name span {padding:18px 0 14px;background:url("http://russeldata.megastudy.net/campus/images/russel/m_russel/intro/bullet_gray_arr.jpg") #fff 83% 53% no-repeat;background-size:7px 13px;color:#0e233e}
+.branch-list li .branch-name sup {font-weight:bold;color:  #ee3b41;font-size:0.9rem;text-decoration: none;padding:0 8px 0 2px;}
+.branch-list li .tel {height:20px;line-height:20px;padding:8px 0 6px 0;font-size:1.3rem;position: absolute;bottom:0;left:0;width: 100%;background:#f2f2f2;}
+.branch-list li .tel img {width: 10px;height: 10px;vertical-align: middle;margin-top:-2px;}
+
+.link-banner {display: flex;display: -webkit-flex;flex-wrap: wrap;display: -ms-flexbox;margin-top:10px;}
+.link-banner li {width:100%;/* width:50%; */background:#fff;position: relative;}
+.link-banner li:first-child {border-right: 1px solid #e5e5e5;box-sizing: border-box;}
+.link-banner a {display:block;/* padding:24px 0% 24px 37%; */padding:12px 0% 12px 26%;box-sizing: border-box;font-size:1.4rem;font-weight:bold;color:#111}
+.link-banner li a span{font-weight:normal;font-size:1.2rem;}
+.link-banner li img {width:40px;height:42px;position: absolute;left:10%;/* top:20px; */top:10px;}
+
+.russeltv-banner {margin-top:10px;}
+.russeltv-banner img {width:100%;}
+
+.intro-banner {position:relative;margin-top:10px;}
+.intro-banner img {width:100%;}
+.intro-banner .num{position:absolute;top: 14.6%;right:18.5%;font-size: 2.4vw !important;color:#ffe975;/* font-family:dotum,'돋움'; */font-weight:bold;}
+.intro-banner.banner02 {position: relative;}
+.intro-banner.banner02 a {position: absolute;top:0;width:50%;height:100%;display: block;font-size:0;line-height: 0;}
+
+.intro-banner.banner02 a.academy-no2 {right:0;}
+
+/* ==================================================
+   학원바로가기 메뉴(인트로 방향 다름)
+================================================== */
+.russel-panel-wrap.on {right:0!important;left:auto!important;;}
+.russel-panel-wrap {right:100%!important;left:auto!important;;}
+
+.russel-panel-wrap .russel-tab-none:after {height:0;width:0;display:none;}
+.russel-panel-wrap .russel-tab-none p {font-size:1.7rem;padding:20px 0 18px 0;color:#0081ff;font-weight: bold;border-bottom:2px solid #0081ff;text-align: center;width:100%}
+
+/* ==================================================
+    배너 모두 보기
+================================================== */
+.main-wrap {overflow:hidden;}

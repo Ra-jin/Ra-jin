@@ -1,0 +1,368 @@
+@import url(/css/danka_common.css);
+
+/* ==================================================
+   common
+================================================== */
+
+.final-wrap {overflow: hidden;}
+.final-wrap .container {background: #f4f4f4;padding: 0 4% 60px;}
+
+/*fixed bar*/
+.final-wrap .fixed-bar {width: 100%;height: 50px;line-height: 50px;background-color: #ffe8b4;position: fixed;bottom: 0;z-index: 5;text-align: center;}
+.final-wrap .fixed-bar a {color: #1e1a16;font-size: 1.6rem;font-weight: bold;display: block;letter-spacing: -2px;}
+/*//fixed bar*/
+
+/* .s-txt li {margin:0 4%;color: #bbbbbb;font-size: 1rem;letter-spacing: -1px;} */
+.final-wrap .swiper-pagination span {width:10px!important;height:10px!important;}
+.final-wrap .swiper-pagination span.swiper-pagination-bullet-active {width:24px!important;border-radius: 5px!important;background:#333333}
+
+.final-wrap .r-txt {text-align: right;font-size: 1.1rem;color: #7e684e;}
+.final-wrap .r-txt.type02 {color: #887b6b;letter-spacing: -1px;padding: 5px 0 0;}
+
+
+
+
+/* .sub-wrap {background: #f2f2f2;} */
+.sub-wrap th,.sub-wrap td {background:#fff}
+.tbl-benefit tbody tr th {background: #f6f6f6;}
+
+footer {padding-bottom:65px}
+
+
+/* ==================================================
+   key color
+================================================== */
+.recruit-tit strong, .recruit-stit strong, .setp-diagram li span, .step-txt .step-tit {color:#7b5a30}
+.recruit-tit{color: #333333;background: #f4f4f4;}
+
+.setp-diagram {text-align: center;}
+.setp-diagram li strong {background:#7b5a30;text-align: center;}
+.setp-diagram::after {border-color:#7b5a30;}
+
+/* .recruit-tit span{font-size: 2.4rem;color: #7b5a30;font-weight: bold;letter-spacing: -2px;} */
+
+
+/* ==================================================
+   모집안내
+================================================== */
+.recruit-wrap {position:relative;padding: 0 5%;background: #f2f2f2;}
+/* .recruit-stit span {color: #7b5a30;} */
+
+.tbl-type01 {border-collapse:separate;}
+.tbl-type01 tbody td {padding: 10px 1% 10px;}
+
+.sticky {position: sticky;top: 0;left: 0;z-index: 1;background: #fff;}
+.stickyGj {position: sticky;top: 0;left: 74.66px;z-index: 1;background: #fff;}
+.stickyDj {position: sticky;top: 0;left: 64px;z-index: 1;background-color: #fff;}
+.stickyYt {position: sticky;top: 0;left: 73.13px;z-index: 1;background-color: #fff;}
+.stickyPc {position: sticky;top: 0;left: 64px;z-index: 1;background-color: #fff;}
+.stickyCj {position: sticky;top: 0;left: 60.94px;z-index: 1;background-color: #fff;}
+.stickyJj {position: sticky;top: 0;left: 64px;z-index: 1;background-color: #fff;}
+.stickyCt {position: sticky;top: 0;left: 60.94px;z-index: 1;background-color: #fff;}
+.stickyCt2 {position: sticky;top: 0;left: 91.42px;z-index: 1;background-color: #fff;}
+.final-wrap .txt_left {text-align: left;font-size:1.2rem;}
+
+.container .list-bullet {margin: 10px 0 0;}
+.campus-wrap .tbl-type01 tbody td {padding:10px 0.5%}
+.campus-wrap .tbl-type01 .stickyH {position:sticky;top:0;left:0;border-right:1px solid #ddd;z-index: 1;}
+.campus-wrap .tbl-type01 .bl-none {border-left:none}
+.campus-wrap .tbl-type01 .l60 {left:60px;border-left:none}
+
+
+/* ==================================================
+   visual
+================================================== */
+.visual-wrap {overflow:hidden;position: relative;height: 119vw;background: #312f2c;}
+.visual-wrap .img-bg {position: absolute;top:0;left:0;width: 100%;}
+.visual-wrap .img-bg img {width: 100%;}
+
+.visual-wrap .v-txt {position:absolute;left:0;z-index: 1;}
+.visual-wrap .v-txt img {width:100%;}
+.visual-wrap .v-txt.txt-01 {font-size: 1.3rem;color: #d0d0d0;letter-spacing: -1.2px;top: 70vw;width: 100%;text-align: center;}
+.visual-wrap .v-txt.txt-02 {top: 21vw;width: 100%;text-align: center;padding: 0 12%;box-sizing: border-box;}
+.visual-wrap .v-txt.txt-03 {top: 30vw;width: 100%;text-align: center;padding: 0 5%;box-sizing: border-box;}
+
+.visual-wrap .info-box {position:absolute;top: 88vw;left: 50%;transform: translateX(-50%);text-align: left;z-index: 1;}
+.visual-wrap .info-box li {display:flex;align-items: baseline;white-space: nowrap;}
+.visual-wrap .info-box li p {font-weight: bold;letter-spacing: -1px;}
+.visual-wrap .info-box li p:nth-child(1) {margin:0 10px 10px 0;padding:5px 7px;border-radius:25px;color:#111111;font-size: 1.2rem;background:#ffe8b4;text-align: center;width: 100%;min-width: 46%;}
+.visual-wrap .info-box li p.cont_bd {margin:0 10px 10px 0;padding:5px 14px;border-radius:25px;color:#111111;font-size: 1.2rem;background:#ffe8b4;text-align: center;width: auto;min-width: auto;}
+.visual-wrap .info-box li p.cont_gn {margin:0 10px 10px 0;padding:5px 14px;border-radius:25px;color:#111111;font-size: 1.2rem;background:#ffe8b4;text-align: center;width: auto;min-width: auto;}
+.visual-wrap .info-box li p:nth-child(2) {width:60%;color:#ffffff;font-size: 1.4rem;}
+.visual-wrap .info-box li p span {display: block;margin-top:3px;font-size: 1rem;color:#999981;letter-spacing: -1px;}
+
+
+.visual-wrap .ico-dday {position:absolute;top: 0;right: 0;width:112.5px;height:40px;background:linear-gradient(90deg, #fbe3ae,#c09359);border-radius: 0 0 0 15px;}
+.visual-wrap .ico-dday p {position:absolute;top:50%;left:50%;width:100%;transform: translate(-50%,-50%);color:#201e1c;font-size: 1.5rem;line-height: 1;text-align: center;}
+.visual-wrap .ico-dday p strong {font-weight: 800;font-size: 1.5rem}
+
+.cont-all-wrap {position: relative;padding-top: 65px;}
+.cont-all-wrap.intro {position: relative;padding-top: 0px;}
+
+.visual-wrap .v-txt.txt-02 {animation: slide-top 1s both;}
+.visual-wrap .v-txt.txt-03 {animation: slide-in-elliptic-top-fwd 1s .5s both;}
+
+
+.fix-menu {background-color:#f4f4f4;display:flex;position:absolute;top:0;left:0;width:100%;box-sizing:border-box;line-height:0}
+.fix-menu.intro {display: none;}
+.fix-menu li {background-color:#adadad;color:#e0e0e0;font-size:1.5rem;font-weight:bold;line-height:1.2;margin-left:1px;padding:15px 0 14px;width:100%;letter-spacing:-1px;text-align:center;}
+.fix-menu li.on {color:#1e1a16;background-color:#ffe8b4}
+.fix-menu.fix {position:fixed;top:101px;z-index:4;}
+
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-top {
+   0% {
+     -webkit-transform: translateY(100px);
+             transform: translateY(100px);
+             opacity: 0;
+   }
+   100% {
+     -webkit-transform: translateY(0);
+             transform: translateY(0);
+             opacity: 1;
+   }
+ }
+ @keyframes slide-top {
+   0% {
+     -webkit-transform: translateY(100px);
+             transform: translateY(100px);
+             opacity: 0;
+   }
+   100% {
+     -webkit-transform: translateY(0);
+             transform: translateY(0);
+             opacity: 1;
+   }
+ }
+ 
+
+.slide-in-elliptic-top-fwd {
+	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+
+/**
+ * ----------------------------------------
+ * animation slide-in-elliptic-top-fwd
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-elliptic-top-fwd {
+   0% {
+     -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+             transform: translateY(-600px) rotateX(-30deg) scale(0);
+     -webkit-transform-origin: 50% 100%;
+             transform-origin: 50% 100%;
+     opacity: 0;
+   }
+   100% {
+     -webkit-transform: translateY(0) rotateX(0) scale(1);
+             transform: translateY(0) rotateX(0) scale(1);
+     -webkit-transform-origin: 50% 1400px;
+             transform-origin: 50% 1400px;
+     opacity: 1;
+   }
+ }
+ @keyframes slide-in-elliptic-top-fwd {
+   0% {
+     -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+             transform: translateY(-600px) rotateX(-30deg) scale(0);
+     -webkit-transform-origin: 50% 100%;
+             transform-origin: 50% 100%;
+     opacity: 0;
+   }
+   100% {
+     -webkit-transform: translateY(0) rotateX(0) scale(1);
+             transform: translateY(0) rotateX(0) scale(1);
+     -webkit-transform-origin: 50% 1400px;
+             transform-origin: 50% 1400px;
+     opacity: 1;
+   }
+ }
+ 
+
+/*원서접수버튼*/
+.goto-wrap {display: flex;justify-content: space-between;gap: 5px;}
+.goto-wrap .btn-link {flex: 1;font-size: 1.3rem;line-height: 1.3;padding: 10px 0;height: 30px;}
+.goto-wrap .btn-link::after {top: 20px;right: 11px;}
+
+/*//원서접수버튼*/
+
+
+
+/* ==================================================
+   contents
+================================================== */
+
+/*러셀 수능 파이널 합격전략 영역*/
+.cont-wrap {padding: 0 4% 60px;}
+.cont-wrap.wrap01 {background: #55422a;padding: 40px 4% 49px;}
+
+.strategy-slide {padding-bottom:42px;}
+.strategy-slide img {width:100%}
+.strategy-slide .swiper-slide {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background: #fff;border-radius: 12px;}
+.strategy-slide .swiper-slide strong {color: #55422a;font-size: 1.5rem;text-align: center;letter-spacing: -1px;display: block;margin: 32.5px 0 15px;}
+.strategy-slide .swiper-slide ul {padding: 20px 0 30px 10vw;margin: 0 !important;}
+.strategy-slide .swiper-slide ul li {font-size: 1.3rem;color: #505050;letter-spacing: -1.3px;}
+
+.cont-wrap.wrap01 .strategy-slide .swiper-pagination-bullets span.swiper-pagination-bullet-active {background:#ffffff !important;}
+.cont-wrap.wrap01 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {background: #887b6b !important;opacity: 1;}
+/*//러셀 수능 파이널 합격전략 영역*/
+
+
+
+/*러셀 파이널 정규반 프로그램 영역*/
+.cont-wrap.wrap02 {background: #d0ab7d;}
+
+.teacher-rolling-inner {padding: 40px 0 40px;}
+.teacher-rolling .swiper-wrapper {transition-timing-function: linear;}
+.teacher-rolling .swiper-slide {width:27%!important;padding-bottom:5px;}
+.teacher-rolling .swiper-slide:nth-of-type(2n) {padding-top:10%}
+.teacher-rolling .swiper-slide .t-name {margin-bottom:10px;text-align: left;}
+.teacher-rolling .swiper-slide .t-name dt {font-size:1.1rem;color: #222222;display:flex;align-items:flex-end;height:30px}
+.teacher-rolling .swiper-slide .t-name dd {font-size:1.3rem !important;color: #ffffff;}
+.teacher-rolling .swiper-slide .t-name dd strong {font-size:1.3rem !important;color: #ffffff;}
+.teacher-rolling .swiper-slide img {width:100%;box-shadow: 3px 3px 10px rgba(1, 1, 1, .2);background-color: #f3d6b2;}
+.teacher-wrap .teacher-sub-list .t-explain , .teacher-wrap .teacher-sub-list .t-info, .teacher-wrap .teacher-sub-list .t-info strong {color: #fff!important;}
+
+.final-wrap .teacher-wrap {padding: 45px 0 50px;}
+.final-wrap .teacher-wrap .teacher-sub-list .t-sub {color: #222222;}
+.final-wrap .teacher-wrap .teacher-sub-list .t-info {color: #fff;}
+.final-wrap .teacher-wrap .teacher-sub-list .t-info strong{color: #fff;}
+.final-wrap .teacher-wrap .teacher-sub-list .pic {background: #f3d6b2;}
+/*//러셀 파이널 정규반 프로그램 영역*/
+
+
+
+/*단과 영역*/
+.danka-wrap > span {display: block;position:relative;padding:25px 0 0;background:#fff;border-radius: 10px;letter-spacing: -1px;}
+.danka-wrap > span:last-child {margin-bottom: 0;}
+.danka-wrap > span p {text-align: center; margin-bottom:5px;font-size: 1.3rem;color:#575757;font-weight: bold;}
+.danka-wrap > span strong {font-size: 1.7rem;color: #55422a;text-align: center;font-weight: bold;display: block;}
+.danka-wrap > span ul {margin: 10px 5% 25px;}
+.danka-wrap > span ul li {position: relative;padding:0 0 0 19px;font-size: 1.2rem;color: #666;line-height: 1.7;letter-spacing: -1px;line-height: 1.5;}
+.danka-wrap > span ul li::before {display: block;position:absolute;top:2px;left:0;width:15px;height:14px;background:url('https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2023/final/ico_check.png') left top no-repeat;background-size:100% auto;content:"";}
+
+.danka-wrap a {display: block;background: #55422a;color: #ffffff;font-weight: 600; font-size: 1.3rem;text-align: center;padding:  15px 0;border-radius: 0 0 10px 10px;}
+.danka-wrap .danka-link:nth-child(n+2) {margin-top: 15px;}
+
+/*학년별로 나뉠 때*/
+.danka-wrap div {display: flex;justify-content: space-between;gap: 1px;}
+.danka-wrap div > a{display: block;flex: 1;text-align: center;font-size: 1.3rem;color: #ffffff;font-weight: 600;background: #55422a;padding: 15px 0;line-height: 1;letter-spacing: -1px;}
+.danka-wrap div > a:first-child {border-radius: 0 0 0 10px;}
+.danka-wrap div > a:nth-child(2) {border-radius: 0 0 0 0px;}
+.danka-wrap div > a:last-child {border-radius: 0 0 10px 0;}
+/*//단과 영역*/
+
+
+
+/*면학분위기로 소문난 바른공부 자습전용관 영역*/
+.cont-wrap.wrap03 {background: #dec099;}
+
+.baja-slide {padding:35px 0;}
+.baja-slide img {width:100%}
+.baja-slide .swiper-slide {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background: #fff;border-radius: 12px;}
+.baja-slide .swiper-slide strong {color: #55422a;font-size: 1.5rem;text-align: center;letter-spacing: -1px;display: block;margin: 32.5px 0 15px;}
+.baja-slide .swiper-slide ul {padding: 20px 0 34px 10vw;margin: 0 !important;}
+.baja-slide .swiper-slide ul li {font-size: 1.3rem;color: #505050;letter-spacing: -1.3px;}
+
+.cont-wrap.wrap03 .baja-slide .swiper-pagination-bullets span.swiper-pagination-bullet-active {background:#ffffff !important;}
+.cont-wrap.wrap03 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {background: #887b6b !important;opacity: 1;}
+
+.st-review {margin-top: 15px; border-radius: 15px;background:url('https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2023/final/review_bg.png') #ffffff no-repeat 0 0;background-size: cover;}
+.st-review > p {padding: 45px 9% 0; font-size: 1.2rem;color: #222222;text-align: left;letter-spacing: -1px;line-height: 1.5;}
+.st-review > div {display: flex;justify-content: flex-end;padding: 10px 25px 20px 0;}
+.st-review > div > p {width: 60px;}
+.st-review > div .txt {text-align: right;margin: 8px 10px 0 0;}
+.st-review > div .txt strong {font-size: 1.2rem;color: #685032;font-weight: bold;letter-spacing: -1px;}
+.st-review > div .txt p {font-size: 1.2rem;color: #555555;}
+/*//면학분위기로 소문난 바른공부 자습전용관 영역*/
+
+
+
+/*입시 담임선생님의 파이널 맞춤 관리 영역*/
+.cont-wrap.wrap04 {background: #f2dabc;}
+
+.mng-slide {padding:35px 0;}
+.mng-slide img {width:100%}
+.mng-slide .swiper-slide {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background: #fff;border-radius: 12px;}
+
+.mng-slide .swiper-slide strong {color: #55422a;font-size: 1.5rem;text-align: center;letter-spacing: -1px;display: block;margin: 32.5px 0 15px;}
+.mng-slide .swiper-slide ul {padding: 20px 0 34px 10vw;margin: 0 !important;}
+.mng-slide .swiper-slide ul li {font-size: 1.3rem;color: #505050;letter-spacing: -1.3px;}
+
+.cont-wrap.wrap04 .mng-slide .swiper-pagination-bullets span.swiper-pagination-bullet-active {background:#ffffff !important;}
+.cont-wrap.wrap04 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {background: #887b6b !important;opacity: 1;}
+/*//입시 담임선생님의 파이널 맞춤 관리 영역*/
+
+
+
+/*파이널 실전 콘텐츠 & 집체 모의고사 영역*/
+.pre-cont {padding-top:35px;background:#fff0dd;}
+.pre-cont .tab-wrap {display: flex;margin:0 4%;flex-wrap: wrap;gap: 2px;}
+.pre-cont .tab-wrap a {letter-spacing: -1px; width: 49.8%;overflow: hidden;padding:15px 0;margin-right:-1px;text-align: center;font-size: 1.4rem;color:#fff;font-weight: bold;border-bottom:0;background:#bbae9e;line-height: 1.2;}
+.pre-cont .tab-wrap a:nth-child(1) {border-radius: 10px 0px 0 0;}
+.pre-cont .tab-wrap a:nth-child(2) {border-radius: 0px 10px 0 0;}
+.pre-cont .tab-wrap a.pt25 {padding-top: 25px;}
+.pre-cont .tab-wrap a.on {color: #fff;background:#7b5a30}
+.pre-cont .tab-cont {overflow: hidden; display: none;margin:0 4%;background: #fff;padding: 0 0 40px;border-radius: 0 0 10px 10px;border: 1px solid #bbae9e;}
+.pre-cont .tab-cont a {background: #333333;color: #ffffff;font-size: 1.4rem;text-align: center;border-radius: 50px;padding: 14px 0;line-height: 1;width: 150px;letter-spacing: -1px; display: flex;justify-content: center;margin: 0 auto;}
+.pre-cont .tab-cont > div {display: flex;justify-content: space-between;padding-top: 40px;}
+.pre-cont .tab-cont > div > p {width: 42%;}
+.pre-cont .tab-cont > div .txt {width: 54%;display: flex;justify-content: center;align-items: flex-start;flex-direction: column;}
+.pre-cont .tab-cont > div .txt p {text-align: left; color: #55422a;font-size: 1.2rem;letter-spacing: -1.2px;}
+.pre-cont .tab-cont > div .txt strong {text-align: left; color: #55422a;font-size: 2.3rem;letter-spacing: -1px;line-height: 1.3;display: inline-block;margin-top: 10px;}
+.pre-cont .tab-cont .list-dot {margin: 25px 0 25px 8% !important;}
+.pre-cont .tab-cont .list-dot li {font-size: 1.2rem;color: #555555;letter-spacing: -1px;}
+
+.pre-cont img {width:100.3%;}
+.pre-cont p:last-child {text-align: right;color: #8eabbf;font-size: 1rem;padding: 15px 4% 0;}
+
+/*3개 탭일경우*/
+.pre-cont .tab-wrap.russel a {width: 33.2%;overflow: hidden;padding:10px 0;margin-right:-1px;text-align: center;font-size: 1.4rem;color:#fff;font-weight: bold;border-bottom:0;background:#bbae9e;line-height: 1.2;}
+.pre-cont .tab-wrap.russel a:nth-child(1) {border-radius: 10px 0 0 0;}
+.pre-cont .tab-wrap.russel a:nth-child(2) {border-radius: 0px 0 0 0;}
+.pre-cont .tab-wrap.russel a:nth-child(3) {border-radius: 0px 10px 0 0;}
+.pre-cont .tab-wrap.russel a:first-child {padding-top: 18px;}
+.pre-cont .tab-wrap.russel a:last-child {padding-top: 18px;}
+.pre-cont .tab-wrap.russel a.on {color: #fff;background:#7b5a30}
+/*//3개 탭일경우*/
+
+/*부천 N수*/
+.pre-cont .tab-wrap.bc a {width: 49.9%;overflow: hidden;padding:10px 0;margin-right:-1px;text-align: center;font-size: 1.4rem;color:#fff;font-weight: bold;border-bottom:0;background:#bbae9e;line-height: 1.2;}
+.pre-cont .tab-wrap.bc a:nth-child(1) {border-radius: 10px 0 0 0;}
+.pre-cont .tab-wrap.bc a:nth-child(2) {border-radius: 0px 10px 0 0;}
+.pre-cont .tab-wrap.bc a.on {color: #fff;background:#7b5a30}
+.pre-cont .tab-cont.bc .list-dot {margin: 25px 0 0px 8% !important;}
+.pre-cont .tab-cont.bc div {position: relative;}
+.pre-cont .tab-cont.bc div .bc-ico {position: absolute;top: 10px;right: 0;width: 110px;}
+/*//부천 N수*/
+
+.final-tbl {padding: 0 4% 60px;background: #fff0dd;}
+.final-tbl thead th {background: #55422a;color: #fff;}
+.final-tbl tbody {background: #fff;}
+.final-tbl .r-txt {color: #9c9081;padding: 10px 0 40px;letter-spacing: -1px;}
+
+.final-tbl .bg01 {background: #d2efff;}
+.final-tbl .bg02 {background: #d4f7e8;}
+.final-tbl .bg03 {background: #fcf0d7;}
+.final-tbl .bg04 {background: #ffe6e6;}
+.final-tbl .bg05 {background: #f5ebff;}
+
+.pic-slide img {width:100%;height: auto;display: block;}
+/*//파이널 실전 콘텐츠 & 집체 모의고사 영역*/
+
+
+

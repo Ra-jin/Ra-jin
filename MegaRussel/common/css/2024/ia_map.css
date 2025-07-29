@@ -1,0 +1,102 @@
+/* === title === */
+/* 통합프로모션 title */
+.pro-wrap .ia-map-wrap .tit-area {display:block;}
+.pro-wrap .ia-map-wrap .tit-area02 {display:none;} 
+.ia-map-wrap .tit-area {background: url("https://russeldata.megastudy.net/campus/images/russel/event/2024/promotion/sec04_light.jpg") no-repeat center top;background-size:cover;text-align:center;padding-top:533px;padding-bottom:162px;display:none;mask-image:linear-gradient(to bottom, #000 80%, transparent 100%)}
+.ia-map-wrap .tit-area h3 {color:#010101;font-size:60px;font-weight:800;line-height:130%;letter-spacing:-1.2px;}
+.ia-map-wrap .tit-area p {margin-top:34px;font-size:28px;color:#666;font-weight:500;line-height:160%;letter-spacing:-0.14px;}
+/* 공통 title */
+.ia-map-wrap .tit-area02 {display: flex;justify-content: center;}
+
+/* map */
+.ia-map {position:relative;margin-top:183px;max-width: 2000px;margin:183px auto 0;}
+.pro-wrap .ia-map {margin:-44px auto 0;}
+
+/* nav */
+.ia-map-wrap .ia-map nav {position:absolute;top:227px;left:52px;z-index: 2;}
+.ia-map-wrap .ia-map nav a {display:flex;height:42px;width:218px;background-color:#fff;border:1px solid #e7e7e7;border-radius:999px;padding:8px 32px;align-items:center;color:#222;font-size:18px;font-weight:500;line-height:24px;letter-spacing:-0.36px;position:relative;margin-top:12px;box-sizing: border-box;opacity:0.8;transition:.3s}
+.ia-map-wrap .ia-map nav a:hover {text-decoration:none;background-color:#010101;color:#fff;}
+.ia-map-wrap .ia-map nav a:hover:after {border-color:#fff;}
+.ia-map-wrap .ia-map nav a:first-child {margin-top:0;}
+.ia-map-wrap .ia-map nav a:after {content:'';width:7px;height:7px;border-top:1px solid #222;border-right:1px solid #222;position:absolute;top:46%;right:32px;transform:rotate(45deg) translateY(-50%);}
+.ia-map-wrap .ia-map nav a.active {background-color:#010101;color:#fff;border-color:#010101;}
+.ia-map-wrap .ia-map nav a.active:after {border-color:#fff;}
+
+/* s-tit */
+.ia-map .s-tit {width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+.ia-map .s-tit p {color:#222;font-size:42px;font-weight:700;line-height:24px;}
+.ia-map .s-tit ul {display:flex;}
+.ia-map .s-tit ul li {margin-left:8px;display:flex;align-items:center;padding:9px 21px 9px 43px;border-radius:999px;border:1px solid #e8e8e8;box-sizing:border-box;color:#222;font-size:14px;font-weight:700;line-height:24px;letter-spacing:-0.7px;position:relative;}
+.ia-map .s-tit ul li:first-child {margin-left:0;}
+.ia-map .s-tit ul li:before {content:'';width:16.55px;height:24px;position:absolute;top:50%;left:19px;transform:translateY(-50%);}
+.ia-map .s-tit ul .f-blue:before {content:'';background: url("https://russeldata.megastudy.net/campus/images/russel/event/2024/promotion/f_blue.png") no-repeat 0 0;background-size:100%;}
+.ia-map .s-tit ul .f-purple:before {content:'';background: url("https://russeldata.megastudy.net/campus/images/russel/event/2024/promotion/f_purple.png") no-repeat 0 0;background-size:100%;}
+.ia-map .s-tit ul .f-red:before {content:'';background: url("https://russeldata.megastudy.net/campus/images/russel/event/2024/promotion/f_red.png") no-repeat 0 0;background-size:100%;}
+
+/* map-area */
+.ia-map .map-area {width:1200px;margin:0 auto;padding-left:109px;box-sizing: border-box;position:relative;}
+.map-area ul li {position:absolute;padding-top:33px;}
+.map-area ul li:before {content:'';background: url("https://russeldata.megastudy.net/campus/images/russel/event/2024/promotion/f_non.png") no-repeat 0 0;width:21px;height:29px;position:absolute;top:0;left:50%;margin-left:-10px;}
+.map-area ul.active li:before {animation:upDown .7s linear infinite alternate;}
+@keyframes upDown {
+    from {
+        transform:translateY(-5px)
+    }
+    to {
+        transform:translateY(0)
+    }
+}
+.map-area ul li span {background-color:rgb(255, 255, 255, 0.8);color:#555;font-size:12px;font-weight:500;letter-spacing:-0.72px;line-height:1.1;display:block;}
+
+.map-area .a-russel.active li:before {content:'';background: url("https://russeldata.megastudy.net/campus/images/russel/event/2024/promotion/f_blue.png") no-repeat 0 0;}
+.map-area .a-russel .r-gn { top: 300px; left: 358px; }          /* 러셀 강남 */
+.map-area .a-russel .r-gn span {background-color:transparent;}
+.map-area .a-russel .r-dc { top: 317px; left: 395px; }    /* 러셀 대치 */
+.map-area .a-russel .r-dc span {background-color:transparent;}
+.map-area .a-russel .r-md { top: 295px; left: 252px; }   /* 러셀 목동 */
+.map-area .a-russel .r-md span {background-color:transparent;}
+.map-area .a-russel .r-bc { top: 323px; left: 122px;padding-top:8px;padding-right: 24px;}   /* 러셀 부천 */
+.map-area .a-russel .r-bc:before {left:initial;margin-left:0;right:0;}
+.map-area .a-russel .r-bd { top: 451px; left: 386px;z-index: 2; }   /* 러셀 분당 */
+.map-area .a-russel .r-ct { top: 610px; left: 1024px; }   /* 러셀 센텀 */
+.map-area .a-russel .r-yt { top: 540px; left: 353px; }   /* 러셀 영통 */
+.map-area .a-russel .r-jg { top: 199px; left: 401px; }   /* 러셀 중계 */
+.map-area .a-russel .r-jg span {background-color:transparent;}
+.map-area .a-russel .r-pc { top: 425px; left: 294px; }   /* 러셀 평촌 */
+.map-area .a-russel .r-dg { top: 509px; left: 966px; }   /* 러셀 대구 */
+.map-area .a-russel .r-us { top: 555px; left: 1046px; }  /* 러셀 울산 */
+.map-area .a-russel .r-gj { top: 605px; left: 741px; }  /* 러셀CORE 광주 */
+.map-area .a-russel .r-dj { top: 438px; left: 808px; }  /* 러셀CORE 대전 */
+.map-area .a-russel .r-wj { top: 286px; left: 903px;padding-top:0;padding-left:24px; }  /* 러셀CORE 원주 */
+.map-area .a-russel .r-wj:before {left:0;margin-left:0;}
+.map-area .a-russel .r-jj { top: 513px; left: 771px; }  /* 러셀CORE 전주 */
+.map-area .a-russel .r-cw { top: 592px; left: 942px;padding-top:0;padding-right: 24px;text-align:right; }  /* 러셀CORE 창원 */
+.map-area .a-russel .r-cw:before {left:initial;margin-left:0;right:0;}
+.map-area .a-russel .r-cj { top: 385px; left: 831px; }  /* 러셀CORE 청주 */
+
+.map-area .a-mega.active li:before {content:'';background: url("https://russeldata.megastudy.net/campus/images/russel/event/2024/promotion/f_purple.png") no-repeat 0 0;}
+.map-area .a-mega li span {background-color:transparent;}
+.map-area .a-mega .m-scho { top: 353px; left: 342px; }          /* 서초재종 */
+.map-area .a-mega .m-gb { top: 186px; left: 328px; }      /* 강북재종 */
+.map-area .a-mega .m-nrj { top: 322px; left: 295px; }    /* 노량진재종 */
+.map-area .a-mega .m-sinc { top: 248px; left: 315px; }   /* 신촌재종 */
+.map-area .a-mega .m-sp { top: 329px; left: 441px; }     /* 송파재종 */
+.map-area .a-mega .m-bc { top: 336px; left: 179px; }     /* 부천재종 */
+.map-area .a-mega .m-bc span {background-color:rgb(255, 255, 255, 0.8)}
+.map-area .a-mega .m-bd { top: 469px; left: 421px; }     /* 분당재종 */
+.map-area .a-mega .m-bd span {background-color:rgb(255, 255, 255, 0.8)}
+.map-area .a-mega .m-is { top: 170px; left: 214px; }     /* 일산재종 */
+.map-area .a-mega .m-pc { top: 436px; left: 254px; }     /* 평촌재종 */
+.map-area .a-mega .m-pc span {background-color:rgb(255, 255, 255, 0.8)}
+.map-area .a-mega .m-sb { top: 235px; left: 360px; }     /* 성북재학 */
+
+.map-area .a-gisuk.active li:before {content:'';background: url("https://russeldata.megastudy.net/campus/images/russel/event/2024/promotion/f_red.png") no-repeat 0 0;}
+.map-area .a-gisuk li {text-align:center;}
+.map-area .a-gisuk .g-hs { top: 572px; left: 446px;z-index: 2; }           /* 최상위권 전문관 */
+.map-area .a-gisuk .g-sm { top: 480px; left: 496px;padding-top:0;padding-bottom:33px; }     /* 남학생 전문관 */
+.map-area .a-gisuk .g-sm:before {top:initial;bottom:0;}
+.map-area .a-gisuk .g-w { top: 517px; left: 528px; }     /* 여학생 전문관 */
+.map-area .a-gisuk .g-mw { top: 513px; left: 570px;padding-top:0;padding-left:24px; }     /* 여학생 수학 전문관 */
+.map-area .a-gisuk .g-mw:before {left:0;margin-left:0;top:4px;}
+.map-area .a-gisuk .g-mw span {background-color:transparent;}
+.map-area .a-gisuk .g-sc { top: 592px; left: 511px; }    /* 자연계 전문관 */

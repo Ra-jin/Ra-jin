@@ -1,0 +1,274 @@
+.consulting-wrap {margin-top:-20px;overflow: hidden;}
+.consulting-wrap .inner {width:1200px;margin:0 auto;text-align:center;}
+
+.consulting-wrap .blind {visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:0}
+
+.pt70 {padding-top: 70px;}
+.pt100 {padding-top: 100px;}
+.pb50 {padding-bottom: 50px;}
+.txt-navy{color: #01078f !important;}
+
+/* visual */
+.consulting-wrap .visual-area {background:url("https://russeldata.megastudy.net/campus/images/russel/intro/2024/consulting/visual_bg.jpg") no-repeat 0 0;background-size:cover;background-position:center;text-align:center;padding:0px 0 200px;}
+.consulting-wrap .visual-area .info-txt {display:flex;justify-content:left;margin-left: 50px;}
+.consulting-wrap .visual-area .info-txt dl {display:flex;align-items:center;}
+.consulting-wrap .visual-area .info-txt dl {margin-top:15px;}
+.consulting-wrap .visual-area .info-txt dl:first-child {margin-top:0;}
+.consulting-wrap .visual-area .info-txt dl dt {font-size:19px;width:140px;height:40px;background-color:#9ca2c1;color:#fff;font-weight:500;display:flex;align-items:center;justify-content:center;border-radius:50px;}
+.consulting-wrap .visual-area .info-txt dl dd {margin-left:20px;font-size:21px;color:#111111;font-weight: 600;}
+.consulting-wrap .visual-area .info-txt dl dd span {color:#d60000;font-weight: 600;}
+.consulting-wrap .visual-area .info-link {margin-top:60px; margin-left:50px; display:flex;justify-content:flex-start;}
+.consulting-wrap .visual-area .info-link *[class^="btn-m-"] {display:block;background-color:#202531;width:310px;height:65px;display:flex;justify-content:center;align-items:center;position:relative;border-radius:10px;font-size:21px;font-weight:bold;color:#fff;margin-left:30px}
+.consulting-wrap .visual-area .info-link *[class^="btn-m-"]:first-child {margin-left:0;}
+.consulting-wrap .visual-area .info-link *[class^="btn-m-"]:hover {text-decoration:none;}
+.consulting-wrap .visual-area .info-link *[class^="btn-m-"]:after {content:'';width:12px;height:12px;border-top:1px solid #fff;border-right:1px solid #fff;transform:translateY(-50%) rotate(45deg);position:absolute;top:50%;right:30px;}
+.consulting-wrap .visual-area .info-link .btn-m-gold {background:linear-gradient(to right, #c5a06a, #b68845);}
+.consulting-wrap .visual-area .info-link .btn-m-blue {background:#01078f; margin-left: 14px;}
+
+.consulting-wrap .visual-area .inner p:first-of-type {text-align: right;}
+.consulting-wrap .visual-area .inner p:last-of-type {text-align: left;margin-left: 50px;margin-top: 60px;}
+/* //visual */
+
+/* nav */
+.consulting-wrap .fix-menu {display:flex;justify-content:center;align-items:center; background:#8a93a4;width:100%;box-sizing:border-box;}
+.consulting-wrap .fix-menu.fix {position:fixed;top:0;left:0;z-index:10;}
+.consulting-wrap .fix-menu .menu {display:flex;justify-content:center;align-items:center;width:1200px; min-width: 1200px;}
+.consulting-wrap .fix-menu .menu a {width:100%;height:85px;}
+.consulting-wrap .fix-menu .menu a:first-child {background:url("https://russeldata.megastudy.net/campus/images/russel/intro/2024/consulting/tab01.png") no-repeat 0 0;}
+.consulting-wrap .fix-menu .menu a:first-child.on{background:url("https://russeldata.megastudy.net/campus/images/russel/intro/2024/consulting/tab01_on.png") no-repeat 0 0;}
+.consulting-wrap .fix-menu .menu a:nth-child(2) {background:url("https://russeldata.megastudy.net/campus/images/russel/intro/2024/consulting/tab02.png") no-repeat 0 0;}
+.consulting-wrap .fix-menu .menu a:nth-child(2).on{background:url("https://russeldata.megastudy.net/campus/images/russel/intro/2024/consulting/tab02_on.png") no-repeat 0 0;}
+/* //nav */
+
+.consulting-wrap *[class^="cont0"] {padding:130px 0;}
+
+/* 입시전략연구소 예약접수 팝업 */
+.bg-green {background-color:#eafaf0}
+.bg-pink {background-color:#ffebed}
+.bg-yellow {background-color:#fcf5e2}
+.bg-blue {background-color:#e2f4fc}
+.r-btn-bk{background-color:#303030;padding:2px 10px;display:inline-block;margin-top:5px;font-size:13px;color:#fff;border-radius:4px;border:1px solid #303030;}
+.r-btn-wh{border:1px solid #b6b6b6;background-color:#fff;color:#7f7f7f; padding:2px 10px;display:inline-block;margin-top:5px;font-size:13px;border-radius:4px; }
+.pop-consult {padding:0 20px 70px;}
+.pop-consult .blind {visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:0}
+.pop-consult .tar {font-size:14px}
+.pop-consult .c-input-box {display:flex;width:100%;align-items:center;}
+.pop-consult .c-input-box .stit {width:80px;font-size:14px;}
+.pop-consult table td {text-align:left;padding-left:10px;}
+.pop-consult table td input[type="text"], .pop-consult table td input[type="number"] {padding:0 5px;background:#fff;}
+.pop-consult .tbl-01.type02 tbody tr td {padding-bottom:10px !important;}
+.pop-consult .tbl-01.type02 td p {padding-top:22px;}
+.pop-consult .tbl-01.type02 td a[class^="r-btn-"] {background-color:#303030;padding:3px 15px;display:inline-block;margin-top:5px;font-size:13px;color:#fff;border-radius:4px;border:1px solid #303030;}
+.pop-consult .tbl-01.type02 td a.r-btn-wh {border:1px solid #b6b6b6;background-color:#fff;color:#7f7f7f;}
+.pop-consult .tbl-01.type02 td > span {font-size:12px}
+.pop-consult .tbl-01.type02 td p span {color:#e30c0c}
+.pop-consult .tbl-01.type02 td strong {display:block;margin-top:5px}
+.pop-consult .in-tel select, .pop-consult .in-email select{background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/common/bg_sel02.png") #fff 95% 52% no-repeat;background-size:10px 7px;}
+.pop-consult .in-email select {font-size:16px;width:85px;padding-right:14px}
+.pop-consult textarea {padding:20px;background:#fff;font-size:16px;}
+
+.pop-consult h2 {margin:30px 0 10px;font-size:18px;color:#222222;}
+.pop-consult .red {color:#d02e2e;}
+
+.pop-consult .pop-info {position:relative;padding:55px 6% 5%;text-align:left;}
+.pop-consult .pop-info .bg-clip {position:absolute;left:50%;top:-27px;transform:translateX(-50%);width:266px;height:80px;background:url('https://russeldata.megastudy.net/campus/images/russel/notice/2020/consult/bg_clip.png') no-repeat 50% 0;}
+.pop-consult .pop-info .info-txt {text-align:right;font-size:14px;color:#222222;}
+
+.pop-consult .input-wrap input, .pop-consult .input-wrap select {width:calc(100% - 105px);}
+.pop-consult .input-wrap a {display:inline-block;vertical-align:middle;width:90px;margin-left:10px;line-height:30px;border-radius:4px;font-size:17px;font-weight:400;background:#6b6b6c;color:#fff;text-align:center;}
+.pop-consult .bottom-list {margin-top:10px;}
+.pop-consult .bottom-list li {font-size:14px;color:#222222;}
+
+.pop-consult .input-date {display:inline-block;margin:0 0 0 20px;}
+.pop-consult .input-date label {width:61px;height:79px;margin:0 0 0 -5px;padding:22px 0 0;vertical-align:middle;text-align:center;background:url('https://russeldata.megastudy.net/campus/images/russel/notice/2020/consult/bg_checkbox.png') left top no-repeat;font-size:15px;}
+.pop-consult .input-date label.on {color:#1d7656;}
+.pop-consult .input-date input[type="radio"] {display:block;width:28px;height:22px;margin:8px auto 0;background-position:4px 0;}
+.pop-consult .input-date input[type="radio"]:checked {background-position:3px -22px}
+
+.pop-consult .input-date .fin {display:block;margin:5px auto 0;color:#d33737;font-size:16px;font-weight:700;}
+.pop-consult .input-disabled:disabled, .pop-consult .input-etc:disabled {background: #f5f5f5;}
+
+.pop-consult .type2 td {padding:12px 0 12px 15px;border-left:1px solid #404040;}
+.pop-consult .type2 td.center {padding:12px 0;text-align:center;border-left:1px solid #404040;}
+.pop-consult input[type="text"].input-etc {height:25px;font-size:14px;margin:3px 0 3px 5px;}
+.pop-consult input[type="checkbox"] {margin:3px 5px;}
+
+.pop-consult .privacy-wrap {background:#ffffff;}
+.pop-consult .privacy-box .tit {position:relative;padding:16px 12px 19px;border-top:2px solid #404040;background:#62646c;font-size:17px;color:#ffffff;}
+.pop-consult .privacy-box .txt {display:none;padding:18px 25px;font-size:14px;color:#515151;}
+.pop-consult .privacy-box .tit .arrow {position:absolute;right:20px;top:50%;transform:translateY(-50%); display:block;width:20px;height:12px;background:url('https://russeldata.megastudy.net/campus/images/russel/notice/2020/consult/bg_arrow.png') no-repeat 0 0;}
+.pop-consult .privacy-box.on .tit {background:#1d7656}
+.pop-consult .privacy-box.on .tit .arrow {background-position:0 -12px;}
+.pop-consult .privacy-box .tit input[type="checkbox"] {vertical-align:-4px;}
+.pop-consult .pop-btn-wrap {position:relative;margin:45px 0 50px;padding:0 177px;}
+.pop-consult .privacy-box.on .txt {display: block;background:#efefef}
+
+.pop-consult table.tbl-01.border {border:1px solid #dfdfdf}
+.pop-consult table tbody tr td .file{position:relative;margin:0;}
+.pop-consult table tbody tr td .file > input{width:40%;box-sizing:border-box;height:30px;line-height:45px;padding:0 25px 0 10px;font-size:14px;}
+.pop-consult table tbody tr td .file span{display:block;width:128px;height:30px;color:#fff;background:#444444;text-align:center;font-size:14px;line-height:30px;position:absolute;left:40%;top:0;}
+.pop-consult table tbody tr td .file span input{opacity:0;width:100%;height:100%;position:absolute;left:0;top:0;cursor:pointer;}
+.pop-consult table tbody tr td .file .backUni{display: inline-block;font-size:19px;width:30px;height:30px;text-align: center;border:none;position:absolute;top:0;left:35%;line-height:30px;text-decoration:none;z-index:10;}
+.pop-consult table tbody tr td .file .file-down {font-size:14px;position:absolute;top:0;line-height:30px;left:66%;}
+.pop-consult .pop-btn-wrap a.btn-black{background:#303030;border:2px solid #303030;padding:0;height:auto}
+.pop-consult .btn-wrap:after {display:none}
+.pop-consult .btn-wrap {height:auto;margin-bottom:0}
+.pop-consult .btn-wrap a {float:initial;border:none;padding:0}
+
+/* 입시전략연구소 정시컨설팅 - 대학/학과 검색 팝업 */
+.popupUniversity{padding:36px 24px 38px;}
+.popupUniversity .searchWrap{margin:0 0 25px 0;}
+.popupUniversity .searchWrap .searchBox{background:#e6f5ff;height:46px;padding:0 54px 0 0;position:relative;color:#565656;font-weight:bold;font-size:16px;line-height:44px;}
+.popupUniversity .searchWrap .searchBox label{display:block;position:absolute;left:0;top:0;width:100%;height:100%;padding:0 64px 0 10px;box-sizing:border-box;}
+.popupUniversity .searchWrap .searchBox label span{font-weight:normal;font-size:13px;color:#868686;}
+.popupUniversity .searchWrap .searchBox input{width:100%;height:100%;border:none;background:transparent;outline:none;padding:0 10px 0 10px;box-sizing:border-box;color:#565656;font-weight:bold;font-size:13px;line-height:44px;}
+.popupUniversity .searchWrap .searchBox a{position:absolute;right:0;top:0;}
+.popupUniversity .searchWrap .major .majorList{position:relative;padding:0 0 0 121px;height:36px;margin:0 0 2px 0;}
+.popupUniversity .searchWrap .major .majorList + .majorList{margin:0 0 0 0;}
+.popupUniversity .searchWrap .major .majorList .title{display:block;position:absolute;left:0;top:0;background:#666666;color:#fff;text-align:center;width:121px;height:100%;line-height:36px;font-size:13px;}
+.popupUniversity .searchWrap .major .majorList .university{height:34px;font-size:13px;line-height:32px;border:1px solid #e5e5e5;border-left:none;color:#1a1a1a;padding:0 0 0 10px;font-weight:bold;}
+.popupUniversity .searchWrap .major .majorList .searchBox{height:34px;font-size:13px;line-height:32px;border:1px solid #e5e5e5;border-left:none;padding:0 45px 0 0;}
+.popupUniversity .searchWrap .major .majorList .searchBox label span{font-size:11px;}
+.popupUniversity .searchWrap .major .majorList .searchBox input{line-height:32px;}
+.popupUniversity .searchWrap .major .majorList .searchBox .backUni{position:absolute;right:64px;top:50%;margin:-8px 0 0 0;}
+.popupUniversity .searchWrap p{font-size:11px;line-height:14px;color:#ff3a3a;margin:5px 0 0 0;padding:0 0 0 14px;}
+.popupUniversity .searchWrap p.info{color:#808080;font-size:13px;margin:8px 0 0 0;}
+
+.uni-result {font-size:13px;color:#1a1a1a;margin:0 0 5px 0;padding:0 0 0 14px;}
+.listBox {height:200px;overflow: scroll;}
+.listBox table{width:100%;}
+.listBox table thead tr th {position: sticky;top:0;left:0;}
+.listBox table thead tr th{background:#d4d4d4;border-left:1px solid #fff;height:35px;font-size:13px;color:#1a1a1a;padding:0;}
+.listBox  table thead tr th:first-child{width:48px;border-left:none;}
+.listBox  table tbody tr td{border:1px solid #e5e5e5;height:26px;line-height:26px;text-align:center;background:#fff;padding:0;font-size:13px;box-sizing:border-box;}
+.listBox  table tbody tr td:first-child{width:48px;}
+.listBox  table tbody tr:hover td{background:#f6f6f6;}
+.listBox  table tbody tr td a{display:block;width:100%;height:100%;}
+.listBox .thead{border-bottom:1px solid #e5e5e5;background:#fff;overflow:hidden;}
+.popupUniversity iframe{width:100%;height:196px;}
+
+/*컨텐츠=================================================================================================*/
+
+
+/* cont01 */
+.consulting-wrap .cont01 {background:#e8eef8;background-position:center;}
+.consulting-wrap .c-box01 {background: linear-gradient(#fff, #ffffff00);border-radius: 50px;margin-top: 75px;}
+.consulting-wrap .c-box01 p:nth-of-type(2){transform: translateX(30px);}
+.consulting-wrap .c-box01 ul {margin:60px 60px 80px;display:flex;justify-content:center;gap:1px;}
+.consulting-wrap .c-box01 ul li {background-color:#444444;padding:35px 20px;}
+.consulting-wrap .c-box01 ul li .tit {color:#fff;font-weight:500;font-size:17px;}
+.consulting-wrap .c-box01 ul li > div {margin:25px 0 20px;}
+.consulting-wrap .c-box01 ul li .txt {color:#aaaaaa;font-size:15px;word-break:keep-all;letter-spacing:-1px;}
+.consulting-wrap .c-box01 ul li .txt strong {color:#e6b974}
+/* //cont01 */
+
+
+/*cont02*/
+.consulting-wrap .cont02 .c-box01 {background: none;border-radius: 0;margin-top: 60px;}
+/*//cont02*/
+
+
+/*cont03*/
+.consulting-wrap .cont03 {background-color: #040756;}
+.consulting-wrap .cont03 .inner {width: 100%;}
+.consulting-wrap .cont03 .c-box01 {background: none;border-radius: 0;margin-top: 60px;}
+
+.consulting-wrap .cont03 .roll-swiper {margin:70px 0;}
+.consulting-wrap .cont03 .roll-swiper .swiper-wrapper  {transition-timing-function:linear !important;}
+.consulting-wrap .cont03 .roll-swiper .swiper-slide {width:220px;}
+/*//cont03*/
+
+
+/* cont04 */
+.consulting-wrap .cont04 {background-color:#dee7f4;}
+.consulting-wrap .cont04 .remark-01 {margin-top:60px;text-align:left;font-size:13px;padding-left:60px;color:#a19eb2}
+.review-rolling {margin-top:15px;padding:0 60px;height:550px;}
+.review-rolling .swiper-slide {height:auto;text-align:left;display:flex;justify-content: flex-end;}
+.review-rolling .swiper-slide:nth-child(odd) {justify-content: flex-start;}
+
+.review-rolling .swiper-slide p {padding:30px;border-radius:10px;background-color:#000;box-sizing:border-box;color:#fff;font-size:15px;position:relative}
+.review-rolling .swiper-slide p:after {content:'';width:44px;height:22px;background:url("https://russeldata.megastudy.net/campus/images/russel/intro/2023/consulting/ico_tail2.png") no-repeat 0 0;position:absolute;bottom:-21px;right:60px;}
+.review-rolling .swiper-slide:nth-child(odd) p:after {content:'';width:44px;height:22px;background:url("https://russeldata.megastudy.net/campus/images/russel/intro/2023/consulting/ico_tail.png") no-repeat 0 0;position:absolute;bottom:-21px;left:60px;right:initial;}
+
+.review-rolling .swiper-slide p span {color:#eebd72;}
+.review-rolling .swiper-slide p span strong {color:#54ffed;}
+/* //cont04 */
+
+/* cont05 */
+.cont05 {text-align:center;background-color:#f5f5f5;}
+.cont05 > p {margin-bottom:110px;}
+*[class^="gall-rolling"] .swiper-wrapper {transition-timing-function:linear !important;}
+*[class^="gall-rolling"] .swiper-slide {width:360px;}
+.gall-rolling02 {padding-left:180px;margin-top:20px}
+/* //cont05 */
+
+/* cont06 */
+.cont06 .mt150 {margin-top:150px}
+.tbl-01.type01 .c-list {display:flex;}
+.tbl-01.type01 .c-list li {position:relative;margin-left:10px;padding-left:10px;}
+.tbl-01.type01 .c-list li:nth-child(2) {margin-left:0px;padding-left: 5px;}
+.tbl-01.type01 .c-list li:first-child {margin-left:0;padding-left:0;}
+.tbl-01.type01 .c-list li:before {content:'';width:1px;height:15px;background-color:#000;position:absolute;top:4px;left:0;}
+.tbl-01.type01 .c-list li:first-child:before {display:none;}
+.tbl-01.type01 .c-list li:nth-child(2):before {display:none;}
+.tbl-01.type01 .c-list li a {display:inline-block;font-size:15px;text-decoration:underline;position:relative;padding-right:7px;}
+.tbl-01.type01 .c-list li a:after {content:'';width:7px;height:7px;border-top:1px solid #555;border-right:1px solid #555;transform:rotate(45deg)translateY(-50%);position:absolute;top:50%;right:0;}
+.tbl-01.type01 td {padding:15px;}
+.tbl-01.type01 td > p {text-align:left;}
+.tbl-01.type01 td .remark-02 {text-align:left;margin-top:5px;margin-bottom:10px;}
+.tbl-01.type01 td .remark-02 li span {text-decoration: underline;}
+
+
+.tbl-01.type02 {margin-top:10px;width: 100%;border: 1px solid #dfdfdf;margin: 20px 0;}
+.tbl-01.type02 tbody tr th {padding:10px 0;background: #111111;color: #fff;}
+.tbl-01.type02 td {position:relative;height:60px;text-align:center;text-align: center;}
+.tbl-01.type02 td > span {position:absolute;top:5px;left:10px;}
+
+
+
+.consulting-wrap .cont06 {padding: 150px 0 0; margin-bottom: 100px;}
+.cont06 .step-list {margin-top:50px;display:flex;justify-content:center;gap:40px;}
+.cont06 .step-list > li {padding:30px 0 10px;border:1px solid #ddd;flex:1;border-radius:10px;position:relative}
+.cont06 .step-list > li:after {content:'';width:0px;height:0px;border-bottom:10px solid transparent;border-left:12px solid #000;border-top: 10px solid transparent;position:absolute;top:50%;right:-30px;transform:translateY(-50%);}
+.cont06 .step-list > li:last-child:after {display:none}
+.cont06 .step-list > li dl dt {width:80px;height:30px;display:flex;align-items:center;justify-content:center;color:#fff;background-color:#01078f;border-radius:50px;font-size:16px;margin:0 auto}
+.cont06 .step-list > li dl dd {margin-top:20px;font-size:16px;font-weight:500}
+.cont06 .step-list > li dl dd span {color:#d60000;}
+.cont06 .step-list > li dl dd .txt_gold {color:#9679d5;}
+.cont06 .step-list > li .remark-03 {margin-top:10px;color:#9679d5;font-size:13px;}
+.cont06 .remark-04 {text-align:left;margin-top:50px;}
+.cont06 .remark-04 > li > p {font-size:16px;font-weight:500;}
+.cont06 .remark-04 > li ul {padding-left:15px;margin-top:5px;}
+.cont06 .remark-04 > li ul li {padding-left:15px;position:relative;margin-bottom:5px}
+.cont06 .remark-04 > li ul li:before {content:'';width:3px;height:3px;border-radius:50%;background-color:#000;position:absolute;top:10px;left:0;}
+.cont06 .link-btn {padding:0 30px 0 10px;color:#fff;display:inline-block;position:relative;background-color:#656565;border-radius:4px;font-size:14px;line-height:26px;height:26px;}
+.cont06 .link-btn:after {content:'';width:7px;height:7px;border-top:1px solid #fff;border-right:1px solid #fff;transform:rotate(45deg) translateY(-50%);position:absolute;top:46%;right:15px;}
+/* //cont06 */
+
+
+/*하단 팝업*/
+.tst-pop-wrap {display: flex;justify-content: center;padding: 60px 0 14px;transform: translateY(60%);visibility: hidden;}
+.tst-pop-wrap.on {visibility: visible; animation: tstPop 1s .1s both;}
+
+@keyframes tstPop {
+  0% {
+    transform: translateY(60%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.tst-pop {width: 1200px;height: 76px; background: url("https://russeldata.megastudy.net/campus/images/russel/intro/2024/consulting/popup_bg.png") no-repeat 0 0;}
+.tst-pop {display: flex;justify-content: space-between;}
+.tst-pop > p {padding: 29px 45px 0 76px;}
+.tst-pop ul {display: flex;justify-content: space-between;align-items: center;margin-right: 60px;}
+.tst-pop ul li {background: #7f8397;color: #ffffff;font-size: 18px;width: 222px;height: 50px;line-height: 50px;height: 50px;border-radius: 10px;text-align: center;}
+.tst-pop ul li:nth-child(1) {background: #b88536;}
+.tst-pop ul li:nth-child(1):hover {background: #9e6e24;}
+.tst-pop ul li:nth-child(2):hover {background: #7f8397;}
+.tst-pop ul li:nth-child(3):hover {background: #7f8397;}
+.tst-pop ul li:nth-child(n+2) {margin-left: 14px;}
+.tst-pop ul li a {color: inherit;font-size: inherit;text-decoration: none;display: block;}

@@ -1,0 +1,140 @@
+
+/* 공통 */
+.pl0 {padding-left:0 !important;}
+
+/* 바자관 */
+.study-td-flex {display:flex;flex-wrap:wrap;}
+.study-td-flex .tb-type2 {width:100%;}
+.study-td-flex .tb-type2:nth-of-type(1){width:40%;}
+.study-td-flex .tb-type2:nth-of-type(2) {width:60%;}
+.study-td-flex  .fix-h {height:65px;}
+
+/* 의무시수&인정시수 */
+.ques-wrap {position:relative;display:inline-block;vertical-align:3px;}
+.i-ques {display:block;width:18px;height:18px;margin-top:3px;line-height:17px;text-align:center;background:#ddd;border-radius:20px;color:#999;font-size:1.4rem;font-style:normal;cursor:pointer;}
+.pop-ques {opacity:0;height:0;width:290px;position:absolute;right:-15px;top:100%;margin-top:20px;text-align:center;border-radius:15px;box-shadow:2px 2px 6px #ddd;overflow:hidden;} 
+.i-ques:hover + .pop-ques {opacity:1;transition:all .5s;height:auto;}
+.pop-ques .box {width:290px;background:#fff;overflow:hidden;}
+.pop-ques p.tit {padding:10px 0;background:#ddd;font-size:2rem;}
+.pop-ques p.txt {padding:20px 10px;line-height:1.5;font-size:1.7rem;color:#353434;}
+/* //의무시수&인정시수 */
+
+.del-date {font-size:1.4rem;}
+.tb-type2 .class-n {padding:50px 10px;}
+.inBox .tableInfo {font-size:1.5rem !important;margin-top:30px !important;}
+
+.bt-class {color:#ee2b59;text-decoration:underline;}
+.inBox .stxt {overflow:hidden;margin:10px 0 0 0;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;font-size:1.6rem;color:#7e7e7e;}
+
+.notice-box {position:relative;padding:20px 4%;background:#f1f4f9;}
+.notice-box p{font-size:2rem;font-weight:bold;}
+.notice-box ul{color:#828181;font-size:1.8rem;line-height:2.0;}
+.notice-box .tit {color:#000;}
+.notice-box .tit span {text-indent:5px;}
+.notice-box .tit strong {color:#ee2b59;}
+.notice-box li strong{color:#FF6600;}
+
+.stu_complete {display:flex;justify-content:center;align-items:center;}
+
+/* btn */
+.inBox .bt-del {display:inline-block;padding:0 20px;height:40px;line-height:36px;background:#666;color:#fff;border-radius:5px;margin:0 15px;font-size:1.7rem;}
+
+
+/* ====================================================================================================
+   미디어 쿼리
+==================================================================================================== */
+/* PC & 태블릿 */
+@media (max-width:1023px){
+    .study-td-flex  .fix-h {height:75px;}
+    .study-td-flex .tb-type2 thead th, .study-td-flex .tb-type2 tbody td {font-size:1.5rem}
+    .tb-type2 table thead tr th .ques-wrap {vertical-align:1px;}
+    .tb-type2 table thead tr th .i-ques {width:15px;height:15px;line-height:14px;font-size:1.4rem;}
+    .tb-type2 table thead tr th .pop-ques::before {right:7px;}
+}
+
+/* 모바일 */
+@media (max-width:600px){
+    /* 바자관 */
+    .study-td-flex {display:block;}
+    .study-td-flex  .fix-h {height:auto;}
+    .study-td-flex .tb-type2:nth-of-type(1), .study-td-flex .tb-type2:nth-of-type(2) {width:100%;}
+    .study-td-flex .tb-type2:nth-of-type(2) {margin-top:25px;}
+    
+    .study-td-flex .tb-type2 tbody td.fix-td {height:auto;}
+    .tb-type2 table thead tr th .ques-wrap {display:none;}
+
+
+    .tabConList .title-wrap .pos-n {position:static !important;}
+    .tabConList .title-wrap .select-wrap {width:auto;display:flex;justify-content:flex-end;margin-top:30px;}
+    .tabConList .select-box {display:inline-block;}
+
+    .tb-type2.rps-tb {border-top:0;border-bottom:0;}
+    .tb-type2.rps-tb thead {display:none;}
+    .tb-type2.rps-tb td {display:block;border:0;}
+    .tb-type2.rps-tb td.aca-name, .tb-type2.rps-tb td.pay-date {display:inline-block !important;width:50%;margin-top:30px;}
+    .tb-type2.rps-tb td.aca-name {text-align:left;}
+    .tb-type2.rps-tb td.pay-date {text-align:right;}
+    .tb-type2.rps-tb tbody td.con {padding:0;max-width:100%;font-size:2.2rem !important;}
+    .inBox .tableInfo {margin-top:10px !important;}
+
+    .tb-type2.rps-tb .price-wrap{padding:10px 0 0;}
+    .tb-type2.rps-tb .price-box {display:flex;justify-content:space-between;align-items:center;padding:10px;background:#f2f6f9;border-radius: 3px;font-size:1.4rem;}
+    .tb-type2.rps-tb .price-box.align-r {justify-content:flex-end;}
+    .tb-type2.rps-tb .price-box .txt-price {font-size:2rem}
+    .tb-type2.rps-tb .price-box strong {font-size:3rem}
+    .tb-type2.rps-tb .price-box .bt-del {display:inline-block;margin:0;vertical-align:middle;height:32px;line-height:30px;padding:0 10px;border:1px solid #d2d2d2;background:linear-gradient(180deg, #fff, #f5f5f5);color:#505050;font-size:2rem;border-radius:3px;}
+    .tb-type2.rps-tb .del-date {padding:10px 0 0;text-align:left;color:#7e7e7e;}
+    /* .tb-type2 table tbody tr td.totalPayment.type2 {font-size:2.3rem !important;} */
+    .bt-more-text {display:block;width:100%;font-size:2.5rem;font-weight:500;color:#7e7e7e;text-align: center;background:#fff;padding:15px 0;border-top:1px solid #eaeaea;border-bottom:1px solid #eaeaea;}
+    .bt-more-text::before {content:"+"}
+    .bt-more-text span {color:#7e7e7e;}
+    .stu_complete img {width:50%;height:50%;}
+    
+}
+
+/* ====================================================================================================
+   바자관 모의고사 레이어 팝업
+==================================================================================================== /* pc/공통  */
+.layer-quel {position:fixed;top:50%;left:50%;width:650px;background:#fff;transform: translate(-50%,-50%);z-index: 10;border:2px solid #c1c1c1;}
+.layer-quel .tit {padding:15px 0 15px 50px;background:url('https://russeldata.megastudy.net/campus/images/russel/myinfo/common/bg_pop_notice.jpg') #1f1f1f right top  no-repeat;background-size: auto  100%;font-size: 35px;color:#fff;font-weight: bold;line-height: 1.2;letter-spacing: -3px;}
+.layer-quel .inner {padding:40px 50px 20px;}
+.layer-quel .stit {margin-bottom:5px;font-size:23px;font-weight: bold;}
+.layer-quel .list-dot {margin-bottom: 25px;}
+.layer-quel .list-dot li {position:relative;font-size: 23px;padding-left:10px;line-height: 1.5;}
+.layer-quel .list-dot li::after {position: absolute;top:0;left:0;content:"·";}
+.layer-quel .list-dot .bg-pink {background-color: #f66565;color:#fff;}
+.layer-quel .list-dot .blue {color:#6681f7}
+.layer-quel .stit-s {margin-bottom:5px;font-size: 17px;font-weight: bold;}
+.layer-quel .list-dot-s {margin-bottom: 15px;;}
+.layer-quel .list-dot-s li {position:relative;font-size: 17px;padding-left:7px;color:#8b8b8b;}
+.layer-quel .list-dot-s li::after {position: absolute;top:0;left:0;content:"·";}
+.layer-quel .bt-go {text-align: center;}
+.layer-quel .bt-go a {padding:10px 20px;display: inline-block;font-size: 23px;font-weight: bold;background:#1f1f1f;border-radius: 5px;color:#fff}
+.layer-quel .bt-box {display: flex;border-top: 1px solid #c1c1c1;border-bottom: 1px solid #d7d7d7;}
+.layer-quel .bt-box a {flex: 1;padding:15px 0;font-size: 25px;color:#4b4b4b;background:#ededed;text-align: center;font-size: 20px;}
+.layer-quel .bt-box a:last-child {border-left: 1px solid #d7d7d7;}
+/* 모바일 */
+@media (max-width:600px){
+    .layer-quel {width:90%;}
+    .layer-quel .tit {font-size: 22px;letter-spacing: 0;}
+    .layer-quel .stit {font-size:16px;}
+    .layer-quel .list-dot li {font-size:16px;}
+    .layer-quel .stit-s {font-size: 13px;}
+    .layer-quel .list-dot-s li {font-size: 13px;}
+    .layer-quel .bt-go a {font-size: 15px;}
+    .layer-quel .bt-box a {font-size: 14px;}
+}
+
+/* ====================================================================================================
+   바자관 재등록 레이어 팝업
+==================================================================================================== */
+.layer-baza {position:fixed;top:50%;left:50%;width:auto;background:#fff;transform: translate(-50%,-50%);z-index: 10;border:2px solid #c1c1c1;}
+.layer-baza .bt-box {display: flex;border-top: 1px solid #c1c1c1;border-bottom: 1px solid #d7d7d7;}
+.layer-baza .bt-box a {flex: 1;padding:15px 0;font-size: 25px;color:#4b4b4b;background:#ededed;text-align: center;font-size: 20px;}
+.layer-baza .bt-box a:last-child {border-left: 1px solid #d7d7d7;}
+
+/* 모바일 */
+@media (max-width:600px){
+    .layer-baza {width:90%;}
+    .layer-baza > a img {width:100%}
+}

@@ -1,0 +1,126 @@
+@import url(/css/danka_common.css);
+
+/* ==================================================
+   common
+================================================== */
+
+
+.switch-wrap .inner {padding:0 5%}
+
+/* text */
+.switch-wrap .ico-txt {display: inline-block;padding:2px 1.5%;font-size:1.2rem;color:#fff;}
+.switch-wrap .ico-txt.s {background:#52a7d8;}
+.switch-wrap .ico-txt.b {background:#5259d8;}
+.switch-wrap .ico-txt.v {background:#9452d8;}
+.switch-wrap .ico-txt.p {background:#d55e91;}
+.switch-wrap .ico-txt.r {background:#d34664;}
+
+.btn-sel {display:inline-block;width:46px;padding:3px 5px;background:#52a7d8;color:#fff;font-size:1.2rem;}
+.btn-duty {display:inline-block;width:46px;padding:3px 5px;background:#5259d8;color:#fff;font-size:1.2rem;}
+.btn-danka-type01 {display:inline-block;width:46px;padding:3px 5px;background:#9452d8;color:#fff;font-size:1.2rem;}
+.btn-advice {display:inline-block;width:46px;padding:3px 5px;background:#d34664;color:#fff;font-size:1.2rem;}
+.btn-greet {display:inline-block;width:46px;padding:3px 5px;background:#48aa81;color:#fff;font-size:1.2rem;}
+.btn-eng {display:inline-block;padding:3px 5px;background:#d55e91;color:#fff;font-size:1.2rem;}
+
+
+/* ==================================================
+   visual
+================================================== */
+
+.switch-wrap {text-align:center;overflow:hidden;}
+.switch-wrap .cont {padding: 0 5%;}
+
+/* visual */
+.switch-wrap .visual {background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2023/switch/visual_bg.jpg") #f4ecc7 center bottom no-repeat;background-size:100% auto;padding:0 0 13vw;}
+.switch-wrap .visual .switch-motion {position:relative}
+.switch-wrap .visual .switch-motion .nsu {animation:fadeInOut 3s linear 1s infinite; z-index:2;position:absolute;top:0;left:0;width:100%}
+.switch-wrap .visual .visual-info {margin-top:10vw;padding:0 10.4vw;display:flex;flex-direction:column;align-items:center;}
+.switch-wrap .visual .visual-info dl {display:flex}
+.switch-wrap .visual .visual-info dl dt {width:21.8vw;height:6.9vw;background-color:#46a50d;color:#fff;font-size:3.5vw;margin-right:2.6vw;border-radius:50px;display:flex;align-items:center;justify-content:center;}
+.switch-wrap .visual .visual-info dl dd {font-size:3.5vw;text-align:left;font-weight:400;margin-top:.5vw}
+
+/* animation */
+@keyframes fadeInOut {0% {opacity:0;} 10% {opacity:0;} 20% {opacity:0;} 30% {opacity:0;}  49% {opacity:0;} 50% {opacity:1;} 60% {opacity:1;} 70% {opacity:1;} 80% {opacity:1;} 90% {opacity:1;}  99% {opacity:1;} 100% {opacity:0;} }
+
+
+/* //visual */
+
+/*fixed bar*/
+.switch-wrap .fixed-bar {width: 100%;height: 50px;line-height: 50px;background-color: #f39a1a;text-align: center;position: fixed;bottom: 0;z-index: 5;opacity: 1;}
+.switch-wrap .fixed-bar a{color: #fff;font-size: 1.6rem;font-weight: 600;position: relative;display: block;}
+/*//fixed bar*/
+
+
+/*cont01*/
+.cont01 {background-color:#4eba2f;padding-bottom:13.8vw}
+.cont01 .c-box {padding:42px 10%;background-color:#fff;border-radius:7vw;}
+.cont01 .c-box .list-bullet {margin:20px 0 0 0}
+.cont01 .c-box .list-bullet li {color:#747070;letter-spacing:-1px;}
+/*cont02*/
+.cont02 {padding-bottom:13.8vw}
+.cont02 .list-bar {margin-left:0;}
+.cont02 .tbl-type01 {margin-top:20px}
+
+.tbl-type01 {border-collapse:separate;}
+.sticky {position: sticky;top: 0;left: 0;z-index: 1;}
+/*cont03*/
+.cont03 {background-color:#f1f1f1;padding-bottom:13.8vw}
+.cont03 .system-con{padding:42px 6% 30px;background-color:#fff;border-radius:7vw;;}
+.cont03 .system-con>p {margin-top: 25px;}
+.cont03 .swiper.baja-rolling {width: 100%;height: 100%;}
+.cont03 .swiper.baja-rolling .swiper-slide img {display: block;width: 100%;height: 100%;object-fit: cover;}
+
+.cont03 .baja-rolling-inner {overflow: hidden;}
+.cont03 .swiper-pagination.baja-rolling{width: 71% !important; display: flex;justify-content: right;margin: -3px 0 0 38px;z-index: 2;}
+.cont03 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {transform: scale(1);}
+.cont03 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {transform: scale(1);}
+.cont03 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {transform: scale(1);}
+.cont03 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {transform: scale(1);}
+.cont03 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {transform: scale(1);}
+.cont03 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet{transform: scale(1);}
+.cont03 .swiper-pagination-bullets-dynamic {overflow: visible;}
+.cont03 .swiper-pagination-bullet-active {background-color: #20ae2d !important;opacity: 1;left: 0 !important;}
+.cont03 .swiper-pagination-bullet {width: 10px !important;height: 10px !important;margin: 0 2px;left: 0 !important;}
+
+.baja-rolling-inner .bt-tt {position: absolute;bottom: 0;right: 0;width: 100%;height: 100%;font-size: 0;box-sizing: border-box;}
+.layer-tt{display:none;overflow-y:scroll;position:fixed;left:5%;top:50%;z-index:11;width:90%;max-height:560px;padding:20px 5%;background:#fff;border-radius:10px;transform:translateY(-50%);box-sizing:border-box;z-index: 11;}
+.layer-tt.on {display:block;}
+.layer-tt .bt-close-tt {position:absolute;top:12px;right:12px;}
+.layer-tt .bt-close-tt  img{width:16px;height:auto;}
+
+.cont03 .remark-02 {color: #aaaaaa;padding: 5px 0 0 0;}
+/*//cont03*/
+
+
+/*cont04*/
+.cont04 {background-color: #f5de91;overflow: hidden;padding-bottom:13.8vw}
+.cont04 .teacher-rolling-inner {background-color:#f5de91}
+
+.teacher-rolling .swiper-wrapper {transition-timing-function: linear;}
+.teacher-rolling .swiper-slide {width:27%!important;padding-bottom:5px;}
+.teacher-rolling .swiper-slide:nth-of-type(2n) {padding-top:10%}
+.teacher-rolling .swiper-slide .t-name {margin-bottom:10px;text-align: left;}
+.teacher-rolling .swiper-slide .t-name dt {font-size:1.1rem;color: #202020;display:flex;align-items:flex-end;height:30px}
+.teacher-rolling .swiper-slide .t-name dd {font-size:1.3rem !important;color: #202020;}
+.teacher-rolling .swiper-slide .t-name dd strong {font-size:1.3rem !important;color: #202020;}
+.teacher-rolling .swiper-slide img {width:100%;box-shadow: 3px 3px 10px rgba(1, 1, 1, .2);background-color: #43b24e;}
+
+.cont04 .btm-con {padding: 25px 0 30px;}
+.cont04 .btm-con .stxt{font-size: 1.2rem;color: #717171;text-align: right;letter-spacing: -1px;}
+
+.danka-box {background-color: #fff;border-radius: 10px;padding-bottom:30px}
+.danka-box:not(:last-child) {margin-bottom: 15px;}
+.danka-box p{font-size: 1.4rem;letter-spacing: -1px;text-align: center;padding: 30px 0 11px;}
+.danka-box strong{font-size: 1.8rem;letter-spacing: -1px;text-align: center;font-weight: bold;color: #24a330;}
+
+.remark-03{padding:18px 4% 20px 33px;}
+.remark-03 li{position: relative;text-align: left;color: #666666;font-size: 1.2rem;letter-spacing: -1px;}
+.remark-03 li:not(:last-child){margin-bottom: 3px;}
+.remark-03 li::before{display: block;content: '';position: absolute;top: 3px;left: -16px;width: 8px;height: 4px;border-top: 2px solid #000;border-right: 2px solid #000;transform: rotate(135deg);}
+
+
+.btn.goto-btn {margin: 0 4%; background-color: #111111;border-radius: 5px;position: relative;height: 45px;line-height: 45px;}
+.btn.goto-btn::after {position: absolute;top: 17px;right: 21px;display: block;content: '';width: 9px;height: 9px; border-top: 2px solid #fff;border-right: 2px solid #fff;transform: rotate(45deg);}
+.btn.goto-btn a{color: #fff;font-size: 1.5rem;font-weight: bold;display: block;}
+/*//cont04*/
+.cont05 {padding-bottom:30px}

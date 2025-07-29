@@ -1,0 +1,173 @@
+/* common */
+.consulting-wrap .txt-gold {color:#fbbe66;font-size:inherit}
+.consulting-wrap .inner {padding:0 4%}
+.consulting-wrap .blind {visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:0}
+
+/* visual */
+.consulting-wrap .visual {position:relative}
+.consulting-wrap .visual .info-box {position:absolute;top:86.1vw;left:0;width:100%;padding:0 4%;box-sizing:border-box;}
+.consulting-wrap .visual .info-txt {margin:0}
+.consulting-wrap .visual .info-txt dl {display:flex;align-items:center;margin-top:2.5vw}
+.consulting-wrap .visual .info-txt dl:first-child {margin-top:0}
+.consulting-wrap .visual .info-txt dl dt {width:21.5vw;height:6.3vw;display:flex;align-items:center;justify-content:center;color:#fff;font-size:3vw;background-color:#7c694d;border-radius:30px;margin-right:2vw;}
+.consulting-wrap .visual .info-txt dl dd {font-size:3.6vw;color:#fff;letter-spacing:-1px;}
+.consulting-wrap .visual .info-btn {margin-top:7vw;display:flex;gap:4%;}
+.consulting-wrap .visual .info-btn a[class^="btn-m"] {display:flex;align-items:center;justify-content:center;background:linear-gradient(to right, #dbdbdb, #ccc);height:13.8vw;width:50%;border-radius:4px;font-size:4vw;font-weight:bold;letter-spacing:-2px;line-height:1}
+.consulting-wrap .visual .info-btn a.btn-m-gold {background:linear-gradient(to right, #c5a06a, #b68845);}
+/* //visual */
+
+/* cont01 */
+.cont01 {background-color:#111111;padding-bottom:16.6vw}
+.cont01 *[class^="c-box0"] {border: 1px solid transparent;background-image:linear-gradient(#141414, #141414), linear-gradient(to right, #755a31 0%,  #ac9b82 100%);background-origin: border-box;background-clip: content-box, border-box;margin-top:7vw}
+.cont01 .c-box01 {background-image: url("https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2023/consulting/cont01_bg.jpg"),linear-gradient(to right, #755a31 0%,  #ac9b82 100%);background-repeat:no-repeat;background-size:cover;margin-top:0}
+.cont01 .c-box01 p:first-child {margin:11.8vw 9vw 9.7vw}
+.cont01 .c-box01 .roll-swiper {margin-bottom:12vw}
+.cont01 .c-box01 .roll-swiper .swiper-wrapper  {transition-timing-function:linear !important}
+.cont01 .c-box01 .roll-swiper .swiper-slide {width:63.8vw;}
+.cont01 .c-box01 .roll-swiper .swiper-slide .img {padding:0 2vw}
+.cont01 .c-box01 .roll-swiper .swiper-slide p {color:#fff;font-size:3.5vw;text-align:center;letter-spacing:-0.5px;margin-top:3vw;}
+
+.cont01 .c-box02 {background-image: url("https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2023/consulting/cont01_bg02.jpg"),linear-gradient(to right, #755a31 0%,  #ac9b82 100%);background-repeat:no-repeat;background-size:cover;}
+.cont01 .c-box02 > p:first-child {margin:11.8vw 18vw 0}
+.cont01 .c-box02 > ul {display:flex;margin:8.3vw;gap:3vw}
+.cont01 .c-box02 > ul > li {width:50%}
+.cont01 .c-box02 > p:last-child {margin:0 5.5vw 12.5vw}
+.cont01 .c-box02 > ul > li > .img {position:relative;line-height:0}
+.cont01 .c-box02 > ul > li > .img a {display:flex;align-items:center;justify-content:center;color:#fff;background-color:rgb(255, 255, 255, 0.2);font-size:2.5vw;padding:1.3vw 0;position:absolute;bottom:0;left:0;width:100%;height:5vw}
+/*popup*/
+.cont01 .c-box02 .layer-popup {display:none;position:fixed;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);width:80%;z-index:3;padding-top:8.3vw;max-height:50vh;overflow-y:auto;}
+.cont01 .c-box02 > ul > li.on .dim {position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgb(0, 0, 0, 0.7);z-index:2}
+.cont01 .c-box02 > ul > li.on .layer-popup {display:block}
+.cont01 .c-box02 .layer-con {background-color:#fff;border:1px solid #000;padding:5.5vw;letter-spacing:-0.5px;}
+.cont01 .c-box02 .layer-popup .card-box {margin-top:4.1vw;background-color:#f5f5f5;border-radius:10px;padding:5vw;}
+.cont01 .c-box02 .layer-popup .card-box li {font-size:3.2vw;margin-top:2vw;line-height:1.5;}
+.cont01 .c-box02 .layer-popup .card-box li:first-child {margin-top:0}
+.cont01 .c-box02 .layer-popup button {position:absolute;top:0;right:0;background-color:#333333;width:8.3vw;height:8.3vw;border:none;}
+.cont01 .c-box02 .layer-popup button:before {content:'';width:1px;height:5vw;background-color:#fff;transform:rotate(45deg) translateX(-50%) translateY(-50%);position:absolute;top:38%;left:31%;}
+.cont01 .c-box02 .layer-popup button:after {content:'';width:1px;height:5vw;background-color:#fff;transform:rotate(-45deg) translateX(-50%) translateY(-50%);position:absolute;top:36%;right:25%;}
+/* 컨설턴트 리스트 */
+.cont01 .c-box02 .consult-swiper {margin-bottom:8.3vw}
+.cont01 .c-box02 .consult-swiper .swiper-wrapper  {transition-timing-function:linear !important;}
+.cont01 .c-box02 .consult-swiper .swiper-slide {width:36.1vw}
+.cont01 .c-box03 > p:first-child {margin:11.8vw 20.8vw 8.3vw;}
+.cont01 .c-box03 ul {margin:0 4%;}
+.cont01 .c-box03 ul li {border-top:1px solid #515151;margin-top:5.5vw;padding-top:4.1vw}
+.cont01 .c-box03 ul li:first-child {border-top:none;margin-top:0;padding-top:0;}
+.cont01 .c-box03 ul li dl {display:flex;align-items:center;}
+.cont01 .c-box03 ul li dl dt {color:#eebd72;border:1px solid #eebd72;font-size:3vw;padding:0.8vw 3vw;border-radius:20px}
+.cont01 .c-box03 ul li dl dd {color:#eebd72;font-size:3.5vw;letter-spacing:-1px;margin-left:2vw;font-weight:bold;}
+.cont01 .c-box03 ul li p {font-size:3.5vw;color:#fff;margin-top:2vw; letter-spacing:-1px;line-height:1.7}
+.cont01 .c-box03 ul li p span {font-size:inherit}
+.cont01 .c-box03 > p:last-child {margin:9.7vw 10.41vw 12.5vw}
+/* //cont01 */
+
+/* cont02 */
+.cont02 .r-step {border:1px solid #d9d9d9;padding:0 4%;font-size:1.3rem}
+.cont02 .r-step li {border-top:1px solid #d9d9d9;display:flex; align-items:center;gap:2vw;font-size:1.4rem;padding:2vw 0}
+.cont02 .r-step li:first-child {border-top:0}
+.cont02 .r-step li div {text-align:center;width:20%;font-weight:bold;font-size:1.4rem}
+.cont02 .r-step li p {font-size:inherit;width:80%;letter-spacing:-1px;}
+.cont02 .r-step li p strong {font-size:inherit}
+.cont02 .c-tit {padding:0 4%;font-size:1.4rem;margin-top:20px}
+.cont02 .link-btn {background-color:#7e7e7e;color:#fff;display:inline-block;padding:2px 5px;border-radius:4px}
+/* //cont02 */
+
+/* 신청 popup */
+.consult-pop *[class^="con-essential"] {display:flex;justify-content:space-between;padding-bottom:12px;margin-bottom:12px;border-bottom:1px solid #eaeaea;margin-right:4%}
+.consult-pop .con-essential > p {font-size:1.3rem}
+.consult-pop *[class^="con-essential"] h3 {padding-bottom:0;margin-bottom:0;border-bottom:none;}
+.consult-pop *[class^="con-essential"] p {padding-top:3px}
+.consult-pop .cont-box-left .con-essential02 {justify-content:flex-start;}
+.consult-pop .c-tit {font-weight:bold;text-align:center;font-size:1.8rem;margin-bottom:10px}
+.consult-pop .pay-pop-in .txt {text-align:left}
+.consult-pop .t-calendar {border-top:1px solid #d9d9d9;}
+.consult-pop .t-calendar * {font-size:1.1rem}
+.consult-pop .pr5 {padding-right:5.5%}
+.consult-pop .bg-green {background-color:#eafaf0}
+.consult-pop .bg-pink {background-color:#ffebed}
+.consult-pop .bg-yellow {background-color:#fcf5e2}
+.consult-pop .t-calendar thead th {border-bottom:1px solid #d9d9d9;padding:5px 0}
+.consult-pop .t-calendar tbody td {position:relative;padding:10px 2px;text-align:center;}
+.consult-pop .t-calendar tbody td:first-child {border-left:none}
+.consult-pop .t-calendar td > span {position:absolute;top:0;left:5px;width:auto}
+.consult-pop .t-calendar p {padding:20px 0 15px;text-align:center;}
+.consult-pop .t-calendar a[class^="r-btn-"] {background-color:#303030;padding:3px 8px;display:inline-block;font-size:1.1rem;color:#fff;border-radius:2px;border:1px solid #303030;text-decoration:none !important;}
+.consult-pop .t-calendar a.r-btn-wh {border:1px solid #b6b6b6;background-color:#fff;color:#7f7f7f;}
+.consult-pop .t-calendar td p span {color:#e30c0c}
+.consult-pop .t-calendar td strong {display:block;font-weight:bold;line-height:24px}
+/* 가로 해상도가 359px 보다 작은 화면에 적용) */
+@media only screen and (max-width: 359px) {
+    .tbl-wrap {overflow-x:auto}
+    .tbl-wrap .t-calendar {width:150%}
+}
+.consult-pop .info-list strong {flex:0 0 30%;letter-spacing:-1px;line-height:1.2}
+.consult-pop .input-tel select {text-align:left}
+
+.consult-pop .t-uni * {font-size:1.5rem}
+.consult-pop .t-uni th {text-align:center;}
+.consult-pop .t-uni th strong {font-weight:normal}
+.consult-pop .t-tendency {border-top:1px solid #d9d9d9}
+.consult-pop .t-tendency * {font-size:1.5rem}
+.consult-pop .t-tendency th {text-align:center;}
+.consult-pop .t-tendency th strong {font-weight:normal}
+.consult-pop .t-tendency td input {width:35%;height:25px}
+
+.consult-pop .file{position:relative;}
+.consult-pop .file > input{box-sizing:border-box;padding:0 23px 0 10px;width:75%}
+.consult-pop .file span{display:block;width:25%;height:40px;color:#fff;background:#444444;text-align:center;font-size:1.2rem;line-height:1.2;position:absolute;right:0;top:0;box-sizing:border-box;padding-top:6px}
+.consult-pop .file span input{opacity:0;width:100%;height:100%;position:absolute;left:0;top:0;cursor:pointer;}
+.consult-pop .file .backUni{display: inline-block;text-align: center;border:none;position:absolute;right:30%;top:50%;transform:translateY(-50%)}
+.consult-pop .bt-type02 {display:flex;}
+.consult-pop .bt-type02 a:first-child {margin-right:0}
+.consult-pop .bt-school {text-decoration:none !important;font-size:1.3rem}
+.consult-pop .bt-school-uni {text-decoration:none !important;display: inline-block;margin-left: 3%;width: 30%;border-radius: 3px;background: #777;color: #fff;font-weight: bold;height: 40px;text-align: center;font-size: 1.3rem;line-height: 40px;vertical-align: middle;}
+.consult-pop .info-list li {align-items:center;}
+.consult-pop .info-list li::before {top:50%;transform:translateY(-50%);}
+.consult-pop .txt-red {font-size:1.3rem}
+.consult-pop .f12 {font-size:1.3rem !important;}
+.consult-pop .agree-box .terms-box {height:auto}
+
+.find-uni {padding:0 6%}
+.find-uni .result-wrap {padding-top:25px;font-size:1.4rem;text-align: left;}
+.find-uni .result-wrap .stit {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #d6d6d6;font-weight: bold;}
+.find-uni .result-wrap .list {height:130px;overflow-y: scroll;}
+.find-uni .result-wrap .list p {margin-bottom:7px;font-weight: bold;letter-spacing: -1px;}
+.find-uni .result-wrap .list p a {display: flex;align-items: center;}
+.find-uni .result-wrap .list p strong {width:28%;padding:0 9px 0 0;margin-right:10px;border-right: 1px solid #979aa1;}
+
+.consult-pop .js-bt-uni {display: inline-block;margin-left:3%;width:30%;border-radius: 3px;background:#777;color:#fff;font-weight: bold;height: 40px;text-align: center;font-size:1.3rem;line-height:40px;vertical-align: middle;text-decoration:none !important;}
+
+/* 입시전략연구소 정시컨설팅 - 대학/학과 검색 팝업 */
+.popupUniversity{padding:0 4%;}
+.popupUniversity .searchWrap{margin:0 0 25px 0;text-align:left;}
+.popupUniversity .searchWrap .searchBox{background:#e6f5ff;height:46px;padding:0 54px 0 0;position:relative;color:#565656;font-weight:bold;font-size:1.6rem;line-height:44px;}
+.popupUniversity .searchWrap .searchBox label{display:block;position:absolute;left:0;top:0;width:100%;height:100%;padding:0 64px 0 10px;box-sizing:border-box;text-align:left;line-height:36px}
+.popupUniversity .searchWrap .searchBox label span{font-weight:normal;font-size:1.3rem;color:#868686;}
+.popupUniversity .searchWrap .searchBox input{width:100%;height:100%;border:none;background:transparent;outline:none;padding:0 10px 0 10px;box-sizing:border-box;color:#565656;font-weight:bold;font-size:1.3rem;line-height:44px;}
+.popupUniversity .searchWrap .searchBox a{position:absolute;right:0;top:0;}
+.popupUniversity .searchWrap .major .majorList{position:relative;padding:0 0 0 25%;height:36px;margin:0 0 2px 0;}
+.popupUniversity .searchWrap .major .majorList + .majorList{margin:0 0 0 0;}
+.popupUniversity .searchWrap .major .majorList .title{display:block;position:absolute;left:0;top:0;background:#666666;color:#fff;text-align:center;width:25%;height:100%;line-height:36px;font-size:1.3rem;}
+.popupUniversity .searchWrap .major .majorList .university{height:34px;font-size:1.3rem;line-height:32px;border:1px solid #e5e5e5;border-left:none;color:#1a1a1a;padding:0 0 0 10px;font-weight:bold;}
+.popupUniversity .searchWrap .major .majorList .searchBox{height:34px;font-size:1.3rem;line-height:32px;border:1px solid #e5e5e5;border-left:none;padding:0 45px 0 0;}
+.popupUniversity .searchWrap .major .majorList .searchBox label span{font-size:1.1rem;}
+.popupUniversity .searchWrap .major .majorList .searchBox input{line-height:32px;}
+.popupUniversity .searchWrap .major .majorList .searchBox .backUni{position:absolute;right:64px;top:50%;transform:translateY(-50%)}
+.popupUniversity .searchWrap .major .majorList .searchBox .backUni img {width:3vw}
+.popupUniversity .searchWrap p{font-size:1.1rem;line-height:14px;color:#ff3a3a;margin:5px 0 0 0;padding:0 0 0 14px;}
+.popupUniversity .searchWrap p.info{color:#808080;font-size:1.3rem;margin:8px 0 0 0;}
+
+.uni-result {font-size:13px;color:#1a1a1a;margin:0 0 5px 0;padding:0 0 0 14px;}
+.listBox {height:200px;overflow: scroll;}
+.listBox table{width:100%;border-collapse: collapse;}
+.listBox table thead tr th {position: sticky;top:0;left:0;}
+.listBox table thead tr th{background:#d4d4d4;border-left:1px solid #fff;height:35px;font-size:13px;color:#1a1a1a;padding:0;}
+.listBox  table thead tr th:first-child{width:48px;border-left:none;}
+.listBox  table tbody tr td{border:1px solid #e5e5e5;height:26px;line-height:26px;text-align:center;background:#fff;padding:0;font-size:13px;box-sizing:border-box;}
+.listBox  table tbody tr td:first-child{width:48px;}
+.listBox  table tbody tr:hover td{background:#f6f6f6;}
+.listBox  table tbody tr td a{display:block;width:100%;height:100%;}
+.listBox .thead{border-bottom:1px solid #e5e5e5;background:#fff;overflow:hidden;}
+.popupUniversity iframe{width:100%;height:196px;}
+
+/* //신청 popup */

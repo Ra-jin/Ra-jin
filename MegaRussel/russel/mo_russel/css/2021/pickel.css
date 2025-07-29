@@ -1,0 +1,83 @@
+/* =========================
+    공통
+========================= */
+.mt5 {margin-top:5%;}
+.mt10 {margin-top:10%;}
+.mt20 {margin-top:20%;}
+
+.pickel-wrap {font-size: 1.6rem;color: #222;padding: 37px 0 55px;}
+.pickel-wrap .inner {padding: 0 4%;box-sizing:border-box;}
+.pickel-wrap img {display:block;width:100%;height:auto}
+.pickel-wrap .cont {position:relative;padding-bottom:60px}
+
+.pickel-wrap .visual {position:relative;width:calc(720vw/7.2);height:100%}
+
+.pickel-wrap .pk-label {position:absolute;right:0;top:15%;padding:5% 3%;background:#fffb87;border-radius:10px 0 0 10px;color:#000000;font-size:1.4rem;font-weight:600;}
+
+
+/* .bg-blue {padding:0 4% 70px;background:#002353;}
+
+.slide-box {padding:0 4% 50px;background:#eaecf2;}
+.slide-box .content:not(:first-child) {margin-top:10px;}
+.slide-box .content .tit {position:relative;border:1px solid #cccccc;background:#ffffff;padding:6% 9% 6% 3%;letter-spacing:-1px;font-size:1.4rem;font-weight:600;border-radius: 7px;}
+.slide-box .content .tit::before {content:'';display:inline-block;vertical-align:-3px;width:20px;height:15px;margin-right:5px;background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/study_hall/pickel_num01_off.png") no-repeat 0 0;background-size:20px auto;}
+.slide-box .content.on .tit::before {background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/study_hall/pickel_num01_on.png") no-repeat 0 0;background-size:20px auto;}
+
+.slide-box .content:nth-child(2) .tit::before {background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/study_hall/pickel_num02_off.png") no-repeat 0 0;background-size:20px auto;}
+.slide-box .content:nth-child(2).on .tit::before {background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/study_hall/pickel_num02_on.png") no-repeat 0 0;background-size:20px auto;}
+
+.slide-box .content:nth-child(3) .tit::before {background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/study_hall/pickel_num03_off.png") no-repeat 0 0;background-size:20px auto;}
+.slide-box .content:nth-child(3).on .tit::before {background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/study_hall/pickel_num03_on.png") no-repeat 0 0;background-size:20px auto;}
+
+.slide-box .content:nth-child(4) .tit::before {background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/study_hall/pickel_num04_off.png") no-repeat 0 0;background-size:20px auto;}
+.slide-box .content:nth-child(4).on .tit::before {background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/study_hall/pickel_num03_o4.png") no-repeat 0 0;background-size:20px auto;}
+
+.slide-box .content .tit::after {content:'';display:block;position:absolute;right:7%;top:47%;width:12px;height:12px;border-top:2px solid #000;border-right:2px solid #000;border-radius: 1px; transform:translateY(-60%) rotate(135deg);}
+.slide-box .content.on .tit {border:1px solid #0a4db2;background:#0a4db2;color:#f8f8f8;}
+.slide-box .content.first .tit {border-radius: 7px 7px 0 0;}
+.slide-box .content.on .tit::after {top:55%;border-top:2px solid #f8f8f8;border-right:2px solid #f8f8f8;transform:translateY(-60%) rotate(-45deg);}
+.slide-box .content .img {display:none;}
+.pickel-wrap .pos-r {position:relative;}
+.pickel-wrap .info-tel {position:absolute;left:0;bottom:20%;width:100%;text-align:center;color:#fff;font-size:1.5rem;font-weight:400;} */
+
+/* ==================================================
+    contents
+================================================== */
+.cont.cont01 {background: #fff;}
+.point-slide {padding-bottom:31px}
+.point-slide.swiper-container-horizontal>.swiper-pagination-bullets {bottom:0}
+.point-slide.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {width:11px;height:11px;opacity:1;background:#AEC0D4;}
+.point-slide.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {background:#0036C4;}
+
+.cont.cont02 {background:#ECF3FB;}
+.pk-slide {padding-bottom:31px}
+.pk-slide.swiper-container-horizontal>.swiper-pagination-bullets {bottom:0}
+.pk-slide.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {width:11px;height:11px;opacity:1;background:#AEC0D4;}
+.pk-slide.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {background:#0036C4;}
+.cont.cont03 {background:#001B64;}
+
+/* .mid-banner {padding:70px 0;background: linear-gradient(93deg, #0036C4 0.43%, #001A5E 55.97%);} */
+/* .banner {width:calc(720vw/7.2);} */
+
+/* 인트로 학원안내 */
+.pickel-list {display:flex;justify-content:space-between;align-content:space-between;flex-flow:row wrap;text-align:center;}
+.pickel-list li {width:48%;margin-top:4%;background:#fff;border-radius:10px;overflow:hidden;}
+.pickel-list li .box {padding:20px 0 14px;}
+.pickel-list li .box .academy {font-size:1.8rem;font-weight:700;letter-spacing: -1px;}
+.pickel-list li .box .desc {font-size:1.6rem;letter-spacing: -1px;margin:10px 0;}
+.pickel-list li .box .desc span{display:block;color:#002EA7;font-size:1.4rem;line-height:1.3;letter-spacing: -1px;}
+.pickel-list li .box .btn {display:inline-block;padding:3px 7%;font-size:1.5rem;line-height:1;letter-spacing: -1px;border:1px solid #DDD;border-radius:2px;}
+.pickel-list li .tel {padding:14px 0;background:#f4f4f4;color:#010101;font-size:1.5rem;line-height:1;letter-spacing:-1px;}
+
+/* .tbl-box {padding:0 5% 10%;background:#fff;}
+.tbl-box table {width:100%;border-collapse:collapse;text-align:center;border-bottom:1px solid #a7a7a7;}
+.tbl-box table thead tr th {padding:7% 0;background:#0006a9;border-left:1px solid #fff;font-size:1.2rem;color:#fff;}
+.tbl-box table thead tr th:first-of-type {background:#3137d9;border-left:0;font-weight:600;}
+.tbl-box table tbody tr th, .tbl-box table tbody tr td {padding:5% 0;font-size:1.2rem;border-left:1px solid #dddddd;border-top:1px solid #dddddd;}
+.tbl-box table tbody tr.line-top th, .tbl-box table tbody tr.line-top td {border-top:1px solid #a7a7a7;}
+.tbl-box table tbody tr th {background:#f4f4f4;color:#333333;border-left:0;}
+.tbl-box table tbody tr td {color:#666666;}
+.tbl-box .info-stxt {margin-top:3%;text-align:center;color:#999999;font-size:1.2rem;} */
+
+
+

@@ -1,0 +1,91 @@
+/* 입결 지도영역 */
+.map-tit {margin-bottom:50px;text-align: center;font-weight:700 ;font-size: 38px;letter-spacing: -2px;}
+.map-tit strong {font-weight: 700;}
+.map-tit sup {padding:15px 0 0 2px;font-size: 22px;color: #222;}
+.map-wrapper {position:relative;width:1350px;height:980px;padding:100px 0 130px;margin:-100px auto 0;transform: translateX(-40px);}
+.map-wrapper .r-stxt {margin:50px 0px 0 0;text-align: right;font-size: 14px;color: #c4c4c4;}
+
+.campus-info {position:absolute;text-align: left;z-index: 1;border-radius: 25px;border:1px solid #f3f3f3;background:#fff}
+.campus-info.on-campus {width:286px;box-sizing: border-box;z-index: 2;}
+.campus-info.on-campus .info-inner {display: block;border-color:#1c3fca;}
+.campus-info.on {z-index: 3;}
+.campus-info .tit {position: relative;width:280px;box-sizing:border-box;padding:25px;border-radius: 20px;cursor: pointer;text-align: left;font-size:16px;color:#222;font-weight: 500;letter-spacing: -1px;}
+.campus-info .tit strong {color: #1c3fca;font-weight: 500;}
+.campus-info .tit sup {padding-top:10px;font-size: 14px;color:#b7b7b7}
+.campus-info .tit::after {position: absolute;top:17px;right:17px;content:"+";display: block;width:19px;height:19px;background:#4c4c4c;color: #fff;font-weight: bold;border-radius: 10px;text-align: center;line-height: 19px;}
+.campus-info .info-inner {display:none;padding:25px;min-width:500px;position:absolute;top:0px;left:50%;border:1px solid #f3f3f3;border-radius: 20px;background:#fff;transform: translate(-40%, -2%);}
+.campus-info .info-inner.on {display: block!important;}
+.campus-info.c-jg .info-inner, .campus-info.c-dc .info-inner,.campus-info.c-bd .info-inner, .campus-info.c-dj .info-inner, .campus-info.c-ct .info-inner {transform: translate(-70%, -2%);}
+.campus-info.c-yj .info-inner {transform: translate(-60%, -2%);}
+
+.campus-info .info-inner .tit {border:none;padding:0;}
+.campus-info .info-inner .tit::after {display: none;}
+.campus-info .info-inner .txt {margin-top: 15px;;}
+.campus-info .info-inner .txt li {position:relative;padding-left:7px;font-size: 13px;color:#545252;line-height: 1.4;}
+.campus-info .info-inner .txt li::before {position:absolute;top:0px;left:0;content: "-";}
+.campus-info .info-inner .stxt {margin-top:4px;font-size: 11px;color:#c3c3c3;}
+.campus-info .bt-close {position:absolute;top:20px;right:20px;cursor: pointer;}
+
+
+
+.campus-info.c-gn {top:120px;left:580px;}
+.campus-info.c-jg {top:173px;right:20px;}
+.campus-info.c-dc {top:308px;right:20px;}
+.campus-info.c-bd {top:440px;right:20px;}
+.campus-info.c-dj {top:580px;right:20px;}
+.campus-info.c-ct {top:713px;right:19px;}
+.campus-info.c-yj {top:807px;left:607px}
+.campus-info.c-gj {top:697px;left:142px}
+.campus-info.c-yt {top:570px;left:142px}
+.campus-info.c-pc {top:438px;left:142px}
+.campus-info.c-bc {top:312px;left:143px}
+.campus-info.c-md {top:175px;left:142px}
+
+
+
+/* 바자관 키컬러 */
+.map-tit.map-study {margin-bottom: 0;}
+.map-tit.map-study strong {color: #0c15c4;}
+.map-study {padding-bottom:70px;}
+.map-study .campus-info.on .tit strong {color:#2d4dd1}
+.map-study .campus-info.on-campus {border:2px solid #4f69d4;}
+.map-study .campus-info.on-campus .tit strong {color:#2d4dd1}
+
+/* HS반 키컬러 */
+.map-tit.map-hs, .map-tit.map-hs * {font-size: 30px}
+.map-tit.map-hs, .map-tit.map-hs sup {color:#fff;}
+.map-tit.map-hs sup {font-size: 15px;}
+.map-tit.map-hs strong {color: #dbc6fe;}
+.map-hs .campus-info .tit strong {color:#7813d5}
+.map-hs .campus-info.on-campus {border:2px solid #8d46f1;}
+.map-hs .campus-info.on-campus .tit strong {color:#7813d5}
+.map-hs .r-stxt {opacity: .3;}
+
+/* 대입합격현황 키컬러 */
+.map-tit.map-perfect strong {color: #0c43c4;}
+.map-perfect .campus-info.on .tit strong {color:#083cb2}
+.map-perfect .campus-info.on-campus > .tit {border:2px solid #3f59c1;}
+.map-perfect .campus-info.on-campus .tit strong {color:#083cb2}
+
+/* 대입성공story 키컬러 */
+.map-tit.map-success strong {color: #2832d2;}
+.map-success .campus-info.on .tit strong {color:#083cb4}
+.map-success .campus-info.on-campus {border:2px solid #415dca;}
+.map-success .campus-info.on-campus .tit strong {color:#083cb4}
+
+.ico-map {position:absolute;display: block}
+.ico-map.intro {display: none;}
+.ico-map.on, .ico-map.on-campus {display: block;}
+.ico-map.ico-gn {top:393px;left:669px;}
+.ico-map.ico-jg {top:327px;left:687px;}
+.ico-map.ico-dc {top:400px;left:697px;}
+.ico-map.ico-bd {top:459px;left:758px;}
+.ico-map.ico-ct {top:856px;left:935px;}
+.ico-map.ico-yj {top:547px;left:786px;}
+.ico-map.ico-sm {top:547px;left:786px;}
+.ico-map.ico-yt {top:511px;left:651px;}
+.ico-map.ico-pc {top:463px;left:630px;}
+.ico-map.ico-bc {top:365px;left:522px;}
+.ico-map.ico-md {top:370px;left:610px;}
+.ico-map.ico-dj {top:657px;right:399px;}
+.ico-map.ico-gj {top:760px;left:526px;}

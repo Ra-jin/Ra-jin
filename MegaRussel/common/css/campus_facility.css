@@ -1,0 +1,27 @@
+
+/* =================================================
+    °øÅë
+==================================================== */
+mark {color:#222;}
+.campus_wrap {position:relative;overflow:hidden;padding-top:90px}
+.campus_wrap h5 {padding-bottom:60px;margin:0;color:#111;font-size:33px;font-weight:bold;line-height:1;letter-spacing:-1px}
+.campus_wrap .tit {padding-bottom:18px;color:#111;font-size:18px;font-weight:bold;line-height:1}
+.campus_wrap .txt {padding-bottom:40px;color:#666;line-height:22px}
+.campus_wrap .txt strong {color:#111;font-weight:500}
+
+.campus_wrap .campus-facility {position:relative;margin-bottom:80px}
+.campus_wrap .swiper-button-next, .campus_wrap .swiper-button-prev {top:48%;transform:translateY(-50%);width:53px;height:70px;background:none}
+.campus_wrap .swiper-button-next {right:0;}
+.campus_wrap .swiper-button-prev {left:0;}
+.campus_wrap .swiper-pagination-bullet {border-radius:0;background:none}
+
+.campus_wrap .js-gallery {position:relative;overflow:hidden}
+.campus_wrap .js-gallery .thumb-wrap {position:relative;min-height:70px}
+.campus_wrap .js-gallery .thumb-wrap span {position:relative;width:125px;height:70px;margin-top:5px;margin-right:5px;opacity:1}
+.campus_wrap .js-gallery .thumb-wrap span:nth-child(6n) {margin-right:0;}
+.campus_wrap .js-gallery .thumb-wrap span img {width:100%;height:100%}
+.campus_wrap .js-gallery .thumb-wrap .swiper-pagination-bullet-active {background:none}
+.campus_wrap .js-gallery .thumb-wrap .swiper-pagination-bullet-active::before {content:'';position:absolute;top:0;width:115px;height:60px;border:5px solid #267dc1}
+
+
+

@@ -1,0 +1,259 @@
+<%@ language="VBScript" %>
+<!-- METADATA TYPE="TypeLib" FILE="c:\windows\system32\scrrun.dll" -->
+<!-- METADATA TYPE="TypeLib" FILE="c:\Program Files\Common Files\system\ado\msado15.dll" -->
+<%
+  Option Explicit
+
+  Const lngMaxFormBytes = 200
+
+  Dim objASPError, blnErrorWritten, strServername, strServerIP, strRemoteIP
+  Dim strMethod, lngPos, datNow, strQueryString, strURL
+  Dim strErrMsg
+
+  If Response.Buffer Then
+    Response.Clear
+    Response.Status = "500 Internal Server Error"
+    Response.ContentType = "text/html"
+    Response.Expires = 0
+  End If
+
+  Set objASPError = Server.GetLastError
+%>
+
+<html dir=ltr>
+<head>
+<META NAME="ROBOTS" CONTENT="NOINDEX">
+<title>이 페이지를 표시할 수 없습니다.</title>
+<META HTTP-EQUIV="Content-Type" Content="text-html; charset=euc-kr">
+<style type='text/css'>
+<!--
+	a:link		{ text-decoration:none; color: #7A7A7A; }
+	a:visited	{ text-decoration:none; color: #7A7A7A; }
+	a:active	{ text-decoration:none; color: #7A7A7A; }
+	a:hover		{ text-decoration:underline; color: #676767; }
+	td			{ font-family: "굴림"; font-size: 9pt; font-style: normal; line-height: 17px; color: #7A7A7A; text-decoration: none}
+
+	.tt{font-family: "굴림","Verdana"; font-size: 11pt; color:#0CA598; text-decoration: none; line-height: 18px;font-weight:bold;}
+	a.tt{font-family: "굴림","Verdana"; font-size: 11pt; color:#0CA598; text-decoration:none;font-weight:bold;}
+//-->
+</style>
+<script>
+<!--
+function Homepage(){
+
+	DocURL=document.URL;
+
+	//this is where the http or https will be, as found by searching for :// but skipping the res://
+	protocolIndex=DocURL.indexOf("://",4);
+
+	//this finds the ending slash for the domain server
+	serverIndex=DocURL.indexOf("/",protocolIndex + 3);
+
+	//for the href, we need a valid URL to the domain. We search for the # symbol to find the begining
+	//of the true URL, and add 1 to skip it - this is the BeginURL value. We use serverIndex as the end marker.
+	//urlresult=DocURL.substring(protocolIndex - 4,serverIndex);
+	BeginURL=DocURL.indexOf("#",1) + 1;
+	urlresult=DocURL.substring(BeginURL,serverIndex);
+
+	//for display, we need to skip after http://, and go to the next slash
+	displayresult="<font color=green>" + DocURL.substring(protocolIndex + 3 ,serverIndex) + "</font>";
+
+	InsertElementAnchor(urlresult, displayresult);
+}
+
+function HtmlEncode(text)
+{
+    return text.replace(/&/g, '&amp').replace(/'/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function TagAttrib(name, value)
+{
+    return ' '+name+'="'+HtmlEncode(value)+'"';
+}
+
+function PrintTag(tagName, needCloseTag, attrib, inner){
+    //document.write( '<' + tagName + attrib + '>' + HtmlEncode(inner) );
+    document.write( '<' + tagName + attrib + '>' + inner );
+    if (needCloseTag) document.write( '</' + tagName +'>' );
+}
+
+function URI(href)
+{
+    IEVer = window.navigator.appVersion;
+    IEVer = IEVer.substr( IEVer.indexOf('MSIE') + 5, 3 );
+
+    return (IEVer.charAt(1)=='.' && IEVer >= '5.5') ?
+        encodeURI(href) :
+        escape(href).replace(/%3A/g, ':').replace(/%3B/g, ';');
+}
+
+function InsertElementAnchor(href, text)
+{
+    PrintTag('A', true, TagAttrib('HREF', URI(href)), text);
+}
+
+//-->
+</script>
+</head>
+<body bgcolor="FFFFFF">
+<table width="689" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+	<td height="20"></td>
+</tr>
+<tr>
+	<td height="50"><a href="http://<%=Request.ServerVariables("SERVER_NAME")%>"><img src="/img_logo.jpg" width="159" height="35" border="0"></a></td>
+</tr>
+<tr>
+	<td valign="top" background="">
+		<table width="680" align="center" cellpadding="0" cellspacing="0" bgcolor="f2f2f2" style = "border:1px solid #a7a7a7" >
+		<tr>
+			<td width="10" valign="top"></br></br><div align="center"></div></td>
+			<td width="490" valign="top">
+			<table width="460" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td height="35" class="tt">이 페이지를 표시할 수 없습니다.</td>
+				</tr>
+				<tr>
+					<td><br>연결하려는 페이지에 문제가 있어서 페이지를 표시할 수 없습니다.<br>
+					<hr color="#C0C0C0" noshade>
+					다음을 시도해 보십시오.<BR>
+					<ul>
+					<li>
+					<a href="javascript:location.reload()"><font color="green">새로 고침</font></a> 단추를 클릭하거나 나중에 다시 시도하십시오.<br>
+					</li>
+					<li>
+					<script>
+					<!--
+						if (!((window.navigator.userAgent.indexOf("MSIE") > 0) && (window.navigator.appVersion.charAt(0) == "2")))
+							Homepage();
+					//-->
+					</script>
+					홈 페이지를 연 다음 원하는 정보에 대한 링크를 찾으십시오. </li>
+					<li>
+					<a href="javascript:history.go(-1)"><font color="green">뒤로가기</font></a> 단추를 클릭하십시오.<br>
+					</li>
+					</ul>
+					<font color="red">이 오류는 관리자와 담당자에게 전달되었습니다.</font><br><br>
+					신속하게 문제가 처리될 수 있도록 최선을 다하겠습니다.<br><br>
+					<hr color="#C0C0C0" noshade>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		</table>
+	</td>
+<tr>
+	<td></td>
+</tr>
+</table>
+
+<%
+	' 오류정보 기록
+	Dim bakCodepage
+	on error resume next
+		bakCodepage = Session.Codepage
+		Session.Codepage = 949
+	on error goto 0
+
+	strErrMsg = strErrMsg & Request.ServerVariables("LOCAL_ADDR") & chr(11)
+	strErrMsg = strErrMsg & Request.ServerVariables("SERVER_NAME") & chr(11)
+	strErrMsg = strErrMsg & Request.ServerVariables("REMOTE_ADDR") & chr(11)
+	datNow = Now()
+	strErrMsg = strErrMsg &  FormatDateTime(datNow, 1) & ", " & FormatDateTime(datNow, 3) & chr(11)
+	strErrMsg = strErrMsg &  Request.ServerVariables("SCRIPT_NAME") & chr(11)
+	strErrMsg = strErrMsg &  objASPError.Category
+	If objASPError.ASPCode > "" Then
+		strErrMsg = strErrMsg &  ", " & objASPError.ASPCode
+	END IF
+	strErrMsg = strErrMsg &  " (0x" & Hex(objASPError.Number) & ")" & chr(11)
+
+	If Len( CStr(objASPError.ASPDescription) ) > 0 Then
+		strErrMsg = strErrMsg &  objASPError.ASPDescription
+	END IF
+
+	If Len( CStr(objASPError.Description) ) > "" Then
+		strErrMsg = strErrMsg & " - " &  objASPError.Description
+	end if
+
+	strErrMsg = strErrMsg &  chr(11)
+
+
+	blnErrorWritten = False
+
+	If objASPError.Source > "" Then
+	    strServername = LCase(Request.ServerVariables("SERVER_NAME"))
+    	strServerIP   = Request.ServerVariables("LOCAL_ADDR")
+    	strRemoteIP   = Request.ServerVariables("REMOTE_ADDR")
+    	If (strServername = "localhost" Or strServerIP = strRemoteIP) And objASPError.File <> "?" Then
+			strErrMsg = strErrMsg &  objASPError.File
+			If objASPError.Line > 0 Then strErrMsg = strErrMsg &  ", line " & objASPError.Line
+			If objASPError.Column > 0 Then strErrMsg = strErrMsg &  ", column " & objASPError.Column
+			strErrMsg = strErrMsg &  chr(11)
+			strErrMsg = strErrMsg &  objASPError.Source & chr(11)
+			If objASPError.Column > 0 Then strErrMsg = strErrMsg &  String((objASPError.Column - 1), "-") & "^" & chr(11)
+			blnErrorWritten = True
+		End If
+	End If
+
+
+	If Not blnErrorWritten And objASPError.File <> "?" Then
+		strErrMsg = strErrMsg &  objASPError.File
+		If objASPError.Line > 0 Then strErrMsg = strErrMsg &  ", line " & objASPError.Line
+		If objASPError.Column > 0 Then strErrMsg = strErrMsg &  ", column " & objASPError.Column
+		strErrMsg = strErrMsg &  chr(11)
+	End If
+
+	strErrMsg = strErrMsg & Request.ServerVariables("HTTP_USER_AGENT") & chr(11)
+	strMethod = Request.ServerVariables("REQUEST_METHOD")
+	strErrMsg = strErrMsg &  strMethod & " "
+
+	If strMethod = "POST" Then
+		strErrMsg = strErrMsg &  Request.TotalBytes & " bytes to "
+	End If
+
+	'strErrMsg = strErrMsg &  Request.ServerVariables("SCRIPT_NAME")
+
+	lngPos = InStr(Request.QueryString, "|")
+	If lngPos > 1 Then
+		strErrMsg = strErrMsg &  "?" & Left(Request.QueryString, (lngPos - 1))
+	End If
+
+
+	strErrMsg = strErrMsg & Request.ServerVariables("QUERY_STRING")
+	If strMethod = "POST" Then
+		If Request.TotalBytes > lngMaxFormBytes Then
+			strErrMsg = strErrMsg '&  Left(Request.Form, lngMaxFormBytes) & " . . ."
+		Else
+			strErrMsg = strErrMsg &  Request.Form
+		End If
+	End If
+	
+	'*************   쿠키 남기기  *************
+	' web_debug 페이지에서 chr(11) 구분자로 잘라서 9배열까지만 출력되도록 설정이 되어있다.
+	' web_debug 페이지의 arrErrorInfo 변수배열을 더 늘려서 출력을 할 경우
+	' 기존 로그와의 배열인덱스 오류가 발생할 수 있으므로,
+	' <BR>을 직접 넣어 남긴다
+	strErrMsg = strErrMsg & chr(11)
+	strErrMsg = strErrMsg & "COOKIES  " & Request.Cookies
+
+	on error resume next
+		Session.Codepage = 949
+	on error goto 0
+
+'레지스트리에서 파일 위치 읽기
+	On Error Resume Next
+
+	Dim objReg, objFSO, objStream, strLogFilePath, strLogFileName
+	Set objReg = Server.CreateObject("WScript.Shell")	
+	strLogFilePath = Server.MapPath("/Data/500_error/log")
+	Set objReg = Nothing
+	strLogFileName = "debug" & Replace(Cstr(date),"-","") & ".log"
+	Set objFSO = Server.CreateObject("Scripting.FileSystemObject")
+	Set objStream = objFSO.OpenTextFile(strLogFilePath & "\" & strLogFileName,ForAppending,True)
+	objStream.WriteLine(strErrMsg)
+	objStream.Close
+	Set objFSO = Nothing
+%>
+</body>
+</html>

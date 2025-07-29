@@ -1,0 +1,27 @@
+.wrap-mock {width:777px;height:1000px;}
+.wrap-mock .visual-mock {position:relative;}
+.wrap-mock .visual-mock .visual-top {position:absolute;top:80px;}
+.wrap-mock .visual-mock .txt-middle {padding:17px 61px 21px;position:absolute;top:395px;left:50%;transform:translateX(-50%);width:617px;background:#000;text-align:center;font-size:26px;color:#fff;font-weight:700;box-sizing:border-box;border-radius:45px;animation: 1.5s blink infinite steps(1);}
+.wrap-mock .visual-mock .txt-middle span{text-align:center;color:#fffb15;animation: 1.5s blink infinite steps(1);}
+.wrap-mock .visual-mock .pen {position:absolute;top:396px;left:608px;}
+
+.wrap-mock .box {position:absolute;top:705px;left:50%;transform:translateX(-49.8%);}
+.wrap-mock .box .bottom-box {text-align:center}
+.wrap-mock .box .mock-txt,.mock-btn {position:absolute;left:50%;transform:translateX(-50%);}
+.wrap-mock .box .mock-txt {position:absolute;left:50%;transform:translateX(-49.5%);top:62px;}
+.wrap-mock .box .mock-btn {position:absolute;left:50%;transform:translateX(-50.5%);top:134px;}
+.wrap-mock .box .mock-click {position:absolute;left:437px;top:187px;animation: motion ease-in 1s infinite both; margin-top: 0;}
+
+/* 깜빡임 애니메이션 */
+@keyframes blink 
+{ 
+    50% {color:transparent;border:transparent;}
+}
+
+/* 클릭 애니메이션 */
+@keyframes motion 
+{
+	0%{transform: translateY(-15%);}
+	50%{transform: translateY(0%);}
+	100%{transform: translateY(-15%);}
+}

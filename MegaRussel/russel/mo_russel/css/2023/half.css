@@ -1,0 +1,65 @@
+/* common */
+.half-wrap .inner {margin:0 4%}
+.half-wrap .bt-online {padding:17px 0;display:block;text-align: center;background:#8b0134;color:#fff;font-size: 1.6rem;font-weight: bold;}
+.half-wrap .recruit-tit strong {color:#8b0134}
+.half-wrap .inquiry{text-align: center;padding: 60px 4% 25px;font-size: 1.4rem;letter-spacing: -2px;}
+
+/* visual */
+.half-wrap .visual {position: relative;}
+.half-wrap .visual .date {position: absolute;top:77%;left:50%;padding:10px 20px;transform:translateX(-50%);font-size:1.4rem;font-weight: bold;background:#313332;color:#fff;border-radius: 20px;white-space: nowrap;}
+.half-wrap .visual .date strong {color:#f6cc93;}
+
+
+/* table */
+.tbl-type01 tbody td .fee {display:flex;justify-content:space-around;align-items:center;margin:0 0 10px;}
+.tbl-type01 tbody td .fee p {font-weight:bold;text-align:center;}
+.tbl-type01 tbody td .fee p strong {color:#ee3b41;}
+.tbl-type01 tbody td .fee p .price {font-size:1.5rem;}
+.tbl-type01 tbody td .fee .sym {font-size:1.8rem;}
+.tbl-type01.process tbody th {font-weight: 600;}
+
+/* 준비물 팝업 */
+.layer-w-pop {display:none;position:fixed;left:0;top:0;width:100%;height:100%;z-index:10;justify-content:center;align-items:center;}
+.layer-w-pop::after {content:'';position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(0, 0, 0, 0.7);}
+.layer-w-pop .layer-box {position:relative;z-index:10;width:90%;height:80%;background:#fff;border-radius:5px;box-sizing:border-box;}
+.layer-w-pop .layer-box .bt-close {position: absolute;top: -30px;right:10px;}
+.layer-w-pop .layer-box .bt-close img {width:20px;height:20px;}
+.layer-w-pop .layer-box .inner{position:absolute;left:0;top:0;width:92%;height:100%;overflow-y:auto;}
+.layer-w-pop .layer-box .inner > div {padding:10% 0%;display:none;}
+.layer-w-pop .layer-box .inner > div.on {display:block;}
+.layer-w-pop .layer-box .inner > div .title {margin-bottom:20px;text-align:center;color:#222222;font-size:2.0rem;font-weight:500;}
+.layer-w-pop .needs {text-align:center;}
+.layer-w-pop .needs .tit {margin-bottom:15px;background:#2c21c6;color:#fff;padding:4px 0 6px;font-size:1.6rem;font-weight:600;}
+.layer-w-pop .needs .stit {margin-bottom:5px;padding:0 5px;text-align:left;color:#2c21c6;font-size:1.6rem;font-weight:600;}
+.layer-w-pop .needs div > ul {margin-bottom:15px;text-align:left;border-bottom:1px solid #e2e2e2;}
+.layer-w-pop .needs div > ul:last-of-type {border-bottom:0;}
+.layer-w-pop .needs div > ul > li {margin-left:8px;padding:0 5px;color:#222222;font-size:1.3rem;letter-spacing:-0.06rem;line-height:1.5;text-indent:-8px;}
+.layer-w-pop .needs div > ul > li.non {margin-left:0;text-indent:0;}
+.layer-w-pop .needs div > ul > li:last-of-type {margin-bottom:15px;}
+.layer-w-pop .needs div > ul > li::before {content:'';display:inline-block;vertical-align:3px;margin-right:5px; width:3px;height:3px;border-radius:10px;background:#222;}
+.layer-w-pop .needs div > ul > li.non::before {content:none;}
+.layer-w-pop .needs div > ul > li .list-bullet li {padding-left:13px}
+.layer-w-pop .review p.txt {font-size:1.3rem;color:#222222;margin-bottom:20px;}
+.layer-w-pop .review p.txt .color-blue {color: #2c21c6 !important;}
+.layer-w-pop .review p.txt::before {content:'';display:inline-block;vertical-align:3px;margin-right:5px; width:3px;height:3px;border-radius:10px;background:#222;}
+
+.layer-receipt {display:none;position: fixed;top:50%;left:8.5%;width:83%;transform:translateY(-50.1%);background:#fff;padding:0;border-radius: 20px;box-sizing: border-box;z-index:11;font-size:1.2rem}
+.layer-receipt .inner .tit {font-size:1.6rem;margin:0 0 15px 0;font-weight: bold;padding:0 0 13px;}
+.layer-receipt .inner .txt {font-size: 1.3rem;line-height: 1.5;}
+.layer-receipt .bt-close {position: absolute;top:-30px;right:5px;}
+.layer-receipt .bt-close img {width:20px;height:20px;}
+.layer-receipt .bt-text {display:block;margin:15px 0 -15px;padding:15px 0;font-size:1.6rem;color:#0081ff;border-top:1px solid #eaeaea;font-weight: bold;}
+/* //준비물팝업 */
+
+/* 상담 */
+.consulting-wrap{display: flex;justify-content: space-between;}
+.consulting-wrap .btn{background-color: #383838;border-radius: 5px;width: 50%;text-align: center;padding: 13px 0;position: relative;}
+.consulting-wrap .btn::after{width: 8px;height: 8px; content: '';display: inline-block;border-top: 2px solid #818181;border-right: 2px solid #818181;transform: rotate(45deg);position: absolute;top: 19px;right: 13px;}
+.consulting-wrap .btn.call{margin-right: 2%;}
+.consulting-wrap .btn a{color: #fff;font-weight: 600;font-size: 1.6rem;}
+/* //상담 */
+
+.bottom-txt {margin-top:50px;padding:35px 0;text-align: center;font-size: 1.5rem;color:#222;background:#f2f2f2;letter-spacing: -1px;}
+.bottom-txt * {letter-spacing: -1px;}
+.bottom-txt p {margin-top:5px;font-weight: bold;font-size: 1.8rem;}
+.bottom-txt strong {color:#8b0134}

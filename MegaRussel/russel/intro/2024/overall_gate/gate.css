@@ -1,0 +1,128 @@
+
+/* =============
+   공통
+============= */
+.gate-wrap {margin-top:-20px;overflow: hidden;min-width:1200px;}
+.gate-wrap .inner {width:1200px;margin:0 auto;}
+.gate-wrap *[class^="cont0"] {padding:130px 0;text-align:center;position:relative}
+.pr0 {padding-right:0 !important;}
+:root {
+   --key-color: #040E82;
+   --text-key: #222;
+ }
+.wrap_left_sky {display:none}
+.wrap_right_sky {display:none;}
+
+.r-txt {text-align:right;color:#a7a7a7;font-size:14px;margin-top:30px;}
+
+/* =============
+   visual
+============= */
+.visual-area {background:#000110;position:relative;}
+.visual-area .v-bg {position:absolute;top:0;left:50%;transform:translateX(-50%);}
+.visual-area .inner {padding:225px 0;width:1200px;position:relative;}
+.visual-area .v-title h1 {padding:56px 0 54px;width:0;overflow:hidden;}
+.full-txt {animation:fullTxt 3s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both}
+@keyframes fullTxt {
+   0% {
+      width:0;
+      opacity: 0;
+   }
+   100% {
+      width:100%;
+      opacity: 1;
+   }
+}
+
+.flip-in-hor-bottom {
+	animation: flip-in-hor-bottom 1s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes flip-in-hor-bottom {
+   0% {
+             transform: rotateX(80deg);
+     opacity: 0;
+   }
+   100% {
+             transform: rotateX(0);
+     opacity: 1;
+   }
+ }
+ 
+ 
+/* =============
+   contents
+============= */
+/* cont01 */
+.gate-wrap .cont01 {background: linear-gradient(180deg, #00053F 4.35%, #0815B6 110.25%);}
+.cont01 .r-txt {color:rgb(255, 255, 255, .58);padding-right:112px;}
+.cont01 {display:flex;justify-content: center;}
+.cont01 .inner {width:1424px;}
+/* cont02 */
+.cont02 {background-color:#242424}
+/* cont03 */
+.cont03 {background-color:#ecedf4}
+
+/* mid-banner */
+.mid-banner {padding:100px 0;background-color:var(--key-color);text-align:center;}
+/* cont04 */
+.cont04 {background-color:#fff}
+
+/* 강사진 */
+.teacher-swiper {padding-bottom:110px;margin-bottom:30px;}
+.teacher-swiper .swiper-wrapper {transition-timing-function:linear !important;}
+.teacher-swiper .swiper-slide {position:relative;width:200px;height:314px;}
+.teacher-swiper .swiper-slide:nth-child(even) {margin-top:70px;}
+.teacher-swiper .swiper-slide .t-name {text-align:left;line-height:1.3;margin-bottom:10px;}
+.teacher-swiper .swiper-slide .t-name dt {font-size:19px;font-weight:500;color:#555;height:50px;display:flex;align-items: flex-end;}
+.teacher-swiper .swiper-slide .t-name dd {font-size:29px;color:#222;}
+.teacher-swiper .swiper-slide .t-name dd strong {font-size:28px;font-weight:bold;color:#222;}
+.teacher-swiper .t-img {display:block;box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.12);background-color:#DDEAFF;overflow:hidden;padding-top:30px;box-sizing: border-box;height:100%;}
+
+.teacher-wrap .swiper-container {padding:0 0 25px 0;}
+.teacher-wrap.fullPage {padding:0;}
+.teacher-wrap.fullPage .teacher-sub-list li {height:auto;overflow:initial;}
+.teacher-wrap.fullPage .teacher-sub-list .info-box .cate.new {margin-left:3px;}
+.teacher-wrap.fullPage .teacher-sub-list .info-box .t-sub {width:100%;}
+.teacher-wrap.fullPage .teacher-sub-list .info-box .t-info {width:100%;}
+.teacher-wrap .teacher-sub-list .pic {height:314px;box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.12);background:var(--t-color);margin-top:10px;}
+.teacher-wrap .teacher-sub-list .ico-box {bottom:30px;}
+.teacher-wrap.fullPage .teacher-sub-list .t-explain {height:38px;}
+.teacher-wrap.fullPage .teacher-sub-list .info-box {height:140px;}
+
+/* cont05 */
+.cont05 {background-color:#DEE9FF}
+.cont05 .cont-wrap {display:flex;margin-top:80px;}
+.cont05 .cont-wrap .cont {width:590px;padding:60px 57px 45px;box-sizing:border-box;background-color:#FFF;border-radius:20px;}
+.cont05 .cont-wrap .cont.ml20 {margin-left:20px;}
+.cont05 .cont-wrap .cont .tit strong {font-size:25px;font-weight:bold;letter-spacing:-1px;color:var(--text-key)}
+.cont05 .cont-wrap .cont .tit span {display:inline-block;margin-top:5px;font-size:20px;font-weight:500;color:#646464;letter-spacing:-1px;}
+.cont05 .cont-wrap .cont .tit span sup {color:#a09f9f;margin:0;font-size:12px;}
+.cont05 .cont-wrap .cont .stit {position:relative;padding-bottom:10px;padding-left:13px;text-align:left;font-size:18px;font-weight:700;letter-spacing:-1px;}
+.cont05 .cont-wrap .cont .stit:before {content:'';position:absolute;top:6px;left:0;display:block;width:3px;height:17px;background-color:var(--key-color);}
+.cont05 .tbl-01 thead tr th {font-size:14px;padding:12px 0 !important;}
+.cont05 .tbl-01 tbody th, .cont05 .tbl-01 tbody td {padding:16px 0;font-size:14px;line-height:1;}
+.cont05 .tbl-01 tbody tr th:first-child {border-left:none !important}
+
+/* cont06 */
+.cont06 {background-color:#FFFFFF}
+/* cont07 */
+.cont07 {background-color:#EEF2FE}
+.cont07 ul {display:flex;flex-wrap:wrap;justify-content:center;margin-top:60px;}
+.cont07 ul li {width:346px;background-color:#fff;padding:51px 0 63px;text-align:center;border-radius:30px;position:relative;margin-left:20px;}
+.cont07 ul li:nth-child(3n+1) {margin-left:0;}
+.cont07 ul li:nth-child(n+4) {margin-top:20px;}
+.cont07 ul li > p {font-size:18px;color:var(--text-key)}
+.cont07 ul li > p strong {color:var(--key-color);font-weight:bold;display:inline-block;line-height:1;}
+.cont07 ul li dl {margin-top:25px;}
+.cont07 ul li dl dt {color:var(--text-key);font-size:23px;font-weight:bold;letter-spacing:-0.2px;}
+.cont07 ul li dl dt .ico-n {vertical-align:top;margin-top:5px}
+
+.cont07 ul li dl dd {color:var(--text-key);font-size:20px;letter-spacing:-0.2px;line-height:1.3}
+.cont07 ul li a {display:block;background-color:#222;color:#fff;width:200px;height:45px;display:flex;align-items:center;justify-content:center;font-size:18px;letter-spacing:-0.2px;font-weight:bold;border-radius:6px;margin:20px auto 0;}
+.cont07 ul li a:hover {text-decoration:none;}
+.cont07 ul li .data-wrap {position:absolute;bottom:31px;right:30px;cursor: pointer;}
+.cont07 ul li .data-wrap .data-txt {font-size:13px;color:rgb(0, 0, 0, 0.45);}
+.cont07 ul li .data-wrap .data-txt i {vertical-align:middle;}
+.cont07 ul li .data-wrap .data-txt i img {margin-bottom:3px}
+.cont07 ul li .data-wrap .data-view {display:none;background-color:#fff;padding:15px 20px;border-radius:6px;font-size:12px;border:1px solid #ddd;text-align:center;position:absolute;top:20px;left:-120px;width:300px;text-align:left;z-index:2;}
+.cont07 ul li .data-wrap:hover .data-view {display:block;}

@@ -1,0 +1,258 @@
+@import url('../campus_list.css');
+
+/* ==================================================
+   공통
+================================================== */
+
+.b-txt {margin-top:25px;font-size:1.1rem;text-align: center;}
+
+.visual {position: relative;}
+
+/* 상단 날짜 동그라미 */
+.visual .date {position:absolute;top:16%;left:19%;width:17%;height:0;padding-top:17%;border-radius: 50%;border:1px solid #fff;text-align: center;transform: translate(-60%, -50%);}
+.visual .date span {display:block;width:100%;position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:1.4rem;font-weight:bold}
+
+/* 버튼 */
+.bt-list a {display:block;position:relative;margin-bottom:10px;padding:11px 0;border:2px solid #434343;text-align: center;border-radius: 5px;font-size:1.4rem;line-height:1.5;color:#222;letter-spacing: -1px;}
+.bt-list a::after {content:"";display:block;width:10px;height:10px;position:absolute;top:50%;right:10%;border-top:3px solid #434343;border-right:3px solid #434343;transform: rotate(45deg) translateY(-50%);}
+.bt-list a strong {display: block;font-size:1.7rem}
+.bt-list .bt-green {color:#fff;background:#20a782;border-color:#20a782}
+.bt-list .bt-green strong {color:#fff}
+.bt-list .bt-green02 {color:#fff;background:#4ba464;border-color:#4ba464}
+.bt-list .bt-green02 strong {color:#fff}
+.bt-list .bt-green02::after {border-color:#fff ;}
+.bt-list .bt-green::after {border-color:#fff ;}
+.bt-list .bt-brown {color:#fff;background:#54252d;border-color:#54252d}
+.bt-list .bt-brown strong {color:#fff}
+.bt-list .bt-brown::after {border-color:#fff ;}
+.bt-list .bt-blue {color:#fff;background:#3b589a;border-color:#3b589a}
+.bt-list .bt-blue strong {color:#fff;}
+.bt-list .bt-blue::after {border-color:#fff ;}
+.bt-list .bt-blue02 {color:#fff;background:#1877ed;border-color:#1877ed}
+.bt-list .bt-blue02 strong {color:#fff;}
+.bt-list .bt-blue02::after {border-color:#fff ;}
+.bt-list .bt-blue03 {color:#fff;background:#1d5bc0;border-color:#1d5bc0}
+.bt-list .bt-blue03 span,
+.bt-list .bt-blue03 strong {color:#fff;}
+.bt-list .bt-blue03::after {border-color:#fff ;}
+.bt-list .bt-vio {color:#fff;background:#5531d1;border-color:#5531d1}
+.bt-list .bt-vio strong {color:#fff;}
+.bt-list .bt-vio::after {border-color:#fff ;}
+.bt-list .bt-vio02 {color:#fff;background:#7750c5;border-color:#7750c5}
+.bt-list .bt-vio02 strong {color:#fff;}
+.bt-list .bt-vio02::after {border-color:#fff ;}
+.bt-list .bt-orange {color:#fff;background:#da7d51;border-color:#da7d51}
+.bt-list .bt-orange span,
+.bt-list .bt-orange strong {color:#fff;}
+.bt-list .bt-orange::after {border-color:#fff ;}
+
+.bt-list .bt-gr {color:#fff;background:#403e3e;border-color:#403e3e}
+.bt-list .bt-gr strong {color:#fff;}
+.bt-list .bt-gr::after {border-color:#fff ;}
+
+.bt-list .bt-02 {display: flex;flex-wrap:wrap;}
+.bt-list .bt-02 a {flex:0 0 49%;box-sizing: border-box;}
+.bt-list .bt-02 a:nth-of-type(odd) {margin-right:2%}
+.bt-list .bt-02 a:after {content:none}
+.bt-list .bt-02 a strong {position:relative}
+.bt-list .bt-02 a strong:after {content:"";display:inline-block;width:7px;height:7px;border-top:3px solid #434343;border-right:3px solid #434343;transform: rotate(45deg)}
+
+/* 타이틀 */
+.sub-wrap .tit {margin:35px 0 20px;text-align: center;font-size:1.8rem;font-weight:bold;letter-spacing: -1px;}
+.sub-wrap .stit {margin:40px 0 15px;font-size:1.6rem;font-weight: bold;font-weight:bold}
+.sub-wrap .stit::before {content:"ㆍ"}
+
+/* 모집요강 및 장학혜택 */
+.sub-wrap ul.txt-info {padding:20px 3%;background:#f6f6f6;}
+.sub-wrap ul.txt-info li {display: flex;}
+.sub-wrap ul.txt-info li, .sub-wrap .txt-info li * {font-size:1.4rem;line-height:1.7;letter-spacing: -1px;}
+.sub-wrap ul.txt-info li > strong:first-child {width:24%;}
+.sub-wrap ul.txt-info li > strong:first-child::before {content:"ㆍ"}
+.sub-wrap ul.txt-info li > span:nth-of-type(1) {width:76%;}
+.sub-wrap ul.txt-info .bullet01 {position:relative;display:block;padding-left:15px;text-decoration: none;}
+.sub-wrap ul.txt-info .bullet01::before {content:"※";position: absolute;top:0;left:0;}
+
+/* 리스트 */
+.sub-wrap {background:#ffffff;}
+.sub-wrap .s-txt {margin-top:15px;}
+.sub-wrap .s-txt li {position: relative;padding-left:10px;font-size:1.2rem;color:#7e7e7e;}
+.sub-wrap .s-txt li::before {content: "-";position: absolute;top:0;left:0;}
+.sub-wrap .con-info {margin:30px 0 15px;font-size:1.4rem;text-align: center;line-height: 1.5;}
+.sub-wrap .con-tel {margin-bottom:40px;font-size:1.8rem;text-align: center;font-weight: bold;}
+.sub-wrap .top-list {margin-bottom:10px;}
+.sub-wrap .top-list li {padding-left:20px;font-size:1.4rem;line-height: 1.8;background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/common/ico_check_gr.png") left 8px no-repeat;background-size:14px 11px }
+.sub-wrap .info-wrap {background:#f6f6f6;}
+.sub-wrap .info-wrap ul {padding:0 8%}
+.sub-wrap .info-wrap ul:first-child{margin:0 0 20px;}
+.sub-wrap .info-01 li {position:relative;color:#000;font-size:1.6rem;font-weight:bold;letter-spacing:-1px;}
+.sub-wrap .info-01 li:first-child strong{text-decoration:underline;}
+.sub-wrap .info-01 li span::before {display:block;position:absolute;top:0;left:-15px;margin:0 0 20px;content:"※";}
+.sub-wrap .info-note {padding:0 5%;color:#8a8989;font-size:1.2rem}
+.sub-wrap .info-02 li {position:relative;color:#8a8989;font-size:1.4rem;}
+.sub-wrap .info-02 li span::before {display:block;position:absolute;top:0;left:-15px;margin:0 0 20px;content:"※";color:#8a8989;}
+
+/* step */
+.info-step li {position:relative;padding:10px 0;margin-bottom:30px;text-align: center;font-size:1.4rem;border:1px solid #c3c3c3;border-radius: 10px;}
+.info-step li span {font-size:1.2rem;color:#7e7e7e;}
+.info-step li .num {display:inline-block;padding:5px 10px;background:#83cdea;font-size:rem;color:#fff;border-radius:15px}
+.info-step li .tit {display: block;margin:10px 0 3px;font-size:1.5rem}
+.info-step li .bt-go {display: inline-block;padding:2px 5px;border-radius:3px;font-size:1.2rem;color:#fff;background:#c4c4c4}
+.info-step li::after {content:"";display: block;width:22px;height:13px;position: absolute;top:calc(100% + 10px);left:50%;transform: translateX(-50%);background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/common/half_arr.jpg") left top 100%/100% no-repeat;}
+.info-step li:last-child::after {content: none;}
+
+/* 움직이는 재생 버튼 : 위치값/배경컬러는 각각 설정 */
+.bt-play {position:absolute;}
+.bt-play p {position: relative;}
+.bt-play p img {width:41px;height:41px;z-index:3;position: relative;animation: btShadow ease-in-out 2s infinite;}
+.bt-play p::before {content:"";display:block;width: 110%;height: 110%;position:absolute;top:-5%;left:-5%;border-radius: 50%;z-index:2;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 1s infinite;}
+.bt-play p::after {content:"";display:block;width: 130%;height: 130%;position:absolute;top:-15%;left:-15%;border-radius: 50%;z-index:1;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 2s infinite;}
+
+
+/* 등록안내 */
+.sub-wrap div.txt-info {padding:20px 7%;background:#f6f6f6;}
+
+.sub-wrap .txt-info .list-check {text-align: left;}
+.sub-wrap .txt-info .list-check li {display:flex;position: relative;padding-left:19px;font-size:1.4rem;color:#7e7e7e;line-height: 1.5;}
+.sub-wrap .txt-info .list-check li::before {content:"";display:block;width:14px;height:10px;position:absolute;top:8px;left:0;;background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/common/ico_check_gr02.png") left top 100%/100% no-repeat;}
+.sub-wrap .txt-info .list-check li strong {flex:0 0 50px}
+.sub-wrap .txt-info .list-check li u {text-decoration:none;color:#6f6f6f;font-size:1.3rem}
+
+.danka-wrap .danka{position:relative;}
+.danka-wrap .danka .danka-tit{position:absolute;top:16%;left:10%;font-size:2rem;color:#4eaaff;font-weight:300;letter-spacing:-5px;}
+.danka-wrap .danka .danka-tit strong{font-size:4rem;color:#4eaaff;font-weight:900;}
+.danka-wrap .danka .square {position:absolute;top:17.4%;left:23%;width:10rem;height:0;border-bottom: 4rem solid #4eaaff;border-left:0px solid transparent;border-right:2.3rem solid transparent;line-height:2;font-size:2rem;font-weight:700;text-align:center;color:#fff;}
+.danka-wrap .danka .circle {position:absolute;top:13%;left:70%;text-align:center;padding:2.5rem 0 0 0;width:10rem;height:10rem;box-sizing:border-box;border-radius:50%;background:linear-gradient(45deg,transparent,#3e37b1,#4655d7,#436de8,#3790f7,#3790f7);}
+.danka-wrap .danka .circle strong {font-size:1.8rem;color:#fff;}
+
+.danka-wrap .danka .danka-tit.winter strong{color:#98f9fd;font-weight:900;}
+
+
+/* ==================================================
+테이블
+================================================== */
+table {width:100%;border-top:2px solid #262626;}
+table * {font-size:1.3rem!important;letter-spacing: -1px;}
+table thead th {text-align:center;padding:15px 0;border-right:1px solid #d9d9d9;border-bottom:1px solid #262626;}
+table thead th:last-child {border-right: none;}
+table tbody th, table tbody td {border-bottom:1px solid #d9d9d9;}
+table tbody th {font-weight: normal;padding:15px 0;}
+table tbody td {border-left:1px solid #d9d9d9;padding:15px 2.5% 15px;line-height: 1.5;word-break: keep-all;}
+table tbody .b-l-n {border-left:none;}
+table tbody u {text-decoration: line-through;color:#9b9b9b}
+table .tr-bg td {background:#f7f0ef}
+table .txt-center {text-align: center;padding-left:0!important;padding-right:0!important}
+table td a {text-decoration: underline!important;}
+table.tbl-center th, table.tbl-center td {text-align: center;padding-left:0;padding-right:0!important}
+
+
+/*2023 1월 윈터특강*/
+
+/*인트로*/
+.winter-special-wrap .danka{position: relative;}
+.winter-special-wrap .grade {width:25%;padding:2% 0;position:absolute;top:36%;right:22%;font-size:1.5rem;font-weight:bold;color:#fff;border-radius:50px;text-align:center;}
+.winter-special-wrap .vis-info {width:41%;height: 45px;line-height: 45px;text-align:center;background:#00124d;color:#fff;border-radius:30px;font-size:1.5rem;position: absolute;left: 50%;transform: translateX(-50%);top: 82%;}
+.winter-special-wrap .vis-info strong{color:#fff;}
+
+/*//인트로*/
+
+/*//2023 1월 윈터특강*/
+
+/* ==================================================
+    메가패스
+================================================== */
+.megaPass {position:relative;overflow:hidden;text-align:center}
+.megaPass .inner {padding: 0 5%;margin:0 auto}
+*[class^="pass-cont0"] {padding-bottom:50px}
+.megaPass .container {position:relative;padding-top:50px;}
+.megaPass .pass-cont01 {position:relative;background:#f36261}
+.megaPass .pass-cont02 {background:#f99696}
+.megaPass .pass-cont03 {background:#ffcbcb}
+
+.megaPass .fix-menu {display:flex;position:absolute;top:0;left:0;width:100%;box-sizing:border-box;line-height:0}
+.megaPass .fix-menu li {width:100%;height:50px;line-height:50px;color:#d7d7d7;font-size:1.4rem;font-weight:bold;letter-spacing:-1px;text-align:center;background-color:#9c9c9c;}
+.megaPass .fix-menu li.on {color:#fff;background-color:#282828}
+.megaPass .fix-menu.fix {position:fixed;top:101px;z-index:4;}
+
+/* 메가패스 color */
+.megaPass .bg-mblue {background-color: #5165ff;}
+.megaPass .bg-mred {background-color: #f8735d;}
+.megaPass .bg-myellow {background-color: #f1ad55;}
+.megaPass .txt-mblue {color: #5165ff;font-size: 1.9rem;font-weight:700;}
+.megaPass .txt-mred {color: #f8735d;font-size: 1.9rem;font-weight:700;}
+.megaPass .txt-myellow {color: #f1ad55;font-size: 1.9rem;font-weight:700;}
+.megaPass .txt-yellow {color: #FFE8AA !important}
+
+.magapass-com {z-index:1;position:absolute;top:24vw;left:3%;width:95%;height:79%;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.magapass-com p {z-index:1;position:absolute;top:41%;left:50%;width:calc(587vw/7.2);transform:translate(-48%);}
+.magapass-com .coming {width:100%;height:100%;background-color:#f36261;opacity:0.4;}
+
+.pass-cont01 .pass-wrap {display:flex;flex-direction:column}
+.pass-cont01 .pass-wrap li {position:relative;display:flex;align-items:center;margin-bottom:20px;border-radius:10px;background:#FFF}
+.pass-cont01 .pass-wrap li div {position:relative;display: flex;flex-direction:column;align-items:center;justify-content:center;width:50%;height:140px}
+.pass-cont01 .pass-wrap li .top-con::before {content:'';position:absolute;top:0;left:45vw;width:1px;height:100%;background:#ddd}
+.pass-cont01 .pass-wrap li .ico {padding:3px 11px;height:18px;line-height:16px;color:#FFF;font-size:1.4rem;font-weight:500;border-radius:20px;}
+.pass-cont01 .pass-wrap li .tit {margin:7px 0 9px;font-size:1.9rem;font-weight:bold;}
+.pass-cont01 .pass-wrap .btm-con .percent{position:absolute;left:0;top:0;width:14vw;height:14vw;background: url("https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/danka/2020/bg-percent.png") no-repeat 50%/cover;}
+.pass-cont01 .pass-wrap .btm-con .percent p {position:absolute;top:2vw;left:2vw;font-size:1.4rem;color:#FFF;}
+.pass-cont01 .pass-wrap .btm-con .percent strong{font-size:1.6rem;color: #fff;font-weight: 600;}
+.pass-cont01 .pass-wrap .past-price {position:relative;display:inline-block;padding-top:10px;color:#aaa;font-size:1.9rem;}
+.pass-cont01 .pass-wrap .past-price::before {content: '';position:absolute;top:24px;width:100%;height:1px;padding:0 5px;background:#aaa}
+.pass-cont01 .pass-wrap .past-price::after {content: '';position:absolute;top:27px;right:-12px;width:10px;height:1px;transform:rotate(-45deg); background:#aaa}
+.pass-cont01 .pass-wrap .past-price span {font-size:1.5rem}
+.pass-cont01 .pass-wrap .current-price {font-size:3.2rem;font-weight:bold;letter-spacing:-1px}
+.pass-cont01 .pass-wrap .current-price span {font-size:2.1rem;}
+.pass-cont01 .pass-wrap li .cash {padding:1% 3%;color:#f73b4b;font-size:1.3rem;line-height:1.5;border:1px solid #f73b4b;border-radius:3px}
+
+.megaPass .txt-point {text-align:right; font-size:1.1rem;color:#ffe8aa}
+
+.megaPass .special-btn {z-index:1;position:relative;margin-top:21px;width:100%;height:50px;line-height: 50px;text-align:center;border-radius:5px;background:#000}
+.megaPass .special-btn a{font-size: 1.6rem;color: #fff;text-decoration: none;font-weight: 600;display: block;}
+.megaPass .special-btn a::before{content: '';position:absolute;top:16px;right:14px;width:10px;height:20px;background: url("https://russeldata.megastudy.net/campus/images/russel/m_russel/intro/danka/2020/buy_arrow.png")no-repeat 50%/cover}
+
+.pass-cont02 .megapass-intro {padding-top:20px;text-align:left;}
+.pass-cont02 .megapass-intro .stxt {color:#FFF;font-size:1.3rem;font-weight:bold;}
+.pass-cont02 .megapass-intro li, .pass-cont02 .megapass-intro p {color:#FFF;font-size:1.2rem;font-weight:1.2;}
+
+.pass-cont03 .member-btn {display:flex;flex-direction:column;margin-top:25px}
+.pass-cont03 .member-btn a {position:relative;height:50px;line-height:50px;color:#FFF;font-size:1.6rem;font-weight:bold;letter-spacing:-1.4px;border-radius:5px;background:#101010}
+.pass-cont03 .member-btn a::before {content: '';position:absolute;top:10px;right:17px;height:10px;transform:translateY(50%) rotate(-45deg);border-right:2px solid #FFF;border-bottom:1px solid #FFF} 
+.pass-cont03 .member-btn a::after {content: '';position:absolute;top:18px;right:17px;height:10px;transform:translateY(50%) rotate(45deg);border-right:2px solid #FFF;border-top:1px solid #FFF}
+.pass-cont03 .member-btn a:last-child {margin-top:15px;}
+
+/* ==================================================
+   //메가패스
+================================================== */
+
+
+/* ==================================================
+   2024 대학별 논술 파이널 특강
+================================================== */
+.danka.non .top-txt{padding: 0;}
+.danka.non .visual {position: relative;}
+.danka.non .grade {display: flex; justify-content: center; align-items: center; position:absolute;top:0;left:0;width:25vw; height: 10vw; background-color: #f37341; color:#fffaec; font-size: 4vw; font-weight: bold;border-radius:0 0 15px 0;line-height:1;box-sizing:border-box}
+.danka.non .vis-info {width: fit-content; display:flex;position:absolute;top:110vw;left: 14vw;text-align:left;justify-content:space-between;flex-direction: column}
+.danka.non .vis-info div:last-child {line-height: 1;}
+.danka.non .vis-info div p {display:inline-block; vertical-align:middle;text-align:left;font-size: 4vw;font-weight:500; letter-spacing: -0.1em; color: #fff}
+.danka.non .vis-info div p .stxt {display: block;color: #7c9ca5;font-size: 3vw;}
+.danka.non .vis-info div p:first-child {display: inline-flex; justify-content: center; align-items: center; width:20vw; height: 6vw; background-color: #f37341; color:#fffaec; font-size: 3.19vw;font-weight: bold; border-radius:70px;line-height:1;box-sizing:border-box}
+.danka.non .vis-info div:not(:first-child) {margin-top: 3vw;}
+/* ==================================================
+   //2024 대학별 논술 파이널 특강
+================================================== */
+
+
+
+/* ==================================================
+1~2월 정규특강 단과
+================================================== */
+.danka.regular {position: relative;}
+.danka.regular .top-txt {padding: 0;}
+.danka.regular .grade {display:flex; justify-content:center;align-items:center;position:absolute;top:25vw;left:9vw;z-index: 1;padding:6px 3.3%;background-color: #ffffff00; color:#4156e6;border: 1px solid #4156e6;font-size: 4.3vw;font-weight: bold;border-radius:70px;line-height:1;box-sizing:border-box}
+.danka.regular .date {position:absolute;top:25vw;left:32vw;color:#222222; font-size: 4vw;line-height:1;}
+.danka.regular .date strong {font-size: 7vw;font-weight: bold;}
+.danka.regular .circle-info {font-size: 3.6vw; text-align: center; position:absolute;top:37vw;left: 73vw;background: linear-gradient(70deg, #192eb8, #374cd5);border-radius: 50%;width: 21vw;height: 21vw;display: flex;justify-content: center;align-items: center;color: #fff;letter-spacing: -1px;}
+.danka.regular .circle-info p strong {font-size: 4vw;font-weight: bold;letter-spacing: -1px;}
+
+/* ==================================================
+//1~2월 정규특강 단과
+================================================== */

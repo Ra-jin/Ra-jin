@@ -1,0 +1,93 @@
+.first-wrap .visual {position: relative;}
+.first-wrap .visual .txt {position:absolute;top:88%;left:0%;width:100%;text-align: center;transform:translateY(-50%)}
+.first-wrap .visual .txt::before {content:"";display: inline-block;width:56px;height:2px;margin-right:10px;vertical-align: middle;background:url("http://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2021/first/bg_date_01.png") left top 100%/100% no-repeat;}
+.first-wrap .visual .txt::after {content:"";display: inline-block;width:56px;height:2px;margin-left:10px;vertical-align: middle;background:url("http://russeldata.megastudy.net/campus/images/russel/m_russel/intro/2021/first/bg_date_02.png") right top 100%/100% no-repeat;}
+.first-wrap .visual .txt strong {display:inline-block;vertical-align:middle;font-size:1.5rem;color:#fff;font-weight: bold;letter-spacing: -1px;}
+
+.first-wrap .bt-foucs {position:relative;display:block;padding:15px 0;font-size:1.7rem;font-weight: bold;color:#fff;text-align: center;background: #b81c1f;}
+
+.first-wrap .bg-gr {background:#f6f6f6;padding:0 4% 40px 4%}
+.first-wrap .bg-red {background:#a1040f;padding:0 4% 40px 4%}
+.first-wrap .bg-w-in {background:#fff;padding:0 4% 30px;}
+.first-wrap .bg-w-in .stit {padding:35px 0 25px;font-size:1.7rem;text-align: center;color:#222;font-weight: bold;}
+
+.first-wrap .bg-w-in .stit-02 {margin:30px 0 10px;font-size:1.4rem;color:#232323;font-weight: bold;}
+.first-wrap .bg-w-in .stit + .stit-02 {margin-top:0}
+.first-wrap .bg-w-in .stit-02::before {content:"ㆍ";font-weight: bold;}
+.first-wrap .bt-g-arr {margin-right:4%;text-align: right;}
+.first-wrap .bt-g-arr a {display: inline-block;position:relative;padding:5px 25px 5px 5%;background:#5c5c5c;color:#fff;font-size:1.2rem!important;border-radius: 5px;text-decoration: none!important;}
+.first-wrap .bt-g-arr a::after {content: "";position:absolute;top:50%;right:10px;transform: translateY(-50.1%) rotate(45deg);display:block;width:7px;height:7px;border-top: 1px solid #fff;border-right: 1px solid #fff}
+
+.first-wrap .layer-wrap {display: none;z-index:11;padding:20px 5%;width:80%;position: fixed;left:10%;top:50%;transform:translateY(-50%);background:#fff;box-sizing: border-box;font-size:1.2rem;color:#222;border-radius: 10px;line-height: 1.5;}
+.btClose {width:16px;height:auto;}
+
+.first-wrap .number {display: flex;justify-content:center;padding:20px 0}
+.first-wrap .number li {position: relative;text-align:center;color:#232323;font-size:1.3rem;padding:0 4%;}
+.first-wrap .number li::after {content:"";display:block;height:100%;width:1px;position: absolute;top:0;right:0;background:#e2e2e2;}
+.first-wrap .number li:last-child::after {display: none;;}
+.first-wrap .number li strong {display: block;font-size:2.5rem;color:#b21112;font-weight: bold;}
+.first-wrap .number li strong span {color:#232323;font-size:1.2rem}
+.first-wrap .number-txt {padding-bottom:20px;text-align:center;font-size:1rem;color:#8a8989;letter-spacing: -1px;}
+
+.first-slide {position: relative;overflow: hidden;}
+.first-slide .swiper-pagination-bullet-active {background:#b21112}
+.first-slide .swiper-pagination {z-index: 5;bottom:20px}
+.first-slide .swiper-slide img {width:100%;}
+
+.review-wrap {margin-bottom: 40px;}
+.review-wrap .swiper-slide {margin:0 10%;padding-bottom:40px;width:80%!important;}
+.review-wrap .detail {position:relative;margin-top:-3px;border:1px solid #e1e1e1;border-top: none;border-radius: 0 0 10px 10px;overflow: hidden;}
+.review-wrap .detail .pic {width:50%;height:auto;position: absolute;bottom:-3px;left:-8%;}
+.review-wrap .detail .txt01 {min-height:65px;padding:10px 3% 10px 32%;font-size: 1.2rem;}
+.review-wrap .detail .txt01 strong {font-size:1.2rem;}
+.review-wrap .detail .txt02 {padding:15px 0 15px 40%;font-size: 1.1rem;background:#f4f4f4;color:#828282;}
+.first-slide .swiper-button-prev {background:none;left:3%;width:20px;height:20px;border:5px solid #d2d2d2;border-right:none;border-bottom:none;transform: rotate(-45deg);}
+.first-slide .swiper-button-next {background:none;right:3%;width:20px;height:20px;border:5px solid #d2d2d2;border-left:none;border-bottom:none;transform: rotate(45deg);}
+.review-wrap .swiper-wrapper img {width:100%;}
+
+.first-wrap table * {font-size:1.4rem!important;}
+.first-wrap table .f11 {font-size: 1.1rem!important;}
+.first-wrap table .red {color:#a1040f;font-weight: bold!important;}
+
+.first-wrap .comming {text-align: center;font-size:1.6rem;background:#eee;padding:100px 0;color:#b21112;font-weight: bold;}
+
+.first-wrap .benfit-info {margin-top:10px;display:flex;background:#f6f6f6;padding:14px;}
+.first-wrap .benfit-info .info {margin-right:10px;background:#5a1ca1;color:#fff;padding:10px;font-size: 1.5rem;font-weight: bold;}
+.first-wrap .benfit-info .txt p:nth-of-type(1) {font-size:1.6rem;font-weight: bold;}
+.first-wrap .benfit-info .txt p:nth-of-type(2) {margin-top:2px;font-size: 1.4rem;}
+.first-wrap .benfit-info .txt p:nth-of-type(2) strong {font-size: 1.4rem;color:#5a1d9f;}
+.first-wrap .benfit-info .txt p:nth-of-type(3) {color:#5a1ca1;font-size:1.3rem;font-weight: bold;}
+
+.bottom-wrap {padding: 20px 0 20px;}
+.bottom-wrap .txt01 {text-align: center;color:#262626;font-size:1.5rem;font-weight: bold;}
+.bottom-wrap .txt02 {margin-top:40px;padding:40px 0 35px;text-align: center;color:#262626;font-size:1.4rem;background: #f6f6f6;}
+.bottom-wrap .txt02 strong {display:block;margin-top:10px;font-weight: bold;font-size:1.7rem;}
+.bottom-wrap .bt-box {margin:25px 4% 0;display: flex;justify-content: space-between;}
+.bottom-wrap .bt-box a {flex:1;position: relative;;margin-right:10px;background:#423cd0;color:#fff;padding:10px 0;border-radius:5px;font-size:1.6rem;font-weight: bold;text-align: center;letter-spacing: -1px;}
+.bottom-wrap .bt-box a:last-child {margin-right: 0;}
+.bottom-wrap .bt-box a::after {content: "";position: absolute;top: 50%;right: 15px;transform: translateY(-50%) rotate(45deg);display: block;width: 9px;height: 9px;border-top: 3px solid #b2b0ef;border-right: 3px solid #b2b0ef;}
+
+/* 기숙 재수생 우선선발반 */
+.first-wrap .visual .bt-play {position:absolute;top:30%;right:4%}
+.first-wrap .visual .bt-play p {position: relative;}
+.first-wrap .visual .bt-play p img {width:41px;height:41px;z-index:3;position: relative;animation: btShadow ease-in-out 2s infinite;}
+.first-wrap .visual .bt-play p::before {content:"";display:block;width: 110%;height: 110%;position:absolute;top:-5%;left:-5%;border-radius: 50%;z-index:2;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 1s infinite;background:#e4d2b6;}
+.first-wrap .visual .bt-play p::after {content:"";display:block;width: 130%;height: 130%;position:absolute;top:-15%;left:-15%;border-radius: 50%;z-index:1;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 2s infinite;background:#e4d2b6;}
+.first-wrap .btn {display:block;position:relative;margin-bottom:10px;padding:13px 0;line-height:1.5;letter-spacing: -1px;background:#b91c1e;text-align:center;font-size:1.4rem;color:#fff;}
+.first-wrap .btn strong {color:#fff;}
+.first-wrap .btn strong {display: block;font-size:1.7rem}
+
+/* 기숙 재수정규반 */
+.regular-wrap {position:relative;}
+.regular-wrap .visual .bt-play {position:absolute;top:54%;right:7%;width:10%;height:0;padding-top:10%;}
+.regular-wrap .visual .bt-play p {position: relative;transform: translateY(-100%);}
+.regular-wrap .visual .bt-play p img {width:100%;height:100%;z-index:3;position: relative;animation: btShadow ease-in-out 2s infinite;}
+.regular-wrap .visual .bt-play p::before {content:"";display:block;width: 110%;height: 110%;position:absolute;top:-5%;left:-5%;background:#a9896f;border-radius: 50%;z-index:1;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 1s infinite;}
+.regular-wrap .visual .bt-play p::after {content:"";display:block;width: 130%;height: 130%;position:absolute;top:-15%;left:-15%;background:#d7ba95;border-radius: 50%;z-index:1;transform:translate(-50%,-50%);visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 2s infinite;}
+.regular-wrap .btn {display:block;position:relative;margin-bottom:10px;padding:13px 0;line-height:1.5;letter-spacing: -1px;background:#967e66;text-align:center;font-size:1.4rem;color:#fff;}
+.regular-wrap .btn strong {color:#fff;}
+.regular-wrap .btn strong {display: block;font-size:1.7rem}
+
+
+.video-wrap{position:relative;width:95%;margin:1rem auto;padding-bottom:53.8%;}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;}

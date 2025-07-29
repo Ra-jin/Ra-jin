@@ -1,0 +1,54 @@
+/* 주요 모객 페이지 table */
+table {width:100%;border-top:2px solid #343434;}
+table thead tr:first-child th:first-child, table tbody th:first-child {border-left:none!important}
+table th, table td {text-align: center;font-size:16px;font-weight:400;vertical-align: middle;border-left:1px solid #dbdbdb;color:#1d1d1b;background-color:#fff;}
+table th, table td p{font-size:16px;}
+table th, table td .other-txt {font-size:14px;}
+table .bg-sky td, table .bg-sky {background-color:#f8faff!important;}
+table .bg-gray th, table .bg-gray td, table .bg-gray {background-color:#f8f8f8!important;}
+table .bg-gray2 th, table .bg-gray2 td, table .bg-gray2 {background-color:#323232!important;color:#fff!important;border-left:0!important;border-right:1px solid #666;border-bottom:1px solid #666!important}
+table .bg-orange th,table .bg-orange td, table .bg-orange {background-color:#fff8f4!important;}
+table .bg-purple th, table .bg-purple td, table .bg-purple {background-color:#fbf8ff!important;}
+table .bg-purple2 th, table .bg-purple2 td, table .bg-purple2 {background-color:#e9e8fc}
+table tbody th.txt-left,
+table tbody td.txt-left {padding-left:20px;text-align: left;}
+table tbody td strong {font-weight: 600;}
+table td.b-l-n {border-left:0!important}
+table .b-l{border-left:1px solid #dbdbdb!important;}
+table thead tr:first-child th.b-l, table tbody th.b-l{border-left:1px solid #dbdbdb!important;}
+
+.tbl-01 thead th {padding:12px 0;color:#1d1d1b;text-align: center;border-bottom:1px solid #343434;font-size:16px;font-weight: 400!important;}
+@media screen and (min-width:0\0){.tbl-01 thead th{padding:12px 0 6px;}}
+.tbl-01 tbody th, .tbl-01 tbody td {padding:11px 0;border-bottom:1px solid #dbdbdb;border-top:1px solid #dbdbdb;}
+@media screen and (min-width:0\0){.tbl-01 tbody th, .tbl-01 tbody td {padding:12px 0 10px;}}
+.tbl-01 tbody td .txt-sub {font-size:13px; color:#757575;}
+.tbl-01 thead th.border-l,
+.tbl-01 tbody td.border-l {border-left:2px solid #343434!important;}
+.tbl-01 thead th.border-l,
+.tbl-01 tbody td.border-l-n {border-left:none;}
+.tbl-01 .tui {margin-top:10px;display: flex;align-items: center;justify-content:center}
+.tbl-01 .tui p {font-size:15px;}
+.tbl-01 .tui p:first-child {position: relative;padding:0px 10px;overflow: hidden;line-height:1.5;vertical-align: top;width:125px;display:inline-block;}
+.tbl-01 .tui p:first-child::after {content:"";height:9px;width:100%;position: absolute;bottom:6px;left:0;background:url("http://russeldata.megastudy.net/campus/images/russel/study_hall/2020/regular/arr_red.png") center top no-repeat}
+.tbl-01 .tui p:last-child {font-size:20px;}
+.tbl-01 .tui p:last-child strong {font-size: 25px;letter-spacing: -1px;;}
+.tbl-01 .tui-02 {margin-top:10px}
+.tbl-01 .tui-02 p:first-child {font-size:15px;}
+.tbl-01 .tui-02 p:last-child {font-size:20px;}
+.tbl-01 .tui-02 p:last-child strong {font-size: 25px;letter-spacing: -1px;}
+
+.tbl-02 th, .tbl-02 td {border-bottom:1px solid #343434;color:#1d1d1b;}
+.tbl-02 td {font-size:14px;font-weight:400;padding:35px 50px;text-align: left;}
+@media screen and (min-width:0\0){.tbl-02 td{padding:35px 50px 30px}}
+.tbl-02 td strong {font-weight:500;margin-bottom:5px;display: block;}
+.tbl-pass {width:958px;display:flex;justify-content:space-between;align-items:flex-start;}
+.tbl-pass .tbl-01 {width:450px;}
+
+.tbl-03 td {padding:0 11px 10px;font-size:14px;text-align:left;border-bottom:1px solid #dbdbdb;vertical-align: top;}
+.tbl-03 td * {font-size:14px;}
+.tbl-03 td ul {margin-top:10px;}
+.tbl-03 td ul li {position: relative;padding-left:6px;}
+.tbl-03 td ul li::before {content:"-";position:absolute;top:0;left:0;}
+.tbl-03 .date {display:inline-block;padding:3px;margin:0px 0 0 -11px;background:#fff;background:#ebebeb;font-size:11px;border:1px solid #dbdbdb}
+.tbl-03 .date-o {color:#ef6000;}
+/* // 주요 모객 페이지 table  */

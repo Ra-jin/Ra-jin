@@ -1,0 +1,378 @@
+/* ====================================================================================================
+   공통
+==================================================================================================== */
+body{letter-spacing:-1px;color:#353434;}
+body, html {font-size:62.5%}
+.main-body {height:100%;min-width:900px\0/!important;overflow:hidden;}
+section.sub{padding:80px 0 0;}
+.bg-gray {background:#f1f3f6;}
+.bg-sky {background:#ebf3ff;}
+.pc-no {display:none!important}
+.inBox {width:100%;max-width:1000px;margin:45px auto 0;}
+.txt-gray{color:#959595;}
+
+.add-bottom{font-size:2.8rem;color:#262626;font-weight:bold;}
+.center{margin-top:30px;text-align:center;}
+.center a{display:inline-block;}
+.center a.add-bottom{padding-right:40px;background:#fff url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/add_bottom.png") right center no-repeat;}
+
+.box-horizon {overflow-x:auto;padding-bottom:10px}
+.box-horizon .in-horizon {min-width:590px;}
+.box-horizon .in-horizon.no-2{min-width:800px;}
+.orange{color:#ff4200;}
+#clock{color:#1d7de7;font-size:2rem;font-weight:bold;}
+
+.txt-bottom{font-size:1.5rem;margin-top:10px;color:#aaa;}
+
+.mo-br br{display:none;}
+.h2{height:63px;}
+.tb-type1 table.small-th thead tr th{padding:5px 0 !important;}
+
+/* ====================================================================================================
+   헤더
+==================================================================================================== */
+header {width:100%;height:81px;background:#fff;border-bottom:1px solid #cecfd2;box-shadow:0px 1px 1px 0px #e5e7ea;position:fixed;z-index:2;left:0;top:0;}
+header .logo{margin:17px 0 0 10%;float:left;}
+header .btnClose{display:block;border-left:1px solid #dee1e5;border-right:1px solid #dee1e5;width:81px;height:100%;text-align:center;position:absolute;right:5%;top:0;}
+header .btnClose img{margin:23px 0 0 0;}
+header .info{position:absolute;right:2%;top:0;overflow:hidden;height:100%;display: table;text-align: center;border-collapse: separate;border-spacing:15px 0;}
+header .info li{font-size:2rem;display: table-cell;vertical-align: middle;}
+header .info li.sel select {border:1px solid #d4dae3; height:30px; font-size:1.5rem; line-height:30px;padding:0 35px 0 5px;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/select_arrow.png") no-repeat 90% 50%;border-radius: 5px; /* iOS 둥근모서리 제거 */-webkit-appearance: none; /* 네이티브 외형 감추기 */-moz-appearance: none;appearance: none;color:#fff;}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+header .info li.sel select::-ms-expand {display: none;}
+header .info li.sel select option{color:#353535;}
+
+header .info .student{color:#167be7;font-weight:bold;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/person.png") no-repeat left center;padding:0 0 0 36px;}
+header .info .student .name {margin-right:7px;}
+header .info .campus{background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/partition_info.gif") no-repeat left center;padding:0 0 0 11px;margin:0 0 0 10px;}
+header .info .btnLogout{position:relative;display:inline-block;width:120px;height:100%;padding:27px 0;font-size:2rem;color:#9299a4;border-left:1px solid #dee1e5;border-right:1px solid #dee1e5;}
+header .info .btnLogout span {width:100%;position: absolute;top:50%;left:0;transform: translateY(-50%);}
+header .my-info {display: none;}
+
+
+header.sub{height:80px;background:#3678e4;border-bottom:none;box-shadow:none;padding:0 10%;}
+header.sub .btnClose{border-left:1px solid #4e8aec;border-right:1px solid #4e8aec;}
+header.sub .info .btnLogout {border-left:1px solid #4e8aec;border-right:1px solid #4e8aec;color:#d0dff6;}
+header.sub .btnPrev{display:block;padding-left:25px;position: absolute;top:50%;left:4%;transform: translateY(-50%);color:#fff;font-size:2.6rem;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/btn/prev.png") no-repeat left 50%;}
+header.sub .info .student{color:#fff;font-weight:bold;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/person_sub.png") no-repeat left center;}
+header.sub .info .campus{color:#fff;}
+/* 윈도우팝업 header 추가 */
+header.pop-header {height:auto; background:#000; border-bottom:0; box-shadow:none; padding:0 30px;}
+header.pop-header.no-fix{position:absolute;}
+
+header.pop-header h2 {color:#fff; font-size:2.2rem; padding:15px 0 15px 20px; font-weight:normal;
+background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/pop_tit.gif") no-repeat 0 center;}
+header.pop-header .btn-close {color:#fff;font-size:3rem;position:absolute;top:10px;right:3%}
+header.pop-header .score-top-btn{display:inline-block;position:absolute;top:50%;right:70px;margin-top:-13px;padding:3px 12px 5px;border-radius:5px;background:#fff;color:#000;font-size:1.4rem;}
+
+/* ====================================================================================================
+   푸터
+==================================================================================================== */
+.wrap footer {position: absolute;bottom:20px;width:100%;}
+footer {text-align:center;color:#bfc4c8;font-size:1.8rem;padding-bottom:20px}
+
+/* ====================================================================================================
+   TAB
+==================================================================================================== */
+
+.tabCommon .tabList::after{content:'';display:block;clear:both;}
+.tabCommon .tabList li{float:left;width:50%;height:60px;border-bottom:1px solid #353434;background:#f1f3f6;border-top-left-radius:5px;border-top-right-radius:5px;}
+.tabCommon .tabList li.on{border:1px solid #353434;border-bottom:none;background:#fff;}
+.tabCommon .tabList li a {display:block;height:100%;text-align:center;line-height:58px;font-size:2.4rem;font-weight:bold; color:#929395;}
+.tabCommon .tabList li.on a{line-height:58px;}/* 
+.tabCommon .tabConList{overflow:hidden;height:0;} */
+.tabCommon .tabConList.on{/* overflow:auto;height:auto; */padding:0 0 50px 0;}
+.tabCommon .tabConList .blind{overflow:hidden;height:0;}
+
+.tabCommon .tabList.no-2 li{width:33.33%;}
+.tabCommon .tabList.no-2 .last a{border-left:1px solid #fff;}
+
+.inBox .tabCommon .tabConList .title{letter-spacing:-2px;font-size:2.2rem;color:#7e7e7e;font-weight:normal;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/bullet_arrow.png") no-repeat left center;padding:0 0 0 2.5%;margin:30px 0 15px 0;}
+.inBox .tabCommon .tabConList .title strong{color:#292929;font-weight:bold;}
+.inBox .tabCommon .tabConList .title .blue{color:#0081ff;}
+.inBox .tabCommon .tabConList .title .orange{color:#ff4200;}
+.inBox .tabCommon .tabConList .title strong.blue{color:#3678E4;}
+.inBox .tabCommon .tabConList .txt-info > input {margin:2px 0 0 10px; vertical-align:middle;}
+.inBox .tabCommon .tabConList .txt-info > label {vertical-align:middle;font-size:1.6rem}
+
+.tabConList .title-wrap {position:relative;}
+.tabConList .title-wrap .txt-info, .tabConList .title-wrap .pos-r {position:absolute; right:0; bottom:0;}
+.tabConList .title-wrap .pos-r.add{display:inline-block;min-width:90px;padding:7px 20px 10px;text-align:center;box-sizing:border-box;color:#fff;border-radius:3px;background:#262729;font-size:1.7rem;}
+.tabConList .line-sample {display:inline-block; margin:0 0 0 15px; color:#929395; font-size:1.7rem;}
+.tabConList .line-sample::before {content:""; display:inline-block; vertical-align:middle; width:43px; height:2px; margin:0 5px 0 0;}
+.tabConList .line-b::before {background:#b8cbf3;}
+.tabConList .line-y::before {background:#efc74e;}
+
+/* 셀렉트박스 */
+.tabConList .select-box {position:relative; border:1px solid #b7b7b7;}
+.tabConList .select-box select {
+    border:0; color:#a6a6a6; height:25px; font-size:1.7rem;
+    padding:0 15px 0 10px;
+    background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/select_arrow.gif") no-repeat 90% 50%;
+    border-radius: 0px; /* iOS 둥근모서리 제거 */
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+.tabConList .select-box  select::-ms-expand {display: none;}
+
+
+
+/* ====================================================================================================
+   TABLE
+==================================================================================================== */
+div.calendar-tableType{margin-bottom:10px;}
+div.calendar-tableType table thead tr th{line-height:40px;}
+div.calendar-tableTypetbody td{padding:6px;}
+
+
+/* 팝업 table type */
+.tb-type1 {border-top:2px solid #363435;}
+.tb-type1 table {border-collapse:collapse; width:100%;}
+.tb-type1 table thead tr th {background:#f6f6f6; border-left:1px solid #353334; border-bottom:1px solid #353334; padding:13px 0; vertical-align:middle; font-size:1.4rem;}
+.tb-type1 table thead tr th:first-of-type {border-left:0;}
+.tb-type1 table thead tr th.border-l {border-left:1px solid #353334}
+.tb-type1 table thead tr th.bg-b {background:#ebf1fd;}
+.tb-type1 tbody td {border-left:1px solid #cdd1d4; border-bottom:1px solid #cdd1d4; text-align:center; padding:13px 0; vertical-align:middle; word-break:break-all; font-size:1.4rem;}
+.tb-type1 tbody td:first-of-type {border-left:0;}
+.tb-type1 tbody td.fc-b,
+.tb-type1 tbody td .fc-b {color:#3578e3 !important;}
+.tb-type1 tbody td.fc-r,
+.tb-type1 tbody td .fc-r {color:#ce2e2e !important;}
+.tb-type1 table tbody tr.bg-b td {background:#ebf1fd; color:#3679e4; font-weight:600;}
+.tb-type1 tbody td.bg-g {background:#e5e5e5;}
+.tb-type1 table thead tr th.bg-p,
+.tb-type1 tbody td.bg-p {background:#fff2f3;}
+.tb-type1 tbody td.fc-black,
+.tb-type1 tbody td .fc-black {color:#353537;}
+.tb-type1.tb-tdBlacktbody td {color:#353434;}
+.tb-type1 table tbody tr.borderB-n td, .borderB-n {border-bottom:0;}
+.borderT-n {border-top:0;}
+.popup-content .tableInfo {font-size:1.7rem; color:#7e7e7e; margin:10px 0 0 0;}
+
+/* 기본 table type */
+.tb-type2{width:100%;border-top:2px solid #353434;border-bottom:1px solid #353434;}
+.tb-type2.bdColor-gy{border-bottom-color:#ced1d4;}
+
+.tb-type2 table{width:100%;}
+.tb-type2 table thead tr th{padding:10px 0;border-bottom:1px solid #353434;font-size:1.5rem;vertical-align:middle;}
+.tb-type2 table thead tr th.b-r{border-right:1px solid #353434;}
+
+/* .tableType table thead tr th{width:90px;} 
+.tb-type2 table thead tr th + th{width:auto;}
+.tableType table thead tr th + th + th{width:10%;} */
+.tb-type2 tbody td{text-align:center;vertical-align:middle;padding:25px 0;border-top:1px solid #ced1d4;font-size:1.4rem; word-break:break-all;}
+.tb-type2 table tbody tr:first-child td{border-top:none;}
+.tb-type2 table tr td.b-r, .tableType table tr th.b-r{border-right:1px solid #353434;}
+.tb-type2 tbody td.con{max-width:250px;text-align:left;line-height:32px;padding-left:10px;padding-right:10px;}
+.tb-type2 tbody td.con .subject{font-size:2.2rem;font-weight:bold;}
+.tb-type2 tbody td.con .tax{text-align:center;height:26px;line-height:22px;display:inline-block;border-radius:3px;background:#18a398;color:#fff;padding:0 12px;font-size:1.8rem;margin:0 0 0 10px;vertical-align:middle;}
+.tb-type2 tbody td.con .info{font-size:2rem;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/bullet_info.png") no-repeat left 10px;padding:0 0 0 20px;display:inline-block;}
+.tb-type2 tbody td.con .fns-num{font-size:1.7rem;color:#595959;}
+.tb-type2 tbody td.con .fns-num strong{color:#ff6600;}
+
+.tb-type2 tbody td.price{font-size:2.2rem;color:#ee2b59;}
+/* .tb-type2 tbody td.price-g{font-size:2.2rem;color:inherit;} */
+.tb-type2 tbody td.price strong{font-weight:bold;}
+.tb-type2 tbody td.price .date{display:block;color:#888888;font-size:1.6rem;font-weight:normal;padding:3px 0 0 0;}
+.tb-type2 tbody td.fc-b, .tb-type2 tbody td .fc-b {color:#3678e8;}
+.tb-type2 tbody td.fc-r, .tb-type2 tbody td .fc-r {color:#cd2f2e;}
+.tb-type2 tbody td.fc-p, .tb-type2 tbody td .fc-p {color:#ee2b59;}
+.tb-type2 table tbody tr.disabled{background:#f1f3f6;}
+
+.table-bottom-text{font-size:1.6rem;}
+
+.tb-type2 table tbody tr td.totalPayment{background:#e6f4ff;height:99px;line-height:99px;font-size:2.6rem;text-align:left;padding:0 30px 0 20px;}
+.tb-type2 table tbody tr td.totalPayment ul{float:right;overflow:hidden;}
+.tb-type2 table tbody tr td.totalPayment ul li{display:inline-block;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/partition_total_info.gif") no-repeat left 40px;margin:0 0 0 2rem;padding:0 0 0 2rem;}
+.tb-type2 table tbody tr td.totalPayment ul li:first-child{background:none;margin:0 0 0 0;padding:0 0 0 0;}
+.tb-type2 table tbody tr td.totalPayment ul li strong{color:#ee2b59;}
+
+.tb-type2 table tbody tr td.totalPayment.type2{background:#e6f4ff;height:99px;line-height:99px;font-size:2.6rem;text-align:left;padding:0 30px 0 20px;}
+.tb-type2 table tbody tr td.totalPayment.type2 .tit {font-weight:700;}
+.tb-type2 table tbody tr td.totalPayment.type2 ul{float:right;overflow:hidden;}
+.tb-type2 table tbody tr td.totalPayment.type2 ul li{display:inline-block;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/partition_total_info.gif") no-repeat left 40px;margin:0 0 0 2rem;padding:0 0 0 2rem;}
+.tb-type2 table tbody tr td.totalPayment.type2 ul li:first-child{background:none;margin:0 0 0 0;padding:0 0 0 0;}
+.tb-type2 table tbody tr td.totalPayment.type2 ul li strong{color:#ee2b59;}
+
+
+
+/* ====================================================================================================
+   팝업
+==================================================================================================== */
+.popupWrap{position:relative;width:90%;margin:0 5%;background:#fff;border-radius:15px;}
+.popupWrap .in{padding:30px 5% 40px;}
+.popupWrap .btnClose{position:absolute;right:6%;top:32px;}
+.popupWrap .title{border-bottom:2px solid #161616;font-size:2.8rem;padding:0 0 15px 0;}
+.popupWrap .info{line-height:30px;font-size:2.2rem;color:#7e7e7e;margin:25px 0 30px 0;}
+
+/* 윈도우팝업 content-in */
+.popup-content {padding:65px 0 0 0;}
+.popup-content .content-in {padding:30px;}
+.popup-content .title-box {position:relative; margin:0 0 15px 0;}
+.popup-content .title-box .title {font-size:2.2rem; color:#7d7d7d; font-weight:normal;}
+.popup-content .title-box .title::before {content:""; display:inline-block; vertical-align:middle; width:3px; height:17px; background:#3578e3; margin:-4px 5px 0 0;}
+.txt-al-r{position:absolute; right:0; bottom:0; color:#7e7e7e; font-size:1.7rem;}
+.txt-al-r .txt-day{height:26px;margin-right:10px;border:1px solid #aaa;vertical-align:middle;text-align:center;}
+
+.popup-content .title-box .txt-al-r.input-list p{float:left;}
+
+
+.txt-al-r .txt-snsCk {vertical-align:middle; font-size:1.5rem; color:#353434; padding:0 10px 0 0;}
+.txt-al-r .blt-sample {display:inline-block; margin:0 0 0 10px;}
+.txt-al-r .blt-sample::before {content:""; display:inline-block; vertical-align:middle; width:14px; height:14px; border-radius:50%; margin:-2px 5px 0 0;}
+.txt-al-r .blt-gray::before {background:#d2d2d2;}
+.txt-al-r .blt-blue::before {background:#b8ccf1;}
+
+.popup-content .textbox-gray {background:#f6f6f6; border:1px solid #d4d4d4; padding:25px 20px;font-size:1.4rem;line-height: 1.8;}
+.popup-content .textbox-white {background:#fff; border:1px solid #d4d4d4; padding:25px 20px; font-size:1.3rem;line-height: 1.8;/*overflow-y:auto;*/}
+.popup-content .textbox-gray textarea {background:#f6f6f6; width:100%; height:100%; border:0; resize:none;}
+.popup-content .textbox-white textarea {background:#fff; width:100%; min-height:200px; border:0; resize:none;overflow:auto;font-size:1.5rem;line-height: 1.8;}
+
+.popup-content .notice {background: #fbfbfb;padding: 20px 35px 25px 35px;border: 1px solid #ddd;font-size:1.6rem}
+.popup-content .notice-agree {padding: 15px 0;text-align: center;font-size:1.4rem}
+
+.file-wrap{width:100%;margin-top:10px;}
+.file-wrap.disabled label{color:#aaa;}
+.file-wrap::after{content:'';display:block;clear:both;}
+.file-wrap label{display:inline-block;width:80px;font-size:1.5rem;line-height:36px;}
+.file-wrap input[type=file]{width:calc(100% - 160px);border:1px solid #ccc;padding:5px;background:#fff;}
+.file-wrap a{float:right;margin-top:6px;}
+.file-wrap p{display:inline-block;margin-right:5px;	line-height:36px;font-size:1.4rem;}
+.file-wrap p span{text-decoration:underline;}
+.file-wrap p:hover{text-decoration:underline;}
+.file-wrap p button{width:16px;margin-left:5px;padding:2px 0;border:1px solid #ff5300;font-size:10px;color:#ff5300;cursor:pointer;line-height:13px;text-align:center;}
+.file-wrap.disabled .btnTypeB-blue{background:#ccc;}
+
+.top-print{position:absolute;top:50%;right:190px;margin-top:-13px;}
+.popup-content .title-box .title.addBtn-wrap{}
+.popup-content .title-box .title input[type=text]{height:26px;width:250px;}
+.addBtn-wrap-fr{margin-top:10px;}
+.addBtn-wrap-fr::after{content:'';display:block;clear:both;}
+.popup-content .addBtn-wrap-fr{text-align:center;}
+.popup-content .addBtn-wrap-fr .add-btn{display:inline-block;height:26px;padding:0 10px;margin-left:5px;border:1px solid #aaa;background:#ededed;color:#555;border-radius:3px;font-size:1.5rem;}
+
+
+/* ====================================================================================================
+   버튼
+==================================================================================================== */
+.btnType-b-l {text-align:center; height:auto; line-height:1.5;display:inline-block;border-radius:3px;background:#000;color:#fff;padding:6px 12px;font-size:1.8rem;vertical-align:middle;}
+.btnType-b-s {text-align:center; height:24px; line-height:22px;display:inline-block;border-radius:3px;background:#000;color:#fff;padding:0 12px;font-size:1.2rem;vertical-align:middle;}
+.btnTypeB-blue {text-align:center; height:24px; line-height:22px;display:inline-block;border-radius:3px;background:#167be7;color:#fff;padding:0 20px;font-size:1.4rem;vertical-align:middle;}
+.btn-type01 {width: 100%;display: block;background: #167be7;color: #fff;font-size: 1.8rem;text-align: center;height: 50px;line-height: 50px;}
+.inBox .btnPrint{float:right;width:24%;margin-top:-4px;min-width:140px;height:33px;line-height:32px;text-align:center;color:#fff;font-size:2.2rem;background:#ee2b59;border-radius:3px;}
+
+.count{position:relative;width:88px;height:23px;padding-right:26px;}
+.count input{position:absolute;left:0;top:0;width:62px;height:23px;border:1px solid #585858;color:#353434;text-align:center;}
+.count button{position:absolute;right:0;width:21px;height:12px;border:1px solid #ced1d4;background: #f7f7f7;}
+.count button.up{top:0;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/count_up.jpg") center center no-repeat;}
+.count button.down{bottom:0;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/count_down.jpg") center center no-repeat;}
+.count button.down.disabled{background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/count_down_disabled.jpg") center center no-repeat;}
+
+
+/* ====================================================================================================
+   미디어 쿼리
+==================================================================================================== */
+/* PC & 태블릿 */
+@media (max-width:1023px){
+    /* 공통 레이아웃 */
+	html, body {font-size:52.5%} /* 폰트설정 */	
+    /* 서브 */
+	header.sub {padding:0 3%}
+    .inBox {width:92%!important;margin:45px 4% 0!important}	
+	.count{position:relative;width:auto;height:auto;padding-right:0;text-align:center;}
+	.count input{position:relative;display:block;width:51px;height:23px;margin:0 auto;border:1px solid #585858;color:#353434;text-align:center;}
+	.count button{display:inline-block;position:relative;width:23px;height:23px;margin-top:3px;border:none;background:#fff;}
+	.count button.up{background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/m/count_up.png") center center no-repeat;-webkit-background-size:100%;background-size:100%;}
+	.count button.down{background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/m/count_down.png") center center no-repeat;-webkit-background-size:100%;background-size:100%;}
+	.count button.down.disabled{background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/m/count_down.png") center center no-repeat;-webkit-background-size:100%;background-size:100%;}
+	/* popup */
+	.txt-al-r .txt-day{width:150px;}
+	.popup-content .title-box .title.addBtn-wrap{margin-bottom:15px;}
+	.popup-content .title-box .title input[type=text]{width:calc(100% - 350px);}
+    
+	header.pop-header .score-top-btn{right:50px}
+	.top-print{right:150px;}
+}
+
+/* 모바일 */
+@media (max-width:600px){
+    /* 공통 레이아웃 */
+    html, body {font-size:42.5%} /* 폰트설정 */
+    .mo-no {display:none!important;}
+    .pc-no {display:block!important;}
+	.h2{height:59px;}
+    
+	#clock{bottom:auto;width:100%;padding:5px 0;background:#e6f4ff;text-align:center;position: relative;}
+	
+	/* 헤더 */
+    header {height:47px;}
+    header .logo  {padding:10px 4.1%;margin:0;}
+    header .logo img {width:123px;} 
+    header .info {right:0;}
+    header .info .student:after {content:" ";display:inline-block;height:7px;width:7px;border-left:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4;transform:rotate(-45deg) translateX(5px);}
+    header .info .student.on::after {transform:rotate(135deg);margin-bottom:0}
+    header .info .campus {padding-right:30%}
+    header .btnLogout {line-height:1;width:100%;}
+    header .my-info {display:none;width:115px;position: absolute;top:55px;right:4%;background:#3678e4;color:#fff;text-align: center;font-size: 13px;line-height: 1.5;z-index: 10;box-shadow: 4px 5px 6px rgba(0,0,0,.3)}
+    header .my-info::before {content:"▲";position: absolute;top:-12px;left:0;color:#3678e4;width:100%;text-align: center;}
+    header .my-info.on {display:block;}
+    header .my-info p {padding:10px;}
+    header .my-info a {padding:10px 0;display: block;color:#fff;font-size: 13px;background:#225ec1}
+
+
+
+    .footer {height:auto;padding:30px;}
+
+	.tabCommon .tabList li{height:40px;}
+	.tabCommon .tabList li a,.tabCommon .tabList li.on a{line-height:38px;}
+	
+	/* TABEL */
+	table  td, table th {font-size:1.7rem!important}
+	.tb-type2 tbody td {padding:10px 0;}
+	.tb-type2 table tbody tr td.totalPayment{text-align:center;line-height:5rem;}
+	.tb-type2 table tbody tr td.totalPayment span{display:none;}
+	.tb-type2 table tbody tr td.totalPayment ul{float:none;text-align:center}	
+
+    .tb-type2 table tbody tr td.totalPayment.type2 {text-align:left;line-height:5rem;height:70px;font-size:2.8rem !important;}
+    .tb-type2 table tbody tr td.totalPayment.type2 .tit {display:inline-block; font-weight:700;}
+	.tb-type2 table tbody tr td.totalPayment.type2 ul{float:right;text-align:right}	
+    /* 서브 컨텐츠 공통 */
+    header.sub {height:48px;}
+    header.sub .btnPrev {background-size:8px auto;padding:0 0 0 4%;}
+    section.sub {padding-top:40px;}
+	.inBox .tabCommon .tabConList .title {background-size:4px auto;}
+		
+    /* mobile table 공통 */
+	.mo-table tbody tr td {padding:10px 2%;}
+    .mo-table tr,.mo-table th, .mo-table td {display: block;}
+    .mo-table thead {display: none;}
+    .mo-table tbody td {position:relative;padding:8px 0 8px 40%!important;border-left: 0;font-size:1.8rem;text-align:left;min-height:30px}
+    .mo-table tbody td::before {display:inline-block;width:40%;position:absolute;top:50%;left:0;transform:translateY(-50%);text-align:center;font-weight: bold;content: attr(data-label);}
+    .mo-table tbody tr td:last-child {border-bottom:1px solid #000}
+    .mo-table tbody tr:nth-child(odd) {background:#f7f7f7}
+	.mo-table tbody td.bg-g {background:none;}
+
+	.mo-br br{display:block;}
+
+	/* 윈도우 팝업 */
+	.popup-content .title-box::after{content:'';display:block;clear:both;}
+	.popup-content .title-box .input-list{float:right;width:49.5%};
+	.popup-content .title-box .input-list a.btnTypeB-blue{position:absolute;top:0;right:0;width:50px;height:67px;padding:0;line-height:65px;}
+
+	.popup-content .title-box .input-list{position:initial;}
+
+	.popup-content .title-box .txt-al-r.input-list p:first-child{width:100%;}
+	.popup-content .title-box .txt-al-r.input-list p label{font-size:1.8rem;}
+	.popup-content .title-box .txt-al-r.input-list p a{float:right;}	
+	.popup-content .title-box .input-list .txt-day{width:100%;margin-right:0;}
+
+	.file-wrap label{width:45px;}
+	.file-wrap input[type=file]{width:calc(100% - 115px);}
+	.popup-content .title-box .title.addBtn-wrap{float:left;width:49.5%;margin-bottom:0;}
+	.popup-content .title-box .title input[type=text]{width:calc(100% - 10px);}
+
+	header.pop-header .score-top-btn{right:25px}
+	.top-print{right:110px;}
+}

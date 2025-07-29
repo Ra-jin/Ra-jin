@@ -1,0 +1,159 @@
+
+/* =========================
+   공통
+========================= */
+.summer-wrap {margin-top:-50px;overflow-x: hidden;}
+.summer-wrap *[class^="cont0"] {padding:120px 0 120px;text-align:center}
+.summer-wrap *[class^="cont1"] {padding:120px 0 120px;text-align:center}
+.summer-wrap *[class^="cont"] .tit {font-weight:900;color:#fff;font-size:50px;margin-bottom:30px}
+.summer-wrap .tbl-stit {text-align:left}
+.inner {width:1200px;margin:0 auto;box-sizing:border-box;}
+.inner02 {width:1100px;margin:0 auto;box-sizing:border-box;}
+.r-txt {font-size:12px;color:#b5e2ff;text-align:right;margin-top:35px}
+.btn-link-bk {text-align:center;margin-top:60px}
+.btn-link-bk a {display:inline-block;background-color:#0f0f0f;color:#fff;position:relative;font-size:21px;font-weight:500;border-radius:6px;padding:25px 105px}
+.btn-link-bk a:hover {text-decoration:none;}
+.btn-link-bk a:after {content:'';position:absolute;top:50%;right:45px;width:14px;height:14px;border-top:1px solid #fff;border-right:1px solid #fff;transform:rotate(45deg) translateY(-50%);}
+.tbl-box.tobe {background-color:#ccc;color:#fff;font-size:50px;font-weight:bold;padding:140px 0;text-align:center}
+
+.tbl-2p-box {display: flex; margin-top: 45px;}
+.tbl-2p-box thead th {border: 1px solid #323232 !important;}
+.tbl-2p-box thead th:first-child {border-left: 1px solid #323232 !important;}
+.tbl-2p-box tbody th, .cont07 .tbl-2p-box tbody td {padding: 10px; border: 1px solid #dfdfdf !important;}
+.tbl-2p-box tbody th.row {height: 200px;}
+.regular-table tr {height:80px !important}
+
+
+
+.c-box {background-color:#fff;padding:90px 65px}
+
+/* =========================
+   Visual
+========================= */
+.visual-area {background:url("https://russeldata.megastudy.net/campus/images/russel_w/2023/summer/visual_bg.jpg") no-repeat 0 0;background-position:bottom;background-size:cover;height:955px;width:100%;position:relative;box-sizing:border-box;}
+.visual-area .v-left {position:absolute;bottom:0;left:0;padding-top:155px}
+
+.visual-area .v-left .bubble01 {position:absolute;top:240px;left:377px;animation:bubble01 3s linear infinite;opacity:0;}
+.visual-area .v-left .bubble02 {position:absolute;top:198px;left:363px;animation:bubble02 3s 1s linear infinite;opacity:0;}
+.visual-area .v-left .bubble03 {position:absolute;top:105px;left:373px;animation:bubble03 3s 2s linear infinite;opacity:0;}
+.visual-area .v-left .bubble04 {position:absolute;top:0;left:325px;animation:bubble04 3s 3s linear infinite;opacity:0;}
+@keyframes bubble01 {0% {transform:translateY(24px);opacity:0;} 50% {transform:translateY(0);opacity:1;} 100% {transform:translateY(0);opacity:0;}}
+@keyframes bubble02 {0% {transform:translateY(53px);opacity:0;} 50% {transform:translateY(0);opacity:1;} 100% {transform:translateY(0);opacity:0;}}
+@keyframes bubble03 {0% {transform:translateY(120px);opacity:0;} 50% {transform:translateY(0);opacity:1;} 100% {transform:translateY(0);opacity:0;}}
+@keyframes bubble04 {0% {transform:translateY(220px);opacity:0;} 50% {transform:translateY(0);opacity:1;} 100% {transform:translateY(0);opacity:0;}}
+
+.visual-area .v-right {position:absolute;bottom:0;right:0;}
+.visual-area #bubble {height:100%;width:100%}
+.visual-area .inner {padding:170px 0 140px;position:relative;z-index:2;text-align:center;}
+.visual-area .badge-go3 {position:absolute;top:330px;right:145px}
+.visual-area .v-info {margin-top:60px;display:flex;align-items:center;justify-content:center;}
+.visual-area .v-info dl {display:flex;align-items:center;margin-left:50px}
+.visual-area .v-info dl:first-child {margin-left:0}
+.visual-area .v-info dl dt {font-size:18px;width:110px;height:36px;display:flex;align-items:center;justify-content:center;background-color:#0c7dd6;border-radius:50px;margin-right:15px;color:#fff}
+.visual-area .v-info dl dd {font-size:20px;font-weight:500;position:relative;color:#263636}
+.visual-area .v-info dl dd span {position:absolute;top:40px;left:0;font-size:14px;color:#648283;font-weight:500}
+.visual-area .v-info > div {margin-left:30px}
+.visual-area .v-info > div a {font-size:15px;color:#282828}
+.visual-area .v-info > div a:hover {text-decoration:underline;}
+.bt-apply {display: inline-block;margin:0 0 0 10px;padding:2px 10px;height:26px;line-height:26px;background:#656565;border-radius:4px;color:#fff;font-size:14px;}
+.bt-apply::after {content:" >"}
+
+/* 퀵 배너 */
+/* .summer-wrap *[class^="quick"] {position:absolute;top:50%;right:0;z-index:5;transform:translateY(-50%)} */
+.summer-wrap *[class^="quick"] {position:fixed;top:50%;right:0;z-index:5;transform:translateY(-50%)}
+.summer-wrap .quick .b-tit {padding:11px 28px;color:#222222;font-size:15px;background:#ffc91e;letter-spacing:-1px;}
+.summer-wrap .quick a {display: block;}
+.summer-wrap .quick .q-ban {position:relative;padding:22px 15px;width:180px;text-decoration:none;background-color:#fff;box-sizing:border-box;border-left: 2px solid #ffc91e;border-bottom:1px solid #eee}
+.summer-wrap .quick .q-ban span {color:#222222;font-size:14px;display:block;letter-spacing: -1px;}
+.summer-wrap .quick .q-ban span strong {font-size:16px;}
+.summer-wrap .quick .q-ban strong {color:#222222;font-size:16px;margin-top:4px;position:relative;display:block;letter-spacing: -1px;}
+.summer-wrap .quick .q-ban strong:after {content:'';position:absolute;top:55%;right:-2px;transform:translateY(-50%) rotate(45deg);width:8px;height:8px;border-right:1px solid #acacac;border-top:1px solid #acacac}
+
+
+/* nav */
+.summer-wrap .fix-menu {display:flex;justify-content:center;align-items:center; background:#ddf2ff;width:100%;box-sizing:border-box;z-index:4;margin-top:-2px}
+.summer-wrap .fix-menu.fix {position:fixed;top:0;left:0;z-index:12;}
+.summer-wrap .fix-menu .menu {display:flex;justify-content:center;align-items:center;width:1290px;}
+.summer-wrap .fix-menu .menu a {height:90px;color:#7799ae;font-size:19px;text-decoration:none;outline:none;flex:1;display:flex;align-items:center;justify-content:center;line-height:1.2;font-weight:bold;border-right:1px solid #c7deed;text-align:center;}
+.summer-wrap .fix-menu .menu a:first-child {border-left:1px solid #c7deed;}
+.summer-wrap .fix-menu .menu a.on{color:#fff;background-color:#0fa0ff}
+/* //nav */
+
+.cont01 {background-color:#0f8bff}
+.cont01 .inner {position:relative}
+.cont01 .info-stxt{position:absolute;top:400px;right:10px;width:auto;padding:0 20px;box-sizing:border-box;text-align:right;font-size:10px;line-height:1.2;font-weight:300;color:#c7dcf8;}
+.cont01 .info-stxt > span {position:relative;padding:0 25px 0 0;cursor:pointer;font-size:13px;}
+.cont01 .info-stxt > span::after {display:block;content:"i";position:absolute;top:2px;right:0;width:18px;height:18px;line-height:19px;background:#a6ccf2;border-radius:50px;text-align:center;color:#1b6dd9;font-size:13px;font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight:900;}
+.cont01 .data-view {display:none;position:absolute;top:30px;right:0;width:auto!important;padding:15px 20px;background:#fff;box-shadow:0 3px 2px rgba(0,0,0,.05); text-align: left;line-height: 1.5;font-size: 11px;font-weight:500;color:#333;white-space: nowrap;}
+.cont01 .info-stxt:hover .data-view  {display: block;}
+.cont01 .data-view.on {display: block;}
+.cont02 {background-color:#e7f5ff;padding-bottom:95px}
+.cont02 .inner {overflow:hidden;padding-bottom:25px}
+.cont02 ul {margin-top:70px;display:flex;flex-wrap:wrap}
+.cont02 ul li {background-color:#fff;border-radius:45px 45px 0 45px;padding:70px 40px 50px 40px;width:calc(50% - 20px);box-sizing:border-box}
+.cont02 ul li:nth-child(even) {margin-left:38px}
+.cont02 ul li:nth-child(n+3) {margin-top:38px}
+.cont02 ul li > div {display:flex;padding-bottom:45px;border-bottom:1px solid #e1f3ff;align-items:center;}
+.cont02 ul li > div .stu-img a {display:block;}
+.cont02 ul li > div .stu-info {width:calc(100% - 70px);text-align:left;display:flex;}
+.cont02 ul li > div .stu-info dl {margin-left:15px}
+.cont02 ul li > div .stu-info dl dt {color:#222222;font-size:22px;font-weight:bold;line-height:1.2}
+.cont02 ul li > div .stu-info dl dd {color:#222222;font-size:22px;}
+.cont02 ul li p {padding-top:45px;font-size:16px;color:#555555;text-align:left;line-height:1.4;letter-spacing:-1px;}
+.cont02 ul li p span {display:inline-block;margin-bottom:20px}
+.cont02 ul li p strong {color:#222222}
+.cont02 .r-txt {color:#a6bddd;margin-top:28px}
+.bt-banner {background-color:#0f8bff;text-align:center;padding:80px 0 70px}
+
+.cont03 .inner > div {display:flex;justify-content:center;}
+.summer-wrap .cont04 {background-color:#f7841e;padding-bottom:85px}
+.cont04 .inner {width:1317px}
+.summer-wrap .cont05 {background-color:#ececec;padding-top:70px}
+.summer-wrap .cont06 {background-color:#3795ff;padding-top:70px}
+.cont06 .baja-slide {margin-top:60px;overflow:visible}
+.cont06 .baja-slide .swiper-slide {opacity:.3;overflow: hidden;border-radius:15px}
+.cont06 .baja-slide .swiper-slide-active {opacity:1;filter: blur(0);transition:all ease .4s;}
+.summer-wrap .cont07 {padding-top:70px}
+.cont07 .inner {position:relative}
+.cont07 .inner .btn-link-bk {text-align: center;}
+.cont07 .inner .btn-link-bk a {box-sizing:border-box;width:480px}
+.summer-wrap .cont08 {background-color:#ecf5fb;padding-top:70px}
+
+/* 입학기준 */
+.cont09 {background-color:#f77807;}
+
+.summer-wrap .cont10 .tit {color:#292929}
+.summer-wrap .cont11 {background-color:#ececec}
+.summer-wrap .cont11 .tit {color:#292929}
+.summer-wrap .cont12 .tit {color:#292929}
+.summer-wrap .cont12.bg-gray {background-color:#ececec}
+.enter-btn{background-color: #2080ec;width: 170px;height: 27px;text-align: center;}
+.enter-btn a{color: #fff;position: relative;line-height: 27px;}
+.enter-btn a::after{content: '';display: block;width: 7px;height: 7px;border-top: 1px solid #fff;border-right: 1px solid #fff;transform: rotate(45deg);position: absolute;top: 6px;right: -15px;}
+
+
+/* =========================
+   animation
+========================= */
+.bounceAni {animation: vibrate-1 3s linear infinite both;}
+
+@keyframes vibrate-1 {
+   0% {transform: translate(0);
+   }
+   20% {transform: translate(-2px, 2px);
+   }
+   40% {transform: translate(-2px, -2px);
+   }
+   60% {transform: translate(2px, 2px);
+   }
+   80% {transform: translate(2px, -2px);
+   }
+   100% {transform: translate(0);
+   }
+ }
+ 
+ canvas{
+	position: absolute;
+	cursor: crosshair;
+}
+

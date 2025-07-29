@@ -1,0 +1,66 @@
+$(function(){
+	//선배들의 성공수기
+	(function(){
+		$(".reviewVideoCon").each(function(index){
+			var $this = $(this);
+			var slide = $this.addClass("js-slide-" + Number(index + 1));
+
+			var reviewVideoCon = new Swiper(slide, {
+				slidesPerView: 5,
+				spaceBetween: 20,
+				loop: true,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				}
+			});
+		});
+	})();	
+	(function(){
+		var sessionSlide = new Swiper('.session.swiper-container', {
+			slidesPerView: 6,
+			spaceBetween: 20,			
+			loop: true,
+			navigation: {
+				nextEl: '.session-next',
+				prevEl: '.session-prev'
+			},
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			}
+			
+		});		
+	})();
+	
+	// 탭버튼
+	$(function(){
+		var bt = $('.tab-bt > a');
+		var cont = $('.playlist-wrap > .tab-cont');
+
+		bt.on('click',function(e){
+			e.preventDefault();
+			var i = $(this).index()
+
+			bt.eq(i).addClass('on').siblings().removeClass('on')
+			cont.eq(i).addClass('on').siblings().removeClass('on')
+		})
+
+	})
+
+	// 2021 대입결과
+	$(".box01 .result-view").hover(function(){
+		$(this).parents().find('.result-2021').addClass('hover-box')
+	});
+	$(".result-2021").mouseleave(function(){
+		$(this).removeClass('hover-box')
+	});
+	$('.bt-data').hover(
+		function(){
+			$(this).children().css('display','block')
+		},
+		function(){
+			$(this).children().css('display','none')
+		}
+	)
+});

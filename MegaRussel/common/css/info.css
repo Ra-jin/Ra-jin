@@ -1,0 +1,349 @@
+/* =================================================
+    원장님 인사말
+==================================================== */
+.info-russel {position: relative;}
+.info-russel .txt-box {position: absolute;top:105px;left:0;width:100%;text-align: center;font-size: 0;line-height: 0;}
+.info-russel .txt-box p {margin-bottom:45px;}
+.info-russel .txt-box p {animation: fadeUp ease-out .7s both;}
+.info-russel .txt-box p:nth-of-type(1) {animation-delay: .3s;}
+.info-russel .txt-box p:nth-of-type(2) {animation-delay: .8s;}
+.info-russel .txt-box p:nth-of-type(3) {animation-delay: 1.3s;}
+.info-russel .txt-box p:nth-of-type(4) {animation-delay: 1.8s;}
+.info-russel .txt-box p:nth-of-type(5) {animation-delay: 2.3s;}
+.info-russel .info-txt {padding:70px 60px 140px;position: relative;background:#f5f6f7;font-size:17px;color:#242424;}
+.info-russel .info-txt.gj p.txt {margin-bottom:20px;}
+.info-russel .info-txt p.txt {margin-bottom:40px;line-height: 1.7;animation: fadeIn ease-in .7s 1.5s both;font-weight: 400;font-size:17px;}
+.info-russel .info-txt p.txt:last-of-type {margin-bottom: 0;}
+.info-russel .info-txt p.txt strong {font-weight: 500;}
+.info-russel .info-txt .name {position:absolute;bottom:0;right:-23px;display:flex;font-size:22px;color:#242424;align-items: flex-end;animation:fadeLeft ease-in 1s 2s both}
+.info-russel .info-txt .name strong {font-weight: 700;}
+.info-russel .info-txt .name p:nth-of-type(1) {padding:0 20px 70px 0;}
+.info-russel .info-txt .name p:only-child {padding-right:95px}
+.info-russel .info-txt .head-profile {position:absolute;bottom:0;right:-40px;width:196px;height:327px;animation:fadeLeft ease-in 1s 2s both}
+.info-russel .info-txt .name.md p:only-child {padding-right:200px}
+@keyframes fadeUp {
+  0%{opacity: 0;transform: translateY(20%);}
+  100%{opacity: 1;transform: translateY(0%);}
+}
+
+@keyframes fadeIn {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes fadeLeft {
+  0%{opacity: 0;transform: translateX(15%);}
+  100%{opacity: 1;transform: translateX(0%);}
+}
+
+/* =================================================
+   학원 시설
+==================================================== */
+.facilities dl{width: 100%;overflow: hidden;margin-bottom: 20px;}
+/* .facilities dt{float:left;width:120px;height:34px;margin-right:10px;margin-bottom:7px;font-size:14px;background:url('https://russeldata.megastudy.net/campus/images/campus/library/russel/intro/bg_facilities.gif') 0 0 no-repeat;line-height:32px;color:#fff;text-align: center;} */
+
+.facilities dt{float:left;min-width:110px;height:34px;margin-right:24px;margin-bottom:7px;font-size:15px;line-height:32px;color:#fff;text-align: center;background-color:#4AA9BA;padding:0 8px 0 18px;box-sizing:border-box;position:relative;}
+.facilities dt:after {content:''; width: 0;height: 0;border-top: 17px solid transparent;border-bottom: 17px solid transparent;border-left: 13px solid #4AA9BA;position:absolute;top:0;right:-13px;}
+
+.facilities dd{display:block;overflow:hidden;padding-bottom:10px;color: #838383;}
+.facilities dd.img{width:100%;}
+.facilities .h4_type_02{margin-bottom: 5px;margin-top: 10px;}
+
+/* =================================================
+   고시 학사
+==================================================== */
+.map .board_view_type_02{padding-bottom: 40px;}
+.map .board_view_type_02 .bus, .map .board_view_type_02 .address{padding: 10px 0}
+.map .board_view_type_02 .bus li {display: flex;}
+.map .board_view_type_02 .bus li strong {padding-right:5px;}
+.map .board_view_type_02 table td{font-size:15px;line-height: 1.7;}
+.map .board_view_type_02 table td.txt-center{text-align: center;}
+.map .board_view_type_02 table th{text-align: center;}
+.map .board_view_type_02 .blue{color: #0081ff !important;}
+.map .board_view_type_02 .green{color: #4aa9ba;}
+.map .board_view_type_02 .fontblue{color: #0099cc;}
+.map .board_view_type_02 strong{font-weight: bold;}
+.map .btn_print{display: block;margin-bottom: 40px;}
+
+/* =================================================
+   주변 학사
+==================================================== */
+.blind{display:block;overflow:hidden;position:absolute;left:-9999px;top:-9999px;z-index:-1;width:1px;height:1px}
+.tb_sec{margin-top:15px}
+.tb_gosi{width:100%;border:0;border-spacing:0;border-bottom:1px solid #d9d9d9;table-layout:fixed}
+.tb_gosi th,.tb_gosi td{margin:0;padding:4px 0;border:0;border-left:1px solid #d9d9d9;border-top:1px solid #d9d9d9;text-align:center}
+.tb_gosi th{font-size:14px;background:#f5f5f5;color:#2d2d2d}
+.tb_gosi td{font-size:13px;color:#666}
+.tb_gosi tr th:first-child{border-left:0}
+.tb_gosi tr td:first-child{padding-left:10px;border-left:0;text-align:left}
+.tb_gosi td a img{display:inline-block;vertical-align:top;margin-top:1px}
+.tb_gosi td strong{font-weight:normal;font-size:11px;letter-spacing:-1px;color:#ee3b41}
+.noti_txt{font-size:14px}
+.etc_txt{padding-top:8px;font-size:12px}
+.etc_won{text-align:right}
+
+/* =================================================
+   오시는길
+==================================================== */
+/* 인쇄 팝업 2020.08 */
+.map-popup-wrap h1{margin-bottom:30px;padding:0 20px;font-size:17px;font-weight:500;line-height:50px;color:#fff;background:#28344d;}
+.map-popup-wrap h4{margin-bottom:10px;font-size:15px;font-weight:500;}
+.map-popup-wrap .map-popup{padding:0 20px;}
+.map-popup-wrap .pop_img{margin-bottom:30px;text-align:center;}
+.map-popup-wrap #btn_set{margin-top:10px;text-align:right;}
+.map-popup-wrap #btn_set a{display:inline-block;}
+.map-popup-wrap table th{font-size:14px;font-weight:500;}
+.map-popup-wrap table td{font-size:14px;font-weight:400;}
+
+/* =================================================
+   온라인 예약
+==================================================== */
+/* 2019 온라인 좌석예약 시스템 */
+.schedule-box {width:697px; margin:0 auto;position: relative;}
+.tb-type01 {border-top:2px solid #434343; margin:15px 0 0 0;}
+.tb-type01 table {width:100%; border-collapse:collapse;}
+.tb-type01 table caption {position:absolute;left:-5000px;top:0;visibility:hidden;overflow:hidden;line-height:0.1%;font-size:0.1%;width:0.1%;height:0.1%;}
+.tb-type01 table thead tr th {background:#c6c6c6; border-bottom:1px solid #434343; border-left:1px solid #9a9a9a; padding:10px 0; color:#191919; font-size:17px; text-align:center;}
+.tb-type01 table thead tr th:first-of-type {border-left:0;}
+.tb-type01 table thead tr th.border-l {border-left:1px solid #434343;}
+.tb-type01 table tbody tr td {border-left:1px solid #c4c4c4; border-bottom:1px solid #c4c4c4; padding:10px 0; color:#191919; text-align:center;}
+.tb-type01 table tbody tr td:first-of-type {border-left:0;}
+.tb-type01 table tbody tr td.border-l {border-left:1px solid #c4c4c4;}
+.tb-type01 table tbody tr td.bg-y {background:#ffffde;}
+.info-txt {padding:10px 0 0 0;}
+.info-txt li {color:#727272; font-size:12px;}
+.logo-wrap {text-align:center; padding:50px 0; }
+
+.online-system .img-comming {position:absolute;top:0;left:0;text-align:center;width:100%;height:100%;margin-top:34px;}
+.online-system .img-comming:after {content:"";position: absolute;top:0;left:0;background-color:#000;z-index:0;width:100%;height:100%;z-index:0;opacity: .95;}
+.online-system .img-comming img {position: relative;z-index:1;top:50%;margin-top:-115px;}
+
+.notice-box {margin:15px 0 0 0;height:300px;line-height:300px;background:#2f2f2f;color:#fff;text-align:center;font-size:22px;}
+.info-box {position:relative;margin:0 40px 40px;padding:30px;border:1px solid #d4cfd3;}
+.info-box .tit {position:absolute;left:30px;top:-16px;display:inline-block;padding:4px 10px 6px;background:#615ffe;color:#fff;font-size:17px;}
+.info-box .txt {margin-bottom:15px;font-size:15px;color:#484848;}
+.info-box .txt:last-of-type {margin-bottom:0;}
+.info-box .list-check li{position:relative;padding:0 0 0 22px;font-size:15px;color:#484848;}
+.info-box .list-check li::before{content:"";position:absolute;left:0;top:6px;display:block;width:14px;height:9px;background:url("https://russeldata.megastudy.net/campus/images/russel/common/bul/bul_check02.jpg") no-repeat 0 0;}
+.info-box .btn {display:inline-block;vertical-align:top;}
+.info-box .txt-notice {text-align:center; margin-top:20px;}
+
+/* =================================================
+   스쿨버스
+==================================================== */
+.school-bus {overflow:hidden;}
+.school-bus .ml0 {margin-left:0 !important;}
+.school-bus .visual {position:relative;padding:80px 0 165px 80px;background:#1e2f89;}
+.school-bus .visual p {margin-bottom: 30px;}
+.school-bus .visual .v01 {overflow:hidden;}
+.school-bus .visual .v02 {overflow:hidden;}
+.school-bus .visual .v03, .school-bus .visual .v05 {transform:translateY(-20px);color:#ffffff;font-size:20px;line-height:30px;font-weight:300;opacity:0;}
+.school-bus .visual .v01 img, .school-bus .visual .v02 img {transform:translateY(-50px) rotate(-5deg);opacity:0;clip-path:polygon(100% 0, 100% 100%, 0 100%, 0 100%);}
+.school-bus .visual .v04 {position:absolute;bottom:-75px;right:0;}
+.school-bus .visual .v04 img {animation:busAction linear 9s both;}
+.school-bus .visual .v05 {font-size:23px;}
+
+/* keyframes */
+@keyframes busAction {
+   0% {transform:translateX(90%);opacity: 1;}
+   25% {transform:translateX(-5%);opacity: 1;}
+   45% {transform:translateX(-5%);opacity: 1;}
+   79% {transform:translateX(-165%);opacity: 1;}
+   80% {transform:translateX(-165%);opacity: 0;}
+   81% {transform:translateX(100%);opacity: 0;}
+   82% {transform:translateX(100%);opacity: 1;}
+   100% {transform:translateX(-5%);opacity: 1;}
+}
+
+.school-bus .visual.on .v01 img {transition:all .5s ease;transform:translateY(0) rotate(0deg);opacity:1;clip-path:polygon(100% 0, 100% 100%, 0 100%, 0 0); background:#1e2f89;}
+.school-bus .visual.on .v02 img {transition:all .5s .5s ease;transform:translateY(0) rotate(0deg);opacity:1;clip-path:polygon(100% 0, 100% 100%, 0 100%, 0 0); background:#1e2f89;}
+.school-bus .visual.on .v03, .school-bus .visual.on .v05 {transform:translateY(0);transition:all .7s 1s ease;opacity:1;}
+.school-bus .visual.on .v04 img {transform:translateX(0);transition:all 1s 1s ease-out;opacity:1;}
+.school-bus .visual .start-month{position: absolute; top:0; right:50px; width: 105px; text-align: center; line-height: 1.2; padding: 18px 0; border-radius: 0 0 10px 10px; background: #fed259;}
+.school-bus .visual .start-month strong{font-size: 22px; font-weight: bold; color: #1e2f89;}
+.school-bus .content {padding:60px 26px;background:#ffc219;}
+.school-bus .content.bg-gray {background:#dadada}
+.school-bus .content .inner {padding:55px 35px;margin-top:30px;background:#fff;border-radius:20px;}
+.school-bus .content .inner:nth-of-type(2) {padding:55px 36px;}
+.school-bus .content .inner:first-of-type {margin-top:0;}
+.school-bus .sub-tit {padding:0 0 8px 0;margin:70px 0 20px;border-bottom:2px solid #313131}
+.school-bus .notice > div {margin-top:10px;}
+.school-bus .tit {margin-top:10px;display:inline-block;width:98px;height:30px;line-height:28px;border-radius:50px;background:#1e2f89;text-align:center;color:#fff;font-size:17px;}
+.school-bus .txt {margin-top:10px;display:inline-block;width:535px;margin-left:10px;font-size:18px;color:#333333;vertical-align: top;font-weight: 500;}
+.school-bus .box {margin-top:10px;padding:24px 37px;border-radius:10px;background:#f2f2f2;}
+.school-bus .box:first-of-type {margin-top:15px;}
+.school-bus .box strong {font-size:18px;font-weight:700;}
+.school-bus .box span {padding-left:8px;font-size:17px;color:#333333;font-weight:400;}
+.school-bus .red {color:#e92654 !important;}
+.school-bus .blue {color:#1e2f89 !important;}
+.school-bus .box p {margin-top:2px;}
+.school-bus .box .bus-line {margin:2px 0 0 -5px;}
+.school-bus .box .bus-line > span {display:inline-block;position:relative;margin:7px 0 0 5px;border-radius:50px;padding:4px 25px 4px 10px;background:#dcdcdc;color:#333333;font-size:13px;letter-spacing:-1px;}
+.school-bus .box .bus-line > span::after {content:'';display:block;position:absolute;right:7px;top:9px;width:12px;height:11px;background:url('https://russeldata.megastudy.net/campus/images/russel/russel_bc/info/schoolBus/arrow.png') no-repeat right 50%;}
+.school-bus .box .bus-line > span:last-of-type {padding:4px 15px;}
+.school-bus .box .bus-line > span:last-of-type::after {content:none;}
+.school-bus .box .bus-line > span.bg-r {background:#f0cad0;}
+.school-bus .box .bus-line > span.bg-b {background:#cadaf0;}
+.school-bus ul li {position:relative;padding-left:10px;color:#333;font-size:18px;font-weight:500;}
+.school-bus ul li::before {content:'·';position:absolute;left:0;top:0px;}
+
+.school-bus .schedule {display:flex;justify-content:space-between;}
+.school-bus .schedule .box {width:322px;flex-flow:wrap row;}
+.school-bus .schedule .box .tit{width:322px;height:30px;line-height:28px;margin-bottom:10px;text-align:center;background:#1e2f89;font-size:17px;color:#ffffff;font-weight:400;border-radius:50px;}
+.school-bus .time-table {width:155px;height:280px;padding:27px 10px;text-align:left;background:#f2f2f2;border-radius:15px;box-sizing:border-box;}
+.school-bus .time-table:first-of-type {width:160px;}
+.school-bus .time-table strong {display:block;text-align:center;margin-bottom:7px;font-size:18px;font-weight:700;color:#1e2f89;}
+.school-bus .time-table:first-of-type strong {color:#e92654;}
+.school-bus .time-table ul {text-align:left;}
+.school-bus .time-table ul li {display:flex;margin-top:2px;color:#333333;}
+.school-bus .time-table .time {height:18px;line-height:18px;padding:0 8px;margin:2px 6px 0 0;background:#e2e2e2;border-radius:50px;font-size:13px;font-weight:500;}
+.school-bus .time-table .station {font-size:14px;letter-spacing:-1px;}
+.school-bus .time-table .txt {font-size:16px;font-weight:500;color:#333333;}
+
+.school-bus .faq-box-wrap {padding:60px 30px;background:#dadada;}
+.school-bus .faq-box-wrap .faq {padding:50px 15px 40px;background:#fff;border-radius: 20px;}
+.school-bus .faq .tit {margin-bottom:30px;text-align:center;}
+.school-bus .faq .q {display:flex;align-items:center;height:60px;margin-top:30px;padding-left:37px;background:#e9ebf3;border-radius:10px;}
+.school-bus .faq .q:first-of-type {margin-top:0;}
+.school-bus .faq .q img {flex:0 0 auto;}
+.school-bus .faq .a {padding:20px 0 0 35px;line-height:1.3;font-size:18px;font-weight:500;color:#333333;}
+.school-bus .faq .a span.txt-g {color:#888787;font-size:16px;font-weight:400;}
+.school-bus .faq .a span.dis-b {display:block;margin-top:10px;}
+
+.school-bus table {border-collapse: separate;border-spacing: 4px;width: 100%;}
+.school-bus table thead tr th {background-color: #919299;color: #fff;font-size: 15px;}
+.school-bus table tbody tr td {background-color: #E9E9E9;text-align: center;font-size: 15px;padding: 0;}
+
+/* 노선도 지도 */
+.route-wrap {margin-top:30px!important;border-top:1px solid #cecece;}
+.route-wrap .tab {display: flex;flex-wrap: wrap;justify-content: center;border-right:1px solid #cecece;border-left:1px solid #cecece;}
+.route-wrap .tab select {border:1px solid #333;text-align: center;height:45px;-webkit-appearance: none;-moz-appearance: none;appearance: none;background:url('https://russeldata.megastudy.net/campus/images/russel/info/schoolBus/bt_select.jpg') right center no-repeat;font-size: 16px;color:#333;font-weight: 700;}
+.route-wrap .tab a {flex:1;position:relative;height:45px;line-height:45px;font-size:17px;text-align: center;color:#8b8b8b;letter-spacing: -1px;border-right:1px solid #cecece;border-bottom:1px solid #cecece;}
+.route-wrap .tab a .bus-end {position:absolute;top:0;left:50%;transform:translate(-50%, -50%);display: inline-block;padding:5px 13px;color:#fff;background:#d61a54;font-weight: bold;border-radius: 15px;line-height: 1;font-size: 12px;letter-spacing: 0;}
+.route-wrap .tab a:only-child {cursor:default}
+.route-wrap .tab a:hover {text-decoration: none;}
+.route-wrap .tab.close a {flex:1;min-width:20%;height:56px;line-height:58px;font-size:17px;text-align: center;color:#8b8b8b;letter-spacing: -1px;border-right:1px solid #cecece;border-bottom:1px solid #cecece;box-sizing: border-box;}
+.route-wrap .tab a span.close {color: #fff;background-color: #d0174f;border-radius: 50px;width: 42px;height: 16px;line-height: 16px; display: block;font-size: 12px;margin: 5px 0 0 5px;}
+.route-wrap .tab a.closeA {line-height: 18px;}
+.route-wrap .tab a:nth-of-type(5n), .route-wrap .tab a:last-child {border-right: none;}
+.route-wrap .tab a.on {color:#eff2ff;background:#1e2f89;border-bottom:1px solid #1e2f89}
+.route-wrap .route-map {display: none;padding:30px 15px;border:1px solid #cecece;border-top: 0;}
+.route-wrap .route-map p:last-child {margin-top:5px;font-size:14px;color:#1e2f89;}
+.route-wrap .route-map.on {display:block}
+.route-wrap .route-map .r-tit {margin-bottom:15px;font-size: 20px;color:#333;font-weight: 700;}
+.route-wrap .route-map .r-tit strong {color: #1e2f89;font-weight: 700;}
+.route-wrap .route-map .r-tit span {font-size: 14px;color:#868686;font-weight: 500;}
+.route-wrap .route-map .route-txt {margin-bottom: 25px;}
+.route-wrap .route-map .route-txt span {display:inline-block;font-weight: 500;font-size:14px;color:#333;letter-spacing: -1px;vertical-align: middle;}
+.route-wrap .route-map .route-txt span strong {display:inline-block;padding:0px 6px 0 5px;font-size: 13px;color:#333;background:#e7e7e7;border-radius: 15px;line-height: 1.2;}
+.route-wrap .route-map .route-txt span:first-child strong, .route-wrap .route-map .route-txt span:last-child strong {background:#1e2f89;color:#fff}
+.route-wrap .route-map .route-txt span::after {display:inline-block;margin:0 2px 0 5px;content: "▶";}
+.route-wrap .route-map .route-txt span.notime::after {content: ",";margin:0;}
+.route-wrap .route-map .route-txt span.notime strong {display: none;}
+.route-wrap .route-map .route-txt span:last-child::after {content:"";display: none;}
+.route-map .map-info {padding:0 5px;background:#fff;border:1px solid #999;margin:-25px 0 0 -30px;font-size: 13px;;}
+
+.school-bus .content .bg-bus {padding-bottom:220px;background-image:url('https://russeldata.megastudy.net/campus/images/russel/info/schoolBus/bg_cont01.jpg');background-repeat: no-repeat;background-position: center bottom;}
+.school-bus .img-driver {position:relative;text-align: right;margin:15px 0 -102px 0;}
+.school-bus .img-driver span {display:inline-block;position: absolute;top:35%;right:130px;text-align: center;color:#313131;font-size: 14px;line-height: 1.2;transform: translateY(-50%);}
+.school-bus .img-driver span strong {display:block;font-size:18px;font-weight: 500;}
+
+.school-bus .bus-bottom {display:none;box-sizing: border-box;height:168px;padding-top:50px;background:url('https://russeldata.megastudy.net/campus/images/russel/info/schoolBus/bg_bottom.jpg') left top;text-align: center;color:#fff;}
+.school-bus .bus-bottom p:nth-child(1) {font-size: 20px;font-weight: 500;}
+.school-bus .bus-bottom p:nth-child(2) {font-size: 30px;font-weight: 700;}
+.school-bus .bus-bottom p:nth-child(2) strong {color:#ffc219;font-weight: 700;}
+
+.school-bus .tel-box {display: flex;justify-content: center;align-items: center;height:180px;background:#1e2f89;}
+
+/* =================================================
+  온라인 서비스
+==================================================== */
+.online-wrap .visual {position:relative;height:930px;background:url('https://russeldata.megastudy.net/campus/images/russel/entinfo/online/service_bg.jpg') no-repeat 0 0;}
+.online-wrap .visual .tit {position:absolute;left:0;top:78px;width:100%;text-align:center;opacity:0;transform: perspective(600px) rotateX(90deg);}
+.online-wrap .visual .stit {position:absolute;left:0;top:260px;width:100%;text-align:center;opacity:0;}
+.online-wrap .visual .badge {position:absolute;left:564px;top:350px;z-index:1;opacity:0;transform: perspective(600px) rotateY(90deg);}
+.online-wrap .visual .device {position:absolute;left:29px;top:392px;opacity:0;}
+.online-wrap .visual .service-btn {position:absolute;left:40px;top:748px;}
+
+.online-wrap .visual.on .tit {top:108px;opacity:1;transition:all 1s cubic-bezier(0.250, 0.460, 0.450, 0.940);transform: perspective(600px) rotateX(0deg);}
+.online-wrap .visual.on .stit {top:260px;opacity:1;transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55) .6s;}
+.online-wrap .visual.on .device {top:372px;opacity:1;transition:all 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s;}
+.online-wrap .visual.on .badge {opacity:1;transition:all .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.8s;transform:perspective(600px) rotateY(0deg);}
+
+.online-wrap .tab {display:flex;justify-content:center;align-items:center;z-index: 10;}
+.online-wrap .tab a {flex:1;height:80px;line-height:80px;text-align:center;background:#f2f2f2;color:#999999;border:1px solid #cccccc;border-left:0;box-sizing:border-box;font-size:20px;font-weight:700;text-decoration:0;}
+.online-wrap .tab.md a {flex:1;width:100%;}
+.online-wrap .tab a:last-of-type {border-right:0;}
+.online-wrap .tab a.on {border:0;background:#a30964;color:#fff;}
+.online-wrap .tab-box.fix .tab {position:fixed;top:0;width:777px;}
+/* .online-wrap .tab-box.fix .tab-con.on {margin-top:80px;} */
+
+.online-wrap .tab-con {display:none;background:#f2f2f2;padding:40px 0;}
+.online-wrap .tab-con .inner {width:717px;margin:0 auto;padding:70px 0 80px;border-radius:15px;background:#fff;}
+.online-wrap .tab-con.on {display:block;}
+
+.online-wrap .btn-wrap {display:flex;justify-content:center; gap: 10px;}
+.online-wrap .btn-wrap .btn {text-align:center;}
+.online-wrap .btn-wrap .btn a {display: inline-block;position: relative;max-width:470px;margin:0 20px 0px 0;padding:0 75px;height:77px;line-height:77px;box-sizing:border-box;background:#101010;border-radius:7px;font-size:22px;color:#fff;font-weight:400;text-decoration:none;}
+.online-wrap .btn-wrap .btn a strong {font-weight:700;color:#f9ff95;}
+.online-wrap .btn-wrap .btn a:last-child {margin-right:0;}
+.online-wrap .btn-wrap .btn a::after {content:"";display:block;height:14px;width:14px;position:absolute;top:50%;right:25px;transform:translateY(-50.1%) rotate(45deg);border-top:1px solid #fff;border-right:1px solid #fff;}
+
+.online-wrap .layer-pop {display:none;opacity:0;justify-content:center;align-items:center;position:fixed;top:0;left:0;width:100%;height:100%;padding:100px 0;box-sizing:border-box;z-index:20;transition:all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s;}
+.online-wrap .layer-pop.on {display:flex;opacity:1;}
+.online-wrap .layer-pop::before {content:'';position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0, 0, 0, 0.2);}
+.online-wrap .layer-pop .in {position:relative;height:100%;}
+.online-wrap .layer-pop .in p {height:100%;overflow-x:hidden;overflow-y:auto;}
+.online-wrap .layer-pop .btn-close {display:block;position:absolute;right:0;top:-50px;width:40px;height:40px;}
+.online-wrap .layer-pop .btn-close::before, .online-wrap .layer-pop .btn-close::after {content:'';position:absolute;top:19px;width:40px;height:3px;background:#000000;}
+.online-wrap .layer-pop .btn-close::before{left:0;transform:rotate(-45deg);}
+.online-wrap .layer-pop .btn-close::after {right:0;transform:rotate(45deg);}
+
+.online-wrap .layer-pop02 {display:none;opacity:0;justify-content:center;align-items:center;position:fixed;top:0;left:0;width:100%;height:100%;padding:100px 0;box-sizing:border-box;z-index:20;transition:all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s;}
+.online-wrap .layer-pop02.on {display:flex;opacity:1;}
+.online-wrap .layer-pop02::before {content:'';position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0, 0, 0, 0.2);}
+.online-wrap .layer-pop02 .in{position: relative;}
+.online-wrap .layer-pop02 .in > div {position:relative;max-height:700px;overflow: hidden;  overflow-y: auto; padding: 20px; background: #fff;}
+.online-wrap .layer-pop02 .in p {height:100%;overflow-x:hidden; overflow-y:auto;}
+.online-wrap .layer-pop02 .btn-close {display:block;position:absolute;right:0;top:-40px;width:40px;height:40px;}
+.online-wrap .layer-pop02 .btn-close::before, .online-wrap .layer-pop02 .btn-close::after {content:'';position:absolute;top:19px;width:40px;height:3px;background:#000000;}
+.online-wrap .layer-pop02 .btn-close::before{left:0;transform:rotate(-45deg);}
+.online-wrap .layer-pop02 .btn-close::after {right:0;transform:rotate(45deg);}
+
+/* =================================================
+  러셀CORE 온라인
+==================================================== */
+.online-service-wrap .service-wrap {padding:40px 0;background:#f2f2f2;}
+.online-service-wrap .service-wrap .inner {width:717px;margin:0 auto;background:#fff;padding-bottom:80px;border-radius:0 0 15px 15px;}
+.online-service-wrap .service-wrap .inner .btn-wrap {display:flex;justify-content:center;}
+.online-service-wrap .service-wrap .inner .btn-wrap .btn {text-align:center;}
+.online-service-wrap .service-wrap .inner .btn-wrap .btn a {display: inline-block;position: relative;min-width:470px;margin:0 20px 0px 0;padding:0 75px;height:77px;line-height:77px;box-sizing:border-box;background:#101010;border-radius:7px;font-size:22px;color:#fff;font-weight:400;text-decoration:none;}
+.online-service-wrap .service-wrap .inner .btn-wrap .btn a strong {font-weight:700;color:#f9ff95;}
+.online-service-wrap .service-wrap .inner .btn-wrap .btn a:last-child {margin-right:0;}
+.online-service-wrap .service-wrap .inner .btn-wrap .btn a::after {content:"";display:block;height:14px;width:14px;position:absolute;top:50%;right:25px;transform:translateY(-50.1%) rotate(45deg);border-top:1px solid #fff;border-right:1px solid #fff;}
+
+/* =================================================
+   장학제도
+==================================================== */
+.wrap-sch {padding:0 40px 90px;text-align: center;background:url('https://russeldata.megastudy.net/campus/images/russel/info/scholarship/bg.jpg') #19253c left top no-repeat}
+.wrap-sch .tit {padding:90px 0 0;}
+.wrap-sch .stit {margin-top:50px;padding:12px 20px;font-size: 19px;background:linear-gradient(45deg,#edd08e,#f6e9bb, #edd699);text-align: left;font-weight: 500;}
+.wrap-sch .txt {margin:10px 0;font-size: 14px;color:#abb3c3;}
+
+.wrap-sch table {width: 100%;}
+.wrap-sch table.tbl01 th, .wrap-sch table.tbl01 td {border-left:1px solid #c9c9c9;border-bottom:1px solid #c9c9c9;}
+.wrap-sch table.tbl01 thead th {padding:14px 0;background:#494646;color:#fff;font-size:17px;}
+.wrap-sch table.tbl01 tbody th {font-size:20px;background:#fff;color:#1e1e1e;}
+.wrap-sch table.tbl01 th:first-child {border-left:none;}
+.wrap-sch table.tbl01 tbody td {padding:20px 0;color:#1e1e1e;background:#fff;font-weight:500;font-size:16px;}
+.wrap-sch table.tbl01 tbody tr.red-bg * {background: #f7eaea !important;}
+
+/* =================================================
+   심폐소생술 안전 교육
+==================================================== */
+
+.safety-edu .visual{position: relative;}
+.safety-edu .visual .v02{position: absolute; top:150px; left:58px; opacity: 0;}
+.safety-edu .visual .v03{position: absolute; top:218px; left:58px; opacity: 0;}
+.safety-edu .visual.on .v02{transition: all 0.3s ease-in-out; transform: translate(0,-10px); opacity: 1;}
+.safety-edu .visual.on .v03{transition: all 0.5s 0.3s ease-in-out; transform: translate(0,-10px); opacity: 1;}

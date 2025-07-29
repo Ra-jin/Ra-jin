@@ -1,0 +1,178 @@
+@import url(./table.css);
+@import url(./full_danka.css);
+
+/* common */
+.final-wrap {margin-top: -20px;}
+.final-wrap .ptb150 {padding:150px 0;}
+.final-wrap .bg-gray {background:#f3f3f3}
+.final-wrap .bg-red {background:#550202}
+.final-wrap .final-wrap {margin-top:-20px;overflow:hidden;}
+.final-wrap .final-inner {padding:150px 0;width:1200px;margin:0 auto;text-align: center;}
+.final-wrap .final-tit {margin:0 0 30px;text-align: center;}
+.final-wrap .final-stit {margin-bottom:80px;font-size: 30px;color: #101010;text-align: center}
+.final-wrap .final-stit strong {font-weight: 700;}
+.final-wrap .bg-red .final-stit {color:#fff}
+.final-wrap .final-txt {margin-top:80px;font-size: 40px;line-height: 1.4;}
+.final-wrap .final-txt strong {color:#d91213;font-weight: 700;}
+.final-wrap .btn-online {position:relative;display:inline-block;width:auto;margin-left:10px;padding:5px 25px 6px 12px;vertical-align:middle;line-height:1.3;background:#d91213;border-radius:5px;font-size:15px;font-weight:400;color:#fff;}
+.final-wrap .btn-online::after {content:'';position:absolute;top:50%;right:12px;display:block;width:7px;height:7px;border-top:1px solid #fff;border-right:1px solid #fff;transform:translateY(-50.3%) rotate(45deg);}
+.final-wrap .full-tit {color:#d91213}
+.final-wrap .txt-tit { position:relative;margin-bottom:20px;font-size:38px;font-weight:900;line-height:1.5;color:#010101;vertical-align: middle;text-align:left;}
+.final-wrap .txt-tit strong { color:#d91213; font-weight:900;}
+
+/* 키컬러 변경 */
+.step-info-wrap .tit, .full-stit strong {color:#d91213}
+.step-info-wrap .tit span {background:#d91213}
+.full-tab-bt a.on {background:#d91213}
+/* //키컬러 변경 */
+
+/* visual */
+.final-wrap .visual {position:relative;height:850px;padding:185px 0 0 0;box-sizing:border-box;text-align: center;background:url('https://russeldata.megastudy.net/campus/images/russel/intro/2022/final/bg.png') #321315 center top no-repeat;}
+.final-wrap .visual::after {display: block;position: absolute;top:0;left:0;width:100%;height:100%;content: "";background:#000;animation:fadeOut ease-in .7s .5s both;z-index: 1;}
+.final-wrap .visual .v-img {position: relative;width:1200px;height:410px;margin:0 auto;z-index: 1;}
+.final-wrap .visual .v-img p {position: absolute;overflow: hidden;}
+.final-wrap .visual .v-img p:nth-child(1) {position: relative;transform: translateX(-27px);}
+.final-wrap .visual .v-img p:nth-child(1) img {animation:fadeInDown .5s 1s ease both}
+.final-wrap .visual .v-img p:nth-child(2) {left:180px;top:65px;}
+.final-wrap .visual .v-img p:nth-child(2) img {animation:fadeInUp .5s 1s ease both}
+.final-wrap .visual .v-img p:nth-child(3) {left:374px;top:63px;}
+.final-wrap .visual .v-img p:nth-child(3) img {animation:fadeInRight .7s 1.2s ease-in both}
+.final-wrap .visual .v-img p:nth-child(4) {height:250px;left:473px;top:115px;}
+.final-wrap .visual .v-img p:nth-child(4) img {animation:fadeInLeft .7s 1.2s ease-in both}
+.final-wrap .visual .v-img p:nth-child(5) {left:858px;top:7px;width: 337px;height: 347px;animation:arrAni 1s 1.9s ease-in-out both}
+.final-wrap .visual .v-img p:nth-child(5) img {position:absolute;top:0;left:0;}
+.final-wrap .v-txt {font-size: 23px;color:#fff;animation:fadeIn .5s 2.3s both}
+.final-wrap .v-txt strong {font-weight: 700;}
+.visual .final-info-box {display: flex;justify-content: center;position:relative;margin-top:40px;z-index:2;animation:fadeIn .5s 2.7s both}
+.visual .final-info-box * {color: #fff;}
+.visual .final-info-box div {display:flex;align-items:baseline;font-size: 20px;font-weight: 500;text-align: left;}
+.visual .final-info-box div p:first-child {min-width:110px;height:35px;line-height:35px;padding:0 10px;margin:0 10px 0 45px;font-size: 18px;font-weight: 500;background:#d91213;border-radius:25px;text-align: center;}
+.visual .final-info-box div:first-child p:first-child {margin-left: 0;}
+.visual .final-info-box div p span.s-txt {display:block;margin-top:10px;font-size:14px;color:#b05d59;font-weight: normal;}
+.visual .final-info-box div p .bt-online {display: inline-block;position:relative;padding-right:13px;font-size:20px;font-weight: 500;border-bottom:1px solid #fff;text-decoration: none;}
+.visual .final-info-box div p .bt-online::after {position:absolute;top:10px;right:0;display:block;content:"";width:9px;height:9px;border-top:1px solid #fff;border-right:1px solid #fff;transform:rotate(45deg)}
+
+@keyframes arrAni {
+   0% {width:0}
+   100% {width:337px}
+}
+/* //visual */
+
+/* quick menu */ 
+.final-wrap .quick {position:absolute;right:0;top:222px;z-index:11;width:181px;text-align: left;}
+.final-wrap .quick .q-box {background:#fff;border-left:2px solid #ff2525;}
+.final-wrap .quick .q-box .q-tit {height:50px;line-height:50px;;text-align:center;background:linear-gradient(90deg, #f82424, #5e1515);font-size:15px;font-weight:500;color:#fff;}
+
+.final-wrap .quick .q-box .q-list {position:relative;}
+.final-wrap .quick .q-box .q-list a {display: block;position:relative;padding:17px;border-bottom:1px solid #ddd;font-size: 16px;color:#111;line-height: 1.2;font-weight: 700;text-decoration: none;}
+.final-wrap .quick .q-box .q-list a::after {position:absolute;bottom:17px;right:17px;display:block;content:"";width:7px;height:7px;border-top:1px solid #9b9b9b;border-right:1px solid #9b9b9b;transform:rotate(45deg)}
+.final-wrap .quick .q-box .q-list a strong {display:block;margin-bottom:5px;font-size: 14px;color:#ca0b0b;}
+/* //quick menu */ 
+
+/* 최상단 탭메뉴 */
+.final-tab {display: flex;justify-content: center;position:relative;height:90px;}
+/* .final-tab::after {position:absolute;top:0;left:0;width:50%;height:100%;z-index: 0;content:"";background:#d91213} */
+.final-tab a {align-items: center;width:600px;z-index:1;text-align: center;background:#222;text-decoration: none;}
+.final-tab a::after {position:absolute;top:0;left:0;width:50%;height:100%;z-index: 0;content:"";background:#222;z-index: 0;}
+.final-tab a:nth-child(2)::after {left: 50%;}
+.final-tab a.on {background:#d91213;}
+.final-tab a.on::after {background:#d91213;}
+.final-tab a strong {display:block;padding-top:21px;position:relative;font-size:18px;color:#bebebe;font-weight:500;z-index: 1;line-height: 1.4;}
+.final-tab a.on strong {color:#fff}
+.final-cont {display: none;}
+.final-cont.on {display: block;}
+/* //최상단 탭메뉴 */
+
+/* 인트로 모집 안내 */
+.campus {padding:170px 0 160px;background:#8a0101;text-align: center;}
+.campus .in {display:flex;justify-content:space-between;width:1190px;margin:70px auto 0;}
+.campus .box-campus:first-child {width:990px;margin-right: 10px;}
+.campus .box-campus ul {display: flex;flex-wrap: wrap;justify-content: space-between;margin-top:10px;}
+.campus .box-campus ul li {position:relative;width:190px;height:180px;margin-top:10px;background:#fff;font-size:17px;color:#686868;}
+.campus .box-campus ul li span {display:block;margin:40px 0 3px;font-size:22px;color:#333;}
+.campus .box-campus ul li span strong {font-size: 21px;font-weight:900;}
+.campus .box-campus ul li a {display:block;width:100%;height:53px;line-height:53px;position:absolute;bottom:0;left:0;font-size:14px;color:#252525;background:#f3f3f3;}
+.campus .box-campus ul li a::after {content: " >";}
+/* //인트로 모집 안내 */
+
+/* 선생님 슬라이드 */
+.teacher-tit {font-size: 37px;font-weight: 700;color:#252525;text-align: center;}
+.teacher-swiper {height:465px;padding:75px 0 0;margin-top:50px;box-sizing:border-box;}
+.teacher-swiper .swiper-wrapper {transition-timing-function:linear !important;}
+.teacher-swiper .swiper-slide {position:relative;width:200px;height:314px;}
+.teacher-swiper .swiper-slide:nth-child(2n) {margin-top:75px;}
+.teacher-swiper .t-img {display:block;box-shadow:3px 3px 10px rgba(0, 0, 0, 11%);}
+.teacher-swiper .swiper-slide .t-name {display:block;position:absolute;left:0;top:-74px;text-align:left;font-weight:500;line-height:1.0;}
+.teacher-swiper .swiper-slide .t-name dt {color:#555555;font-size:22px;}
+.teacher-swiper .swiper-slide .t-name dd {margin-top:10px;color:#333333;font-size:26px;}
+.teacher-swiper .swiper-slide .t-name dd strong {font-size:26px;font-weight:900;}
+.r-txt {width: 1020px;margin:0 auto;text-align: right;color:#a5a5a5;font-size:11px;}
+
+/* 모집요강 */
+.full-tab-cont .info-inner.gn {border-bottom:0}
+.final-wrap .tbl-01 tbody .price02 {position:relative;}
+.final-wrap .tbl-01 tbody .price02::after {display:block;content:"";position:absolute;top:9px;left:0;width:75px;height:10px;background:url("https://russeldata.megastudy.net/campus/images/russel/study_hall/2020/regular/arr_red02.png") 100% top no-repeat;}
+
+/* danka-list */
+.danka-list {display:flex;width: 1230px;margin:65px auto 0;}
+.danka-list .d-box {flex: 1;padding:60px 26px 40px 26px;margin-right: 9px;border:1px solid #dddddd;border-radius:15px;}
+.danka-list .d-box:last-child {margin-right: 0;}
+.danka-list .d-box > p:first-child {margin-bottom:20px;font-size: 20px;color:#777;text-align:center;line-height: 1.3;}
+.danka-list .d-box > p:first-child strong {display: block;font-size: 30px;color:#d91213;font-weight: 800;letter-spacing:-1px;}
+.danka-list .d-box li {position:relative;padding-left:20px;margin-bottom:20px;line-height: 1.3;font-size: 17px;color:#666;letter-spacing: -1px;word-spacing: -1px;}
+.danka-list .d-box li:after {display: block;position:absolute;top:4px;left:0px;width:17px;height:14px;background:url('https://russeldata.megastudy.net/campus/images/russel/intro/2022/final/ico_check.gif') left top no-repeat;content: "";}
+.danka-list.type02 {width:817px;}
+
+/* final02 */
+.final02-tab {display: flex;width:1100px;margin:0 auto}
+.final02-tab a {overflow:hidden;flex: 1;position:relative;margin-right: 3px;padding:35px;background: #dddddd;border:1px solid #ddd;border-bottom-color:#111;border-radius: 10px 10px 0 0;font-size: 21px;color:#787878;z-index: 1;}
+.final02-tab a:last-child {margin-right: 0;}
+.final02-tab a.on {background:#fff;border:1px solid #111111;border-bottom-color: #fff;color:#111;font-weight: 700;}
+.final02-tab a:focus {outline: none;}
+.final02-cont {display:none;position:relative;width:1100px;padding:65px 55px 40px;margin:-1px auto 0;background:#fff;border:1px solid #111111;z-index: 0;text-align: left;box-sizing: border-box;}
+.final02-cont.on {display: block;}
+.final02-cont .mng-info {display: flex;align-items: center;padding-bottom:45px;margin-bottom:35px;border-bottom:2px dashed #f2f2f2}
+.final02-cont .mng-info > p:first-child {margin-right: 40px;}
+.final02-cont .mng-info .mng-txt > p:first-child {margin-bottom:40px;color: #393939;font-size: 20px;line-height: 1.2;}
+.final02-cont .mng-info .mng-txt > p:first-child strong {display:block;color:#d91213;font-size:30px;font-weight: 700;}
+.final02-cont .mng-info .mng-txt li {position: relative;padding-left: 30px;margin-bottom:15px;font-size: 17px;color:#222;letter-spacing: -1px;}
+.final02-cont .mng-info .mng-txt li::after {display: block;position:absolute;top:4px;left:0px;width:19px;height:18px;background:url('https://russeldata.megastudy.net/campus/images/russel/intro/2022/final/ico_check_red.gif') left top no-repeat;content: "";}
+.final02-cont .mng-info .mng-txt li strong {color:#d91213;font-weight: 700;}
+.final02-cont .review-box {display:flex;align-items: center;position:relative;height:240px;padding:0 35px;box-sizing:border-box;background:url('https://russeldata.megastudy.net/campus/images/russel/intro/2022/final/bg_mark02.png') #efefef 98% 150px no-repeat;border-radius:25px;}
+.final02-cont .review-box::before {display: block;position:absolute;top:0px;left:8px;width:56px;height:49px;background:url('https://russeldata.megastudy.net/campus/images/russel/intro/2022/final/bg_mark01.png') left top no-repeat;content: "";}
+.final02-cont .review-box p {color:#777;font-size: 17px;letter-spacing: -1px;word-break: keep-all;text-align: justify;transform: translateY(-8%);}
+.final02-cont .review-box p strong {color:#222;font-weight: 700;}
+.final02-cont .review-box .review-name {position:absolute;bottom:25px;right:35px}
+
+/* final03 */
+.mock-box {display: flex;flex-wrap: wrap;justify-content:space-around;vertical-align: baseline;padding:65px 90px;border:1px solid #ddd;background:#fff}
+.mock-box > li {margin:25px;text-align: left;}
+.mock-box li > p:first-child {margin-bottom:35px;font-size: 28px;color:#101010;line-height: 1.3;letter-spacing: -1px;}
+.mock-box li > p:first-child strong {display:block;font-weight: 700;}
+.mock-box li ul {margin-top: 35px;}
+.mock-box li li {position: relative;color: #555;line-height: 2;}
+.mock-box li li::after {display: block;position:absolute;top:0px;left:-7px;width:19px;height:18px;content: "·";}
+.mock-box li:last-child p:nth-child(2) {margin-top:-20px;}
+.mock-box.type02 > li {margin:25px 50px}
+
+.review-box02 {display:flex;margin-top:20px;background:#fff;border:1px solid #ddd;}
+.review-box02 .review-txt {text-align: left;width:693px;}
+.review-box02 .review-txt .swiper-slide {display:flex;align-items: center;}
+.review-box02 .review-txt .swiper-slide p {padding:0 50px;font-size: 17px;color:#777;line-height: 1.6;}
+.review-box02 .review-txt .swiper-slide p strong {color:#222;font-weight:700;}
+.review-box02 .review-txt .swiper-slide p:first-child {transform: translateY(-10%);}
+.review-box02 .review-txt .swiper-slide p:last-child {position: absolute;bottom:60px;right:0px;}
+.review-box02 .review-txt .swiper-pagination {top:20px;right:20px;left:unset;width:fit-content;height:10px;}
+.review-box02 .review-txt .swiper-pagination span {width:12px;height:12px;margin:0 7px;background:#fff;box-sizing: border-box;border:1px solid #cecece;opacity: 1;}
+.review-box02 .review-txt .swiper-pagination .swiper-pagination-bullet-active {background:#d91213;border-color: #d91213;}
+
+/* final04 */
+.final-04 {padding:150px 0;text-align: center;}
+.final-04 .final04-slide {margin-bottom:75px;}
+.final-04 .swiper-slide {width:1096px!important}
+.final-04 .swiper-slide .tit {margin-bottom:20px;font-size: 30px;color:#252525;font-weight: 700;}
+.final-04 .swiper-slide .comment {padding:25px 45px 0 55px;width:849px;height:195px;position:absolute;bottom:-3px;left:0;font-size: 17px;box-sizing: border-box;color:#777;text-align: left;background:url('https://russeldata.megastudy.net/campus/images/russel/intro/2022/final/bg_slide_txt.png') left top no-repeat;word-break: keep-all;text-align: justify;letter-spacing: -2px;line-height: 1.5;}
+.final-04 .swiper-slide .comment strong {font-weight: 700;color:#222}
+.final-04 .swiper-slide .comment span {display: block;margin-top:10px;}
+/* //final04 */
+

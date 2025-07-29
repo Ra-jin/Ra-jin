@@ -1,0 +1,38 @@
+.map-wrap {position: relative;}
+.map-wrap .pin {position: absolute;}
+/* .map-wrap .pin > img {width: 100%;} */
+.map-wrap .pin.ico-jg {top: 138px;left: 353px;}
+.map-wrap .pin.ico-bc {top: 250px;left: 57px}
+.map-wrap .pin.ico-md {top: 275px;left: 172px}
+.map-wrap .pin.ico-gn {top: 275px;left: 288px}
+.map-wrap .pin.ico-dc {top: 285px;left: 353px}
+.map-wrap .pin.ico-pc {top: 397px;left: 220px}
+.map-wrap .pin.ico-bd {top: 425px;left: 333px}
+.map-wrap .pin.ico-yt {top: 535px;left: 292px}
+.map-wrap .pin.ico-wj {top: 209px;left: 956px}
+.map-wrap .pin.ico-cj {top: 341px;left: 870px}
+.map-wrap .pin.ico-dj {top: 423px;left: 859px}
+.map-wrap .pin.ico-jj {top: 505px;left: 795px}
+.map-wrap .pin.ico-gj {top: 629px;left: 762px}
+.map-wrap .pin.ico-dg {top: 500px;left: 1029px}
+.map-wrap .pin.ico-us {top: 550px;left: 1133px}
+.map-wrap .pin.ico-ct {top: 633px;left: 1097px}
+.map-wrap .pin.ico-cw {top: 587px;left: 1003px}
+.map-wrap .pin.ico-gisuk {top: 490px;left: 374px;}
+
+
+.map-wrap .h-cont {display: none; background: #fff;width: 400px;position: absolute;top: 85px;left: 0;z-index: 1;padding: 20px;border: 1px solid #ccc;border-radius: 10px;}
+.map-wrap .h-cont p {font-size: 13px;text-align: left;}
+.map-wrap .h-cont .main-tit {font-size: 15px;font-weight: 800;display: block;text-align: left;}
+.map-wrap .h-cont .sub-txt {font-size: 13px;display: block;text-align: left;margin-top: 15px;color: #818181;}
+.map-wrap .h-cont .list-04 li {line-height: 1.7;}
+.map-wrap .pin:hover .h-cont  {display: block;cursor: pointer;}
+
+.map-wrap .h-cont.gisuk {top: -282px;}
+.map-wrap .h-cont.gj {top: -330px;}
+.map-wrap .h-cont.us {top: -330px;}
+.map-wrap .h-cont.dg {left: -250px;}
+.map-wrap .h-cont.us {left: -250px;top: -240px;}
+.map-wrap .h-cont.cw {left: -250px;top: -240px;}
+.map-wrap .h-cont.ct {left: -250px;top: -360px;}
+.map-wrap .h-cont.dc {text-decoration: unset;color: unset;font-weight: unset;}

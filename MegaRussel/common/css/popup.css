@@ -1,0 +1,114 @@
+/* =================================================
+    팝업 공통
+==================================================== */
+
+/* =================================================
+    주소 검색 팝업
+==================================================== */
+fieldset.fld_inside {padding:0;margin:0;border:none;width:100%;}
+.post_search {position:relative;width:100%;height:45px;background:#0081ff;}
+.post_search .wrap_tf_keyword input[type="text"] {position:absolute;top:0;left:0;width:80%;height:45px;padding:10px;border:none;background:#0081ff;font-size: 20px;color:#fff;box-sizing: border-box;}
+.post_search .wrap_tf_keyword input[type="text"]::placeholder {color:#999}
+.post_search button {position:absolute;top:0;right:0;width: 36px;height: 46px;background:#0081ff;cursor: pointer;}
+.post_search button span {text-indent: -9999;font-size: 0;line-height: 0;overflow: hidden;}
+
+
+/* =================================================
+    개인정보 처리방침
+==================================================== */
+
+html{font-size: 62.5%;width:100%;-webkit-text-size-adjust: none;-ms-text-size-adjust: none; -moz-text-size-adjust: none; }
+
+.privacy .txtLine{line-height:18px;}
+.privacy .termsBox{border-top:2px solid #777; border-bottom:1px solid #777; background:#f9f9f9; padding:25px;}
+.privacy .pre_div{font-size:14px;line-height:130%; margin:0;}
+.privacy .border-r {border-right: 1px solid #dcdcdc;}
+.privacy .border-l {border-left: 1px solid #dcdcdc;}
+.privacy .line-y {display: inline-block;background-color: #ffff81;}
+
+.privacy .gotoFast-con {width: 100%;max-width: 845px;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+.privacy .gotoFast-con li {display: none;margin-top: 12px;text-align: left;}
+.privacy .gotoFast-con li.on {display: block;}
+
+.privacy .member_table_02 {width:100%; table-layout:fixed; margin:15px 0;}
+.privacy .member_table_02 caption {display:none;}
+.privacy .member_table_02 thead tr {border-left:1px solid #f9f9f9; border-bottom:1px solid #f9f9f9;font-size: 12px;}
+.privacy .member_table_02 thead tr th {padding: 12px 20px; font-weight: normal;background-color: #f9f9f9;color: #111111;text-align: left;font-size: 12px;}
+.privacy .member_table_02 tbody tr{border-left: 1px solid #f9f9f9;border: 1px solid #f9f9f9;font-size: 12px;}
+.privacy .member_table_02 td {background:#fff; padding:10px 7px !important; word-break:break-word; vertical-align: top;font-size: 12px;}
+.privacy .member_table_02 th,
+.privacy .member_table_02 td {border-left:1px solid #f9f9f9; border-bottom:1px solid #f9f9f9;font-size: 12px;text-align:left;}
+.privacy .member_table_02 tr th:first-child,
+.privacy .member_table_02 tr td:first-child {border-left:none;}
+.privacy .member_table_02 tr span {font-size: 12px;}
+
+.privacy{width: 100%;padding:30px;box-sizing: border-box;display: flex;justify-content: center;}
+.privacy .content.joinArea {width: 100%;max-width: 1200px;font-size: 14px;}
+.privacy a {font-size:14px;text-decoration:underline;color:#074cbd;}
+.privacy .pr_link {background:#fff;padding:20px;line-height: 2;margin-top:15px}
+.privacy .pr_link::after {display: block;content: "";clear: both;}
+.privacy .pr_link div {width:50%;float: left;}
+.privacy .pr_link a {display:block;}
+.privacy .member_table_01 {border-top:1px solid #000;}
+.privacy .member_table_01 td {background:#fff; padding:12px 10px !important; word-break:keep-all;} 
+.privacy .member_table_01 td.bl {border-left:1px solid #dcdcdc;}
+.privacy .member_table_01 th + th {border-left:1px solid #dcdcdc;}
+.privacy .member_table_01 td + td {border-left:1px solid #dcdcdc;}
+.privacy .member_table_01 thead th {border-top:1px solid #000;}
+
+.privacy #btn-top {display: none;}
+
+.privacy #btn-top {position: fixed;bottom: 25px;right: 4%;z-index:6;display: block;}
+.privacy #btn-top a {box-sizing:border-box;font-size:0;width: 50px;height: 50px;overflow:hidden;border-radius:50% 50%;display: block;background-color:#fff;border:1px solid #cdcdcd;opacity: 0.8;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);}
+.privacy #btn-top span {display:block;width:100%;height:100%;background:url("https://russeldata.megastudy.net/campus/images/russel/m_russel/common/ico_top.png") center 13px no-repeat;background-size: 50%;/* transition */-webkit-transition: 1s;-moz-transition: 1s;transition: 1s;}
+.privacy #btn-top.on span {padding-top:0;-webkit-transition: 1s;-moz-transition: 1s;transition: 1s;background-position: center center;}
+
+/* 개인정보 처리방침 리스트 */
+.privacy .privacy-list {position:relative;margin-top:20px;display:flex;justify-content:center}
+.privacy .privacy-list li {width:197px;display: flex;justify-content: center;align-items: center;}
+.privacy .privacy-list li img {width:100%;height:auto;}
+.privacy .privacy-list li:not(:first-child) {margin-left:20px;}
+
+.privacy .privacy-tbl {display:none;z-index:9;position:absolute;top:180px;left:0;width:95%;padding:20px;background:#77a7ee;}
+.privacy .privacy-tbl .in_tit {margin-bottom:10px;color:#FFF;font-size:16px;font-weight:700;letter-spacing:-1px;}
+.privacy .privacy-tbl div {padding:20px;background-color:#FFF;box-sizing:border-box;}
+.privacy .privacy-tbl .i_close {z-index:9;position:absolute;display:flex;top:10px;right:10px;width:15px;height:15px;}
+.privacy .privacy-tbl .i_close img {width:100%;height:auto;}
+
+.privacy .privacy-list li.on .privacy-tbl {display:block;}
+
+
+/* Tablet (601px ~ 1199px) */
+@media only screen and (max-width:1199px){
+
+
+}
+
+/* Mobile (0px ~ 600px) */
+@media only screen and (max-width:600px){
+	.privacy{padding:10px 3% 90px;}
+	.privacy .termsBox{padding:20px 4%;word-break: break-word;}
+	.privacy .content.joinArea {font-size:1.3rem;}
+	.privacy .content.joinArea h4{font-size:2.2rem;height: auto;line-height: normal;}
+	.privacy .pre_div {font-size:1.2rem;}
+
+	.privacy .member_table_01 thead tr th	{padding:12px 3%;text-align:center;word-break:break-all !important;white-space: pre-wrap;}
+	.privacy .member_table_01 th {padding:12px 10px;word-break:keep-all;}
+	.privacy .member_table_01 tbody tr td	{word-break: break-all !important;}
+	.privacy .pr_link a {margin-right: 10px;}
+
+	.privacy select{font-size:1.4rem;width: 100%;height: 40px;}
+	.privacy .view.taR {text-align: center !important;}
+
+	.privacy .pr_link div {width:100%;float: unset;}
+
+	/* 개인정보 처리방침 리스트 */
+	.privacy .privacy-list {display:flex;flex-wrap:wrap}
+	.privacy .privacy-list li {width:calc(280vw/7.2);height:calc(250vw/7.2);background-size:contain !important;}
+	.privacy .privacy-list li:not(:first-child){margin-left:calc(20vw/7.2);}
+	.privacy .privacy-list li:nth-child(3) {margin-left:0;margin-top:calc(10vw/7.2)}
+	.privacy .privacy-list li:nth-child(4) {margin-top:calc(10vw/7.2)}
+	.privacy .privacy-tbl {top:calc(170vw/7.2);padding:5% 3%;box-sizing:border-box}
+	.privacy .privacy-tbl div {padding:5% 3%;}
+
+}

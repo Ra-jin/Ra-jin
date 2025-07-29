@@ -1,0 +1,56 @@
+/* 입결 지도영역 */
+.map-wrapper {position:relative;}
+.map-wrapper .r-stxt {margin:23vw 4vw 0 0;text-align: right;font-size: 1rem;color: #c4c4c4;}
+
+.campus-info {position:absolute;text-align: left;z-index: 1;border-radius: 7px;border:1px solid #f3f3f3;background:#fff;box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.05);}
+.campus-info.on-campus {width:calc(280vw / 7.2);box-sizing: border-box;z-index: 2;}
+.campus-info.on-campus .info-inner {display: block;border:none;}
+.campus-info.on {z-index: 3;}
+.campus-info .tit {position: relative;width:calc(280vw / 7.2);box-sizing:border-box;padding:3vw 3vw;border-radius: 7px;cursor: pointer;text-align: left;font-size:calc(17.7vw / 7.2);color:#222;font-weight: 500;letter-spacing:-0.3vw;line-height:1.2;}
+.campus-info .tit strong {color: #1c3fca;font-weight: 500;}
+.campus-info .tit sup {padding-top:10px;font-size:calc(17vw / 7.2);color:#b7b7b7}
+.campus-info .tit::after {position: absolute;top:2vw;right:2vw;content:"+";display: block;width:calc(17vw / 7.2);height:calc(19vw / 7.2);background:#4c4c4c;color: #fff;font-weight: bold;border-radius: 10px;text-align: center;line-height:calc(20vw / 7.2);;padding-right:1px;}
+.campus-info .info-inner {display:none;padding:5vw;width:60vw;position:absolute;top:0;left:0;border:1px solid #f3f3f3;border-radius: 7px;background:#fff;box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);}
+.campus-info .info-inner.on {display: block!important;}
+
+.campus-info.c-jg .info-inner,.campus-info.c-bc .info-inner,.campus-info.c-bd .info-inner,.campus-info.c-yt .info-inner,.campus-info.c-pc .info-inner,.campus-info.c-yj .info-inner {left:initial;right:0;}
+
+
+.campus-info .info-inner .tit {border:none;padding:0;}
+.campus-info .info-inner .tit::after {display: none;}
+.campus-info .info-inner .txt {margin-top: 15px;;}
+.campus-info .info-inner .txt li {position:relative;padding-left:7px;font-size:calc(17vw / 7.2);color:#545252;line-height: 1.4;}
+.campus-info .info-inner .txt li::before {position:absolute;top:0px;left:0;content: "-";}
+.campus-info .info-inner .stxt {margin-top:4px;font-size:calc(17vw / 7.2);color:#c3c3c3;}
+.campus-info .bt-close {position:absolute;top:4vw;right:4vw;cursor: pointer;width:3vw;}
+
+
+
+.campus-info.c-gn {top:calc(42vw / 7.2);left:4vw;}
+.campus-info.c-dc {top:calc(146vw / 7.2);left:4vw;}
+.campus-info.c-md {top:calc(250vw / 7.2);left:4vw;}
+.campus-info.c-dg {top:calc(798vw / 7.2);left:4vw;}
+.campus-info.c-dj {top:calc(902vw / 7.2);left:4vw;}
+.campus-info.c-ct {top:calc(1006vw / 7.2);left:4vw;}
+.campus-info.c-gj {top:calc(1110vw / 7.2);left:4vw;}
+.campus-info.c-wj {top:calc(1214vw / 7.2);left:4vw;}
+.campus-info.c-jj {top:calc(1318vw / 7.2);left:4vw;}
+.campus-info.c-cw {top:calc(1422vw / 7.2);left:4vw;}
+.campus-info.c-cj {top:calc(1526vw / 7.2);left:4vw;}
+
+
+.campus-info.c-jg {top:calc(112vw / 7.2);right:4vw;}
+.campus-info.c-bc {top:calc(216vw / 7.2);right:4vw;}
+.campus-info.c-bd {top:calc(320vw / 7.2);right:4vw;}
+.campus-info.c-yt {top:calc(424vw / 7.2);right:4vw;}
+.campus-info.c-pc {top:calc(528vw / 7.2);right:4vw;}
+.campus-info.c-yj {top:calc(632vw / 7.2);right:4vw;}
+
+
+
+/* 대입합격현황 키컬러 */
+.map-perfect .campus-info .tit strong {color: #BC1A1A;}
+.map-perfect .campus-info.on .tit strong {color:#BC1A1A}
+.map-perfect .campus-info.on-campus > .tit {border:2px solid #BC1A1A;}
+.map-perfect .campus-info.on-campus .tit strong {color:#BC1A1A}
+

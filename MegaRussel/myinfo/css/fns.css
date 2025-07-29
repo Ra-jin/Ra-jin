@@ -1,0 +1,537 @@
+
+/* fns 캘린더 */
+.wrap footer{position:relative !important;}
+
+
+.tabConList .title-wrap {position:relative;}
+.tabConList .title-wrap .txt-info,
+.tabConList .title-wrap .pos-r {position:absolute; right:0; bottom:0;}
+.tabConList .title-wrap .pos-r.add{display:inline-block;min-width:90px;padding:7px 20px 10px;text-align:center;box-sizing:border-box;color:#fff;border-radius:3px;background:#262729;font-size:17px;}
+.tabConList .line-sample {display:inline-block; margin:0 0 0 15px; color:#929395; font-size:17px;}
+.tabConList .line-sample::before {content:""; display:inline-block; vertical-align:middle; width:43px; height:2px; margin:0 5px 0 0;}
+.tabConList .line-b::before {background:#b8cbf3;}
+.tabConList .line-y::before {background:#efc74e;}
+
+.tabConList .infoList {margin-top:20px;padding:20px;background:#e6f4ff}
+.tabConList .infoList li {position:relative;padding-left:35px;margin-bottom:7px;font-size:1.6rem;}
+.tabConList .infoList li:before {content:'';position:absolute;left:0;width:23px;height:23px;border-radius:50%;background:url('https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/icon_title_info.jpg') center / 100% no-repeat;}
+.tabConList .infoList li:last-child {margin-bottom:0;}
+
+/* 교재구매영역 */
+.textbook .tabCon .tb-type2 {border-top:none;border-bottom:none;}
+.textbook .tabCon .tb-type2 > table {width: 100%; border-top: 2px solid #353434; border-bottom: 1px solid #353434;margin-top:60px}
+.textbook .tabCon .tb-type2 > table:first-child {margin-top:0;}
+.textbook .tabCon .tb-type2 tbody td {vertical-align:top;}
+.textbook .tabCon .tb-type2 tbody td.con dl {display:flex;align-items:flex-start;margin-bottom:3%}
+.textbook .tabCon .tb-type2 tbody td.con dl dt {width:81%;font-size:1.7rem;line-height:1.4}
+.textbook .tabCon .tb-type2 tbody td.con .info {padding-top:10px;border-top:1px solid #EEE;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/bullet_info.png") no-repeat left 15px;}
+.textbook .tabCon .tb-type2 tbody td.con .info input {width:20px;height:20px;}
+.textbook .tabCon .tb-type2 tbody td.con .info dt span {display:block;padding-left:24px;font-size:1.6rem}
+.textbook .tabCon .tb-type2 tbody td.con .info.cart dt span {padding:0;}
+
+.textbook .tabCon .tb-type2 tbody td .price {display:block;width:20%;text-align:center;color:#0e64e7;font-size:2.2rem;}
+.textbook .tabCon .tb-type2 tbody td .price .ing {color:#ea2c5c;font-size:2.2rem;}
+.textbook .tabCon .tb-type2 tbody td .price .bf {position:relative;color:#888;font-size:2rem;}
+.textbook .tabCon .tb-type2 tbody td .price .bf::before {content:'';position:absolute;top:50%;left:0;width:100%;height:1px; background:#888;transform:translateY(-50%)}
+
+.textbook .tabCon .tb-type2 tbody td .apply {width:20%;text-align:center;font-size:1.7rem;line-height:1.4}
+.textbook .tabCon .tb-type2 tbody td .apply strong {color:#0e64e7;font-size:1.7rem;font-weight:bold}
+
+
+/* 바자관 OMEGA 콘텐츠 구매영역 */
+.textbook .sel-sbj-pop {background:rgb(0, 0, 0, .4);position:fixed;top:0;left:0;width:100%;height:100%;z-index: 2;}
+.textbook .sel-sbj-pop .pop-con {position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);background-color:#fff;padding:40px 24px 30px;width:80%;max-width: 896px;border-radius: 4px;}
+.textbook .sel-sbj-pop .pop-con > p {color:#222;font-size:2.4rem;font-weight:bold;text-align: center;}
+.textbook .sel-sbj-pop .pop-con .infoList {margin-top:20px;padding:25px 32px;background:#e6f4ff;border-radius: 4px;}
+.textbook .sel-sbj-pop .pop-con .infoList > p {font-size:1.6rem;font-weight:bold;color:#222;margin-bottom:10px;}
+.textbook .sel-sbj-pop .pop-con .infoList li {position:relative;padding-left:22px;margin-bottom:8px;font-size:1.4rem;}
+.textbook .sel-sbj-pop .pop-con .infoList li:before {content:'';position:absolute;left:0;width:16px;height:16px;border-radius:50%;background:url('https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/icon_title_info.jpg') center / 100% no-repeat;top:2px;}
+.textbook .sel-sbj-pop .pop-con .infoList li:last-child {margin-bottom:0;}
+.textbook .sel-sbj-pop .pop-con .tit-area {margin-top:25px;background-color:#eee;border-radius:4px;text-align: center;color:#222;font-size:1.8rem;font-weight:bold;padding:16px 0;}
+.textbook .sel-sbj-pop .pop-con .tit-area span {font-size:1.6rem;font-weight:400;}
+.textbook .sel-sbj-pop .pop-con .sel-area {display:flex;}
+.textbook .sel-sbj-pop .pop-con .sel-area > div {width:calc(100% - 104px)}
+.textbook .sel-sbj-pop .pop-con .sel-area ul {background-color:#F9F9F9;border-radius:4px;padding:26px 4.48% 14px 7.88%;display:flex;flex-wrap:wrap;margin-top:8px;box-sizing: border-box;}
+.textbook .sel-sbj-pop .pop-con .sel-area ul li {color:#222;font-size:1.6rem;width:20%;margin-bottom:12px;}
+.textbook .sel-sbj-pop .pop-con .sel-area div ul:nth-child(2) li:nth-child(4) {width:33%;}
+.textbook .sel-sbj-pop .pop-con .sel-area ul .end-cell {width:21%;}
+
+.textbook .sel-sbj-pop .pop-con .sel-area ul li input[type="checkbox"] {
+  display: none;
+}
+.s-checkbox span {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #0081FF;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius:2px;
+}
+.s-checkbox input[type="checkbox"]:checked + span {background-color:#0081FF}
+.s-checkbox input[type="checkbox"]:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid #fff; 
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.s-checkbox input[type="checkbox"]:disabled + span {
+  background-color: #C5C5C5;
+  border-color: #C5C5C5;
+  opacity: 1;
+  cursor: initial;
+}
+
+
+.textbook .sel-sbj-pop .pop-con .sel-area > ul {width:104px;flex-direction: column;padding:0 0 0 17px;justify-content: center;margin-right:8px;}
+.textbook .sel-sbj-pop .pop-con .sel-area > ul li {width:auto;margin-bottom:20px;}
+.textbook .sel-sbj-pop .pop-con .btn-type01 {margin-top:25px;border-radius:4px;width:318px;margin:25px auto 0;font-size:2.2rem;font-weight:bold;}
+.textbook .tabConList .tit-wrap {display:flex;justify-content: space-between;align-items: center;}
+.textbook .tabConList .tit-wrap .s-btn {background-color:#EE2B59;color:#fff;border-radius:2px;padding:2px 21px;font-size:2.2rem;}
+
+.title-wrap select{
+    border:1px solid #b7b7b7; height:25px; font-size:1.5rem; line-height:25px;
+    padding:0 35px 0 5px;
+    background:#fff url(https://russeldata.megastudy.net/campus/images/russel/myinfo/common/select_arrow.gif) right 10px top 50% no-repeat;
+    border-radius: 0px; /* iOS 둥근모서리 제거 */
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+	color:#353434; 
+	margin-left:10px;
+}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+.title-wrap select::-ms-expand {display: none;}
+.reserve-title{display:none;}
+
+.title-wrap .res-cancel{display:inline-block;position:absolute;top:3px;right:0;padding:3px 20px 5px;border:1px solid #ea2c5c;border-radius:3px;font-size:1.5rem;color:#ea2c5c;}
+.title-wrap .info{margin:30px 0 20px;padding:10px 22px 13px;padding-left:50px;border-radius:8px;background:#fbf4f4 url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/icon_title_info.jpg) left 22px top 50% no-repeat;font-size:1.4rem;}
+.title-wrap .info span{color:#ee2b59;}
+
+.fns .fns-cal{position:relative;}
+.fns .fns-cal::after{content:'';display:block;clear:both;}
+
+.fns .fns-cal .calendar-tool{display:none;position:absolute;top:50%;left:50%;z-index:1;width:300px;margin-left:-150px;padding:20px 10px;border:2px solid #3678e4;background:#fff;box-shadow:5px 5px 10px #b1b1b1;text-align:center;font-size:1.6rem;}
+.fns .fns-cal .calendar-tool p.close{position:absolute;top:10px;right:10px;cursor:pointer;}
+.fns .fns-cal .calendar-tool span{color:#3678e4;}
+.fns .fns-cal .calendar-tool a{display:inline-block;margin-top:10px;padding:3px 20px 5px;background:#3678e4;border-radius:3px;font-size:1.6rem;color:#fff;line-height:30px;}
+
+.fns .fns-cal .cal-top{position:absolute;top:0;width:100%;text-align:center;margin-bottom:10px;}
+.fns .fns-cal .cal-top::after{content:'';display:block;clear:both;}
+.fns .fns-cal .cal-top li.right{position:absolute;right:0;bottom:0;}
+.fns .fns-cal .cal-top li.right span{position:relative;margin-left:10px;padding-left:11px;color:#7e7e7e;font-size:1.5rem;}
+.fns .fns-cal .cal-top li.right span.no-1::after{content:'';display:block;position:absolute;top:50%;left:0;margin-top:-4px;background:#afafaf;width:8px;height:8px;border-radius:4px;}
+.fns .fns-cal .cal-top li.right span.no-2::after{content:'';display:block;position:absolute;top:50%;left:0;margin-top:-4px;background:#ee2b59;width:8px;height:8px;border-radius:4px;}
+.fns .fns-cal .cal-top li.right span.no-3::after{content:'';display:block;position:absolute;top:50%;left:0;margin-top:-4px;background:#3678e4;width:8px;height:8px;border-radius:4px;}
+
+.fns .fns-cal .cal-top li.mid{display:inline-block;}
+.fns .fns-cal .cal-top li.mid button{display:inline-block;width:31px;height:52px;text-indent:-9999px;}
+.fns .fns-cal .cal-top li.mid button.prev{margin-right:30px;background:url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/cal_prev.jpg) left center no-repeat;}
+.fns .fns-cal .cal-top li.mid button.next{margin-left:30px;background:url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/cal_next.jpg) right center no-repeat;}
+.fns .fns-cal .cal-top li.mid p{display:inline-block;font-size:4rem;font-weight:bold;}
+.fns .fns-cal .cal-top li.mid div{font-size:1.6rem;color:#595959;}
+.fns .fns-cal .cal-top li.mid div span{color:#ff6600;font-weight:bold;}
+
+.fns .fns-cal .cal-top li.left{position:absolute;bottom:0;left:0;}
+.fns .fns-cal .cal-top li.left select{ border:1px solid #b7b7b7; height:25px; font-size:1.5rem; line-height:25px;
+    padding:0 35px 0 5px;
+    background:#fff url(https://russeldata.megastudy.net/campus/images/russel/myinfo/common/select_arrow.gif) right 10px top 50% no-repeat;
+    border-radius: 0px; /* iOS 둥근모서리 제거 */
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+	color:#353434; 
+}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+.fns .fns-cal .cal-top li.left select::-ms-expand {display: none;}
+.fns .fns-cal .cal-top li.left a{display:inline-block;width:130px;height:30px;line-height:28px;color:#fff;font-size:1.8rem;text-align:center;border-radius:3px}
+.fns .fns-cal .cal-top li.left a.no-1{background:#3678e4;}
+.fns .fns-cal .cal-top li.left a.no-2{background:#454545;}
+.fns .fns-cal #calendar{padding-top:88px;}
+.fns .fns-cal table{position:relative;width:100%;}
+.fns .fns-cal .active{float:left;width:70%;padding-right:30px;}
+.fns .fns-cal table thead th{padding:7px 0 10px;border-top:2px solid #353434;border-bottom:1px solid #353434;text-align:center;color:#353434;font-size:1.6rem;}
+.fns .fns-cal table tbody td{position:relative;border-bottom:1px solid #e3e3e3;color:#353434;font-size:1.6rem;}
+.fns .fns-cal table tbody td.on{background:#ebf2fc;}
+.fns .fns-cal table tbody td p{text-align:left;line-height:6px;}
+.fns .fns-cal table tbody td div{text-align:center;cursor:pointer;height:88px;padding:20px 15px 18px;}
+
+.fns .fns-cal table thead th.sunday{color:#cd2e2e;}
+.fns .fns-cal table tbody td.sunday div,.fns .fns-cal table tbody td.day-next div{background:#f8f9fa;color:#979b9f;}
+
+.fns .fns-cal table tbody td.day-prev, .fns .fns-cal table tbody td.day-prev p{color:#d4d4d4 !important;}
+.fns .fns-cal table tbody td.sunday p{color:#cd2e2e;}
+
+.fns .fns-cal table tbody td.res-day{position:relative;}
+.fns .fns-cal table tbody td.res-day::after{content:'예약불가';display: flex;position:absolute;top:0;left:0;width:100%;height:100%;border:1px solid #ea2c5c;box-sizing:border-box;font-weight:bold;background:rgba(255,255,255,0.7);color:#ea2c5c;align-items:center;justify-content:space-around;animation-name:lightning;animation-duration:5s;animation-fill-mode: both;}
+
+.fns .fns-cal table tbody td.cal-day{position:relative;}
+.fns .fns-cal table tbody td.cal-day::after{content:'취소불가';display: flex;position:absolute;top:0;left:0;width:100%;height:100%;border:1px solid #ea2c5c;box-sizing:border-box;font-weight:bold;background:rgba(255,255,255,0.7);color:#ea2c5c;align-items:center;justify-content:space-around;animation-name:lightning;animation-duration:5s;animation-fill-mode: both;}
+
+
+
+.fns .fns-cal table tbody td span{position:relative;}
+.fns .fns-cal table tbody td span.on{color:#3679e4;font-weight:bold;}
+.fns .fns-cal table tbody td span img{position:absolute;right:-13px;top:50%;margin-top:-4px;}
+
+.fns .fns-cal table tbody td div.today{position:relative;}
+.fns .fns-cal table tbody td div.today::after{content:'오늘';position:absolute;top:30px;left:10px;color:#3678e4;font-size:1.2rem;}
+
+.fns .fns-cal table tbody td div.tool{display:none;position:absolute;top:-10px;left:-10px;width:100%;min-width:100px;height:110%;padding: 13px 15px 20px;border:2px solid #3678e4;background:#fff;box-shadow: 5px 5px 10px #b1b1b1;z-index:1;}
+.fns .fns-cal table tbody td div.tool p{line-height:19px;}
+.fns .fns-cal table tbody td div.tool::after{content:'예약현황';position:absolute;top:16px;left:40px;color:#3678e4;font-size:1.2rem;font-weight:bold;}
+.fns .fns-cal table tbody td div.tool .close{position:absolute;right: 14px;top:20px;cursor:pointer;z-index:3;}
+.fns .fns-cal table.on::after{content:'';position:absolute;display:block;top:0;left:0;width:100%;height:100%;background:rgba(255,255,255,0.5);}
+
+.inBox .cal-btn-wrap{margin:25px 0 36px;text-align:center;}
+.inBox .cal-btn-wrap a{display:inline-block;width:45%;height:60px;margin:0 1%;font-size:2.8rem;border-radius:5px;line-height:58px;color:#fff;}
+.inBox .cal-btn-wrap .cancel,.inBox .cal-btn-wrap .btn-cancel{background:#454545;}
+.inBox .cal-btn-wrap .btn-reserve{background:#3678e4;}
+
+.reserve-wrap{display:none;float:left;position:relative;top:88px;z-index:1;width:30%;background:#f1f3f6;border:1px solid #353434;text-align:center;}
+.reserve-wrap .tit{padding:10px;font-size:1.9rem;font-weight:bold;color:#fff;text-align:left;}
+.reserve-wrap .tit span{margin-left:10px;font-weight:normal;font-size:1.8rem;}
+.reserve-wrap .tit span:last-child{display:block;font-size:1.3rem;margin-top:5px;margin-left:0;}
+.reserve-wrap .tit strong{letter-spacing:0.5px;}
+.reserve-wrap .tit.no-1{background:#86b3d8;}
+.reserve-wrap .tit.no-1 span{color:#eaf3fa;}
+.reserve-wrap .tit.no-2{background:#829ecc;}
+.reserve-wrap .tit.no-2 span{color:#eaf3fa;}
+.reserve-wrap .tit.no-3{background:#b98dd2;}
+.reserve-wrap .tit.no-3 span{color:#f2e1fb;}
+.reserve-wrap .tit.no-4{background:#df89a6;}
+.reserve-wrap .tit.no-4 span{color:#ffe5ed;}
+
+.reserve-wrap .info::after{content:'';display:block;clear:both;}
+.reserve-wrap .info.no-1 ul{display:block;}
+.reserve-wrap .info.no-1 ul::after{content:'';display:block;clear:both;}
+.reserve-wrap .info.no-1 ul span{color:#ee2b59;}
+/* .reserve-wrap .info.no-1 ul .text{font-weight:normal;font-size:1.5rem;text-indent:160px;} */
+.reserve-wrap .info.no-1 ul.floor{margin-top:10px;}
+.reserve-wrap .info.no-1 ul li{display:block;float:left;width:50%;font-weight:bold;font-size:1.6rem;line-height:30px;text-align:left;}
+.reserve-wrap .info.no-1 ul li:nth-child(1){width:100%;}
+.reserve-wrap .info.no-1 ul.floor li:nth-child(1){width:30%}
+.reserve-wrap .info.no-1 ul.floor li{width:70%;}
+.reserve-wrap .info.no-1 ul li a{display:inline-block;width:99%;height:40px;padding-left:19px;color:#fff;line-height:38px;text-align:center;border-radius:3px;box-sizing:border-box;}
+.reserve-wrap .info.no-1 ul li a.no-1{background:#c3c6cc url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/btn_lunch.png) 40px center no-repeat;}
+.reserve-wrap .info.no-1 ul li a.no-2{background:#c3c6cc url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/btn_dinner.png) 42px center no-repeat;}
+.reserve-wrap .info.no-1 ul li a.no-1.on{background-color:#42454c}
+.reserve-wrap .info.no-1 ul li a.no-2.on{background-color:#42454c;}
+
+
+
+.reserve-wrap .info.no-1 ul li select{
+    width:100%; height:28px; padding:0 35px 0 5px; border:1px solid #bfbfbf;  font-size:1.5rem; line-height:26px;    
+    background:#fff url(https://russeldata.megastudy.net/campus/images/russel/myinfo/common/select_arrow.gif) right 10px top 50% no-repeat;
+    border-radius: 0px; /* iOS 둥근모서리 제거 */
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+	color:#353434;
+}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+.reserve-wrap .info.no-1 ul li select::-ms-expand {display: none;}
+
+
+
+.reserve-wrap .info{padding:10px;}
+.reserve-wrap .info .right::after{content:'';display:block;clear:both;}
+.reserve-wrap .info .right a.day_btn{display:block;width:100%;margin-bottom:5px;padding:2px 0 4px;border-radius:3px;font-size:1.3rem;background:#3f3f3f;color:#fff;}
+.reserve-wrap .info .right a.day_btn span img{padding-left:5px;vertical-align:baseline;}
+.reserve-wrap .info .right ul.day{overflow-y:auto;display:block;height:80px;padding:10px;background:#fff;border-radius:3px;}
+.reserve-wrap .info .right ul.day.on{height:105px;}
+.reserve-wrap .info .right ul.day li{float:left;margin-right:11px;font-size:1.6rem;color:#292929;}
+.reserve-wrap .info .right p{margin-top:5px;font-size:1.2rem;}
+.reserve-wrap .info .right p span{color:#3579e4;}
+.reserve-wrap a.finish{display:inline-block;width:94%;height:46px;margin-bottom:10px;line-height:44px;margin-top:5px;background:#3678e4;color:#fff;font-size:2.2rem;font-weight:bold;text-align:center;border-radius:3px;}
+.reserve-wrap.color a.finish{background:#d94769;}
+.reserve-wrap .close{position:absolute;top:10px;right:10px;}
+
+
+.big-num{position:relative;font-size:4.5rem;font-weight:bold;color:#3678e4;}
+.big-num::after{content:'';display:block;position:absolute;left:0;bottom:4px;width:100%;height:2px;background:#3678e4;}
+.big-num.gray{color:#aaa}
+.big-num.gray::after{background:#aaa;}
+
+.popup.fix{display:flex;}
+.popup{position:fixed;top:0;left:0;z-index:5;display:none;width:100%;height:100vh;align-items:center;justify-content:center;}
+.popup .dim-bg{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:3;}
+.popup .popup-wrap{position:relative;width:785px;padding:30px;background:#fff;border-radius:15px;z-index:4;}
+.popup .title-wrap{position:relative;padding-bottom:15px;border-bottom:2px solid #161616;}
+.popup .title-wrap .tit{font-size:2.8rem;color:#353434;}
+.popup .title-wrap a{position:absolute;top:10px;right:0;}
+.popup .info .sub-txt{margin:25px 0 20px;text-align:center;color:#3678e4;font-size:2.5rem;font-weight:bold;}
+.popup .info .pop-tableWrap{border-top:1px solid #353434;}
+.popup .pop-tableWrap table{width:100%;}
+.popup .pop-tableWrap table thead th{padding:12px 5px;text-align:center;border-bottom:1px solid #353434;background:#f6f6f6;font-size:1.7rem;color:#353434;}
+.popup .pop-tableWrap table tbody th{border-right:1px solid #ced1d4;border-bottom:1px solid #ced1d4;text-align:center;vertical-align:middle;font-size:1.7rem;}
+.popup .pop-tableWrap table tbody td{padding:15px 40px;font-size:1.7rem;text-align:left;border-bottom:1px solid #ced1d4;vertical-align:middle;}
+.popup .pop-tableWrap table tbody td select{
+    width:100%; height:28px; padding:0 35px 0 5px; border:1px solid #bfbfbf;  font-size:1.5rem; line-height:26px;    
+    background:#fff url(https://russeldata.megastudy.net/campus/images/russel/myinfo/common/select_arrow.gif) right 10px top 50% no-repeat;
+    border-radius: 0px; /* iOS 둥근모서리 제거 */
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+	color:#353434;
+}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+.popup .pop-tableWrap table tbody td  select::-ms-expand {display: none;}
+.popup .pop-refund span{padding:0 20px;font-size:3rem;color:#3678e4;vertical-align:sub;}
+.popup .pop-refund img{margin-right:20px;vertical-align:sub;}
+.popup .pop-refund input{width:95px;height:36px;margin-top:4px;margin-left:20px;font-size:3rem;text-align:center;}
+
+.input-wrap select,.input-wrap input{float:left;margin-right:10px;height:28px;border:1px solid #bfbfbf;}
+.input-wrap select{width:120px !important;}
+.input-wrap input.no-1{width:120px;padding-left:5px;}
+.input-wrap input.no-2{width:238px;margin-right:0;padding-left:5px;}
+
+.popup table tbody td.pop-totalPayment{padding:13px 40px 18px;background:#e6f4ff;border-bottom:0;}
+.popup .pop-totalPayment::after{content:'';display:block;clear:both;}
+.popup .pop-totalPayment > span{float:left;line-height:38px;}
+.popup .pop-totalPayment p{float:right;top:15px;right:40px;font-size:2.8rem;font-weight:bold;}
+.popup .pop-totalPayment p span{color:#ee2b59;}
+.popup .pop-btnWrap{margin:20px 0;text-align:center;}
+.popup .pop-btnWrap a{display:inline-block;margin:0 7px;min-width:267px;height:70px;line-height:66px;color:#fff;border-radius:3px;font-size:2.8rem;}
+.popup .pop-btnWrap a.cancel{background:#bec3cc;}
+.popup .pop-btnWrap a.pay{background:#167be7;}
+.popup .txt-list{padding-top:20px;border-top:1px solid #ced1d4;}
+.popup .txt-list li{font-size:1.7rem;color:#7e7e7e;line-height:23px;}
+
+
+
+.day_pop{}
+.day_pop .info-title{position:relative;}
+.day_pop .title{margin:30px 0 15px 0;padding-left:18px;font-size:2.2rem;font-weight:normal;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/bullet_arrow.png") no-repeat left center;;letter-spacing: -2px; color: #7e7e7e;}
+.day_pop .info-title .pos-r{position:absolute;right:0;bottom:3px;color:#7e7e7e;font-size:1.6rem;}
+.day_pop .info-title .pos-r span{color:#167be7;}
+
+.day_pop .calendar-scroll{position:relative;overflow-y:auto;height:360px;}
+.day_pop table{width:100%;}
+.day_pop table thead th{padding:6px 0 9px;border-top:2px solid #353434;border-bottom:1px solid #353434;font-size:1.7rem;}
+.day_pop table tbody td{padding:10px 0 13px;border-bottom:1px solid #ced1d4;text-align:center;font-size:1.5rem;color:#353434;}
+.day_pop table tbody tr td:first-child{font-size:1.7rem;color:#353434;}
+.day_pop table tbody tr.disabled td{background:#f2f2f2;}
+.day_pop table tbody tr.disabled td .imgCheck{background:url(https://russeldata.megastudy.net/campus/images//russel/myinfo/common/disabled_check.jpg) 0 0 no-repeat;}
+.day_pop table tbody tr.disabled td .imgCheck.on{background:url(https://russeldata.megastudy.net/campus/images/russel/myinfo/common/disabled_check_on.jpg) 0 0 no-repeat;}
+.day_pop table tbody tr td.sunday{color:#cd2e2e;}
+.day_pop table tbody tr td.today span{position:relative;}
+.day_pop table tbody tr td.today span:after{position:absolute;display:inline-block;width:35px;padding-left:8px;padding-top:5px;content:'오늘';color:#3678e4;font-size:1.2rem;}
+
+
+
+.popup.guide.on{display:flex;}
+
+.popup.guide .dim-bg{display:none;}
+.popup.guide.on .dim-bg{display:block;}
+
+.popup.guide .popup-wrap{overflow:hidden;width:0;padding:0;border-radius: 15px;}
+.popup.guide.on .popup-wrap{overflow:inherit;width:785px;}
+.popup.guide .popup-wrap .guide-input{position:absolute;bottom:8px;right:13px;font-size:1.3rem;color:#333;z-index:4;}
+
+.popup.guide .guide-title{padding:20px 0;background:#cbdcf8;border-radius:15px 15px 0 0;text-align:center;}
+.popup.guide .guide-title p{margin-top:15px;font-size:1.5rem;color:#474747;}
+.popup.guide .guide-title .close{position:absolute;right:15px;top:0;cursor:pointer;}
+
+.popup.guide .tab_btn{display:inline-block;width:144px;margin-top:10px;padding:3px 0;border-radius:3px;font-size:1.4rem;background:#8ca8d3;color:#fff;text-align:center;}
+.popup.guide .tab_btn.on{background:#2f373f;}
+
+
+.popup.guide .guide-con{display:none;}
+.popup.guide .guide-con.on{display:block;}
+
+
+.popup.guide .swiper-container{width:100%;padding-top:63px;padding-bottom:40px;}
+.popup.guide .swiper-wrapper{}
+.popup.guide .swiper-wrapper .swiper-slide{text-align:center;}
+.popup.guide .swiper-wrapper .swiper-slide ul{display:inline-block;width:748px;margin:10px 0;padding:10px 15px;box-sizing:border-box;text-align:left;background:#f5f5f5;}
+.popup.guide .swiper-wrapper .swiper-slide ul li{font-size:1.3rem;line-height:1.6;color:#646465;}
+.popup.guide .swiper-wrapper .swiper-slide ul li img{vertical-align:middle;}
+.popup.guide .swiper-wrapper .swiper-slide > img{width:600px;}
+.popup.guide .swiper-wrapper .swiper-slide p.tit{display:none;}
+
+.popup.guide .swiper-pagination{top:20px;bottom:auto;}
+.popup.guide .swiper-pagination span{display:inline-block;width:100px;height:43px;border:1px solid #9ebff5;background:#fff;color:#2f373f;font-size:1.3rem;border-radius:0;opacity:1;}
+.popup.guide .swiper-pagination span i{font-style:normal;font-size:1.4rem;font-weight:bold;color:#0e64e7;}
+.popup.guide .swiper-pagination span.swiper-pagination-bullet-active{background:#d5e3f9;border:1px solid #d5e3f9;}
+
+.popup.guide .button-next{position:absolute;top:55%;right:20px;width:26px;height:49px;background:url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/guide_slide_next.png) 0 0 no-repeat;z-index:1;cursor:pointer;}
+.popup.guide .button-prev{position:absolute;top:55%;left:20px;width:26px;height:49px;background:url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/guide_slide_prev.png) 0 0 no-repeat;z-index:1;cursor:pointer;}
+
+.popup.guide .button-prev.swiper-button-disabled,.popup.guide .button-next.swiper-button-disabled{opacity:0.5;}
+
+.popup.guide .txt-red{color:#ed1941;}
+.popup.guide .txt-blue{color:#125ace;}
+.popup.guide .txt-gray{color:#acb0b4;}
+
+.txt-red{color:#ea2c5c;font-size:1.6rem;}
+
+.popup.guide .guide-con .guide-video{padding:50px;}
+.popup.guide .guide-con .guide-video .iframe-wrap{position:relative;padding-top:56.8%;}
+.popup.guide .guide-con .guide-video .iframe-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
+.guide-btn{position:fixed;bottom:20px;right:0;z-index:2;}
+
+
+/* 약관동의 */
+.agree-wrap{margin-bottom:30px;background:#f2f3f7;}
+.agree-wrap > ul{border-bottom:1px solid #353434;}
+.agree-wrap li{padding:0 3%;}
+.agree-wrap .agree-tit{border-top:1px solid #ced1d4;}
+.agree-wrap .agree-tit:first-child{border-top:none;}
+
+.agree-wrap .agree-tit input{margin-right:5px;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/check_off.gif") no-repeat left top;vertical-align:sub;}
+
+.agree-wrap .agree-tit input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 0;
+	border-radius:0;
+}
+
+.agree-wrap .agree-tit input[type="checkbox"]:checked{background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/check_on.gif") no-repeat left top;;}
+
+.agree-wrap .agree-tit label{display:block;font-size:16px;font-weight:bold;background:url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/agree_box.png) right 0 bottom 9px no-repeat;background-size:25px auto;color:#353434;line-height:60px;letter-spacing:-1px;}
+.agree-wrap .agree-tit.on label{background:url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/agree_box.png) right 0 top 9px no-repeat;background-size:25px auto;}
+.agree-wrap .agree-tit label span{color:#3678e4;}
+
+.agree-wrap .agree-tit .agree-pre{display:none;}
+.agree-wrap .agree-tit.on .agree-pre{display:block;}
+.agree-wrap .agree-info ul{overflow-y:scroll;max-height:80px;padding:2% 3%;border:1px solid #ced1d4;background:#fff;}
+.agree-wrap .agree-info ul li{padding-left:0;font-size:12px;color:#828181;}
+.agree-wrap .agree-info p{margin-top:10px;margin-bottom:15px;font-size:14px;color:#353434;}
+
+.agree-wrap .agree-info table{width:100%;margin-top:10px;}
+.agree-wrap .agree-info table th{padding:10px;border-top:2px solid #353434;border-bottom:1px solid #353434;font-size:12px;text-align:center;color:#353434;font-weight:bold;}
+.agree-wrap .agree-info table td{padding:10px;border-bottom:1px solid #ced1d4;font-size:12px;text-align:left;font-weight:normal;}
+
+
+/* ====================================================================================================
+   미디어 쿼리
+==================================================================================================== */
+/* PC & 태블릿 */
+@media (max-width:1023px){    
+
+	/* 식권 */
+	.guide-btn img{width:100px;}
+
+	.fns{margin-top:36px;}
+	.fns .fns-cal .cal-top li.right{position:relative;width:100%;margin-top:5px;padding:2px 0 4px;background:#f8f9fa;border-top:1px solid #c2c2c3;text-align:center;}
+	.fns .fns-cal .cal-top li.left{position:relative;width:100%;text-align:right;}
+	.fns .fns-cal .cal-top li.mid{margin-top:10px;}
+	.fns .fns-cal .cal-top li.mid button.prev{width:17px;height:40px;background:url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/cal_prev.jpg) left bottom no-repeat;background-size:100%;}
+	.fns .fns-cal .cal-top li.mid button.next{width:17px;height:40px;background:url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/cal_next.jpg) right 1px bottom no-repeat;background-size:100%;}
+
+
+
+	.fns .fns-cal #calendar{padding-top:138px;padding-bottom:0;}
+	.fns .fns-cal table thead th{border-top:0;}
+	.fns .fns-cal table tbody td div.tool .close{top:-20px;right:0;}
+
+	.popup .popup-wrap{padding:20px 10px;width:80%;}	
+	.popup .pop-btnWrap a{width:45%;min-width:auto;height:50px;line-height:50px;}
+	.popup .pop-tableWrap table tbody td{padding:10px;}
+	.popup .pop-tableWrap table tbody td select.w100{width:100% !important;}
+	.popup .pop-tableWrap table tbody td select{width:35% !important;}
+	.popup .pop-tableWrap table tbody td input.no-1{width:calc(100% - 35% - 10px);margin-right:0;}
+	.popup .pop-tableWrap table tbody td input.no-2{width:100%;margin-top:3px;}
+
+	.popup .pop-refund span{padding:0 10px;}
+	.popup .pop-refund img{width:15px;margin-right:10px;}
+	.popup .pop-refund input{width:65px;height:29px;margin:7px 0 0 5px;}
+
+	.popup.guide.on .popup-wrap{position:relative;width:95%;max-width:785px;top:0;left:0;margin:0;}
+	.popup.guide .swiper-container{padding-top:63px;}
+	.popup.guide .swiper-pagination span{width:12%;height:43px;margin-bottom:3px;font-size:1.6rem;letter-spacing:-0.2rem;}
+	.popup.guide .swiper-wrapper .swiper-slide ul{width:95%;box-sizing:border-box;}
+	.popup.guide .swiper-wrapper .swiper-slide > img{width:95%;}
+
+	.fns .fns-cal .active{float:none;width:100%;padding-right:0;}
+	.reserve-wrap{float:none;width:100%;top:0;}
+	.center a.add-bottom{background:#fff url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/add_bottom.png) right top 7px no-repeat;}
+	.textbook .sel-sbj-pop .pop-con {width: 92%;max-height:80vh;overflow:auto;padding:26px 12px}
+}
+@media (max-width:783px){   
+	.popup.guide .swiper-pagination span{font-size:1.2rem;height:37px;}
+	.textbook .sel-sbj-pop .pop-con {width: 92%;max-height:80vh;overflow:auto;padding:26px 12px}
+	
+	.textbook .sel-sbj-pop .pop-con .infoList {margin-top:12px;padding:24px 20px;}
+	.textbook .sel-sbj-pop .pop-con .infoList > p {font-size:2rem;}
+	.textbook .sel-sbj-pop .pop-con .infoList li {font-size:1.8rem;}
+	.textbook .sel-sbj-pop .pop-con .infoList li:before {width:14px; height:14px;}
+	.textbook .sel-sbj-pop .pop-con .tit-area {margin-top:18px;font-size:2rem;padding:12px 0;}
+	.textbook .sel-sbj-pop .pop-con .tit-area span {font-size:1.8rem;}
+	.textbook .sel-sbj-pop .pop-con .sel-area {display:block;}
+	.textbook .sel-sbj-pop .pop-con .sel-area > div {width: 100%;}
+	.textbook .sel-sbj-pop .pop-con .sel-area ul {padding:14px 20px 10px;}
+	.textbook .sel-sbj-pop .pop-con .sel-area ul li {margin-bottom:10px;font-size:1.8rem;width:33%;}
+	.textbook .sel-sbj-pop .pop-con .sel-area > ul {width: 100%;flex-direction: row;margin-right:0;justify-content: flex-start;}
+	.textbook .sel-sbj-pop .pop-con .sel-area > ul li {width:50%;}
+	.textbook .sel-sbj-pop .pop-con .sel-area ul .end-cell {width:33%;}
+	.textbook .sel-sbj-pop .pop-con .btn-type01 {margin-top:18px;width:248px;}
+}
+/* 모바일 */
+@media (max-width:600px){
+    
+	/* 식권 */	
+	.fns .fns-cal #calendar{padding-top:115px;}
+	.fns .fns-cal .cal-top li.mid button.prev{width:17px;height:33px;background:url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/cal_prev.jpg) left bottom no-repeat;background-size:100%;}
+	.fns .fns-cal .cal-top li.mid button.next{width:17px;height:33px;background:url(https://russeldata.megastudy.net/campus/images/russel/myinfo/fns/cal_next.jpg) right 1px bottom no-repeat;background-size:100%;}
+
+	.inBox .cal-btn-wrap a{height:40px;line-height:38px;}
+
+	.guide-btn img{width:70px;}
+	.title-wrap .info{margin:0;font-size:2rem;}
+	.popup .title-wrap a{top:6px;}
+	.popup .title-wrap a img{width:20px;}
+
+	.popup .popup-wrap{width:95%;}
+	.popup .pop-refund input{margin:0 0 0 5px;}
+	.popup .pop-totalPayment p{line-height:38px;}
+	
+	.popup.guide.on .popup-wrap{position:relative;width:95%;top:0;left:0;margin:0;}
+	.popup.guide .tab_btn{width:48%;max-width:144px;}
+	.popup.guide .guide-title p img{width:80%;}
+	.popup.guide .swiper-container{padding-top:10px;padding-bottom:40px;}
+	.popup.guide .swiper-wrapper .swiper-slide p.tit{display:block;padding:0 2.5%;font-size:3rem;font-weight:bold;color:#353434;text-align:left;}
+	.popup.guide .swiper-wrapper .swiper-slide p.tit span{color:#0e64e7;}
+	.popup.guide .swiper-pagination{top:auto;bottom:20px;}
+	.popup.guide .swiper-pagination span.swiper-pagination-bullet{width:10px;height:10px;font-size:0;line-height:0;border-radius:5px;background:#ccc;border:none;}
+	.popup.guide .swiper-pagination span.swiper-pagination-bullet-active{background:#0e64e7;}
+	.popup.guide .swiper-pagination span i{display:none;}
+	.popup.guide .button-next,.popup.guide .button-prev{top:57%;width:17px;background-size:100%;}
+	.popup.guide .guide-con .guide-video{padding:30px 10px;}
+
+	.fns .fns-cal table tbody td div{padding:5px;height:50px;}
+	.fns .fns-cal table tbody td div.tool{min-width:50px;height:67px;padding:3px;}
+	.fns .fns-cal table tbody td div.tool::after{top:-22px;left:-3px;}
+	.fns .fns-cal table tbody td div.tool .close{top:-20px;right:0;}
+	.fns .fns-cal table tbody td div.today::after{top:12px;left:2px;}
+
+	.textbook .tabCon .tb-type2 > table {margin-top:25px}
+	.textbook .tabCon .tb-type2 tbody td.con dl dt {width:70%}
+	.textbook .tabCon .tb-type2 tbody td.con dl dd {margin-left:5%;line-height:1.4}
+	.textbook .tabCon .tb-type2 tbody td.con .info {padding:3% 0 3% 15px;border-top:1px solid #EEE;background:url("https://russeldata.megastudy.net/campus/images/russel/myinfo/common/bullet_info.png") no-repeat left 9px;}
+	.textbook .tabCon .tb-type2 tbody td.con .info input {width:15px;height:15px}
+	
+	.textbook .imgCheck {margin-left:5px;}
+
+	.textbook .tabConList .infoList li {padding-left:25px}
+	.textbook .tabConList .infoList li:before {width: 18px;height:18px}
+	
+	.textbook .tabConList .tit-wrap .s-btn {padding:6px 18px;}
+	.inBox .tabCommon .tabConList .title {background-position:left 6px !important;}
+	
+	/* 교재구매 토탈부분 */
+	.inBox .textbook .totalInfo {font-size:2rem}
+
+}

@@ -1,0 +1,469 @@
+/* ==================================================
+   푸터
+================================================== */
+footer {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 30px 0;
+  text-align: center;
+  background: #fff;
+  font-size: 1.1rem;
+  color: #666;
+  border-radius: 25px 25px 0 0;
+  line-height: 1.5;
+  box-shadow: 0 -1px 2px rgba(82, 82, 82, 0.1);
+  margin-top: -25px;
+
+  .footer-btn {
+    text-align: center;
+    margin-bottom: 20px;
+
+    a {
+      padding: 0 2% 0 0;
+      margin-right: 1%;
+      color: #7e7e7e;
+      font-size: 1.3rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 10px;
+        background: #cacaca;
+        position: absolute;
+        top: 50%;
+        right: 1%;
+        transform: translateY(-50%);
+      }
+
+      &:last-child {
+        padding: 0;
+
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+
+  .footer-info {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #a9a9a9;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .btn-sns a {
+    margin-right: 1%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .info-area {
+    margin: 0 4% 15px;
+    color: #a9a9a9;
+
+    p {
+      margin-top: 2%;
+    }
+  }
+
+  .footer-toggle {
+    display: block;
+    width: 90%;
+    margin: 0 auto 1.5rem;
+    padding: 1rem 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    border: 1px solid #e7e7e7;
+    color: #a9a9a9;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin-left: 5px;
+      border-left: 2px solid #a9a9a9;
+      border-bottom: 2px solid #a9a9a9;
+      transform: translateY(-3px) rotate(-45deg);
+    }
+
+    &.on::after {
+      transform: rotate(135deg);
+    }
+  }
+
+  .footer-wrap {
+    display: none;
+    padding-top: 1rem;
+  }
+}
+
+/* ==================================================
+   컨텐츠 공통
+================================================== */
+
+.sub-wrap {
+  background: #fff;
+  padding: 49px 0 55px 0;
+
+  * {
+    font-size: 1.6rem;
+    color: #222;
+  }
+
+  .bg-gray {
+    background: #f2f2f2;
+    margin-bottom: -55px;
+    padding-bottom: 35px;
+  }
+}
+
+/* 서브 타이틀 */
+
+.sub-tit {
+  height: 51px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  background: #fff;
+  z-index: 7;
+
+  strong {
+    width: 80%;
+    font-size: 1.7rem;
+    color: #222;
+    position: absolute;
+    top: 50.1%;
+    left: 50.1%;
+    transform: translate(-50.1%, -50.1%);
+  }
+
+  .bt-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50.1%;
+    left: 4%;
+    transform: translateY(-50.1%);
+
+    img {
+      width: 19px;
+      height: auto;
+    }
+  }
+}
+
+/* 서브 고정 메뉴 */
+
+.fix-tab {
+  position: relative;
+  width: 100%;
+
+  &.active {
+    position: fixed;
+    top: 51px;
+    left: 0;
+    z-index: 7;
+  }
+}
+
+/* 플로팅 메뉴 */
+
+.h-body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.floating-box {
+  z-index: -1;
+  opacity: 0;
+  position: fixed;
+  bottom: 129px;
+  right: 4%;
+
+  &.on {
+    z-index: 8;
+    opacity: 1;
+  }
+
+  a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-bottom: 7px;
+    transform: translateY(15%);
+    opacity: 0;
+    transition: all ease .3s;
+
+    em {
+      display: block;
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      position: absolute;
+      top: 0px;
+      right: -7px;
+      background: #db3e6b;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 1.1rem;
+      text-align: center;
+      font-style: normal;
+    }
+  }
+
+  &.on a {
+    transform: translateY(0%);
+    opacity: 1;
+
+    &:nth-of-type(1) {
+      transition-delay: .3s;
+    }
+
+    &:nth-of-type(2) {
+      transition-delay: .2s;
+    }
+
+    &:nth-of-type(3) {
+      transition-delay: .1s;
+    }
+  }
+
+  a span {
+    &:nth-of-type(1) {
+      display: block;
+      width: 120px;
+      position: absolute;
+      top: 50%;
+      left: -130px;
+      text-align: right;
+      font-size: 1.3rem;
+      color: #fff;
+      transform: translateY(-50%);
+    }
+
+    &:nth-of-type(2) {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border-radius: 25px;
+      position: relative;
+
+      img {
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50.1%, -50.1%);
+      }
+    }
+  }
+}
+
+#btn-floating {
+  width: 50px;
+  height: 50px;
+  margin-top: 7px;
+  position: fixed;
+  bottom: 80px;
+  right: 4%;
+  z-index: 5;
+  text-align: center;
+
+  &.on {
+    z-index: 8;
+  }
+
+  img {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50.1%, -50.1%) rotate(-45deg);
+    transition: all ease .4s;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0b9678;
+    border-radius: 25px;
+    opacity: .8;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+  }
+
+  &.on img {
+    transform: translate(-50.1%, -50.1%) rotate(90deg);
+  }
+}
+
+#btn-top {
+  position: fixed;
+  bottom: 135px;
+  right: 4%;
+  z-index: 6;
+
+  a {
+    box-sizing: border-box;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50% 50%;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    opacity: 0.8;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("http://russeldata.megastudy.net/campus/images/russel/m_russel/common/ico_top.png") center 40px no-repeat;
+    background-size: 50%;
+
+    /* transition */
+
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+  }
+
+  &.on span {
+    padding-top: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    background-position: center center;
+  }
+}
+
+.floating-mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  background: #000;
+  opacity: .6;
+  width: 100%;
+  height: 100%;
+
+  &.on {
+    display: block;
+  }
+}
+
+/* 하단 코로나 방역 툴팁 */
+
+#btn-corona {
+  position: fixed;
+  bottom: 135px;
+  right: 4%;
+  z-index: 6;
+
+  &.on {
+    .btn-corona-wrap {
+      display: flex;
+      align-items: center;
+      width: 300px;
+      transition-property: width;
+      transition-duration: 200ms;
+      transition-timing-function: linear;
+    }
+
+    .text {
+      opacity: 1;
+      animation-name: fadeIn;
+      animation-delay: 200ms;
+      animation-fill-mode: both;
+    }
+  }
+
+  .btn-corona-wrap {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background: #fff url("http://russeldata.megastudy.net/campus/images/russel/m_russel/common/ico_corona_tool.png") right 6px bottom 0 no-repeat;
+    background-size: 37px;
+    transition-property: width;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+  }
+
+  .text {
+    overflow: hidden;
+    height: 18px;
+    padding-left: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    opacity: 0;
+    box-sizing: border-box;
+    color: #222;
+
+    span {
+      color: #0081ff;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .co-tit {
+      float: left;
+      margin-right: 5px;
+      color: #0081ff;
+    }
+
+    .corona-slide {
+      float: left;
+      width: 165px;
+    }
+  }
+}

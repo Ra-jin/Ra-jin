@@ -1,0 +1,48 @@
+.t-tit {margin-bottom:15px;font-size: 20px;color:#222;position: relative;}
+.t-tit::before {content:"";display: inline-block;width:12px;height:12px;background:#222;margin-right:7px}
+.t-stit {margin:20px 0 10px;font-size:17px;}
+.t-stit::before {content:"";display: inline-block;width:3px;height:3px;background:#222;margin-right:3px;vertical-align: middle ;}
+.t-stxt {margin-bottom:10px;font-size:15px;color:#cb3838}
+.t-stxt::before {content:"";display: inline-block;width:13px;height:11px;background:url("https://russeldata.megastudy.net/campus/images/russel/common/teacher/ico_bullet_red.jpg") left top no-repeat;margin-right:3px}
+input[type="text"] {border:1px solid #999}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    input[type="file"] {background:#eee;border:1px solid #eee}
+}
+
+table .cont-td {padding:20px 10px!important;border-left: none!important;}
+
+.option-box {font-size: 0;line-height: 0;}
+.option-box select::-ms-expand {display: none;}
+.option-box select {margin-right:-1px;padding-left:10px;line-height: 34px;height:39px;appearance: none;-webkit-appearance:none;-moz-appearance: none;background:url("https://russeldata.megastudy.net/campus/images/russel/common/teacher/sel_bg.jpg") right top no-repeat;vertical-align: middle;border:1px solid #dadada;box-sizing: border-box;border-top:1px solid #303030;color:#303030;vertical-align: top;}
+.option-box input[type="text"] {margin-right:-1px;padding-left:10px;line-height: 39px;height:39px;vertical-align: middle;border:1px solid #dadada;box-sizing: border-box;border-top:1px solid #303030;color:#303030;vertical-align: top;}
+.option-box .bt-search {display: inline-block;width:82px;height:38px;line-height:38px;border-top:1px solid #303030;background:#919191;color:#fff;font-size:14px;text-align: center;vertical-align: top;}
+
+.t-tab-menu {margin:29px 0 10px;position: relative;height:39px;font-size:0}
+.t-tab-menu::after {content:"";width:100%;height:1px;background:#222;position: absolute;left:0;bottom:0;z-index: 0;}
+.t-tab-menu a {display: inline-block;height:37px;line-height:37px;width:140px;font-size:15px;text-align: center;border:1px solid #e3e3e3}
+.t-tab-menu a.on {border:1px solid #222;border-bottom:1px solid #fff;z-index: 1;position: relative;background:#fff}
+
+.tbl_menu table {margin-bottom:10px;width: 100%;border-top:2px solid #222;}
+.tbl_menu table th {color:#303030;font-weight:500;position: relative;background:#f7f7f7;border-bottom:1px solid #dadada;text-align: center;}
+.tbl_menu table th, .tbl_menu table td {padding:13px 0;text-align: center;font-size: 15px;color:#444;}
+.tbl_menu table td {padding-left:20px;border-bottom:1px solid #dadada;text-align: left;}
+
+.bt-save {display:inline-block;margin:0 10px;width:63px;height:27px;line-height:27px;background:#303030;font-size:13px;color:#fff;text-align: center;border-radius: 5px;}
+.d-info {font-size: 14px;color:#7f7f7f;}
+.d-info strong {font-weight: normal;position: relative;padding-right:8px;margin-right: 3px;font-size: 14px;}
+.d-info strong::after {content:"";display: inline-block;position:absolute;top:50%;right:0;width:1px;height:13px;transform:translateY(-40%);background:#7f7f7f}
+
+.bt-box {margin-bottom:30px}
+.bt-box::after {clear: both;content:"";display: block;}
+.bt-box .bt-left {float:left;}
+.bt-box .bt-right {float:right;}
+.bt-box .bt-right a {margin-left:5px;}
+.bt-box .bt-left a {margin-right: 5px;}
+.bt-box a {width:96px;height:33px;line-height:33px;display:inline-block;border:1px solid #dadada;font-size:13px;color:#5a5a5a;border-radius: 5px;position: relative;text-align: center;text-decoration: none;}
+.bt-box .bt-blue {background:#1f86e8;color:#fff;border-color: #1f86e8;}
+.bt-box .bt-gray {color:#fff;background:#999;border-color:#eee;}
+
+.answer-list {position: absolute;top:0;right:0;font-size:14px;}
+.answer-list strong:nth-of-type(1) {margin-right:10px;color:#0081ff;}
+
+.ellipsis {text-overflow: ellipsis;overflow:hidden;white-space: nowrap;word-wrap:normal;}
