@@ -1,0 +1,78 @@
+
+/* ==================================================
+    테이블 공통
+================================================== */
+.b-r-n {border-right: none!important}
+.b-l-n {border-left: none!important}
+.b-l {border-left:1px solid #d3d3d3!important;}
+.b-r {border-right:1px solid #d3d3d3;}
+
+
+/* ==================================================
+    tbl-type01
+================================================== */
+.tbl-type01 {width:100%;border-top:2px solid #797979;}
+.tbl-type01 th, .tbl-type01 td {font-size:14px}
+.tbl-type01 thead th {padding:13px 0;font-weight:500;background:#f5f5f5;border-bottom:1px solid #d3d3d3;color:#222;}
+.tbl-type01 tbody th {text-align: center;background:#f5f5f5;border-bottom:1px solid #d3d3d3;vertical-align: middle;color:#222;font-weight:500;}
+.tbl-type01 tbody td {border-bottom:1px solid #d3d3d3;padding:13px 15px;vertical-align: middle}
+.tbl-type01 tbody td.stit {background:#f6fafd;text-align: center;}
+
+
+.timetable {text-align: center}
+.timetable td {border-left:1px solid #d3d3d3;border-right:1px solid #d3d3d3;font-size:13px!important}
+
+/* ==================================================
+    tbl-type02
+================================================== */
+.tbl-type02 {width:100%;border-top:2px solid #797979;}
+.tbl-type02 thead th {padding:15px 0;font-weight:500;background:#f5f5f5;border-bottom:1px solid #909090;color:#222;letter-spacing: -1px}
+.tbl-type02 tbody th {text-align: center;background:#f5f5f5;border-bottom:1px solid #d3d3d3;vertical-align: middle;color:#222;letter-spacing: -1px}
+.tbl-type02 tbody td {border-bottom:1px solid #d9d9d9;text-align: center;padding:15px 0;letter-spacing: -1px}
+.tbl-type02 .txt-left {padding-left:10px;}
+.tbl-type02 .board_tit {cursor: pointer;}
+.tbl-type02 .board_tit td {padding:15px 0;background:#f7f7f7;}
+.tbl-type02 .board_view {display:none;}
+.tbl-type02 .board_view.on {display:table-row;}
+.tbl-type02 .board_view td {line-height: 1.5}
+.tbl-type02 .notice td {background:#f7f7f7;}
+.tbl-type01 tbody td.bd_none{border-left:none;}
+
+/* ==================================================
+    tbl-type03
+================================================== */
+.tbl-type03 {width:100%;border-top:2px solid #797979;}
+.tbl-type03 th, .tbl-type03 td {font-size:13px;}
+.tbl-type03 thead th {padding:10px 0;font-weight:500;background:#f5f5f5;border-bottom:1px solid #d3d3d3;color:#222;}
+.tbl-type03 tbody th {text-align: center;background:#f7f7f7;border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;vertical-align: middle;color:#222;}
+.tbl-type03 tbody th.bg-blue {background:#f6fafd}
+.tbl-type03 tbody th.bg-gray {background:#eee}
+.tbl-type03 tbody td {border-bottom:1px solid #d3d3d3;padding:10px 12px;vertical-align: middle;line-height: 1.7;}
+/* .tbl-type03 tbody td:last-child::after {content: "";display:inline-block;vertical-align: middle;min-height: 20px;} */
+.tbl-type03 tbody td.stit {background:#f6fafd;text-align: center;}
+.tbl-type03 tbody td .blank {display:block;height:20px;}
+.tbl-type03 tbody .bg-yellow {background-color:#fffcd9;}
+.tbl-type03 tbody .bg-green {background-color:#eaf5f5;}
+
+
+/* ==================================================
+    추가사항
+================================================== */
+.tbl-type-plr5 tbody td {padding-left:3px!important;padding-right:3px!important;}
+.tbl-bl th, .tbl-bl td {border-left:1px solid #d3d3d3;}
+.tbl-bl th:first-child {border-left:none}
+
+.tbl-center td {text-align:center}
+.bg-blue {background:#f6fafd!important;}
+#yj-sub-wrap .content-wrap #form1 #div_scr_middle table.tbl-type03.mt10 {border-collapse:separate;}
+#yj-sub-wrap .content-wrap #form1 #div_scr_middle table.tbl-type03.mt10 tbody th {border-right:none}
+
+/* ==================================================
+    calendar
+================================================== */
+.calendar {width:210px;}
+.calendar td {text-align: center;height:29px;vertical-align: top;color:#555;}
+.calendar td.sat {color:#007fff}
+.calendar td.sun {color:#ff0000}
+.calendar td.on {color:#fff;position: relative;}
+.calendar td.on::before {content:"";position: absolute;top:0px;left:5px;display: block;width:20px;height:20px;background:#007fff;border-radius: 50%;z-index: -1;}

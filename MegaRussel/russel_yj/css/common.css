@@ -1,0 +1,678 @@
+
+/* ==================================================
+   Reset
+================================================== */
+body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,blockquote,th,td,input,select,input,textarea,button, a{
+    margin:0;
+    padding:0;
+    font-size:14px;
+	color:#666;
+	line-height:1.5;
+}
+
+/* body {
+	letter-spacing: -0.04em;
+} */
+
+* {
+    line-height:1.5;
+	font-family:'Pretendard', 'Noto Sans KR', sans-serif;
+}
+
+b, strong {
+	font-weight:500;
+}
+
+fieldset, img, iframe {
+    border:none
+}
+
+ul, dl, menu {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+
+input,select,textarea,button {
+	vertical-align:middle;
+	font-family:'Pretendard', 'Noto Sans KR', sans-serif;
+}
+
+a {
+	text-decoration:none;
+	font-family:'Pretendard', 'Noto Sans KR', sans-serif;
+}
+
+a:hover,
+a:active,
+a:focus{
+	outline: 0;
+	text-decoration:none;
+}
+
+a img {
+	border: none;
+}
+
+a > img {
+	vertical-align: middle;	
+}
+
+address,caption,cite,code,em {
+    font-style:inherit;
+    font-weight:400
+}
+
+hr {
+	border:none;
+}
+
+.fl_left{
+	float:left;
+}
+
+.fl_right{
+	float:right;
+}
+
+.clearfix:after{
+	content:"";
+	clear: both;
+	display:block;
+}
+
+.txt-left {
+	text-align: left!important;
+}
+
+.txt-center {
+	text-align: center!important;
+}
+
+.txt-right {
+	text-align: right!important;	
+}
+
+.v-top {
+	vertical-align: top!important;
+}
+
+.v-middle {
+	vertical-align: middle!important;
+}
+
+.v-bottom {
+	vertical-align: bottom!important;
+}
+
+table{
+	border-collapse: collapse;
+	border-spacing:0;
+}
+label{display:inline-block;}
+.pr {position:relative!important}
+/* ==================================================
+   Font style
+================================================== */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+}
+
+.f11 {
+	font-size: 11px!important;
+}
+
+.f12 {
+	font-size: 12px!important;
+}
+
+.f14, .f14 li {
+	font-size: 14px!important;
+}
+
+.f15 {
+	font-size: 15px!important;
+}
+
+.f16, .f16 li {
+	font-size: 16px!important;
+}
+
+.f17 {
+	font-size: 17px!important;
+}
+
+.f18 {
+	font-size: 18px!important;
+}
+
+.f19 {
+	font-size: 19px!important;
+}
+
+.f20 {
+	font-size: 20px!important;
+}
+
+.f30 {
+	font-size: 30px!important;
+}
+
+
+.txt-black {
+    color: #000!important;
+}
+
+.txt-orange {
+    color: #DE5E60!important;
+}
+
+.txt-gray {
+    color: #333!important;
+}
+
+.txt-gray-01 {
+    color: #222!important;
+}
+
+.txt-gray-02 {
+    color: #666!important;
+}
+
+.txt-gray-03 {
+    color: #999!important;
+}
+
+.txt-blue {
+	color:#0081ff!important;
+}
+
+.txt-blue02 {
+	color:#1766c3!important;
+}
+
+.txt-blue03 {
+	color:#3e5c9a!important;
+}
+
+.txt-green {
+	color:#009944!important;
+}
+
+.txt-green02 {
+	color:#1eb29a!important;
+}
+
+.txt-red {
+	color:#ee3b41!important;
+}
+
+.txt-pink {
+	color:#eb5dea!important;
+}
+
+.through{
+	text-decoration:line-through!important;
+}
+
+.bold {
+	font-weight: 500!important;
+}
+
+.bold2 {
+	font-weight: 600!important;
+}
+
+.normal {
+	font-weight: 400!important;
+}
+/* ==================================================
+   Input Styles
+================================================== */
+input, button, select, textarea {
+	font-size:13px;
+	font-family:'Pretendard', 'Noto Sans KR', sans-serif;
+	outline: 0;
+}
+
+input[type="text"],
+input[type="password"] {
+	height:30px;
+	line-height: 30px;
+	border:1px solid #cecece;
+	padding:0 10px;
+	box-sizing: border-box
+}
+
+input:focus, 
+textarea:focus,
+input[type="text"]:focus {
+	outline: 0;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #7F8289;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #7F8289;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #7F8289;
+}
+
+textarea {
+	border:1px solid #cecece; 
+	padding:10px;
+	box-sizing: border-box
+}
+
+.sel-type01::-ms-expand {
+	display: none;
+}
+
+.sel-type01 {
+	height:30px;
+	padding:0 35px 0 5px; 
+	-webkit-appearance:none;
+	-moz-appearance:none; 
+	-o-appearance:none; 
+	appearance:none;
+	border:1px solid #cecece; 
+	background:#fff url("https://img.megastudy.net/russel_yj/btn/btn_sel02.gif") no-repeat center right;
+	color:#808080;
+}
+
+
+/* ==================================================
+   Margin Sets
+================================================== */
+.m0{
+	margin-bottom:0 !important;
+}
+
+.mr0{
+	margin-right:0px !important;
+}
+
+.mr10{
+	margin-right:10px !important;
+}
+
+.mr20{
+	margin-right:20px !important;
+}
+
+.mr30{
+	margin-right:30px !important;
+}
+
+.mr40{
+	margin-right:40px !important;
+}
+
+.mr50{
+	margin-right:50px !important;
+}
+
+.ml0{
+	margin-left:0px !important;
+}
+
+.ml10{
+	margin-left:10px !important;
+}
+
+.ml15{
+	margin-left:15px !important;
+}
+
+.ml20{
+	margin-left:20px !important;
+}
+
+.ml30{
+	margin-left:30px !important;
+}
+
+.ml40{
+	margin-left:40px !important;
+}
+
+.ml50{
+	margin-left:50px !important;
+}
+
+.mt0{
+	margin-top:0px !important;
+}
+
+.mt10{
+	margin-top:10px !important;
+}
+
+.mt15{
+	margin-top:15px !important;
+}
+
+
+.mt20{
+	margin-top:20px !important;
+}
+
+.mt30{
+	margin-top:30px !important;
+}
+
+.mt40{
+	margin-top:40px !important;
+}
+
+.mt50{
+	margin-top:50px !important;
+}
+.mt60{
+	margin-top:60px !important;
+}
+.mt80{
+	margin-top:80px !important;
+}
+
+.mt150{
+	margin-top:150px !important;
+}
+
+.mb0{
+	margin-bottom:0px !important;
+}
+
+.mb10{
+	margin-bottom:10px !important;
+}
+
+.mb20{
+	margin-bottom:20px !important;
+}
+
+.mb30{
+	margin-bottom:30px !important;
+}
+
+.mb40{
+	margin-bottom:40px !important;
+}
+
+.mb50{
+	margin-bottom:50px !important;
+}
+
+/* ==================================================
+   Padding Sets
+================================================== */
+.p0{
+	padding-bottom:0 !important;
+}
+
+.p20{
+	padding:20px !important;
+}
+
+.pr0{
+	padding-right:0px !important;
+}
+
+.pr10{
+	padding-right:10px !important;
+}
+
+.pr20{
+	padding-right:20px !important;
+}
+
+.pr30{
+	padding-right:30px !important;
+}
+
+.pr40{
+	padding-right:40px !important;
+}
+
+.pr50{
+	padding-right:50px !important;
+}
+
+.pr0{
+	padding-left:0px !important;
+}
+
+.pl10{
+	padding-left:10px !important;
+}
+
+.pl15{
+	padding-left:15px !important;
+}
+
+.pl20{
+	padding-left:20px !important;
+}
+
+.pl30{
+	padding-left:30px !important;
+}
+
+.pl40{
+	padding-left:40px !important;
+}
+
+.pl50{
+	padding-left:50px !important;
+}
+
+.pt0{
+	padding-top:0px !important;
+}
+
+.pt5 {
+	padding-top:5px !important;
+}
+
+.pt10{
+	padding-top:10px !important;
+}
+
+.pt12{
+	padding-top:12px !important;
+}
+
+
+.pt20{
+	padding-top:20px !important;
+}
+
+.pt30{
+	padding-top:30px !important;
+}
+
+.pt40{
+	padding-top:40px !important;
+}
+
+.pt50{
+	padding-top:50px !important;
+}
+
+.pb0{
+	padding-bottom:0px !important;
+}
+
+.pb10{
+	padding-bottom:10px !important;
+}
+
+.pb20{
+	padding-bottom:20px !important;
+}
+
+.pb30{
+	padding-bottom:30px !important;
+}
+
+.pb40{
+	padding-bottom:40px !important;
+}
+
+.pb50{
+	padding-bottom:50px !important;
+}
+
+/* ==================================================
+    Skip Navigation
+================================================== */
+.skip-navigation {
+	position:relative;
+}
+
+.skip-navigation a {
+	display:block; 
+	height:1px; 
+	width:1px; 
+	margin-bottom:-1px; 
+	overflow:hidden; 
+	text-align:center; 
+	color:#000; 
+	white-space:nowrap;
+} 
+
+.skip-navigation a:focus, 
+.skip-navigation a:active { 
+	height:auto; 
+	width:100%; 
+	padding:5px; 
+	margin-bottom:10px;
+}
+
+
+/* ==================================================
+    screen-out
+================================================== */
+.screen-out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+	text-indent: -9999px;
+}
+
+/* ==================================================
+    visible
+================================================== */
+.cont-none {
+	display:none
+}
+
+.cont-block {
+	display:block
+}
+
+/* ==================================================
+    position
+================================================== */
+.po-rel {
+	position: relative;
+}
+
+.cb {clear:both; height:0 !important; line-height:0 !important; margin:0 !important;}
+.cb_1	{clear:both; font-size:1px;}
+
+.gatewayFull .wrap_left_sky{display:none;}
+
+/*프리텐다드 폰트(가변형) 추가 -2025.03.11 */
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/font/PretendardVariable.woff2') format('woff2-variations');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+/* 본고딕 추가 수정 */
+@font-face {
+	font-family: 'Noto Sans KR',sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	src:local('NotoSans-Light'), local('NotoSans-Light'), url(https://russel.megastudy.net/russel/library/font/NotoSans-Light.eot);
+	src:url(https://russel.megastudy.net/russel/library/font/NotoSans-Light.eot?#iefix) format('embedded-opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR',sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	src:local('NotoSans-Regular'), local('NotoSans-Regular'), url(https://russel.megastudy.net/russel/library/font/NotoSans-Regular.eot);
+	src:url(https://russel.megastudy.net/russel/library/font/NotoSans-Regular.eot?#iefix) format('embedded-opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR',sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	src:local('NotoSans-Medium'), local('NotoSans-Medium'),url(https://russel.megastudy.net/russel/library/font/NotoSans-Medium.eot);
+	src:url(https://russel.megastudy.net/russel/library/font/NotoSans-Medium.eot?#iefix) format('embedded-opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR',sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	src:local('NotoSans-Bold'), local('NotoSans-Bold'),url(https://russel.megastudy.net/russel/library/font/NotoSans-Bold.eot);
+	src:url(https://russel.megastudy.net/russel/library/font/NotoSans-Bold.eot?#iefix) format('embedded-opentype');
+}
+
+
+/* 기숙페이지 예외처리 */
+.hsWrap {margin-top:-50px !important;}
+.quel-wrap {margin-top:-50px !important;}
+
+
+/* 원서 접수 생년월일 인풋 */
+.content-wrap #birth_year {width:28px;text-align: center!important;padding: 0;}
+.content-wrap #birth_month, .content-wrap #birth_day {width: 15px;text-align: center!important;padding: 0;}
+
+
+/* =================================================
+    리스트 타입
+==================================================== */
+.list-01,.list-02,.list-03,.list-04,.list-bar {margin-top:10px;text-align: left;}
+
+.list-01 li {position:relative;padding-left:18px;font-size:15px;line-height: 1.6;}
+.list-01 li::before {content:'★';position:absolute;left:0;top:0;}
+.list-01 li.bar {padding-left:8px;}
+.list-01 li.bar:before {content:'-';position:absolute;left:0;top:0;}
+.list-01 li.txt-red {color:#d05050;}
+
+.list-02 li {position:relative;padding-left:18px;font-size:15px;line-height: 1.6;}
+.list-02 li::before {content:'※';position:absolute;left:0;top:0;}
+
+.list-03 li {position:relative;padding-left:5px;font-size:15px;}
+.list-03 li::before {content:'·';position:absolute;left:0;top:0;}
+
+.list-04 li {position:relative;padding-left:10px!important;font-size:15px;line-height: 1.6;}
+.list-04 li::before {content:'-';position:absolute;left:0;top:0;}
+
+.list-05 li {position:relative;padding:0 0 0 10px;text-align: left;line-height: 1.6;}
+.list-05 li:before {content:'*';position:absolute;left:0;top:0;}
+
+.list-bar li {position:relative;padding:0 0 0 10px;text-align: left;line-height: 1.6;}
+.list-bar li:before {content:'-';position:absolute;left:0;top:0;}
+
+
+
+/* =================================================
+    어드민으로 등록한 게시물 화면
+==================================================== */
+.view_area.ck-content * {font-family:'Pretendard', 'Noto Sans KR', sans-serif;color:#222;}

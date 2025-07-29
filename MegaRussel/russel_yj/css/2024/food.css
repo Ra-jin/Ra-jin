@@ -1,0 +1,112 @@
+
+/*========================= COMMON =========================*/
+
+:root {
+    --sec_Height : calc(100vh);  /* 섹션 스크롤모션 범위기준 */
+  }
+
+.wrap_right_sky, .wrap_left_sky {display:none}
+.headerWrap.pos-sticky {display:none;}
+.food-wrap {margin-top:-20px;overflow:hidden}
+.inner {width:1200px;margin:0 auto;}
+.l-txt {font-size:12px;color:rgb(255, 255, 255, .3);}
+.food-wrap *[class^="cont0"] {padding:200px 0;text-align:center}
+.food-wrap .inner {position:relative;width:1100px;height:100%;margin:0 auto;text-align:center;box-sizing:border-box;}
+.food-wrap .inner02 {position:relative;width:1200px;height:100%;margin:0 auto;text-align:center;box-sizing:border-box;}
+
+/* visual */
+.visual-area {position:relative;height:1289px;overflow:hidden;}
+.visual-area .v-bg {width:100%;height:100%;overflow: hidden;transition: all 5s ease;}
+.visual-area .v-bg img {width:100%;height:100%;object-fit: cover;transition: all 0.5s;}
+.visual-area.on .v-bg img {animation: visual 8s forwards;}
+.visual-area .v-txt {position: absolute;top:0;left:0;width: 100%;height:100%;display: flex;justify-content: center;flex-direction: column;align-items:center}
+.visual-area .v-txt .t01, .visual-area .v-txt .t02 {transform: translateY(100px);opacity:0;transition: all 0.5s;}
+.visual-area.on .v-txt .t01 {animation: slideIn 1s 0.4s ease both;}
+.visual-area.on .v-txt .t02 {animation: slideIn 1s 0.6s ease both;}
+
+@keyframes slideIn{
+    from{opacity: 0;transform: translateY(100px);}
+    to{opacity: 1;transform: translateY(0);}
+}  
+
+@keyframes visual {
+    to {
+        transform: scale(1.07);
+    }
+}
+
+.food-wrap .next_btn {position:relative;display:flex;justify-content:center;align-items:center;margin:0 auto;padding:0 37px 0 30px;width:314px;height:60px;color:#000;font-size:18px;line-height:1.4;border-radius:64px;background:#FFF;box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.05);box-sizing:border-box;}
+.food-wrap .next_btn::before {content:'';display:block;position: absolute;top:27px;right:30px;width:7px;height:7px;border-top:2px solid #222;border-right:2px solid #222;transform: rotate(45deg);}
+.food-wrap .next_btn span {margin-right:10px;color:#FFF;padding:5px 8px;font-size:13px;font-weight:500;border-radius:23px;background:#36A1B1;}
+
+/* 밥에 대한 생각 */
+.food-wrap .rice .cont01 {padding-top:280px;background:linear-gradient(180deg, #FFF 75.62%, #FFF0E6 100%);}
+
+/* cont02 */
+.food-wrap .rice .cont02 {padding:0 !important;background:#FFF;}
+.food-wrap .rice .sec0 {height:var(--sec_Height);display:flex;align-items:center;justify-content:center;}
+.food-wrap .rice .time-line {position:relative;display:flex;align-items:center;margin:0 auto;width:1200px;overflow:hidden;}
+.food-wrap .rice .time-line ul {position:relative;width:1200px;height:551px;display:flex;flex-direction:row;align-items:center;}
+.food-wrap .rice .time-line ul *[class^="box0"] {opacity:0;transition:.3s;}
+.food-wrap .rice .time-line ul .box01 {opacity:1;}
+/* .food-wrap .rice .time-line ul *[class^="box0"] {position:absolute;top:0;left:0;opacity:0;display:flex;transition:.3s;border-radius:60px;overflow:hidden;}
+.food-wrap .rice .time-line ul .box01 {opacity:1;} */
+
+/* .food-wrap .rice .img-slide {padding-bottom:48px;height:559px;}
+.food-wrap .rice .img-slide.swiper-container-horizontal>.swiper-pagination-bullets {display:flex;}
+.food-wrap .rice .img-slide .swiper-pagination-bullet {opacity:1;width:16px;height:16px;border-radius:100px;background-color:#DFDFDF;}
+.food-wrap .rice .img-slide .swiper-pagination-bullet-active {background-color:#439200} */
+
+.food-wrap .slide-wrap {display:flex;justify-content:center;width:1200px}
+.food-wrap .food-slide {margin-top:10px;margin-left:100px;width: 536px!important;overflow:hidden;}
+.food-wrap .rice .time-line ul .box04 .swiper-button-prev {top:537px;left:647px;opacity:1;width:36px;height:36px;background:url("https://russeldata.megastudy.net/campus/images/russel_sm/info/food/i_prev.png");}
+.food-wrap .rice .time-line ul .box04 .swiper-button-next {top:537px;left:703px;opacity:1;width:36px;height:36px;background:url("https://russeldata.megastudy.net/campus/images/russel_sm/info/food/i_next.png");}
+
+.food-wrap .rice .cont03 {background:linear-gradient(180deg, #FFF 50.03%, #ECF0E5 100%);}
+.food-wrap .rice .cont04 {background:#F8F6F6}
+.food-wrap .rice .cont02 .inner, .food-wrap .rice .cont03 .inner {overflow:hidden;}
+.food-wrap .rice .min-banner img {width:100%;}
+
+
+
+
+/* 김치에 대한 생각 */
+.food-wrap .kimchi .cont01 {background:linear-gradient(180deg, #FFF 80.2%, #F9EBEB 104.72%); padding-top: 280px;}
+.food-wrap .kimchi .cont02 {background:#FFF;}
+.food-wrap .kimchi .cont03 {background:#F3F0FA;}
+.food-wrap .rice-wrap {display:flex;justify-content:center;align-items:center;padding:70px;border-radius:15px;background:linear-gradient(180deg, #FFF 41.22%, #FFF 94.59%);box-sizing:border-box;}
+.food-wrap .rice-wrap .rice-slide {width:400px;height:400px;overflow:hidden;}
+.food-wrap .rice-wrap .txt-slide {margin-left:40px;width:496px;height:292px;overflow:hidden;}
+
+.food-wrap .food-list {margin-left:40px;text-align:left;}
+.food-wrap .food-list li {position:relative;margin-bottom:30px;padding-left:32px;color:#B5B2B2;font-size:18px;letter-spacing:-1px;line-height:1;}
+.food-wrap .food-list li.on {color:#222;font-weight:500;animation: fade-in-fwd 1s linear both;}
+.food-wrap .food-list li::before {content:'';position:absolute;top:2px;left:0;width:19px;height:16px;background:url("https://russeldata.megastudy.net/campus/images/russel_sm/info/food/i_check.png") 0 0 no-repeat;}
+.food-wrap .food-list li.on::before {background:url("https://russeldata.megastudy.net/campus/images/russel_sm/info/food/i_check_on.png") 0 0 no-repeat;}
+
+@keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+.food-wrap .tab-bt {z-index: 1; position:absolute;top:1289px;width:100%;background:#f2f2f2}
+.food-wrap .tab-bt div {display:flex;width:1200px;margin:0 auto;}
+.food-wrap .tab-bt div a {flex:1;height:85px;line-height:85px;border-right:1px solid #DADADA;box-sizing:border-box;font-size:23px;color:#BDBDBD;background:#F2F2F2;text-align: center;}
+.food-wrap .tab-bt div a::before {content:"";width:31px;height:25px;overflow:hidden;display:inline-block;margin:-5px 6px 0 0;vertical-align: middle;}
+.food-wrap .tab-bt div a:first-child {border-left:1px solid #DADADA;}
+
+.food-wrap .tab-bt a:nth-of-type(1)::before {background:url("https://russeldata.megastudy.net/campus/images/russel_sm/info/food/bg_tab01.png") left top no-repeat;}
+.food-wrap .tab-bt a:nth-of-type(2)::before {background:url("https://russeldata.megastudy.net/campus/images/russel_sm/info/food/bg_tab02.png") left top no-repeat;}
+.food-wrap .tab-bt div a.on {color:#fff;background:#3a3b3c;border-color:#3a3b3c}
+.food-wrap .tab-bt div a.on::before {background-position:0 -30px}
+.food-wrap .tab-bt a.on:nth-of-type(1)::before {background:url("https://russeldata.megastudy.net/campus/images/russel_sm/info/food/bg_tab01_on.png") left top no-repeat;}
+.food-wrap .tab-bt a.on:nth-of-type(2)::before {background:url("https://russeldata.megastudy.net/campus/images/russel_sm/info/food/bg_tab02_on.png") left top no-repeat;}
+
